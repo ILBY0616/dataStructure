@@ -13,11 +13,18 @@ project(${ProjectId} C)
 # 指定 C 语言的标准为 C11
 set(CMAKE_C_STANDARD 11)
 
-# 使用文件通配符获取当前目录下所有的 .c 文件
-file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
+# 使用文件通配符递归获取当前目录及子目录下所有的 .c 文件
+file(GLOB_RECURSE files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
 
 # 遍历每个 .c 文件，并为每个文件创建对应的可执行文件
 foreach (file ${files})
-    get_filename_component(name ${file} NAME)
-    add_executable(${name} ${file})
+    # 获取文件相对路径
+    file(RELATIVE_PATH relPath ${CMAKE_CURRENT_SOURCE_DIR} ${file})
+
+    # 将相对路径中的目录分隔符替换为下划线，作为可执行文件的名称
+    string(REPLACE "/" "_" execName ${relPath})
+    string(REPLACE ".c" "" execName ${execName})
+
+    # 创建可执行文件
+    add_executable(${execName} ${file})
 endforeach ()

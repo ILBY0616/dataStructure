@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "dataStructure",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,16 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "main.c::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main.c-Debug-736f05f5e618f440e69c.json",
-					"name" : "main.c",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "test.c::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test.c-Debug-836e9fb6ebdc0e3e9d53.json",
-					"name" : "test.c",
+					"id" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId-Debug-0fcde440f4840c4bf416.json",
+					"name" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId",
 					"projectIndex" : 0
 				}
 			]

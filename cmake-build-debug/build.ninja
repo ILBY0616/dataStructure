@@ -41,6 +41,369 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target List_Jop_jop01
+
+
+#############################################
+# Order-only phony target for List_Jop_jop01
+
+build cmake_object_order_depends_target_List_Jop_jop01: phony || CMakeFiles/List_Jop_jop01.dir
+
+build CMakeFiles/List_Jop_jop01.dir/List/Jop/jop01.c.obj: C_COMPILER__List_Jop_jop01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop01.c || cmake_object_order_depends_target_List_Jop_jop01
+  DEP_FILE = CMakeFiles\List_Jop_jop01.dir\List\Jop\jop01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_Jop_jop01.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop01.dir\List\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_Jop_jop01
+
+
+#############################################
+# Link the executable List_Jop_jop01.exe
+
+build List_Jop_jop01.exe: C_EXECUTABLE_LINKER__List_Jop_jop01_Debug CMakeFiles/List_Jop_jop01.dir/List/Jop/jop01.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_Jop_jop01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_Jop_jop01.exe
+  TARGET_IMPLIB = libList_Jop_jop01.dll.a
+  TARGET_PDB = List_Jop_jop01.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_Jop_jop02
+
+
+#############################################
+# Order-only phony target for List_Jop_jop02
+
+build cmake_object_order_depends_target_List_Jop_jop02: phony || CMakeFiles/List_Jop_jop02.dir
+
+build CMakeFiles/List_Jop_jop02.dir/List/Jop/jop02.c.obj: C_COMPILER__List_Jop_jop02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop02.c || cmake_object_order_depends_target_List_Jop_jop02
+  DEP_FILE = CMakeFiles\List_Jop_jop02.dir\List\Jop\jop02.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_Jop_jop02.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop02.dir\List\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_Jop_jop02
+
+
+#############################################
+# Link the executable List_Jop_jop02.exe
+
+build List_Jop_jop02.exe: C_EXECUTABLE_LINKER__List_Jop_jop02_Debug CMakeFiles/List_Jop_jop02.dir/List/Jop/jop02.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_Jop_jop02.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_Jop_jop02.exe
+  TARGET_IMPLIB = libList_Jop_jop02.dll.a
+  TARGET_PDB = List_Jop_jop02.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_Jop_jop03
+
+
+#############################################
+# Order-only phony target for List_Jop_jop03
+
+build cmake_object_order_depends_target_List_Jop_jop03: phony || CMakeFiles/List_Jop_jop03.dir
+
+build CMakeFiles/List_Jop_jop03.dir/List/Jop/jop03.c.obj: C_COMPILER__List_Jop_jop03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop03.c || cmake_object_order_depends_target_List_Jop_jop03
+  DEP_FILE = CMakeFiles\List_Jop_jop03.dir\List\Jop\jop03.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_Jop_jop03.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop03.dir\List\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_Jop_jop03
+
+
+#############################################
+# Link the executable List_Jop_jop03.exe
+
+build List_Jop_jop03.exe: C_EXECUTABLE_LINKER__List_Jop_jop03_Debug CMakeFiles/List_Jop_jop03.dir/List/Jop/jop03.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_Jop_jop03.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_Jop_jop03.exe
+  TARGET_IMPLIB = libList_Jop_jop03.dll.a
+  TARGET_PDB = List_Jop_jop03.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_Jop_jop04
+
+
+#############################################
+# Order-only phony target for List_Jop_jop04
+
+build cmake_object_order_depends_target_List_Jop_jop04: phony || CMakeFiles/List_Jop_jop04.dir
+
+build CMakeFiles/List_Jop_jop04.dir/List/Jop/jop04.c.obj: C_COMPILER__List_Jop_jop04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop04.c || cmake_object_order_depends_target_List_Jop_jop04
+  DEP_FILE = CMakeFiles\List_Jop_jop04.dir\List\Jop\jop04.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_Jop_jop04.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop04.dir\List\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_Jop_jop04
+
+
+#############################################
+# Link the executable List_Jop_jop04.exe
+
+build List_Jop_jop04.exe: C_EXECUTABLE_LINKER__List_Jop_jop04_Debug CMakeFiles/List_Jop_jop04.dir/List/Jop/jop04.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_Jop_jop04.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_Jop_jop04.exe
+  TARGET_IMPLIB = libList_Jop_jop04.dll.a
+  TARGET_PDB = List_Jop_jop04.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_Jop_jop05
+
+
+#############################################
+# Order-only phony target for List_Jop_jop05
+
+build cmake_object_order_depends_target_List_Jop_jop05: phony || CMakeFiles/List_Jop_jop05.dir
+
+build CMakeFiles/List_Jop_jop05.dir/List/Jop/jop05.c.obj: C_COMPILER__List_Jop_jop05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop05.c || cmake_object_order_depends_target_List_Jop_jop05
+  DEP_FILE = CMakeFiles\List_Jop_jop05.dir\List\Jop\jop05.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_Jop_jop05.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop05.dir\List\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_Jop_jop05
+
+
+#############################################
+# Link the executable List_Jop_jop05.exe
+
+build List_Jop_jop05.exe: C_EXECUTABLE_LINKER__List_Jop_jop05_Debug CMakeFiles/List_Jop_jop05.dir/List/Jop/jop05.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_Jop_jop05.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_Jop_jop05.exe
+  TARGET_IMPLIB = libList_Jop_jop05.dll.a
+  TARGET_PDB = List_Jop_jop05.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_LList_DLList
+
+
+#############################################
+# Order-only phony target for List_LList_DLList
+
+build cmake_object_order_depends_target_List_LList_DLList: phony || CMakeFiles/List_LList_DLList.dir
+
+build CMakeFiles/List_LList_DLList.dir/List/LList/DLList.c.obj: C_COMPILER__List_LList_DLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/DLList.c || cmake_object_order_depends_target_List_LList_DLList
+  DEP_FILE = CMakeFiles\List_LList_DLList.dir\List\LList\DLList.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_LList_DLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_LList_DLList.dir\List\LList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_LList_DLList
+
+
+#############################################
+# Link the executable List_LList_DLList.exe
+
+build List_LList_DLList.exe: C_EXECUTABLE_LINKER__List_LList_DLList_Debug CMakeFiles/List_LList_DLList.dir/List/LList/DLList.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_LList_DLList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_LList_DLList.exe
+  TARGET_IMPLIB = libList_LList_DLList.dll.a
+  TARGET_PDB = List_LList_DLList.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_LList_SLList
+
+
+#############################################
+# Order-only phony target for List_LList_SLList
+
+build cmake_object_order_depends_target_List_LList_SLList: phony || CMakeFiles/List_LList_SLList.dir
+
+build CMakeFiles/List_LList_SLList.dir/List/LList/SLList.c.obj: C_COMPILER__List_LList_SLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/SLList.c || cmake_object_order_depends_target_List_LList_SLList
+  DEP_FILE = CMakeFiles\List_LList_SLList.dir\List\LList\SLList.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_LList_SLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_LList_SLList.dir\List\LList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_LList_SLList
+
+
+#############################################
+# Link the executable List_LList_SLList.exe
+
+build List_LList_SLList.exe: C_EXECUTABLE_LINKER__List_LList_SLList_Debug CMakeFiles/List_LList_SLList.dir/List/LList/SLList.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_LList_SLList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_LList_SLList.exe
+  TARGET_IMPLIB = libList_LList_SLList.dll.a
+  TARGET_PDB = List_LList_SLList.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_SList_DSList
+
+
+#############################################
+# Order-only phony target for List_SList_DSList
+
+build cmake_object_order_depends_target_List_SList_DSList: phony || CMakeFiles/List_SList_DSList.dir
+
+build CMakeFiles/List_SList_DSList.dir/List/SList/DSList.c.obj: C_COMPILER__List_SList_DSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/DSList.c || cmake_object_order_depends_target_List_SList_DSList
+  DEP_FILE = CMakeFiles\List_SList_DSList.dir\List\SList\DSList.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_SList_DSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_SList_DSList.dir\List\SList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_SList_DSList
+
+
+#############################################
+# Link the executable List_SList_DSList.exe
+
+build List_SList_DSList.exe: C_EXECUTABLE_LINKER__List_SList_DSList_Debug CMakeFiles/List_SList_DSList.dir/List/SList/DSList.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_SList_DSList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_SList_DSList.exe
+  TARGET_IMPLIB = libList_SList_DSList.dll.a
+  TARGET_PDB = List_SList_DSList.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target List_SList_SSList
+
+
+#############################################
+# Order-only phony target for List_SList_SSList
+
+build cmake_object_order_depends_target_List_SList_SSList: phony || CMakeFiles/List_SList_SSList.dir
+
+build CMakeFiles/List_SList_SSList.dir/List/SList/SSList.c.obj: C_COMPILER__List_SList_SSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/SSList.c || cmake_object_order_depends_target_List_SList_SSList
+  DEP_FILE = CMakeFiles\List_SList_SSList.dir\List\SList\SSList.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\List_SList_SSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List_SList_SSList.dir\List\SList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target List_SList_SSList
+
+
+#############################################
+# Link the executable List_SList_SSList.exe
+
+build List_SList_SSList.exe: C_EXECUTABLE_LINKER__List_SList_SSList_Debug CMakeFiles/List_SList_SSList.dir/List/SList/SSList.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\List_SList_SSList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = List_SList_SSList.exe
+  TARGET_IMPLIB = libList_SList_SSList.dll.a
+  TARGET_PDB = List_SList_SSList.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack_LStack_LStack
+
+
+#############################################
+# Order-only phony target for Stack_LStack_LStack
+
+build cmake_object_order_depends_target_Stack_LStack_LStack: phony || CMakeFiles/Stack_LStack_LStack.dir
+
+build CMakeFiles/Stack_LStack_LStack.dir/Stack/LStack/LStack.c.obj: C_COMPILER__Stack_LStack_LStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/LStack/LStack.c || cmake_object_order_depends_target_Stack_LStack_LStack
+  DEP_FILE = CMakeFiles\Stack_LStack_LStack.dir\Stack\LStack\LStack.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack_LStack_LStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack_LStack_LStack.dir\Stack\LStack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack_LStack_LStack
+
+
+#############################################
+# Link the executable Stack_LStack_LStack.exe
+
+build Stack_LStack_LStack.exe: C_EXECUTABLE_LINKER__Stack_LStack_LStack_Debug CMakeFiles/Stack_LStack_LStack.dir/Stack/LStack/LStack.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack_LStack_LStack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack_LStack_LStack.exe
+  TARGET_IMPLIB = libStack_LStack_LStack.dll.a
+  TARGET_PDB = Stack_LStack_LStack.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack_SStack_SStack
+
+
+#############################################
+# Order-only phony target for Stack_SStack_SStack
+
+build cmake_object_order_depends_target_Stack_SStack_SStack: phony || CMakeFiles/Stack_SStack_SStack.dir
+
+build CMakeFiles/Stack_SStack_SStack.dir/Stack/SStack/SStack.c.obj: C_COMPILER__Stack_SStack_SStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/SStack/SStack.c || cmake_object_order_depends_target_Stack_SStack_SStack
+  DEP_FILE = CMakeFiles\Stack_SStack_SStack.dir\Stack\SStack\SStack.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack_SStack_SStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack_SStack_SStack.dir\Stack\SStack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack_SStack_SStack
+
+
+#############################################
+# Link the executable Stack_SStack_SStack.exe
+
+build Stack_SStack_SStack.exe: C_EXECUTABLE_LINKER__Stack_SStack_SStack_Debug CMakeFiles/Stack_SStack_SStack.dir/Stack/SStack/SStack.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack_SStack_SStack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack_SStack_SStack.exe
+  TARGET_IMPLIB = libStack_SStack_SStack.dll.a
+  TARGET_PDB = Stack_SStack_SStack.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId
 
 
@@ -54,8 +417,6 @@ build CMakeFiles/cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerI
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC
-  TARGET_COMPILE_PDB = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir\
-  TARGET_PDB = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.pdb
 
 
 # =============================================================================
@@ -71,10 +432,9 @@ build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe: C_EX
   OBJECT_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir\
   TARGET_FILE = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
   TARGET_IMPLIB = libcmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dll.a
-  TARGET_PDB = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.pdb
+  TARGET_PDB = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe.dbg
 
 
 #############################################
@@ -102,6 +462,28 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build List_Jop_jop01: phony List_Jop_jop01.exe
+
+build List_Jop_jop02: phony List_Jop_jop02.exe
+
+build List_Jop_jop03: phony List_Jop_jop03.exe
+
+build List_Jop_jop04: phony List_Jop_jop04.exe
+
+build List_Jop_jop05: phony List_Jop_jop05.exe
+
+build List_LList_DLList: phony List_LList_DLList.exe
+
+build List_LList_SLList: phony List_LList_SLList.exe
+
+build List_SList_DSList: phony List_SList_DSList.exe
+
+build List_SList_SSList: phony List_SList_SSList.exe
+
+build Stack_LStack_LStack: phony Stack_LStack_LStack.exe
+
+build Stack_SStack_SStack: phony Stack_SStack_SStack.exe
+
 build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId: phony cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
 
 # =============================================================================
@@ -112,7 +494,7 @@ build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
+build all: phony List_Jop_jop01.exe List_Jop_jop02.exe List_Jop_jop03.exe List_Jop_jop04.exe List_Jop_jop05.exe List_LList_DLList.exe List_LList_SLList.exe List_SList_DSList.exe List_SList_SSList.exe Stack_LStack_LStack.exe Stack_SStack_SStack.exe cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets
@@ -121,14 +503,14 @@ build all: phony cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerI
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/CLion/WorkPlace/dataStructure/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/CLion/WorkPlace/dataStructure/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/CLion/WorkPlace/dataStructure/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/CLion/CLion/CLion$ 2024.1.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake D$:/CLion/WorkPlace/dataStructure/CMakeLists.txt: phony
 
 
 #############################################

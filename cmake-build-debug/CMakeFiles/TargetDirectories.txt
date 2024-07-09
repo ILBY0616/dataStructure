@@ -1,3 +1,14 @@
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_Jop_jop01.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_Jop_jop02.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_Jop_jop03.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_Jop_jop04.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_Jop_jop05.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_LList_DLList.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_LList_SLList.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_SList_DSList.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/List_SList_SSList.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Stack_LStack_LStack.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Stack_SStack_SStack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

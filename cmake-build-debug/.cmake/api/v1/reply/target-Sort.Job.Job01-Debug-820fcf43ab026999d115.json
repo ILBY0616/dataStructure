@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe"
+			"path" : "Sort.Job.Job01.exe"
 		},
 		{
-			"path" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.pdb"
+			"path" : "Sort.Job.Job01.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId::@6890427a1f51a3e7e1df",
+	"id" : "Sort.Job.Job01::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId",
-	"nameOnDisk" : "cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe",
+	"name" : "Sort.Job.Job01",
+	"nameOnDisk" : "Sort.Job.Job01.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c",
+			"path" : "Sort/Job/Job01.c",
 			"sourceGroupIndex" : 0
 		}
 	],

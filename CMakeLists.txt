@@ -22,7 +22,7 @@ foreach (file ${files})
     file(RELATIVE_PATH relPath ${CMAKE_CURRENT_SOURCE_DIR} ${file})
 
     # 将相对路径中的目录分隔符替换为下划线，作为可执行文件的名称
-    string(REPLACE "/" "_" execName ${relPath})
+    string(REPLACE "/" "." execName ${relPath})
     string(REPLACE ".c" "" execName ${execName})
 
     # 创建可执行文件

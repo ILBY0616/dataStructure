@@ -41,400 +41,1060 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target List_Jop_jop01
+# Object build statements for EXECUTABLE target Base.AboutString
 
 
 #############################################
-# Order-only phony target for List_Jop_jop01
+# Order-only phony target for Base.AboutString
 
-build cmake_object_order_depends_target_List_Jop_jop01: phony || CMakeFiles/List_Jop_jop01.dir
+build cmake_object_order_depends_target_Base.AboutString: phony || CMakeFiles/Base.AboutString.dir
 
-build CMakeFiles/List_Jop_jop01.dir/List/Jop/jop01.c.obj: C_COMPILER__List_Jop_jop01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop01.c || cmake_object_order_depends_target_List_Jop_jop01
-  DEP_FILE = CMakeFiles\List_Jop_jop01.dir\List\Jop\jop01.c.obj.d
+build CMakeFiles/Base.AboutString.dir/Base/AboutString.c.obj: C_COMPILER__Base.2eAboutString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Base/AboutString.c || cmake_object_order_depends_target_Base.AboutString
+  DEP_FILE = CMakeFiles\Base.AboutString.dir\Base\AboutString.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_Jop_jop01.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop01.dir\List\Jop
+  OBJECT_DIR = CMakeFiles\Base.AboutString.dir
+  OBJECT_FILE_DIR = CMakeFiles\Base.AboutString.dir\Base
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_Jop_jop01
+# Link build statements for EXECUTABLE target Base.AboutString
 
 
 #############################################
-# Link the executable List_Jop_jop01.exe
+# Link the executable Base.AboutString.exe
 
-build List_Jop_jop01.exe: C_EXECUTABLE_LINKER__List_Jop_jop01_Debug CMakeFiles/List_Jop_jop01.dir/List/Jop/jop01.c.obj
+build Base.AboutString.exe: C_EXECUTABLE_LINKER__Base.2eAboutString_Debug CMakeFiles/Base.AboutString.dir/Base/AboutString.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_Jop_jop01.dir
+  OBJECT_DIR = CMakeFiles\Base.AboutString.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_Jop_jop01.exe
-  TARGET_IMPLIB = libList_Jop_jop01.dll.a
-  TARGET_PDB = List_Jop_jop01.exe.dbg
+  TARGET_FILE = Base.AboutString.exe
+  TARGET_IMPLIB = libBase.AboutString.dll.a
+  TARGET_PDB = Base.AboutString.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_Jop_jop02
+# Object build statements for EXECUTABLE target List.Job.Job01
 
 
 #############################################
-# Order-only phony target for List_Jop_jop02
+# Order-only phony target for List.Job.Job01
 
-build cmake_object_order_depends_target_List_Jop_jop02: phony || CMakeFiles/List_Jop_jop02.dir
+build cmake_object_order_depends_target_List.Job.Job01: phony || CMakeFiles/List.Job.Job01.dir
 
-build CMakeFiles/List_Jop_jop02.dir/List/Jop/jop02.c.obj: C_COMPILER__List_Jop_jop02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop02.c || cmake_object_order_depends_target_List_Jop_jop02
-  DEP_FILE = CMakeFiles\List_Jop_jop02.dir\List\Jop\jop02.c.obj.d
+build CMakeFiles/List.Job.Job01.dir/List/Job/Job01.c.obj: C_COMPILER__List.2eJob.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Job/Job01.c || cmake_object_order_depends_target_List.Job.Job01
+  DEP_FILE = CMakeFiles\List.Job.Job01.dir\List\Job\Job01.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_Jop_jop02.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop02.dir\List\Jop
+  OBJECT_DIR = CMakeFiles\List.Job.Job01.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.Job.Job01.dir\List\Job
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_Jop_jop02
+# Link build statements for EXECUTABLE target List.Job.Job01
 
 
 #############################################
-# Link the executable List_Jop_jop02.exe
+# Link the executable List.Job.Job01.exe
 
-build List_Jop_jop02.exe: C_EXECUTABLE_LINKER__List_Jop_jop02_Debug CMakeFiles/List_Jop_jop02.dir/List/Jop/jop02.c.obj
+build List.Job.Job01.exe: C_EXECUTABLE_LINKER__List.2eJob.2eJob01_Debug CMakeFiles/List.Job.Job01.dir/List/Job/Job01.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_Jop_jop02.dir
+  OBJECT_DIR = CMakeFiles\List.Job.Job01.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_Jop_jop02.exe
-  TARGET_IMPLIB = libList_Jop_jop02.dll.a
-  TARGET_PDB = List_Jop_jop02.exe.dbg
+  TARGET_FILE = List.Job.Job01.exe
+  TARGET_IMPLIB = libList.Job.Job01.dll.a
+  TARGET_PDB = List.Job.Job01.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_Jop_jop03
+# Object build statements for EXECUTABLE target List.Job.Job02
 
 
 #############################################
-# Order-only phony target for List_Jop_jop03
+# Order-only phony target for List.Job.Job02
 
-build cmake_object_order_depends_target_List_Jop_jop03: phony || CMakeFiles/List_Jop_jop03.dir
+build cmake_object_order_depends_target_List.Job.Job02: phony || CMakeFiles/List.Job.Job02.dir
 
-build CMakeFiles/List_Jop_jop03.dir/List/Jop/jop03.c.obj: C_COMPILER__List_Jop_jop03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop03.c || cmake_object_order_depends_target_List_Jop_jop03
-  DEP_FILE = CMakeFiles\List_Jop_jop03.dir\List\Jop\jop03.c.obj.d
+build CMakeFiles/List.Job.Job02.dir/List/Job/Job02.c.obj: C_COMPILER__List.2eJob.2eJob02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Job/Job02.c || cmake_object_order_depends_target_List.Job.Job02
+  DEP_FILE = CMakeFiles\List.Job.Job02.dir\List\Job\Job02.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_Jop_jop03.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop03.dir\List\Jop
+  OBJECT_DIR = CMakeFiles\List.Job.Job02.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.Job.Job02.dir\List\Job
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_Jop_jop03
+# Link build statements for EXECUTABLE target List.Job.Job02
 
 
 #############################################
-# Link the executable List_Jop_jop03.exe
+# Link the executable List.Job.Job02.exe
 
-build List_Jop_jop03.exe: C_EXECUTABLE_LINKER__List_Jop_jop03_Debug CMakeFiles/List_Jop_jop03.dir/List/Jop/jop03.c.obj
+build List.Job.Job02.exe: C_EXECUTABLE_LINKER__List.2eJob.2eJob02_Debug CMakeFiles/List.Job.Job02.dir/List/Job/Job02.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_Jop_jop03.dir
+  OBJECT_DIR = CMakeFiles\List.Job.Job02.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_Jop_jop03.exe
-  TARGET_IMPLIB = libList_Jop_jop03.dll.a
-  TARGET_PDB = List_Jop_jop03.exe.dbg
+  TARGET_FILE = List.Job.Job02.exe
+  TARGET_IMPLIB = libList.Job.Job02.dll.a
+  TARGET_PDB = List.Job.Job02.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_Jop_jop04
+# Object build statements for EXECUTABLE target List.Job.Job03
 
 
 #############################################
-# Order-only phony target for List_Jop_jop04
+# Order-only phony target for List.Job.Job03
 
-build cmake_object_order_depends_target_List_Jop_jop04: phony || CMakeFiles/List_Jop_jop04.dir
+build cmake_object_order_depends_target_List.Job.Job03: phony || CMakeFiles/List.Job.Job03.dir
 
-build CMakeFiles/List_Jop_jop04.dir/List/Jop/jop04.c.obj: C_COMPILER__List_Jop_jop04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop04.c || cmake_object_order_depends_target_List_Jop_jop04
-  DEP_FILE = CMakeFiles\List_Jop_jop04.dir\List\Jop\jop04.c.obj.d
+build CMakeFiles/List.Job.Job03.dir/List/Job/Job03.c.obj: C_COMPILER__List.2eJob.2eJob03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Job/Job03.c || cmake_object_order_depends_target_List.Job.Job03
+  DEP_FILE = CMakeFiles\List.Job.Job03.dir\List\Job\Job03.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_Jop_jop04.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop04.dir\List\Jop
+  OBJECT_DIR = CMakeFiles\List.Job.Job03.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.Job.Job03.dir\List\Job
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_Jop_jop04
+# Link build statements for EXECUTABLE target List.Job.Job03
 
 
 #############################################
-# Link the executable List_Jop_jop04.exe
+# Link the executable List.Job.Job03.exe
 
-build List_Jop_jop04.exe: C_EXECUTABLE_LINKER__List_Jop_jop04_Debug CMakeFiles/List_Jop_jop04.dir/List/Jop/jop04.c.obj
+build List.Job.Job03.exe: C_EXECUTABLE_LINKER__List.2eJob.2eJob03_Debug CMakeFiles/List.Job.Job03.dir/List/Job/Job03.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_Jop_jop04.dir
+  OBJECT_DIR = CMakeFiles\List.Job.Job03.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_Jop_jop04.exe
-  TARGET_IMPLIB = libList_Jop_jop04.dll.a
-  TARGET_PDB = List_Jop_jop04.exe.dbg
+  TARGET_FILE = List.Job.Job03.exe
+  TARGET_IMPLIB = libList.Job.Job03.dll.a
+  TARGET_PDB = List.Job.Job03.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_Jop_jop05
+# Object build statements for EXECUTABLE target List.Job.Job04
 
 
 #############################################
-# Order-only phony target for List_Jop_jop05
+# Order-only phony target for List.Job.Job04
 
-build cmake_object_order_depends_target_List_Jop_jop05: phony || CMakeFiles/List_Jop_jop05.dir
+build cmake_object_order_depends_target_List.Job.Job04: phony || CMakeFiles/List.Job.Job04.dir
 
-build CMakeFiles/List_Jop_jop05.dir/List/Jop/jop05.c.obj: C_COMPILER__List_Jop_jop05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Jop/jop05.c || cmake_object_order_depends_target_List_Jop_jop05
-  DEP_FILE = CMakeFiles\List_Jop_jop05.dir\List\Jop\jop05.c.obj.d
+build CMakeFiles/List.Job.Job04.dir/List/Job/Job04.c.obj: C_COMPILER__List.2eJob.2eJob04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Job/Job04.c || cmake_object_order_depends_target_List.Job.Job04
+  DEP_FILE = CMakeFiles\List.Job.Job04.dir\List\Job\Job04.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_Jop_jop05.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_Jop_jop05.dir\List\Jop
+  OBJECT_DIR = CMakeFiles\List.Job.Job04.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.Job.Job04.dir\List\Job
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_Jop_jop05
+# Link build statements for EXECUTABLE target List.Job.Job04
 
 
 #############################################
-# Link the executable List_Jop_jop05.exe
+# Link the executable List.Job.Job04.exe
 
-build List_Jop_jop05.exe: C_EXECUTABLE_LINKER__List_Jop_jop05_Debug CMakeFiles/List_Jop_jop05.dir/List/Jop/jop05.c.obj
+build List.Job.Job04.exe: C_EXECUTABLE_LINKER__List.2eJob.2eJob04_Debug CMakeFiles/List.Job.Job04.dir/List/Job/Job04.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_Jop_jop05.dir
+  OBJECT_DIR = CMakeFiles\List.Job.Job04.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_Jop_jop05.exe
-  TARGET_IMPLIB = libList_Jop_jop05.dll.a
-  TARGET_PDB = List_Jop_jop05.exe.dbg
+  TARGET_FILE = List.Job.Job04.exe
+  TARGET_IMPLIB = libList.Job.Job04.dll.a
+  TARGET_PDB = List.Job.Job04.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_LList_DLList
+# Object build statements for EXECUTABLE target List.Job.Job05
 
 
 #############################################
-# Order-only phony target for List_LList_DLList
+# Order-only phony target for List.Job.Job05
 
-build cmake_object_order_depends_target_List_LList_DLList: phony || CMakeFiles/List_LList_DLList.dir
+build cmake_object_order_depends_target_List.Job.Job05: phony || CMakeFiles/List.Job.Job05.dir
 
-build CMakeFiles/List_LList_DLList.dir/List/LList/DLList.c.obj: C_COMPILER__List_LList_DLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/DLList.c || cmake_object_order_depends_target_List_LList_DLList
-  DEP_FILE = CMakeFiles\List_LList_DLList.dir\List\LList\DLList.c.obj.d
+build CMakeFiles/List.Job.Job05.dir/List/Job/Job05.c.obj: C_COMPILER__List.2eJob.2eJob05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/Job/Job05.c || cmake_object_order_depends_target_List.Job.Job05
+  DEP_FILE = CMakeFiles\List.Job.Job05.dir\List\Job\Job05.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_LList_DLList.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_LList_DLList.dir\List\LList
+  OBJECT_DIR = CMakeFiles\List.Job.Job05.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.Job.Job05.dir\List\Job
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_LList_DLList
+# Link build statements for EXECUTABLE target List.Job.Job05
 
 
 #############################################
-# Link the executable List_LList_DLList.exe
+# Link the executable List.Job.Job05.exe
 
-build List_LList_DLList.exe: C_EXECUTABLE_LINKER__List_LList_DLList_Debug CMakeFiles/List_LList_DLList.dir/List/LList/DLList.c.obj
+build List.Job.Job05.exe: C_EXECUTABLE_LINKER__List.2eJob.2eJob05_Debug CMakeFiles/List.Job.Job05.dir/List/Job/Job05.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_LList_DLList.dir
+  OBJECT_DIR = CMakeFiles\List.Job.Job05.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_LList_DLList.exe
-  TARGET_IMPLIB = libList_LList_DLList.dll.a
-  TARGET_PDB = List_LList_DLList.exe.dbg
+  TARGET_FILE = List.Job.Job05.exe
+  TARGET_IMPLIB = libList.Job.Job05.dll.a
+  TARGET_PDB = List.Job.Job05.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_LList_SLList
+# Object build statements for EXECUTABLE target List.LList.DLList
 
 
 #############################################
-# Order-only phony target for List_LList_SLList
+# Order-only phony target for List.LList.DLList
 
-build cmake_object_order_depends_target_List_LList_SLList: phony || CMakeFiles/List_LList_SLList.dir
+build cmake_object_order_depends_target_List.LList.DLList: phony || CMakeFiles/List.LList.DLList.dir
 
-build CMakeFiles/List_LList_SLList.dir/List/LList/SLList.c.obj: C_COMPILER__List_LList_SLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/SLList.c || cmake_object_order_depends_target_List_LList_SLList
-  DEP_FILE = CMakeFiles\List_LList_SLList.dir\List\LList\SLList.c.obj.d
+build CMakeFiles/List.LList.DLList.dir/List/LList/DLList.c.obj: C_COMPILER__List.2eLList.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/DLList.c || cmake_object_order_depends_target_List.LList.DLList
+  DEP_FILE = CMakeFiles\List.LList.DLList.dir\List\LList\DLList.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_LList_SLList.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_LList_SLList.dir\List\LList
+  OBJECT_DIR = CMakeFiles\List.LList.DLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.LList.DLList.dir\List\LList
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_LList_SLList
+# Link build statements for EXECUTABLE target List.LList.DLList
 
 
 #############################################
-# Link the executable List_LList_SLList.exe
+# Link the executable List.LList.DLList.exe
 
-build List_LList_SLList.exe: C_EXECUTABLE_LINKER__List_LList_SLList_Debug CMakeFiles/List_LList_SLList.dir/List/LList/SLList.c.obj
+build List.LList.DLList.exe: C_EXECUTABLE_LINKER__List.2eLList.2eDLList_Debug CMakeFiles/List.LList.DLList.dir/List/LList/DLList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_LList_SLList.dir
+  OBJECT_DIR = CMakeFiles\List.LList.DLList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_LList_SLList.exe
-  TARGET_IMPLIB = libList_LList_SLList.dll.a
-  TARGET_PDB = List_LList_SLList.exe.dbg
+  TARGET_FILE = List.LList.DLList.exe
+  TARGET_IMPLIB = libList.LList.DLList.dll.a
+  TARGET_PDB = List.LList.DLList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_SList_DSList
+# Object build statements for EXECUTABLE target List.LList.SLList
 
 
 #############################################
-# Order-only phony target for List_SList_DSList
+# Order-only phony target for List.LList.SLList
 
-build cmake_object_order_depends_target_List_SList_DSList: phony || CMakeFiles/List_SList_DSList.dir
+build cmake_object_order_depends_target_List.LList.SLList: phony || CMakeFiles/List.LList.SLList.dir
 
-build CMakeFiles/List_SList_DSList.dir/List/SList/DSList.c.obj: C_COMPILER__List_SList_DSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/DSList.c || cmake_object_order_depends_target_List_SList_DSList
-  DEP_FILE = CMakeFiles\List_SList_DSList.dir\List\SList\DSList.c.obj.d
+build CMakeFiles/List.LList.SLList.dir/List/LList/SLList.c.obj: C_COMPILER__List.2eLList.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/LList/SLList.c || cmake_object_order_depends_target_List.LList.SLList
+  DEP_FILE = CMakeFiles\List.LList.SLList.dir\List\LList\SLList.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_SList_DSList.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_SList_DSList.dir\List\SList
+  OBJECT_DIR = CMakeFiles\List.LList.SLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.LList.SLList.dir\List\LList
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_SList_DSList
+# Link build statements for EXECUTABLE target List.LList.SLList
 
 
 #############################################
-# Link the executable List_SList_DSList.exe
+# Link the executable List.LList.SLList.exe
 
-build List_SList_DSList.exe: C_EXECUTABLE_LINKER__List_SList_DSList_Debug CMakeFiles/List_SList_DSList.dir/List/SList/DSList.c.obj
+build List.LList.SLList.exe: C_EXECUTABLE_LINKER__List.2eLList.2eSLList_Debug CMakeFiles/List.LList.SLList.dir/List/LList/SLList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_SList_DSList.dir
+  OBJECT_DIR = CMakeFiles\List.LList.SLList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_SList_DSList.exe
-  TARGET_IMPLIB = libList_SList_DSList.dll.a
-  TARGET_PDB = List_SList_DSList.exe.dbg
+  TARGET_FILE = List.LList.SLList.exe
+  TARGET_IMPLIB = libList.LList.SLList.dll.a
+  TARGET_PDB = List.LList.SLList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target List_SList_SSList
+# Object build statements for EXECUTABLE target List.SList.DSList
 
 
 #############################################
-# Order-only phony target for List_SList_SSList
+# Order-only phony target for List.SList.DSList
 
-build cmake_object_order_depends_target_List_SList_SSList: phony || CMakeFiles/List_SList_SSList.dir
+build cmake_object_order_depends_target_List.SList.DSList: phony || CMakeFiles/List.SList.DSList.dir
 
-build CMakeFiles/List_SList_SSList.dir/List/SList/SSList.c.obj: C_COMPILER__List_SList_SSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/SSList.c || cmake_object_order_depends_target_List_SList_SSList
-  DEP_FILE = CMakeFiles\List_SList_SSList.dir\List\SList\SSList.c.obj.d
+build CMakeFiles/List.SList.DSList.dir/List/SList/DSList.c.obj: C_COMPILER__List.2eSList.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/DSList.c || cmake_object_order_depends_target_List.SList.DSList
+  DEP_FILE = CMakeFiles\List.SList.DSList.dir\List\SList\DSList.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\List_SList_SSList.dir
-  OBJECT_FILE_DIR = CMakeFiles\List_SList_SSList.dir\List\SList
+  OBJECT_DIR = CMakeFiles\List.SList.DSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.SList.DSList.dir\List\SList
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target List_SList_SSList
+# Link build statements for EXECUTABLE target List.SList.DSList
 
 
 #############################################
-# Link the executable List_SList_SSList.exe
+# Link the executable List.SList.DSList.exe
 
-build List_SList_SSList.exe: C_EXECUTABLE_LINKER__List_SList_SSList_Debug CMakeFiles/List_SList_SSList.dir/List/SList/SSList.c.obj
+build List.SList.DSList.exe: C_EXECUTABLE_LINKER__List.2eSList.2eDSList_Debug CMakeFiles/List.SList.DSList.dir/List/SList/DSList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\List_SList_SSList.dir
+  OBJECT_DIR = CMakeFiles\List.SList.DSList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = List_SList_SSList.exe
-  TARGET_IMPLIB = libList_SList_SSList.dll.a
-  TARGET_PDB = List_SList_SSList.exe.dbg
+  TARGET_FILE = List.SList.DSList.exe
+  TARGET_IMPLIB = libList.SList.DSList.dll.a
+  TARGET_PDB = List.SList.DSList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Stack_LStack_LStack
+# Object build statements for EXECUTABLE target List.SList.SSList
 
 
 #############################################
-# Order-only phony target for Stack_LStack_LStack
+# Order-only phony target for List.SList.SSList
 
-build cmake_object_order_depends_target_Stack_LStack_LStack: phony || CMakeFiles/Stack_LStack_LStack.dir
+build cmake_object_order_depends_target_List.SList.SSList: phony || CMakeFiles/List.SList.SSList.dir
 
-build CMakeFiles/Stack_LStack_LStack.dir/Stack/LStack/LStack.c.obj: C_COMPILER__Stack_LStack_LStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/LStack/LStack.c || cmake_object_order_depends_target_Stack_LStack_LStack
-  DEP_FILE = CMakeFiles\Stack_LStack_LStack.dir\Stack\LStack\LStack.c.obj.d
+build CMakeFiles/List.SList.SSList.dir/List/SList/SSList.c.obj: C_COMPILER__List.2eSList.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/List/SList/SSList.c || cmake_object_order_depends_target_List.SList.SSList
+  DEP_FILE = CMakeFiles\List.SList.SSList.dir\List\SList\SSList.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Stack_LStack_LStack.dir
-  OBJECT_FILE_DIR = CMakeFiles\Stack_LStack_LStack.dir\Stack\LStack
+  OBJECT_DIR = CMakeFiles\List.SList.SSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\List.SList.SSList.dir\List\SList
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Stack_LStack_LStack
+# Link build statements for EXECUTABLE target List.SList.SSList
 
 
 #############################################
-# Link the executable Stack_LStack_LStack.exe
+# Link the executable List.SList.SSList.exe
 
-build Stack_LStack_LStack.exe: C_EXECUTABLE_LINKER__Stack_LStack_LStack_Debug CMakeFiles/Stack_LStack_LStack.dir/Stack/LStack/LStack.c.obj
+build List.SList.SSList.exe: C_EXECUTABLE_LINKER__List.2eSList.2eSSList_Debug CMakeFiles/List.SList.SSList.dir/List/SList/SSList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Stack_LStack_LStack.dir
+  OBJECT_DIR = CMakeFiles\List.SList.SSList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Stack_LStack_LStack.exe
-  TARGET_IMPLIB = libStack_LStack_LStack.dll.a
-  TARGET_PDB = Stack_LStack_LStack.exe.dbg
+  TARGET_FILE = List.SList.SSList.exe
+  TARGET_IMPLIB = libList.SList.SSList.dll.a
+  TARGET_PDB = List.SList.SSList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Stack_SStack_SStack
+# Object build statements for EXECUTABLE target Queue.LQueue.LQueue
 
 
 #############################################
-# Order-only phony target for Stack_SStack_SStack
+# Order-only phony target for Queue.LQueue.LQueue
 
-build cmake_object_order_depends_target_Stack_SStack_SStack: phony || CMakeFiles/Stack_SStack_SStack.dir
+build cmake_object_order_depends_target_Queue.LQueue.LQueue: phony || CMakeFiles/Queue.LQueue.LQueue.dir
 
-build CMakeFiles/Stack_SStack_SStack.dir/Stack/SStack/SStack.c.obj: C_COMPILER__Stack_SStack_SStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/SStack/SStack.c || cmake_object_order_depends_target_Stack_SStack_SStack
-  DEP_FILE = CMakeFiles\Stack_SStack_SStack.dir\Stack\SStack\SStack.c.obj.d
+build CMakeFiles/Queue.LQueue.LQueue.dir/Queue/LQueue/LQueue.c.obj: C_COMPILER__Queue.2eLQueue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Queue/LQueue/LQueue.c || cmake_object_order_depends_target_Queue.LQueue.LQueue
+  DEP_FILE = CMakeFiles\Queue.LQueue.LQueue.dir\Queue\LQueue\LQueue.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Stack_SStack_SStack.dir
-  OBJECT_FILE_DIR = CMakeFiles\Stack_SStack_SStack.dir\Stack\SStack
+  OBJECT_DIR = CMakeFiles\Queue.LQueue.LQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\Queue.LQueue.LQueue.dir\Queue\LQueue
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Stack_SStack_SStack
+# Link build statements for EXECUTABLE target Queue.LQueue.LQueue
 
 
 #############################################
-# Link the executable Stack_SStack_SStack.exe
+# Link the executable Queue.LQueue.LQueue.exe
 
-build Stack_SStack_SStack.exe: C_EXECUTABLE_LINKER__Stack_SStack_SStack_Debug CMakeFiles/Stack_SStack_SStack.dir/Stack/SStack/SStack.c.obj
+build Queue.LQueue.LQueue.exe: C_EXECUTABLE_LINKER__Queue.2eLQueue.2eLQueue_Debug CMakeFiles/Queue.LQueue.LQueue.dir/Queue/LQueue/LQueue.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Stack_SStack_SStack.dir
+  OBJECT_DIR = CMakeFiles\Queue.LQueue.LQueue.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Stack_SStack_SStack.exe
-  TARGET_IMPLIB = libStack_SStack_SStack.dll.a
-  TARGET_PDB = Stack_SStack_SStack.exe.dbg
+  TARGET_FILE = Queue.LQueue.LQueue.exe
+  TARGET_IMPLIB = libQueue.LQueue.LQueue.dll.a
+  TARGET_PDB = Queue.LQueue.LQueue.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId
+# Object build statements for EXECUTABLE target Queue.SQueue.CSQueue
 
 
 #############################################
-# Order-only phony target for cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId
+# Order-only phony target for Queue.SQueue.CSQueue
 
-build cmake_object_order_depends_target_cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId: phony || CMakeFiles/cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
+build cmake_object_order_depends_target_Queue.SQueue.CSQueue: phony || CMakeFiles/Queue.SQueue.CSQueue.dir
 
-build CMakeFiles/cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj: C_COMPILER__cmake-build-debug_CMakeFiles_3.2e28.2e1_CompilerIdC_CMakeCCompilerId_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c || cmake_object_order_depends_target_cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId
-  DEP_FILE = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC\CMakeCCompilerId.c.obj.d
+build CMakeFiles/Queue.SQueue.CSQueue.dir/Queue/SQueue/CSQueue.c.obj: C_COMPILER__Queue.2eSQueue.2eCSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Queue/SQueue/CSQueue.c || cmake_object_order_depends_target_Queue.SQueue.CSQueue
+  DEP_FILE = CMakeFiles\Queue.SQueue.CSQueue.dir\Queue\SQueue\CSQueue.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC
+  OBJECT_DIR = CMakeFiles\Queue.SQueue.CSQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\Queue.SQueue.CSQueue.dir\Queue\SQueue
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId
+# Link build statements for EXECUTABLE target Queue.SQueue.CSQueue
 
 
 #############################################
-# Link the executable cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
+# Link the executable Queue.SQueue.CSQueue.exe
 
-build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe: C_EXECUTABLE_LINKER__cmake-build-debug_CMakeFiles_3.2e28.2e1_CompilerIdC_CMakeCCompilerId_Debug CMakeFiles/cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj
+build Queue.SQueue.CSQueue.exe: C_EXECUTABLE_LINKER__Queue.2eSQueue.2eCSQueue_Debug CMakeFiles/Queue.SQueue.CSQueue.dir/Queue/SQueue/CSQueue.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dir
+  OBJECT_DIR = CMakeFiles\Queue.SQueue.CSQueue.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
-  TARGET_IMPLIB = libcmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.dll.a
-  TARGET_PDB = cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe.dbg
+  TARGET_FILE = Queue.SQueue.CSQueue.exe
+  TARGET_IMPLIB = libQueue.SQueue.CSQueue.dll.a
+  TARGET_PDB = Queue.SQueue.CSQueue.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Queue.SQueue.SQueue
+
+
+#############################################
+# Order-only phony target for Queue.SQueue.SQueue
+
+build cmake_object_order_depends_target_Queue.SQueue.SQueue: phony || CMakeFiles/Queue.SQueue.SQueue.dir
+
+build CMakeFiles/Queue.SQueue.SQueue.dir/Queue/SQueue/SQueue.c.obj: C_COMPILER__Queue.2eSQueue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Queue/SQueue/SQueue.c || cmake_object_order_depends_target_Queue.SQueue.SQueue
+  DEP_FILE = CMakeFiles\Queue.SQueue.SQueue.dir\Queue\SQueue\SQueue.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Queue.SQueue.SQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\Queue.SQueue.SQueue.dir\Queue\SQueue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Queue.SQueue.SQueue
+
+
+#############################################
+# Link the executable Queue.SQueue.SQueue.exe
+
+build Queue.SQueue.SQueue.exe: C_EXECUTABLE_LINKER__Queue.2eSQueue.2eSQueue_Debug CMakeFiles/Queue.SQueue.SQueue.dir/Queue/SQueue/SQueue.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Queue.SQueue.SQueue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Queue.SQueue.SQueue.exe
+  TARGET_IMPLIB = libQueue.SQueue.SQueue.dll.a
+  TARGET_PDB = Queue.SQueue.SQueue.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.ESort.BSort
+
+
+#############################################
+# Order-only phony target for Sort.ESort.BSort
+
+build cmake_object_order_depends_target_Sort.ESort.BSort: phony || CMakeFiles/Sort.ESort.BSort.dir
+
+build CMakeFiles/Sort.ESort.BSort.dir/Sort/ESort/BSort.c.obj: C_COMPILER__Sort.2eESort.2eBSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/ESort/BSort.c || cmake_object_order_depends_target_Sort.ESort.BSort
+  DEP_FILE = CMakeFiles\Sort.ESort.BSort.dir\Sort\ESort\BSort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.ESort.BSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.ESort.BSort.dir\Sort\ESort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.ESort.BSort
+
+
+#############################################
+# Link the executable Sort.ESort.BSort.exe
+
+build Sort.ESort.BSort.exe: C_EXECUTABLE_LINKER__Sort.2eESort.2eBSort_Debug CMakeFiles/Sort.ESort.BSort.dir/Sort/ESort/BSort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.ESort.BSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.ESort.BSort.exe
+  TARGET_IMPLIB = libSort.ESort.BSort.dll.a
+  TARGET_PDB = Sort.ESort.BSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.ESort.QSort
+
+
+#############################################
+# Order-only phony target for Sort.ESort.QSort
+
+build cmake_object_order_depends_target_Sort.ESort.QSort: phony || CMakeFiles/Sort.ESort.QSort.dir
+
+build CMakeFiles/Sort.ESort.QSort.dir/Sort/ESort/QSort.c.obj: C_COMPILER__Sort.2eESort.2eQSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/ESort/QSort.c || cmake_object_order_depends_target_Sort.ESort.QSort
+  DEP_FILE = CMakeFiles\Sort.ESort.QSort.dir\Sort\ESort\QSort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.ESort.QSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.ESort.QSort.dir\Sort\ESort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.ESort.QSort
+
+
+#############################################
+# Link the executable Sort.ESort.QSort.exe
+
+build Sort.ESort.QSort.exe: C_EXECUTABLE_LINKER__Sort.2eESort.2eQSort_Debug CMakeFiles/Sort.ESort.QSort.dir/Sort/ESort/QSort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.ESort.QSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.ESort.QSort.exe
+  TARGET_IMPLIB = libSort.ESort.QSort.dll.a
+  TARGET_PDB = Sort.ESort.QSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.ISort.BISort
+
+
+#############################################
+# Order-only phony target for Sort.ISort.BISort
+
+build cmake_object_order_depends_target_Sort.ISort.BISort: phony || CMakeFiles/Sort.ISort.BISort.dir
+
+build CMakeFiles/Sort.ISort.BISort.dir/Sort/ISort/BISort.c.obj: C_COMPILER__Sort.2eISort.2eBISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/ISort/BISort.c || cmake_object_order_depends_target_Sort.ISort.BISort
+  DEP_FILE = CMakeFiles\Sort.ISort.BISort.dir\Sort\ISort\BISort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.ISort.BISort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.ISort.BISort.dir\Sort\ISort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.ISort.BISort
+
+
+#############################################
+# Link the executable Sort.ISort.BISort.exe
+
+build Sort.ISort.BISort.exe: C_EXECUTABLE_LINKER__Sort.2eISort.2eBISort_Debug CMakeFiles/Sort.ISort.BISort.dir/Sort/ISort/BISort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.ISort.BISort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.ISort.BISort.exe
+  TARGET_IMPLIB = libSort.ISort.BISort.dll.a
+  TARGET_PDB = Sort.ISort.BISort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.ISort.SISort
+
+
+#############################################
+# Order-only phony target for Sort.ISort.SISort
+
+build cmake_object_order_depends_target_Sort.ISort.SISort: phony || CMakeFiles/Sort.ISort.SISort.dir
+
+build CMakeFiles/Sort.ISort.SISort.dir/Sort/ISort/SISort.c.obj: C_COMPILER__Sort.2eISort.2eSISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/ISort/SISort.c || cmake_object_order_depends_target_Sort.ISort.SISort
+  DEP_FILE = CMakeFiles\Sort.ISort.SISort.dir\Sort\ISort\SISort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.ISort.SISort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.ISort.SISort.dir\Sort\ISort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.ISort.SISort
+
+
+#############################################
+# Link the executable Sort.ISort.SISort.exe
+
+build Sort.ISort.SISort.exe: C_EXECUTABLE_LINKER__Sort.2eISort.2eSISort_Debug CMakeFiles/Sort.ISort.SISort.dir/Sort/ISort/SISort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.ISort.SISort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.ISort.SISort.exe
+  TARGET_IMPLIB = libSort.ISort.SISort.dll.a
+  TARGET_PDB = Sort.ISort.SISort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.ISort.SSort
+
+
+#############################################
+# Order-only phony target for Sort.ISort.SSort
+
+build cmake_object_order_depends_target_Sort.ISort.SSort: phony || CMakeFiles/Sort.ISort.SSort.dir
+
+build CMakeFiles/Sort.ISort.SSort.dir/Sort/ISort/SSort.c.obj: C_COMPILER__Sort.2eISort.2eSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/ISort/SSort.c || cmake_object_order_depends_target_Sort.ISort.SSort
+  DEP_FILE = CMakeFiles\Sort.ISort.SSort.dir\Sort\ISort\SSort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.ISort.SSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.ISort.SSort.dir\Sort\ISort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.ISort.SSort
+
+
+#############################################
+# Link the executable Sort.ISort.SSort.exe
+
+build Sort.ISort.SSort.exe: C_EXECUTABLE_LINKER__Sort.2eISort.2eSSort_Debug CMakeFiles/Sort.ISort.SSort.dir/Sort/ISort/SSort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.ISort.SSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.ISort.SSort.exe
+  TARGET_IMPLIB = libSort.ISort.SSort.dll.a
+  TARGET_PDB = Sort.ISort.SSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job01
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job01
+
+build cmake_object_order_depends_target_Sort.Job.Job01: phony || CMakeFiles/Sort.Job.Job01.dir
+
+build CMakeFiles/Sort.Job.Job01.dir/Sort/Job/Job01.c.obj: C_COMPILER__Sort.2eJob.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job01.c || cmake_object_order_depends_target_Sort.Job.Job01
+  DEP_FILE = CMakeFiles\Sort.Job.Job01.dir\Sort\Job\Job01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job01.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job01.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job01
+
+
+#############################################
+# Link the executable Sort.Job.Job01.exe
+
+build Sort.Job.Job01.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob01_Debug CMakeFiles/Sort.Job.Job01.dir/Sort/Job/Job01.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job01.exe
+  TARGET_IMPLIB = libSort.Job.Job01.dll.a
+  TARGET_PDB = Sort.Job.Job01.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job02
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job02
+
+build cmake_object_order_depends_target_Sort.Job.Job02: phony || CMakeFiles/Sort.Job.Job02.dir
+
+build CMakeFiles/Sort.Job.Job02.dir/Sort/Job/Job02.c.obj: C_COMPILER__Sort.2eJob.2eJob02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job02.c || cmake_object_order_depends_target_Sort.Job.Job02
+  DEP_FILE = CMakeFiles\Sort.Job.Job02.dir\Sort\Job\Job02.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job02.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job02.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job02
+
+
+#############################################
+# Link the executable Sort.Job.Job02.exe
+
+build Sort.Job.Job02.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob02_Debug CMakeFiles/Sort.Job.Job02.dir/Sort/Job/Job02.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job02.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job02.exe
+  TARGET_IMPLIB = libSort.Job.Job02.dll.a
+  TARGET_PDB = Sort.Job.Job02.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job03
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job03
+
+build cmake_object_order_depends_target_Sort.Job.Job03: phony || CMakeFiles/Sort.Job.Job03.dir
+
+build CMakeFiles/Sort.Job.Job03.dir/Sort/Job/Job03.c.obj: C_COMPILER__Sort.2eJob.2eJob03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job03.c || cmake_object_order_depends_target_Sort.Job.Job03
+  DEP_FILE = CMakeFiles\Sort.Job.Job03.dir\Sort\Job\Job03.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job03.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job03.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job03
+
+
+#############################################
+# Link the executable Sort.Job.Job03.exe
+
+build Sort.Job.Job03.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob03_Debug CMakeFiles/Sort.Job.Job03.dir/Sort/Job/Job03.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job03.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job03.exe
+  TARGET_IMPLIB = libSort.Job.Job03.dll.a
+  TARGET_PDB = Sort.Job.Job03.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job04
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job04
+
+build cmake_object_order_depends_target_Sort.Job.Job04: phony || CMakeFiles/Sort.Job.Job04.dir
+
+build CMakeFiles/Sort.Job.Job04.dir/Sort/Job/Job04.c.obj: C_COMPILER__Sort.2eJob.2eJob04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job04.c || cmake_object_order_depends_target_Sort.Job.Job04
+  DEP_FILE = CMakeFiles\Sort.Job.Job04.dir\Sort\Job\Job04.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job04.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job04.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job04
+
+
+#############################################
+# Link the executable Sort.Job.Job04.exe
+
+build Sort.Job.Job04.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob04_Debug CMakeFiles/Sort.Job.Job04.dir/Sort/Job/Job04.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job04.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job04.exe
+  TARGET_IMPLIB = libSort.Job.Job04.dll.a
+  TARGET_PDB = Sort.Job.Job04.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack.Jop.Job01
+
+
+#############################################
+# Order-only phony target for Stack.Jop.Job01
+
+build cmake_object_order_depends_target_Stack.Jop.Job01: phony || CMakeFiles/Stack.Jop.Job01.dir
+
+build CMakeFiles/Stack.Jop.Job01.dir/Stack/Jop/Job01.c.obj: C_COMPILER__Stack.2eJop.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/Jop/Job01.c || cmake_object_order_depends_target_Stack.Jop.Job01
+  DEP_FILE = CMakeFiles\Stack.Jop.Job01.dir\Stack\Jop\Job01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack.Jop.Job01.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack.Jop.Job01.dir\Stack\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack.Jop.Job01
+
+
+#############################################
+# Link the executable Stack.Jop.Job01.exe
+
+build Stack.Jop.Job01.exe: C_EXECUTABLE_LINKER__Stack.2eJop.2eJob01_Debug CMakeFiles/Stack.Jop.Job01.dir/Stack/Jop/Job01.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack.Jop.Job01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack.Jop.Job01.exe
+  TARGET_IMPLIB = libStack.Jop.Job01.dll.a
+  TARGET_PDB = Stack.Jop.Job01.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack.LStack.LStack
+
+
+#############################################
+# Order-only phony target for Stack.LStack.LStack
+
+build cmake_object_order_depends_target_Stack.LStack.LStack: phony || CMakeFiles/Stack.LStack.LStack.dir
+
+build CMakeFiles/Stack.LStack.LStack.dir/Stack/LStack/LStack.c.obj: C_COMPILER__Stack.2eLStack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/LStack/LStack.c || cmake_object_order_depends_target_Stack.LStack.LStack
+  DEP_FILE = CMakeFiles\Stack.LStack.LStack.dir\Stack\LStack\LStack.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack.LStack.LStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack.LStack.LStack.dir\Stack\LStack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack.LStack.LStack
+
+
+#############################################
+# Link the executable Stack.LStack.LStack.exe
+
+build Stack.LStack.LStack.exe: C_EXECUTABLE_LINKER__Stack.2eLStack.2eLStack_Debug CMakeFiles/Stack.LStack.LStack.dir/Stack/LStack/LStack.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack.LStack.LStack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack.LStack.LStack.exe
+  TARGET_IMPLIB = libStack.LStack.LStack.dll.a
+  TARGET_PDB = Stack.LStack.LStack.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack.SStack.SStack
+
+
+#############################################
+# Order-only phony target for Stack.SStack.SStack
+
+build cmake_object_order_depends_target_Stack.SStack.SStack: phony || CMakeFiles/Stack.SStack.SStack.dir
+
+build CMakeFiles/Stack.SStack.SStack.dir/Stack/SStack/SStack.c.obj: C_COMPILER__Stack.2eSStack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Stack/SStack/SStack.c || cmake_object_order_depends_target_Stack.SStack.SStack
+  DEP_FILE = CMakeFiles\Stack.SStack.SStack.dir\Stack\SStack\SStack.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack.SStack.SStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack.SStack.SStack.dir\Stack\SStack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack.SStack.SStack
+
+
+#############################################
+# Link the executable Stack.SStack.SStack.exe
+
+build Stack.SStack.SStack.exe: C_EXECUTABLE_LINKER__Stack.2eSStack.2eSStack_Debug CMakeFiles/Stack.SStack.SStack.dir/Stack/SStack/SStack.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack.SStack.SStack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack.SStack.SStack.exe
+  TARGET_IMPLIB = libStack.SStack.SStack.dll.a
+  TARGET_PDB = Stack.SStack.SStack.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target String.Jop.Job01
+
+
+#############################################
+# Order-only phony target for String.Jop.Job01
+
+build cmake_object_order_depends_target_String.Jop.Job01: phony || CMakeFiles/String.Jop.Job01.dir
+
+build CMakeFiles/String.Jop.Job01.dir/String/Jop/Job01.c.obj: C_COMPILER__String.2eJop.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/String/Jop/Job01.c || cmake_object_order_depends_target_String.Jop.Job01
+  DEP_FILE = CMakeFiles\String.Jop.Job01.dir\String\Jop\Job01.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\String.Jop.Job01.dir
+  OBJECT_FILE_DIR = CMakeFiles\String.Jop.Job01.dir\String\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target String.Jop.Job01
+
+
+#############################################
+# Link the executable String.Jop.Job01.exe
+
+build String.Jop.Job01.exe: C_EXECUTABLE_LINKER__String.2eJop.2eJob01_Debug CMakeFiles/String.Jop.Job01.dir/String/Jop/Job01.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\String.Jop.Job01.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = String.Jop.Job01.exe
+  TARGET_IMPLIB = libString.Jop.Job01.dll.a
+  TARGET_PDB = String.Jop.Job01.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target String.Jop.Job02
+
+
+#############################################
+# Order-only phony target for String.Jop.Job02
+
+build cmake_object_order_depends_target_String.Jop.Job02: phony || CMakeFiles/String.Jop.Job02.dir
+
+build CMakeFiles/String.Jop.Job02.dir/String/Jop/Job02.c.obj: C_COMPILER__String.2eJop.2eJob02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/String/Jop/Job02.c || cmake_object_order_depends_target_String.Jop.Job02
+  DEP_FILE = CMakeFiles\String.Jop.Job02.dir\String\Jop\Job02.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\String.Jop.Job02.dir
+  OBJECT_FILE_DIR = CMakeFiles\String.Jop.Job02.dir\String\Jop
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target String.Jop.Job02
+
+
+#############################################
+# Link the executable String.Jop.Job02.exe
+
+build String.Jop.Job02.exe: C_EXECUTABLE_LINKER__String.2eJop.2eJob02_Debug CMakeFiles/String.Jop.Job02.dir/String/Jop/Job02.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\String.Jop.Job02.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = String.Jop.Job02.exe
+  TARGET_IMPLIB = libString.Jop.Job02.dll.a
+  TARGET_PDB = String.Jop.Job02.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target String.LString.LString
+
+
+#############################################
+# Order-only phony target for String.LString.LString
+
+build cmake_object_order_depends_target_String.LString.LString: phony || CMakeFiles/String.LString.LString.dir
+
+build CMakeFiles/String.LString.LString.dir/String/LString/LString.c.obj: C_COMPILER__String.2eLString.2eLString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/String/LString/LString.c || cmake_object_order_depends_target_String.LString.LString
+  DEP_FILE = CMakeFiles\String.LString.LString.dir\String\LString\LString.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\String.LString.LString.dir
+  OBJECT_FILE_DIR = CMakeFiles\String.LString.LString.dir\String\LString
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target String.LString.LString
+
+
+#############################################
+# Link the executable String.LString.LString.exe
+
+build String.LString.LString.exe: C_EXECUTABLE_LINKER__String.2eLString.2eLString_Debug CMakeFiles/String.LString.LString.dir/String/LString/LString.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\String.LString.LString.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = String.LString.LString.exe
+  TARGET_IMPLIB = libString.LString.LString.dll.a
+  TARGET_PDB = String.LString.LString.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target String.SString.DSString
+
+
+#############################################
+# Order-only phony target for String.SString.DSString
+
+build cmake_object_order_depends_target_String.SString.DSString: phony || CMakeFiles/String.SString.DSString.dir
+
+build CMakeFiles/String.SString.DSString.dir/String/SString/DSString.c.obj: C_COMPILER__String.2eSString.2eDSString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/String/SString/DSString.c || cmake_object_order_depends_target_String.SString.DSString
+  DEP_FILE = CMakeFiles\String.SString.DSString.dir\String\SString\DSString.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\String.SString.DSString.dir
+  OBJECT_FILE_DIR = CMakeFiles\String.SString.DSString.dir\String\SString
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target String.SString.DSString
+
+
+#############################################
+# Link the executable String.SString.DSString.exe
+
+build String.SString.DSString.exe: C_EXECUTABLE_LINKER__String.2eSString.2eDSString_Debug CMakeFiles/String.SString.DSString.dir/String/SString/DSString.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\String.SString.DSString.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = String.SString.DSString.exe
+  TARGET_IMPLIB = libString.SString.DSString.dll.a
+  TARGET_PDB = String.SString.DSString.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target String.SString.SSString
+
+
+#############################################
+# Order-only phony target for String.SString.SSString
+
+build cmake_object_order_depends_target_String.SString.SSString: phony || CMakeFiles/String.SString.SSString.dir
+
+build CMakeFiles/String.SString.SSString.dir/String/SString/SSString.c.obj: C_COMPILER__String.2eSString.2eSSString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/String/SString/SSString.c || cmake_object_order_depends_target_String.SString.SSString
+  DEP_FILE = CMakeFiles\String.SString.SSString.dir\String\SString\SSString.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\String.SString.SSString.dir
+  OBJECT_FILE_DIR = CMakeFiles\String.SString.SSString.dir\String\SString
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target String.SString.SSString
+
+
+#############################################
+# Link the executable String.SString.SSString.exe
+
+build String.SString.SSString.exe: C_EXECUTABLE_LINKER__String.2eSString.2eSSString_Debug CMakeFiles/String.SString.SSString.dir/String/SString/SSString.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\String.SString.SSString.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = String.SString.SSString.exe
+  TARGET_IMPLIB = libString.SString.SSString.dll.a
+  TARGET_PDB = String.SString.SSString.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tree.BTree.BTree
+
+
+#############################################
+# Order-only phony target for Tree.BTree.BTree
+
+build cmake_object_order_depends_target_Tree.BTree.BTree: phony || CMakeFiles/Tree.BTree.BTree.dir
+
+build CMakeFiles/Tree.BTree.BTree.dir/Tree/BTree/BTree.c.obj: C_COMPILER__Tree.2eBTree.2eBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Tree/BTree/BTree.c || cmake_object_order_depends_target_Tree.BTree.BTree
+  DEP_FILE = CMakeFiles\Tree.BTree.BTree.dir\Tree\BTree\BTree.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Tree.BTree.BTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tree.BTree.BTree.dir\Tree\BTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tree.BTree.BTree
+
+
+#############################################
+# Link the executable Tree.BTree.BTree.exe
+
+build Tree.BTree.BTree.exe: C_EXECUTABLE_LINKER__Tree.2eBTree.2eBTree_Debug CMakeFiles/Tree.BTree.BTree.dir/Tree/BTree/BTree.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Tree.BTree.BTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Tree.BTree.BTree.exe
+  TARGET_IMPLIB = libTree.BTree.BTree.dll.a
+  TARGET_PDB = Tree.BTree.BTree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
+
+
+#############################################
+# Order-only phony target for cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
+
+build cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony || CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
+
+build CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj: C_COMPILER__cmake-build-debug.2eCMakeFiles.2e3.2e28.2e1.2eCompilerIdC.2eCMakeCCompilerId_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c || cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
+  DEP_FILE = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC\CMakeCCompilerId.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
+  OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
+
+
+#############################################
+# Link the executable cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+
+build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe: C_EXECUTABLE_LINKER__cmake-build-debug.2eCMakeFiles.2e3.2e28.2e1.2eCompilerIdC.2eCMakeCCompilerId_Debug CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+  TARGET_IMPLIB = libcmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dll.a
+  TARGET_PDB = cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe.dbg
 
 
 #############################################
@@ -462,29 +1122,69 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build List_Jop_jop01: phony List_Jop_jop01.exe
+build Base.AboutString: phony Base.AboutString.exe
 
-build List_Jop_jop02: phony List_Jop_jop02.exe
+build List.Job.Job01: phony List.Job.Job01.exe
 
-build List_Jop_jop03: phony List_Jop_jop03.exe
+build List.Job.Job02: phony List.Job.Job02.exe
 
-build List_Jop_jop04: phony List_Jop_jop04.exe
+build List.Job.Job03: phony List.Job.Job03.exe
 
-build List_Jop_jop05: phony List_Jop_jop05.exe
+build List.Job.Job04: phony List.Job.Job04.exe
 
-build List_LList_DLList: phony List_LList_DLList.exe
+build List.Job.Job05: phony List.Job.Job05.exe
 
-build List_LList_SLList: phony List_LList_SLList.exe
+build List.LList.DLList: phony List.LList.DLList.exe
 
-build List_SList_DSList: phony List_SList_DSList.exe
+build List.LList.SLList: phony List.LList.SLList.exe
 
-build List_SList_SSList: phony List_SList_SSList.exe
+build List.SList.DSList: phony List.SList.DSList.exe
 
-build Stack_LStack_LStack: phony Stack_LStack_LStack.exe
+build List.SList.SSList: phony List.SList.SSList.exe
 
-build Stack_SStack_SStack: phony Stack_SStack_SStack.exe
+build Queue.LQueue.LQueue: phony Queue.LQueue.LQueue.exe
 
-build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId: phony cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
+build Queue.SQueue.CSQueue: phony Queue.SQueue.CSQueue.exe
+
+build Queue.SQueue.SQueue: phony Queue.SQueue.SQueue.exe
+
+build Sort.ESort.BSort: phony Sort.ESort.BSort.exe
+
+build Sort.ESort.QSort: phony Sort.ESort.QSort.exe
+
+build Sort.ISort.BISort: phony Sort.ISort.BISort.exe
+
+build Sort.ISort.SISort: phony Sort.ISort.SISort.exe
+
+build Sort.ISort.SSort: phony Sort.ISort.SSort.exe
+
+build Sort.Job.Job01: phony Sort.Job.Job01.exe
+
+build Sort.Job.Job02: phony Sort.Job.Job02.exe
+
+build Sort.Job.Job03: phony Sort.Job.Job03.exe
+
+build Sort.Job.Job04: phony Sort.Job.Job04.exe
+
+build Stack.Jop.Job01: phony Stack.Jop.Job01.exe
+
+build Stack.LStack.LStack: phony Stack.LStack.LStack.exe
+
+build Stack.SStack.SStack: phony Stack.SStack.SStack.exe
+
+build String.Jop.Job01: phony String.Jop.Job01.exe
+
+build String.Jop.Job02: phony String.Jop.Job02.exe
+
+build String.LString.LString: phony String.LString.LString.exe
+
+build String.SString.DSString: phony String.SString.DSString.exe
+
+build String.SString.SSString: phony String.SString.SSString.exe
+
+build Tree.BTree.BTree: phony Tree.BTree.BTree.exe
+
+build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Folder targets.
@@ -494,7 +1194,7 @@ build cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony List_Jop_jop01.exe List_Jop_jop02.exe List_Jop_jop03.exe List_Jop_jop04.exe List_Jop_jop05.exe List_LList_DLList.exe List_LList_SLList.exe List_SList_DSList.exe List_SList_SSList.exe Stack_LStack_LStack.exe Stack_SStack_SStack.exe cmake-build-debug_CMakeFiles_3.28.1_CompilerIdC_CMakeCCompilerId.exe
+build all: phony Base.AboutString.exe List.Job.Job01.exe List.Job.Job02.exe List.Job.Job03.exe List.Job.Job04.exe List.Job.Job05.exe List.LList.DLList.exe List.LList.SLList.exe List.SList.DSList.exe List.SList.SSList.exe Queue.LQueue.LQueue.exe Queue.SQueue.CSQueue.exe Queue.SQueue.SQueue.exe Sort.ESort.BSort.exe Sort.ESort.QSort.exe Sort.ISort.BISort.exe Sort.ISort.SISort.exe Sort.ISort.SSort.exe Sort.Job.Job01.exe Sort.Job.Job02.exe Sort.Job.Job03.exe Sort.Job.Job04.exe Stack.Jop.Job01.exe Stack.LStack.LStack.exe Stack.SStack.SStack.exe String.Jop.Job01.exe String.Jop.Job02.exe String.LString.LString.exe String.SString.DSString.exe String.SString.SSString.exe Tree.BTree.BTree.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

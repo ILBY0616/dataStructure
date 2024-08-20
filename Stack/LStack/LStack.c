@@ -9,7 +9,6 @@
 // 统一注释：代码上方
 // 统一状态：-1失败，0成功，1其他
 
-// 链栈
 typedef struct LStack
 {
     type data;
@@ -52,7 +51,7 @@ int getTop(LStack* s,type* data)
     return result;
 }
 
-int push(LStack* s,type data)
+int pushData(LStack* s,type data)
 {
     int result;
     LStack* p = (LStack*)malloc(sizeof(LStack));
@@ -70,7 +69,7 @@ int push(LStack* s,type data)
     return result;
 }
 
-int pop(LStack* s,type* data)
+int popData(LStack* s,type* data)
 {
     int result;
     if (s->next == NULL)
@@ -88,7 +87,7 @@ int pop(LStack* s,type* data)
     return result;
 }
 
-void destroy(LStack* s)
+void destroyStack(LStack* s)
 {
     while (s->next != NULL)
     {

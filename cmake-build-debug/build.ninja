@@ -767,6 +767,138 @@ build Sort.Job.Job04.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob04_Debug CMakeFil
   TARGET_PDB = Sort.Job.Job04.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job05
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job05
+
+build cmake_object_order_depends_target_Sort.Job.Job05: phony || CMakeFiles/Sort.Job.Job05.dir
+
+build CMakeFiles/Sort.Job.Job05.dir/Sort/Job/Job05.c.obj: C_COMPILER__Sort.2eJob.2eJob05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job05.c || cmake_object_order_depends_target_Sort.Job.Job05
+  DEP_FILE = CMakeFiles\Sort.Job.Job05.dir\Sort\Job\Job05.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job05.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job05.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job05
+
+
+#############################################
+# Link the executable Sort.Job.Job05.exe
+
+build Sort.Job.Job05.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob05_Debug CMakeFiles/Sort.Job.Job05.dir/Sort/Job/Job05.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job05.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job05.exe
+  TARGET_IMPLIB = libSort.Job.Job05.dll.a
+  TARGET_PDB = Sort.Job.Job05.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.Job.Job06
+
+
+#############################################
+# Order-only phony target for Sort.Job.Job06
+
+build cmake_object_order_depends_target_Sort.Job.Job06: phony || CMakeFiles/Sort.Job.Job06.dir
+
+build CMakeFiles/Sort.Job.Job06.dir/Sort/Job/Job06.c.obj: C_COMPILER__Sort.2eJob.2eJob06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/Job/Job06.c || cmake_object_order_depends_target_Sort.Job.Job06
+  DEP_FILE = CMakeFiles\Sort.Job.Job06.dir\Sort\Job\Job06.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job06.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.Job.Job06.dir\Sort\Job
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.Job.Job06
+
+
+#############################################
+# Link the executable Sort.Job.Job06.exe
+
+build Sort.Job.Job06.exe: C_EXECUTABLE_LINKER__Sort.2eJob.2eJob06_Debug CMakeFiles/Sort.Job.Job06.dir/Sort/Job/Job06.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.Job.Job06.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.Job.Job06.exe
+  TARGET_IMPLIB = libSort.Job.Job06.dll.a
+  TARGET_PDB = Sort.Job.Job06.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.SSort.HSort
+
+
+#############################################
+# Order-only phony target for Sort.SSort.HSort
+
+build cmake_object_order_depends_target_Sort.SSort.HSort: phony || CMakeFiles/Sort.SSort.HSort.dir
+
+build CMakeFiles/Sort.SSort.HSort.dir/Sort/SSort/HSort.c.obj: C_COMPILER__Sort.2eSSort.2eHSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/SSort/HSort.c || cmake_object_order_depends_target_Sort.SSort.HSort
+  DEP_FILE = CMakeFiles\Sort.SSort.HSort.dir\Sort\SSort\HSort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.SSort.HSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.SSort.HSort.dir\Sort\SSort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.SSort.HSort
+
+
+#############################################
+# Link the executable Sort.SSort.HSort.exe
+
+build Sort.SSort.HSort.exe: C_EXECUTABLE_LINKER__Sort.2eSSort.2eHSort_Debug CMakeFiles/Sort.SSort.HSort.dir/Sort/SSort/HSort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.SSort.HSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.SSort.HSort.exe
+  TARGET_IMPLIB = libSort.SSort.HSort.dll.a
+  TARGET_PDB = Sort.SSort.HSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sort.SSort.SSSort
+
+
+#############################################
+# Order-only phony target for Sort.SSort.SSSort
+
+build cmake_object_order_depends_target_Sort.SSort.SSSort: phony || CMakeFiles/Sort.SSort.SSSort.dir
+
+build CMakeFiles/Sort.SSort.SSSort.dir/Sort/SSort/SSSort.c.obj: C_COMPILER__Sort.2eSSort.2eSSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/Sort/SSort/SSSort.c || cmake_object_order_depends_target_Sort.SSort.SSSort
+  DEP_FILE = CMakeFiles\Sort.SSort.SSSort.dir\Sort\SSort\SSSort.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Sort.SSort.SSSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\Sort.SSort.SSSort.dir\Sort\SSort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sort.SSort.SSSort
+
+
+#############################################
+# Link the executable Sort.SSort.SSSort.exe
+
+build Sort.SSort.SSSort.exe: C_EXECUTABLE_LINKER__Sort.2eSSort.2eSSSort_Debug CMakeFiles/Sort.SSort.SSSort.dir/Sort/SSort/SSSort.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Sort.SSort.SSSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sort.SSort.SSSort.exe
+  TARGET_IMPLIB = libSort.SSort.SSSort.dll.a
+  TARGET_PDB = Sort.SSort.SSSort.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Stack.Jop.Job01
 
 
@@ -1166,6 +1298,14 @@ build Sort.Job.Job03: phony Sort.Job.Job03.exe
 
 build Sort.Job.Job04: phony Sort.Job.Job04.exe
 
+build Sort.Job.Job05: phony Sort.Job.Job05.exe
+
+build Sort.Job.Job06: phony Sort.Job.Job06.exe
+
+build Sort.SSort.HSort: phony Sort.SSort.HSort.exe
+
+build Sort.SSort.SSSort: phony Sort.SSort.SSSort.exe
+
 build Stack.Jop.Job01: phony Stack.Jop.Job01.exe
 
 build Stack.LStack.LStack: phony Stack.LStack.LStack.exe
@@ -1194,7 +1334,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony Base.AboutString.exe List.Job.Job01.exe List.Job.Job02.exe List.Job.Job03.exe List.Job.Job04.exe List.Job.Job05.exe List.LList.DLList.exe List.LList.SLList.exe List.SList.DSList.exe List.SList.SSList.exe Queue.LQueue.LQueue.exe Queue.SQueue.CSQueue.exe Queue.SQueue.SQueue.exe Sort.ESort.BSort.exe Sort.ESort.QSort.exe Sort.ISort.BISort.exe Sort.ISort.SISort.exe Sort.ISort.SSort.exe Sort.Job.Job01.exe Sort.Job.Job02.exe Sort.Job.Job03.exe Sort.Job.Job04.exe Stack.Jop.Job01.exe Stack.LStack.LStack.exe Stack.SStack.SStack.exe String.Jop.Job01.exe String.Jop.Job02.exe String.LString.LString.exe String.SString.DSString.exe String.SString.SSString.exe Tree.BTree.BTree.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony Base.AboutString.exe List.Job.Job01.exe List.Job.Job02.exe List.Job.Job03.exe List.Job.Job04.exe List.Job.Job05.exe List.LList.DLList.exe List.LList.SLList.exe List.SList.DSList.exe List.SList.SSList.exe Queue.LQueue.LQueue.exe Queue.SQueue.CSQueue.exe Queue.SQueue.SQueue.exe Sort.ESort.BSort.exe Sort.ESort.QSort.exe Sort.ISort.BISort.exe Sort.ISort.SISort.exe Sort.ISort.SSort.exe Sort.Job.Job01.exe Sort.Job.Job02.exe Sort.Job.Job03.exe Sort.Job.Job04.exe Sort.Job.Job05.exe Sort.Job.Job06.exe Sort.SSort.HSort.exe Sort.SSort.SSSort.exe Stack.Jop.Job01.exe Stack.LStack.LStack.exe Stack.SStack.SStack.exe String.Jop.Job01.exe String.Jop.Job02.exe String.LString.LString.exe String.SString.DSString.exe String.SString.SSString.exe Tree.BTree.BTree.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

@@ -20,6 +20,10 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job01.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job02.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job03.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job04.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job05.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.Job.Job06.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.SSort.HSort.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Sort.SSort.SSSort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Stack.Jop.Job01.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Stack.LStack.LStack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/Stack.SStack.SStack.dir

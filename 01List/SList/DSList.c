@@ -1,84 +1,25 @@
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "DSList.h"
 
-#define newSize 100
-#define type int
-
-// 动态顺序表
-typedef struct List
-{
-    type* data;
-    int size, length;
-} List;
-
-typedef List* DSList;
-
-// 建立线性表
-DSList initiateList(DSList l)
-{
-    l = (DSList)malloc(sizeof(List));
-    if (l != NULL)
-    {
-        l->data = (type*)malloc(newSize * sizeof(type));
-        l->size = newSize;
-        l->length = 0;
-    }
-    return l;
-}
-
-// 插入数据
-bool insertData(DSList l, int location, type data)
-{
-    // 检查位置
-    if (l == NULL || location < 0 || location > l->length)
-    {
+// 建立顺序表
+bool initiateNode(List* list) {
+    *list = (List)malloc(sizeof(Node));
+    if (*list == NULL) {
         return false;
     }
-    // 检查内存
-    if (l->length == l->size)
-    {
-        l->size += newSize;
-        l->data = (type*)realloc(l->data, newSize * sizeof(type));
+    (*list)->data = (type*)malloc(newSize * sizeof(type));
+    if ((*list)->data == NULL) {
+        return false;
     }
-    // 后移
-    for (int i = l->length; i > location; i--)
-    {
-        l->data[i] = l->data[i - 1];
-    }
-    // 插入
-    l->data[location] = data;
-    l->length++;
+    (*list)->size = newSize;
+    (*list)->length = 0;
     return true;
 }
 
-// 删除数据
-bool deleteData(DSList l, int location)
-{
-    // 检查
-    if (l == NULL || l->length == 0 || location < 0 || location > l->length - 1)
-    {
-        return false;
-    }
-    // 前移
-    for (int i = location; i < l->length; i++)
-    {
-        l->data[i] = l->data[i + 1];
-    }
-    // 删除
-    l->length--;
-    return true;
-}
-
-// 查找元素
-int selectData(DSList l, type data)
-{
-    if (l != NULL)
-    {
-        for (int i = 0; i < l->length; i++)
-        {
-            if (l->data[i] == data)
-            {
+// 查找数据
+int selectData(List list, type data) {
+    if (list != NULL) {
+        for (int i = 0; i < list->length; i++) {
+            if (list->data[i] == data) {
                 return i;
             }
         }
@@ -86,28 +27,50 @@ int selectData(DSList l, type data)
     return -1;
 }
 
-// 销毁线性表
-void destroyList(DSList l)
-{
-    free(l);
+// 插入数据
+bool insertData(List list, int location, type data) {
+    // 检查位置
+    if (list == NULL || location < 0 || location > list->length) {
+        return false;
+    }
+    // 检查内存
+    if (list->length == list->size) {
+        list->size += newSize;
+        list->data = (type*)realloc(list->data, list->size * sizeof(type));
+        if (list->data == NULL) {
+            return false;
+        }
+    }
+    // 后移
+    for (int i = list->length; i > location; i--) {
+        list->data[i] = list->data[i - 1];
+    }
+    // 插入
+    list->data[location] = data;
+    list->length++;
+    return true;
 }
 
-int main()
-{
-    int i = 0;
-    type data[newSize];
-    DSList l = NULL;
-    l = initiateList(l);
-    while (scanf("%d", &data[i]) == 1)
-    {
-        insertData(l, i, data[i]);
-        i++;
+// 删除数据
+bool deleteData(List list, int location) {
+    // 检查
+    if (list == NULL || list->length == 0 || location < 0 || location > list->length - 1) {
+        return false;
     }
-    deleteData(l, --i);
-    for (int j = 0; j < i; j++)
-    {
-        printf("%d ", selectData(l, data[j]));
+    // 前移
+    for (int i = location; i < list->length - 1; i++) {
+        list->data[i] = list->data[i + 1];
     }
-    destroyList(l);
-    return 0;
+    // 删除
+    list->length--;
+    return true;
+}
+
+// 销毁顺序表
+void destroyNode(List* list) {
+    if (*list) {
+        free((*list)->data);
+        free(*list);
+        *list = NULL;
+    }
 }

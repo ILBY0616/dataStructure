@@ -16,7 +16,6 @@ typedef struct Queue
 } Queue;
 
 typedef Queue* LQueue;
-
 LQueue initiateQueue(LQueue q)
 {
     q = (LQueue)malloc(sizeof(Queue));

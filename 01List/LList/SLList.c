@@ -1,86 +1,24 @@
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "SLList.h"
 
-#define type int
-
-// 带头节点单链表
-typedef struct Node
+// 建立链表
+bool initiateList(List* list)
 {
-    type data;
-    struct Node* next;
-} Node;
-
-typedef Node* SLList;
-
-// 建立线性表
-SLList initiateList(SLList l)
-{
-    l = (SLList)malloc(sizeof(Node));
-    if (l != NULL)
-    {
-        l->data = 0;
-        l->next = NULL;
-    }
-    return l;
-}
-
-// 插入数据
-bool insertData(SLList l, int location, type data)
-{
-    // 检查
-    if (l == NULL || location < 0 || location > l->data)
+    *list = (List)malloc(sizeof(Node));
+    if (*list == NULL)
     {
         return false;
     }
-    // 查找
-    SLList temp = l;
-    while (location > 0)
-    {
-        temp = temp->next;
-        location--;
-    }
-    // 插入
-    SLList node = malloc(sizeof(Node));
-    if (node != NULL)
-    {
-        node->data = data;
-        node->next = temp->next;
-        temp->next = node;
-        l->data++;
-    }
-    return true;
-}
-
-// 删除数据
-bool deleteData(SLList l, int location)
-{
-    // 检查
-    if (l == NULL || l->next == NULL || location < 0 || location > l->data - 1)
-    {
-        return false;
-    }
-    // 查找
-    SLList temp = l;
-    while (location > 0)
-    {
-        temp = temp->next;
-        location--;
-    }
-    // 删除
-    SLList node = temp->next;
-    temp->next = node->next;
-    free(node);
-    l->data--;
+    (*list)->data = 0;
+    (*list)->next = NULL;
     return true;
 }
 
 // 查找数据
-SLList selectData(SLList l, type data)
+List selectData(List list, type data)
 {
-    if (l != NULL)
+    if (list != NULL)
     {
-        SLList temp = l->next;
+        List temp = list->next;
         while (temp != NULL)
         {
             if (temp->data == data)
@@ -93,40 +31,64 @@ SLList selectData(SLList l, type data)
     return NULL;
 }
 
-// 销毁线性表
-void destroyList(SLList l)
+// 插入数据
+bool insertData(List list, int location, type data)
 {
-    SLList temp = l;
+    // 检查
+    if (list == NULL || location < 0 || location > list->data)
+    {
+        return false;
+    }
+    // 查找
+    List temp = list;
+    while (location > 0)
+    {
+        temp = temp->next;
+        location--;
+    }
+    // 插入
+    List node = malloc(sizeof(Node));
+    if (node != NULL)
+    {
+        node->data = data;
+        node->next = temp->next;
+        temp->next = node;
+        list->data++;
+    }
+    return true;
+}
+
+// 删除数据
+bool deleteData(List list, int location)
+{
+    // 检查
+    if (list == NULL || list->next == NULL || location < 0 || location > list->data - 1)
+    {
+        return false;
+    }
+    // 查找
+    List temp = list;
+    while (location > 0)
+    {
+        temp = temp->next;
+        location--;
+    }
+    // 删除
+    List node = temp->next;
+    temp->next = node->next;
+    free(node);
+    list->data--;
+    return true;
+}
+
+// 销毁链表
+void destroyList(List* list)
+{
+    List temp = *list;
     while (temp != NULL)
     {
-        l = l->next;
+        *list = (*list)->next;
         free(temp);
-        temp = l;
+        temp = *list;
     }
 }
-
-int main()
-{
-    int i = 0;
-    type data[10];
-    SLList l = NULL;
-    l = initiateList(l);
-    while (scanf("%d", &data[i]) == 1)
-    {
-        insertData(l, i, data[i]);
-        i++;
-    }
-    deleteData(l, --i);
-    for (int j = 0; j < i; j++)
-    {
-        printf("%d ", selectData(l, data[j])->data);
-    }
-    destroyList(l);
-    return 0;
-}
-
-
-
-
-
-

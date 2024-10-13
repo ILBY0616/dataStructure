@@ -1,50 +1,45 @@
 #include <stdio.h>
 
-// 统一重点：ToDo
-// 统一提示：中文
-// 统一注释：代码上方
-// 统一状态：-1失败，0成功，1其他
-
-// ToDo从前往后两两比较，大的在后小的在前，一趟冒泡后确定一个最大的元素在最终位置
 // BubbleSort
-
 void sortData(int data[], int length)
 {
-    for (int i = 1; i <= length; i++)
+    for (int i = 0; i < length; i++)
     {
-        // ToDo冒泡
+        // 冒泡
         int flag = 0;
-        for (int j = 1; j <= length - i; j++)
+        for (int j = 0; j < length - i - 1; j++)
         {
-            // ToDo比较
+            // 比较
             if (data[j] > data[j + 1])
             {
-                // ToDo交换
-                data[0] = data[j];
+                // 交换
+                int temp = data[j];
                 data[j] = data[j + 1];
-                data[j + 1] = data[0];
+                data[j + 1] = temp;
                 flag++;
             }
         }
         if (flag == 0)
+        {
             break;
+        }
     }
 }
 
 void printData(int data[], int length)
 {
-    for (int i = 1; i <= length; i++)
+    for (int i = 0; i < length; i++)
     {
-        printf("%d", data[i]);
+        printf("%d ", data[i]);
     }
     printf("\n");
 }
 
 int main()
 {
-    int data[8] = {0, 7, 6, 5, 4, 3, 2, 1};
-    printData(data, 7);
-    sortData(data, 7);
-    printData(data, 7);
+    int data[8] = {8, 7, 6, 5, 4, 3, 2, 1};
+    printData(data, 8);
+    sortData(data, 8);
+    printData(data, 8);
     return 0;
 }

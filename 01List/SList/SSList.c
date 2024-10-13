@@ -1,75 +1,25 @@
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "SSList.h"
 
-#define size 10
-#define type int
-
-// 静态顺序表
-typedef struct List
+// 建立顺序表
+bool initiateNode(List* list)
 {
-    type data[size];
-    int length;
-} List;
-
-typedef List* SSList;
-
-// 建立线性表
-SSList initiateList(SSList l)
-{
-    l = (SSList)malloc(sizeof(List));
-    if (l != NULL)
-    {
-        l->length = 0;
-    }
-    return l;
-}
-
-// 插入数据
-bool insertData(SSList l, int location, type data)
-{
-    // 检查
-    if (l == NULL || l->length == size || location < 0 || location > l->length)
+    *list = (List)malloc(sizeof(Node));
+    if (*list == NULL)
     {
         return false;
     }
-    // 后移
-    for (int i = l->length; i > location; i--)
-    {
-        l->data[i] = l->data[i - 1];
-    }
-    // 插入
-    l->data[location] = data;
-    l->length++;
-    return true;
-}
-
-// 删除数据
-bool deleteData(SSList l, int location)
-{
-    // 检查
-    if (l == NULL || l->length == 0 || location < 0 || location > l->length - 1)
-    {
-        return false;
-    }
-    // 前移
-    for (int i = location; i < l->length; i++)
-    {
-        l->data[i] = l->data[i + 1];
-    }
-    // 删除
-    l->length--;
+    (*list)->length = 0;
     return true;
 }
 
 // 查找数据
-int selectData(SSList l, type data)
+int selectData(List list, type data)
 {
-    if (l != NULL)
+    if (list != NULL)
     {
-        for (int i = 0; i < l->length; i++)
+        for (int i = 0; i < list->length; i++)
         {
-            if (l->data[i] == data)
+            if (list->data[i] == data)
             {
                 return i;
             }
@@ -78,28 +28,45 @@ int selectData(SSList l, type data)
     return -1;
 }
 
-// 销毁线性表
-void destroyList(SSList l)
+// 插入数据
+bool insertData(List list, int location, type data)
 {
-    free(l);
+    // 检查
+    if (list == NULL || list->length == size || location < 0 || location > list->length)
+    {
+        return false;
+    }
+    // 后移
+    for (int i = list->length; i > location; i--)
+    {
+        list->data[i] = list->data[i - 1];
+    }
+    // 插入
+    list->data[location] = data;
+    list->length++;
+    return true;
 }
 
-int main()
+// 删除数据
+bool deleteData(List list, int location)
 {
-    int i = 0;
-    type data[size];
-    SSList l = NULL;
-    l = initiateList(l);
-    while (scanf("%d", &data[i]) == 1)
+    // 检查
+    if (list == NULL || list->length == 0 || location < 0 || location > list->length - 1)
     {
-        insertData(l, i, data[i]);
-        i++;
+        return false;
     }
-    deleteData(l, --i);
-    for (int j = 0; j < i; j++)
+    // 前移
+    for (int i = location; i < list->length - 1; i++)
     {
-        printf("%d ", selectData(l, data[j]));
+        list->data[i] = list->data[i + 1];
     }
-    destroyList(l);
-    return 0;
+    // 删除
+    list->length--;
+    return true;
+}
+
+// 销毁顺序表
+void destroyNode(List* list)
+{
+    free(*list);
 }

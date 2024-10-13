@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// 统一重点：ToDo
-// 统一提示：中文
-// 统一注释：代码上方
-// 统一状态：-1失败，0成功，1其他
-
-// ToDo比较一个移动一个，直到找到合适位置插入
-// BinarySearh
-
 typedef struct Node
 {
     int* data;

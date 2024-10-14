@@ -1,32 +1,34 @@
 #include "SSList.h"
 
+// 删除顺序表中所有值为x的元素
 void deleteX01(List l,type x)
 {
     int i = 0, j = 0;
-    while (i < l->length)
+    while (j < l->length)
     {
-        if (l->data[i] == x)
+        if (l->data[j] == x)
         {
-            j++;
+            i++;
         }
         else
         {
-            l->data[i - j] = l->data[i];
+            l->data[j - i] = l->data[j];
         }
-        i++;
+        j++;
     }
-    l->length = l->length - j;
+    l->length = l->length - i;
 }
 
+// 删除顺序表中所有值为x的元素
 void deleteX02(List l,type x)
 {
     int i = 0, j = 0;
-    while (i < l->length)
+    while (j < l->length)
     {
-        if (l->data[i] != x)
+        if (l->data[j] != x)
         {
-            l->data[j++] = l->data[i];
+            l->data[i++] = l->data[j];
         }
     }
-    l->length = j;
+    l->length = i;
 }

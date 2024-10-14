@@ -1,37 +1,35 @@
 #include "SSList.h"
 
-bool deleteX(List l,type a,type b)
+// 删除顺序表指定范围元素
+void deleteAToB01(List l,type a,type b)
 {
-    if (l == NULL || l->length == 0 || a > b)
-    {
-        return false;
-    }
     int i = 0, j = 0;
-    while (i < l->length)
+    while (j < l->length)
     {
-        if (a <= l->data[i] && l->data[i] <= b)
+        if (a <= l->data[j] && l->data[j] <= b)
         {
-            j++;
+            i++;
         }
         else
         {
-            l->data[i - j] = l->data[i];
+            l->data[j - i] = l->data[j];
         }
-        i++;
+        j++;
     }
-    l->length = l->length - j;
-    return true;
+    l->length = l->length - i;
 }
 
-void deleteX02(List l,type a,type b)
+// 删除顺序表指定范围元素
+void deleteAToB02(List l,type a,type b)
 {
     int i = 0, j = 0;
-    while (i < l->length)
+    while (j < l->length)
     {
-        if (a > l->data[i] || l->data[i] > b)
+        if (b < l->data[j] || l->data[j] < a)
         {
-            l->data[j++] = l->data[i];
+            l->data[i++] = l->data[j];
         }
+        j++;
     }
-    l->length = j;
+    l->length = i;
 }

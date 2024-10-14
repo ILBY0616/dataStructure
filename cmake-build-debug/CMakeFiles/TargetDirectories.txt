@@ -3,6 +3,11 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day02.d
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day03.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day04.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day05.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day06.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day07.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day08.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day09.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.App.Day10.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.LList.DLList.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.LList.SLList.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.SList.DSList.dir

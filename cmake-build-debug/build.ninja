@@ -211,6 +211,176 @@ build 01List.App.Day05.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay05_Debug CMak
   TARGET_PDB = 01List.App.Day05.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day06
+
+
+#############################################
+# Order-only phony target for 01List.App.Day06
+
+build cmake_object_order_depends_target_01List.App.Day06: phony || CMakeFiles/01List.App.Day06.dir
+
+build CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj: C_COMPILER__01List.2eApp.2eDay06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day06.c || cmake_object_order_depends_target_01List.App.Day06
+  DEP_FILE = CMakeFiles\01List.App.Day06.dir\01List\App\Day06.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day06.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day06.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day06
+
+
+#############################################
+# Link the executable 01List.App.Day06.exe
+
+build 01List.App.Day06.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay06_Debug CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day06.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day06.exe
+  TARGET_IMPLIB = lib01List.App.Day06.dll.a
+  TARGET_PDB = 01List.App.Day06.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day07
+
+
+#############################################
+# Order-only phony target for 01List.App.Day07
+
+build cmake_object_order_depends_target_01List.App.Day07: phony || CMakeFiles/01List.App.Day07.dir
+
+build CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj: C_COMPILER__01List.2eApp.2eDay07_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day07.c || cmake_object_order_depends_target_01List.App.Day07
+  DEP_FILE = CMakeFiles\01List.App.Day07.dir\01List\App\Day07.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day07.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day07.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day07
+
+
+#############################################
+# Link the executable 01List.App.Day07.exe
+
+build 01List.App.Day07.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay07_Debug CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day07.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day07.exe
+  TARGET_IMPLIB = lib01List.App.Day07.dll.a
+  TARGET_PDB = 01List.App.Day07.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day08
+
+
+#############################################
+# Order-only phony target for 01List.App.Day08
+
+build cmake_object_order_depends_target_01List.App.Day08: phony || CMakeFiles/01List.App.Day08.dir
+
+build CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj: C_COMPILER__01List.2eApp.2eDay08_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day08.c || cmake_object_order_depends_target_01List.App.Day08
+  DEP_FILE = CMakeFiles\01List.App.Day08.dir\01List\App\Day08.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day08.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day08.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day08
+
+
+#############################################
+# Link the executable 01List.App.Day08.exe
+
+build 01List.App.Day08.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay08_Debug CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day08.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day08.exe
+  TARGET_IMPLIB = lib01List.App.Day08.dll.a
+  TARGET_PDB = 01List.App.Day08.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day09
+
+
+#############################################
+# Order-only phony target for 01List.App.Day09
+
+build cmake_object_order_depends_target_01List.App.Day09: phony || CMakeFiles/01List.App.Day09.dir
+
+build CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj: C_COMPILER__01List.2eApp.2eDay09_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day09.c || cmake_object_order_depends_target_01List.App.Day09
+  DEP_FILE = CMakeFiles\01List.App.Day09.dir\01List\App\Day09.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day09.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day09.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day09
+
+
+#############################################
+# Link the executable 01List.App.Day09.exe
+
+build 01List.App.Day09.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay09_Debug CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day09.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day09.exe
+  TARGET_IMPLIB = lib01List.App.Day09.dll.a
+  TARGET_PDB = 01List.App.Day09.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day10
+
+
+#############################################
+# Order-only phony target for 01List.App.Day10
+
+build cmake_object_order_depends_target_01List.App.Day10: phony || CMakeFiles/01List.App.Day10.dir
+
+build CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj: C_COMPILER__01List.2eApp.2eDay10_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day10.c || cmake_object_order_depends_target_01List.App.Day10
+  DEP_FILE = CMakeFiles\01List.App.Day10.dir\01List\App\Day10.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day10.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day10.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day10
+
+
+#############################################
+# Link the executable 01List.App.Day10.exe
+
+build 01List.App.Day10.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay10_Debug CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day10.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day10.exe
+  TARGET_IMPLIB = lib01List.App.Day10.dll.a
+  TARGET_PDB = 01List.App.Day10.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 01List.LList.DLList
 
 
@@ -1640,6 +1810,16 @@ build 01List.App.Day04: phony 01List.App.Day04.exe
 
 build 01List.App.Day05: phony 01List.App.Day05.exe
 
+build 01List.App.Day06: phony 01List.App.Day06.exe
+
+build 01List.App.Day07: phony 01List.App.Day07.exe
+
+build 01List.App.Day08: phony 01List.App.Day08.exe
+
+build 01List.App.Day09: phony 01List.App.Day09.exe
+
+build 01List.App.Day10: phony 01List.App.Day10.exe
+
 build 01List.LList.DLList: phony 01List.LList.DLList.exe
 
 build 01List.LList.SLList: phony 01List.LList.SLList.exe
@@ -1730,7 +1910,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.InOrderByStack.exe 06Tree.BTree.BTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe 09AboutC.AboutPointer.exe 09AboutC.AboutString.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.App.Day06.exe 01List.App.Day07.exe 01List.App.Day08.exe 01List.App.Day09.exe 01List.App.Day10.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.InOrderByStack.exe 06Tree.BTree.BTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe 09AboutC.AboutPointer.exe 09AboutC.AboutString.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

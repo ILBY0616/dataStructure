@@ -1,5 +1,6 @@
 #include "SSList.h"
 
+// 合并顺序表
 bool mergeList(List a, List b, List c)
 {
     if (a->length + b->length > c->length)

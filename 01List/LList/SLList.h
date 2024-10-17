@@ -19,6 +19,7 @@ bool initiateList(List* list);
 List selectData(List list, type data);
 bool insertData(List list, int location, type data);
 bool deleteData(List list, int location);
+int getLength(List list);
 void destroyList(List* list);
 
 #endif

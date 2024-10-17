@@ -91,6 +91,18 @@ List selectData(List list, type data)
     return NULL;
 }
 
+// 获取长度
+int getLength(List list)
+{
+    int length = 0;
+    while (list != NULL)
+    {
+        length++;
+        list = list->next;
+    }
+    return length;
+}
+
 // 销毁链表
 void destroyList(List* list)
 {

@@ -1,28 +1,43 @@
 #include "SLList.h"
 
-// 尾插法建立单链表
-void buildList(List* l)
+// 尾插法建立带头结点单链表
+bool buildList(SLList* l)
 {
-    List head = NULL, tail = NULL;
+    if (*l == NULL)
+    {
+        return false;
+    }
+    SLList p = NULL, q = NULL, r = NULL;
     type data;
     while (scanf("%d", &data) == 1)
     {
-        List node = malloc(sizeof(Node));
-        if (node != NULL)
+        q = malloc(sizeof(Node));
+        if (q != NULL)
         {
-            node->data = data;
-            node->next = NULL;
-            if (head == NULL || tail == NULL)
+            q->data = data;
+            q->next = NULL;
+            if (p == NULL || r == NULL)
             {
-                head = node;
-                tail = node;
+                p = q;
+                r = q;
             }
             else
             {
-                tail->next = node;
-                tail = node;
+                r->next = q;
+                r = r->next;
             }
         }
     }
-    *l = head;
+    (*l)->next = p;
+    return true;
+}
+
+int main()
+{
+    SLList l = NULL;
+    initiateSLList(&l);
+    buildList(&l);
+    printSLList(l);
+    destroySLList(&l);
+    return 0;
 }

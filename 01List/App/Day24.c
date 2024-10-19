@@ -1,11 +1,11 @@
 #include "SLList.h"
 
 // 逐个输出并删除循环单链表最小值
-void findMin(List* l)
+void findMin(SLList* l)
 {
     while ((*l)->next != NULL)
     {
-        List p = *l, q = (*l)->next, s = (*l)->next, t = (*l)->next->next;
+        SLList p = *l, q = (*l)->next, s = (*l)->next, t = (*l)->next->next;
         while (t != *l)
         {
             if (t->data < q->data)
@@ -21,4 +21,9 @@ void findMin(List* l)
         free(q);
     }
     free(*l);
+}
+
+int main()
+{
+    return 0;
 }

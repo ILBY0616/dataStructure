@@ -1,9 +1,9 @@
 #include "SLList.h"
 
 // 判断a单链表是否包含b单链表
-bool judgePattern(List a, List b)
+bool judgePattern(SLList a, SLList b)
 {
-    List p = a, q = a, s = b, t = b;
+    SLList p = a->next, q = a->next, s = b->next, t = b->next;
     while (q != NULL && t != NULL)
     {
         if (q->data == t->data)
@@ -23,4 +23,32 @@ bool judgePattern(List a, List b)
         return true;
     }
     return false;
+}
+
+int main()
+{
+    SLList a = NULL, b = NULL;
+    initiateSLList(&a);
+    initiateSLList(&b);
+    insertSLList(a, 0, 1);
+    insertSLList(a, 1, 2);
+    insertSLList(a, 2, 3);
+    insertSLList(a, 3, 4);
+    insertSLList(a, 4, 5);
+    insertSLList(b, 0, 3);
+    insertSLList(b, 1, 4);
+    printSLList(a);
+    printSLList(b);
+    if (judgePattern(a, b))
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
+    destroySLList(&a);
+    destroySLList(&b);
+
+    return 0;
 }

@@ -7,19 +7,20 @@
 #include <stdio.h>
 #include <math.h>
 
-#define newSize 100
+#define newSize 10
 #define type int
 
 typedef struct Node
 {
     type* data;
     int size, length;
-} Node, *List;
+} Node, *DSList;
 
-bool initiateNode(List* list);
-int selectData(List list, type data);
-bool insertData(List list, int location, type data);
-bool deleteData(List list, int location);
-void destroyNode(List* list);
+bool initiateDSList(DSList* list);
+int selectDSList(DSList list, type data);
+bool insertDSList(DSList list, int location, type data);
+bool deleteDSList(DSList list, int location);
+bool printDSList(DSList list);
+void destroyDSList(DSList* list);
 
 #endif

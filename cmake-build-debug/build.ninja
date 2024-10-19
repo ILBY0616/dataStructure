@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_DLList_lib: phony || CMakeFiles/DLList_l
 
 build CMakeFiles/DLList_lib.dir/01List/LList/DLList.c.obj: C_COMPILER__DLList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/DLList.c || cmake_object_order_depends_target_DLList_lib
   DEP_FILE = CMakeFiles\DLList_lib.dir\01List\LList\DLList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\DLList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\DLList_lib.dir\01List\LList
@@ -83,7 +83,7 @@ build cmake_object_order_depends_target_SLList_lib: phony || CMakeFiles/SLList_l
 
 build CMakeFiles/SLList_lib.dir/01List/LList/SLList.c.obj: C_COMPILER__SLList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/SLList.c || cmake_object_order_depends_target_SLList_lib
   DEP_FILE = CMakeFiles\SLList_lib.dir\01List\LList\SLList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\SLList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\SLList_lib.dir\01List\LList
@@ -115,7 +115,7 @@ build cmake_object_order_depends_target_DSList_lib: phony || CMakeFiles/DSList_l
 
 build CMakeFiles/DSList_lib.dir/01List/SList/DSList.c.obj: C_COMPILER__DSList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/DSList.c || cmake_object_order_depends_target_DSList_lib
   DEP_FILE = CMakeFiles\DSList_lib.dir\01List\SList\DSList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\DSList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\DSList_lib.dir\01List\SList
@@ -147,7 +147,7 @@ build cmake_object_order_depends_target_SSList_lib: phony || CMakeFiles/SSList_l
 
 build CMakeFiles/SSList_lib.dir/01List/SList/SSList.c.obj: C_COMPILER__SSList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/SSList.c || cmake_object_order_depends_target_SSList_lib
   DEP_FILE = CMakeFiles\SSList_lib.dir\01List\SList\SSList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\SSList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\SSList_lib.dir\01List\SList
@@ -179,7 +179,7 @@ build cmake_object_order_depends_target_01List.App.Day01: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day01.dir/01List/App/Day01.c.obj: C_COMPILER__01List.2eApp.2eDay01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day01.c || cmake_object_order_depends_target_01List.App.Day01
   DEP_FILE = CMakeFiles\01List.App.Day01.dir\01List\App\Day01.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day01.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day01.dir\01List\App
@@ -209,11 +209,11 @@ build 01List.App.Day01.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay01_Debug CMak
 #############################################
 # Order-only phony target for 01List.App.Day02
 
-build cmake_object_order_depends_target_01List.App.Day02: phony || cmake_object_order_depends_target_SSList_lib
+build cmake_object_order_depends_target_01List.App.Day02: phony || cmake_object_order_depends_target_DSList_lib
 
 build CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj: C_COMPILER__01List.2eApp.2eDay02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day02.c || cmake_object_order_depends_target_01List.App.Day02
   DEP_FILE = CMakeFiles\01List.App.Day02.dir\01List\App\Day02.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day02.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day02.dir\01List\App
@@ -226,9 +226,9 @@ build CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj: C_COMPILER__01List
 #############################################
 # Link the executable 01List.App.Day02.exe
 
-build 01List.App.Day02.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay02_Debug CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj | libSSList_lib.a || libSSList_lib.a
+build 01List.App.Day02.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay02_Debug CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj | libDSList_lib.a || libDSList_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libDSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day02.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -247,7 +247,7 @@ build cmake_object_order_depends_target_01List.App.Day03: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day03.dir/01List/App/Day03.c.obj: C_COMPILER__01List.2eApp.2eDay03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day03.c || cmake_object_order_depends_target_01List.App.Day03
   DEP_FILE = CMakeFiles\01List.App.Day03.dir\01List\App\Day03.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day03.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day03.dir\01List\App
@@ -281,7 +281,7 @@ build cmake_object_order_depends_target_01List.App.Day04: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day04.dir/01List/App/Day04.c.obj: C_COMPILER__01List.2eApp.2eDay04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day04.c || cmake_object_order_depends_target_01List.App.Day04
   DEP_FILE = CMakeFiles\01List.App.Day04.dir\01List\App\Day04.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day04.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day04.dir\01List\App
@@ -315,7 +315,7 @@ build cmake_object_order_depends_target_01List.App.Day05: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day05.dir/01List/App/Day05.c.obj: C_COMPILER__01List.2eApp.2eDay05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day05.c || cmake_object_order_depends_target_01List.App.Day05
   DEP_FILE = CMakeFiles\01List.App.Day05.dir\01List\App\Day05.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day05.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day05.dir\01List\App
@@ -349,7 +349,7 @@ build cmake_object_order_depends_target_01List.App.Day06: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj: C_COMPILER__01List.2eApp.2eDay06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day06.c || cmake_object_order_depends_target_01List.App.Day06
   DEP_FILE = CMakeFiles\01List.App.Day06.dir\01List\App\Day06.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day06.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day06.dir\01List\App
@@ -383,7 +383,7 @@ build cmake_object_order_depends_target_01List.App.Day07: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj: C_COMPILER__01List.2eApp.2eDay07_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day07.c || cmake_object_order_depends_target_01List.App.Day07
   DEP_FILE = CMakeFiles\01List.App.Day07.dir\01List\App\Day07.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day07.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day07.dir\01List\App
@@ -417,7 +417,7 @@ build cmake_object_order_depends_target_01List.App.Day08: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj: C_COMPILER__01List.2eApp.2eDay08_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day08.c || cmake_object_order_depends_target_01List.App.Day08
   DEP_FILE = CMakeFiles\01List.App.Day08.dir\01List\App\Day08.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day08.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day08.dir\01List\App
@@ -451,7 +451,7 @@ build cmake_object_order_depends_target_01List.App.Day09: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj: C_COMPILER__01List.2eApp.2eDay09_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day09.c || cmake_object_order_depends_target_01List.App.Day09
   DEP_FILE = CMakeFiles\01List.App.Day09.dir\01List\App\Day09.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day09.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day09.dir\01List\App
@@ -485,7 +485,7 @@ build cmake_object_order_depends_target_01List.App.Day10: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj: C_COMPILER__01List.2eApp.2eDay10_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day10.c || cmake_object_order_depends_target_01List.App.Day10
   DEP_FILE = CMakeFiles\01List.App.Day10.dir\01List\App\Day10.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day10.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day10.dir\01List\App
@@ -519,7 +519,7 @@ build cmake_object_order_depends_target_01List.App.Day11: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day11.dir/01List/App/Day11.c.obj: C_COMPILER__01List.2eApp.2eDay11_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day11.c || cmake_object_order_depends_target_01List.App.Day11
   DEP_FILE = CMakeFiles\01List.App.Day11.dir\01List\App\Day11.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day11.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day11.dir\01List\App
@@ -553,7 +553,7 @@ build cmake_object_order_depends_target_01List.App.Day12: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day12.dir/01List/App/Day12.c.obj: C_COMPILER__01List.2eApp.2eDay12_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day12.c || cmake_object_order_depends_target_01List.App.Day12
   DEP_FILE = CMakeFiles\01List.App.Day12.dir\01List\App\Day12.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day12.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day12.dir\01List\App
@@ -587,7 +587,7 @@ build cmake_object_order_depends_target_01List.App.Day13: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day13.dir/01List/App/Day13.c.obj: C_COMPILER__01List.2eApp.2eDay13_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day13.c || cmake_object_order_depends_target_01List.App.Day13
   DEP_FILE = CMakeFiles\01List.App.Day13.dir\01List\App\Day13.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day13.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day13.dir\01List\App
@@ -621,7 +621,7 @@ build cmake_object_order_depends_target_01List.App.Day14: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day14.dir/01List/App/Day14.c.obj: C_COMPILER__01List.2eApp.2eDay14_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day14.c || cmake_object_order_depends_target_01List.App.Day14
   DEP_FILE = CMakeFiles\01List.App.Day14.dir\01List\App\Day14.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day14.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day14.dir\01List\App
@@ -655,7 +655,7 @@ build cmake_object_order_depends_target_01List.App.Day15: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day15.dir/01List/App/Day15.c.obj: C_COMPILER__01List.2eApp.2eDay15_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day15.c || cmake_object_order_depends_target_01List.App.Day15
   DEP_FILE = CMakeFiles\01List.App.Day15.dir\01List\App\Day15.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day15.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day15.dir\01List\App
@@ -689,7 +689,7 @@ build cmake_object_order_depends_target_01List.App.Day16: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day16.dir/01List/App/Day16.c.obj: C_COMPILER__01List.2eApp.2eDay16_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day16.c || cmake_object_order_depends_target_01List.App.Day16
   DEP_FILE = CMakeFiles\01List.App.Day16.dir\01List\App\Day16.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day16.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day16.dir\01List\App
@@ -723,7 +723,7 @@ build cmake_object_order_depends_target_01List.App.Day17: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day17.dir/01List/App/Day17.c.obj: C_COMPILER__01List.2eApp.2eDay17_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day17.c || cmake_object_order_depends_target_01List.App.Day17
   DEP_FILE = CMakeFiles\01List.App.Day17.dir\01List\App\Day17.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day17.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day17.dir\01List\App
@@ -757,7 +757,7 @@ build cmake_object_order_depends_target_01List.App.Day18: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day18.dir/01List/App/Day18.c.obj: C_COMPILER__01List.2eApp.2eDay18_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day18.c || cmake_object_order_depends_target_01List.App.Day18
   DEP_FILE = CMakeFiles\01List.App.Day18.dir\01List\App\Day18.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day18.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day18.dir\01List\App
@@ -791,7 +791,7 @@ build cmake_object_order_depends_target_01List.App.Day19: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day19.dir/01List/App/Day19.c.obj: C_COMPILER__01List.2eApp.2eDay19_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day19.c || cmake_object_order_depends_target_01List.App.Day19
   DEP_FILE = CMakeFiles\01List.App.Day19.dir\01List\App\Day19.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day19.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day19.dir\01List\App
@@ -825,7 +825,7 @@ build cmake_object_order_depends_target_01List.App.Day20: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day20.dir/01List/App/Day20.c.obj: C_COMPILER__01List.2eApp.2eDay20_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day20.c || cmake_object_order_depends_target_01List.App.Day20
   DEP_FILE = CMakeFiles\01List.App.Day20.dir\01List\App\Day20.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day20.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day20.dir\01List\App
@@ -859,7 +859,7 @@ build cmake_object_order_depends_target_01List.App.Day21: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day21.dir/01List/App/Day21.c.obj: C_COMPILER__01List.2eApp.2eDay21_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day21.c || cmake_object_order_depends_target_01List.App.Day21
   DEP_FILE = CMakeFiles\01List.App.Day21.dir\01List\App\Day21.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day21.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day21.dir\01List\App
@@ -893,7 +893,7 @@ build cmake_object_order_depends_target_01List.App.Day22: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day22.dir/01List/App/Day22.c.obj: C_COMPILER__01List.2eApp.2eDay22_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day22.c || cmake_object_order_depends_target_01List.App.Day22
   DEP_FILE = CMakeFiles\01List.App.Day22.dir\01List\App\Day22.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day22.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day22.dir\01List\App
@@ -927,7 +927,7 @@ build cmake_object_order_depends_target_01List.App.Day23: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day23.dir/01List/App/Day23.c.obj: C_COMPILER__01List.2eApp.2eDay23_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day23.c || cmake_object_order_depends_target_01List.App.Day23
   DEP_FILE = CMakeFiles\01List.App.Day23.dir\01List\App\Day23.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day23.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day23.dir\01List\App
@@ -961,7 +961,7 @@ build cmake_object_order_depends_target_01List.App.Day24: phony || cmake_object_
 
 build CMakeFiles/01List.App.Day24.dir/01List/App/Day24.c.obj: C_COMPILER__01List.2eApp.2eDay24_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day24.c || cmake_object_order_depends_target_01List.App.Day24
   DEP_FILE = CMakeFiles\01List.App.Day24.dir\01List\App\Day24.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day24.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day24.dir\01List\App
@@ -995,7 +995,7 @@ build cmake_object_order_depends_target_01List.App.Day25: phony || CMakeFiles/01
 
 build CMakeFiles/01List.App.Day25.dir/01List/App/Day25.c.obj: C_COMPILER__01List.2eApp.2eDay25_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day25.c || cmake_object_order_depends_target_01List.App.Day25
   DEP_FILE = CMakeFiles\01List.App.Day25.dir\01List\App\Day25.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.App.Day25.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day25.dir\01List\App
@@ -1019,6 +1019,108 @@ build 01List.App.Day25.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay25_Debug CMak
   TARGET_PDB = 01List.App.Day25.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day26
+
+
+#############################################
+# Order-only phony target for 01List.App.Day26
+
+build cmake_object_order_depends_target_01List.App.Day26: phony || cmake_object_order_depends_target_SLList_lib
+
+build CMakeFiles/01List.App.Day26.dir/01List/App/Day26.c.obj: C_COMPILER__01List.2eApp.2eDay26_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day26.c || cmake_object_order_depends_target_01List.App.Day26
+  DEP_FILE = CMakeFiles\01List.App.Day26.dir\01List\App\Day26.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day26.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day26.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day26
+
+
+#############################################
+# Link the executable 01List.App.Day26.exe
+
+build 01List.App.Day26.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay26_Debug CMakeFiles/01List.App.Day26.dir/01List/App/Day26.c.obj | libSLList_lib.a || libSLList_lib.a
+  FLAGS = -g
+  LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day26.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day26.exe
+  TARGET_IMPLIB = lib01List.App.Day26.dll.a
+  TARGET_PDB = 01List.App.Day26.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day27
+
+
+#############################################
+# Order-only phony target for 01List.App.Day27
+
+build cmake_object_order_depends_target_01List.App.Day27: phony || cmake_object_order_depends_target_SLList_lib
+
+build CMakeFiles/01List.App.Day27.dir/01List/App/Day27.c.obj: C_COMPILER__01List.2eApp.2eDay27_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day27.c || cmake_object_order_depends_target_01List.App.Day27
+  DEP_FILE = CMakeFiles\01List.App.Day27.dir\01List\App\Day27.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day27.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day27.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day27
+
+
+#############################################
+# Link the executable 01List.App.Day27.exe
+
+build 01List.App.Day27.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay27_Debug CMakeFiles/01List.App.Day27.dir/01List/App/Day27.c.obj | libSLList_lib.a || libSLList_lib.a
+  FLAGS = -g
+  LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day27.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day27.exe
+  TARGET_IMPLIB = lib01List.App.Day27.dll.a
+  TARGET_PDB = 01List.App.Day27.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 01List.App.Day28
+
+
+#############################################
+# Order-only phony target for 01List.App.Day28
+
+build cmake_object_order_depends_target_01List.App.Day28: phony || cmake_object_order_depends_target_SLList_lib
+
+build CMakeFiles/01List.App.Day28.dir/01List/App/Day28.c.obj: C_COMPILER__01List.2eApp.2eDay28_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day28.c || cmake_object_order_depends_target_01List.App.Day28
+  DEP_FILE = CMakeFiles\01List.App.Day28.dir\01List\App\Day28.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  OBJECT_DIR = CMakeFiles\01List.App.Day28.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.App.Day28.dir\01List\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.App.Day28
+
+
+#############################################
+# Link the executable 01List.App.Day28.exe
+
+build 01List.App.Day28.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay28_Debug CMakeFiles/01List.App.Day28.dir/01List/App/Day28.c.obj | libSLList_lib.a || libSLList_lib.a
+  FLAGS = -g
+  LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.App.Day28.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.App.Day28.exe
+  TARGET_IMPLIB = lib01List.App.Day28.dll.a
+  TARGET_PDB = 01List.App.Day28.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 01List.LList.DLList
 
 
@@ -1029,7 +1131,7 @@ build cmake_object_order_depends_target_01List.LList.DLList: phony || cmake_obje
 
 build CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj: C_COMPILER__01List.2eLList.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/DLList.c || cmake_object_order_depends_target_01List.LList.DLList
   DEP_FILE = CMakeFiles\01List.LList.DLList.dir\01List\LList\DLList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.LList.DLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.LList.DLList.dir\01List\LList
@@ -1063,7 +1165,7 @@ build cmake_object_order_depends_target_01List.LList.SLList: phony || cmake_obje
 
 build CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj: C_COMPILER__01List.2eLList.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/SLList.c || cmake_object_order_depends_target_01List.LList.SLList
   DEP_FILE = CMakeFiles\01List.LList.SLList.dir\01List\LList\SLList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.LList.SLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.LList.SLList.dir\01List\LList
@@ -1097,7 +1199,7 @@ build cmake_object_order_depends_target_01List.SList.DSList: phony || cmake_obje
 
 build CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj: C_COMPILER__01List.2eSList.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/DSList.c || cmake_object_order_depends_target_01List.SList.DSList
   DEP_FILE = CMakeFiles\01List.SList.DSList.dir\01List\SList\DSList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.SList.DSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SList.DSList.dir\01List\SList
@@ -1131,7 +1233,7 @@ build cmake_object_order_depends_target_01List.SList.SSList: phony || cmake_obje
 
 build CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj: C_COMPILER__01List.2eSList.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/SSList.c || cmake_object_order_depends_target_01List.SList.SSList
   DEP_FILE = CMakeFiles\01List.SList.SSList.dir\01List\SList\SSList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\01List.SList.SSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SList.SSList.dir\01List\SList
@@ -1165,7 +1267,7 @@ build cmake_object_order_depends_target_02Stack.App.BaseConvert: phony || CMakeF
 
 build CMakeFiles/02Stack.App.BaseConvert.dir/02Stack/App/BaseConvert.c.obj: C_COMPILER__02Stack.2eApp.2eBaseConvert_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/BaseConvert.c || cmake_object_order_depends_target_02Stack.App.BaseConvert
   DEP_FILE = CMakeFiles\02Stack.App.BaseConvert.dir\02Stack\App\BaseConvert.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.App.BaseConvert.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.BaseConvert.dir\02Stack\App
@@ -1199,7 +1301,7 @@ build cmake_object_order_depends_target_02Stack.App.BracketMatch: phony || CMake
 
 build CMakeFiles/02Stack.App.BracketMatch.dir/02Stack/App/BracketMatch.c.obj: C_COMPILER__02Stack.2eApp.2eBracketMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/BracketMatch.c || cmake_object_order_depends_target_02Stack.App.BracketMatch
   DEP_FILE = CMakeFiles\02Stack.App.BracketMatch.dir\02Stack\App\BracketMatch.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.App.BracketMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.BracketMatch.dir\02Stack\App
@@ -1233,7 +1335,7 @@ build cmake_object_order_depends_target_02Stack.App.Expression: phony || CMakeFi
 
 build CMakeFiles/02Stack.App.Expression.dir/02Stack/App/Expression.c.obj: C_COMPILER__02Stack.2eApp.2eExpression_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/Expression.c || cmake_object_order_depends_target_02Stack.App.Expression
   DEP_FILE = CMakeFiles\02Stack.App.Expression.dir\02Stack\App\Expression.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.App.Expression.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.Expression.dir\02Stack\App
@@ -1267,7 +1369,7 @@ build cmake_object_order_depends_target_02Stack.App.RowEdit: phony || CMakeFiles
 
 build CMakeFiles/02Stack.App.RowEdit.dir/02Stack/App/RowEdit.c.obj: C_COMPILER__02Stack.2eApp.2eRowEdit_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/RowEdit.c || cmake_object_order_depends_target_02Stack.App.RowEdit
   DEP_FILE = CMakeFiles\02Stack.App.RowEdit.dir\02Stack\App\RowEdit.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.App.RowEdit.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.RowEdit.dir\02Stack\App
@@ -1301,7 +1403,7 @@ build cmake_object_order_depends_target_02Stack.LStack.LStack: phony || CMakeFil
 
 build CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj: C_COMPILER__02Stack.2eLStack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack/LStack.c || cmake_object_order_depends_target_02Stack.LStack.LStack
   DEP_FILE = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack\LStack.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.LStack.LStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack
@@ -1335,7 +1437,7 @@ build cmake_object_order_depends_target_02Stack.SStack.SStack: phony || CMakeFil
 
 build CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj: C_COMPILER__02Stack.2eSStack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack/SStack.c || cmake_object_order_depends_target_02Stack.SStack.SStack
   DEP_FILE = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack\SStack.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\02Stack.SStack.SStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack
@@ -1369,7 +1471,7 @@ build cmake_object_order_depends_target_03Queue.LQueue.LQueue: phony || CMakeFil
 
 build CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj: C_COMPILER__03Queue.2eLQueue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/LQueue/LQueue.c || cmake_object_order_depends_target_03Queue.LQueue.LQueue
   DEP_FILE = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue\LQueue.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue
@@ -1403,7 +1505,7 @@ build cmake_object_order_depends_target_03Queue.SQueue.SQueue: phony || CMakeFil
 
 build CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj: C_COMPILER__03Queue.2eSQueue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/SQueue/SQueue.c || cmake_object_order_depends_target_03Queue.SQueue.SQueue
   DEP_FILE = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue\SQueue.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue
@@ -1437,7 +1539,7 @@ build cmake_object_order_depends_target_04Array.Matrix: phony || CMakeFiles/04Ar
 
 build CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj: C_COMPILER__04Array.2eMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/Matrix.c || cmake_object_order_depends_target_04Array.Matrix
   DEP_FILE = CMakeFiles\04Array.Matrix.dir\04Array\Matrix.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\04Array.Matrix.dir
   OBJECT_FILE_DIR = CMakeFiles\04Array.Matrix.dir\04Array
@@ -1471,7 +1573,7 @@ build cmake_object_order_depends_target_05String.LString.BFMatch: phony || CMake
 
 build CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj: C_COMPILER__05String.2eLString.2eBFMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/LString/BFMatch.c || cmake_object_order_depends_target_05String.LString.BFMatch
   DEP_FILE = CMakeFiles\05String.LString.BFMatch.dir\05String\LString\BFMatch.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\05String.LString.BFMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.LString.BFMatch.dir\05String\LString
@@ -1505,7 +1607,7 @@ build cmake_object_order_depends_target_05String.SString.KMPMatch: phony || CMak
 
 build CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj: C_COMPILER__05String.2eSString.2eKMPMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/SString/KMPMatch.c || cmake_object_order_depends_target_05String.SString.KMPMatch
   DEP_FILE = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString\KMPMatch.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\05String.SString.KMPMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString
@@ -1539,7 +1641,7 @@ build cmake_object_order_depends_target_06Tree.App.InOrderByStack: phony || CMak
 
 build CMakeFiles/06Tree.App.InOrderByStack.dir/06Tree/App/InOrderByStack.c.obj: C_COMPILER__06Tree.2eApp.2eInOrderByStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/InOrderByStack.c || cmake_object_order_depends_target_06Tree.App.InOrderByStack
   DEP_FILE = CMakeFiles\06Tree.App.InOrderByStack.dir\06Tree\App\InOrderByStack.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\06Tree.App.InOrderByStack.dir
   OBJECT_FILE_DIR = CMakeFiles\06Tree.App.InOrderByStack.dir\06Tree\App
@@ -1573,7 +1675,7 @@ build cmake_object_order_depends_target_06Tree.BTree.BTree: phony || CMakeFiles/
 
 build CMakeFiles/06Tree.BTree.BTree.dir/06Tree/BTree/BTree.c.obj: C_COMPILER__06Tree.2eBTree.2eBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/BTree/BTree.c || cmake_object_order_depends_target_06Tree.BTree.BTree
   DEP_FILE = CMakeFiles\06Tree.BTree.BTree.dir\06Tree\BTree\BTree.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\06Tree.BTree.BTree.dir
   OBJECT_FILE_DIR = CMakeFiles\06Tree.BTree.BTree.dir\06Tree\BTree
@@ -1607,7 +1709,7 @@ build cmake_object_order_depends_target_07Search.Line.BSearch: phony || CMakeFil
 
 build CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj: C_COMPILER__07Search.2eLine.2eBSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/BSearch.c || cmake_object_order_depends_target_07Search.Line.BSearch
   DEP_FILE = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line\BSearch.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\07Search.Line.BSearch.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line
@@ -1641,7 +1743,7 @@ build cmake_object_order_depends_target_07Search.Line.SSearch: phony || CMakeFil
 
 build CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj: C_COMPILER__07Search.2eLine.2eSSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/SSearch.c || cmake_object_order_depends_target_07Search.Line.SSearch
   DEP_FILE = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line\SSearch.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\07Search.Line.SSearch.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line
@@ -1675,7 +1777,7 @@ build cmake_object_order_depends_target_07Search.Tree.BSTree: phony || CMakeFile
 
 build CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj: C_COMPILER__07Search.2eTree.2eBSTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Tree/BSTree.c || cmake_object_order_depends_target_07Search.Tree.BSTree
   DEP_FILE = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree\BSTree.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\07Search.Tree.BSTree.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree
@@ -1709,7 +1811,7 @@ build cmake_object_order_depends_target_08Sort.App.Job01: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job01.dir/08Sort/App/Job01.c.obj: C_COMPILER__08Sort.2eApp.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job01.c || cmake_object_order_depends_target_08Sort.App.Job01
   DEP_FILE = CMakeFiles\08Sort.App.Job01.dir\08Sort\App\Job01.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job01.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job01.dir\08Sort\App
@@ -1743,7 +1845,7 @@ build cmake_object_order_depends_target_08Sort.App.Job02: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job02.dir/08Sort/App/Job02.c.obj: C_COMPILER__08Sort.2eApp.2eJob02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job02.c || cmake_object_order_depends_target_08Sort.App.Job02
   DEP_FILE = CMakeFiles\08Sort.App.Job02.dir\08Sort\App\Job02.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job02.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job02.dir\08Sort\App
@@ -1777,7 +1879,7 @@ build cmake_object_order_depends_target_08Sort.App.Job03: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job03.dir/08Sort/App/Job03.c.obj: C_COMPILER__08Sort.2eApp.2eJob03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job03.c || cmake_object_order_depends_target_08Sort.App.Job03
   DEP_FILE = CMakeFiles\08Sort.App.Job03.dir\08Sort\App\Job03.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job03.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job03.dir\08Sort\App
@@ -1811,7 +1913,7 @@ build cmake_object_order_depends_target_08Sort.App.Job04: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job04.dir/08Sort/App/Job04.c.obj: C_COMPILER__08Sort.2eApp.2eJob04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job04.c || cmake_object_order_depends_target_08Sort.App.Job04
   DEP_FILE = CMakeFiles\08Sort.App.Job04.dir\08Sort\App\Job04.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job04.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job04.dir\08Sort\App
@@ -1845,7 +1947,7 @@ build cmake_object_order_depends_target_08Sort.App.Job05: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job05.dir/08Sort/App/Job05.c.obj: C_COMPILER__08Sort.2eApp.2eJob05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job05.c || cmake_object_order_depends_target_08Sort.App.Job05
   DEP_FILE = CMakeFiles\08Sort.App.Job05.dir\08Sort\App\Job05.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job05.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job05.dir\08Sort\App
@@ -1879,7 +1981,7 @@ build cmake_object_order_depends_target_08Sort.App.Job06: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job06.dir/08Sort/App/Job06.c.obj: C_COMPILER__08Sort.2eApp.2eJob06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job06.c || cmake_object_order_depends_target_08Sort.App.Job06
   DEP_FILE = CMakeFiles\08Sort.App.Job06.dir\08Sort\App\Job06.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job06.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job06.dir\08Sort\App
@@ -1913,7 +2015,7 @@ build cmake_object_order_depends_target_08Sort.App.Job07: phony || CMakeFiles/08
 
 build CMakeFiles/08Sort.App.Job07.dir/08Sort/App/Job07.c.obj: C_COMPILER__08Sort.2eApp.2eJob07_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job07.c || cmake_object_order_depends_target_08Sort.App.Job07
   DEP_FILE = CMakeFiles\08Sort.App.Job07.dir\08Sort\App\Job07.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.Job07.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job07.dir\08Sort\App
@@ -1947,7 +2049,7 @@ build cmake_object_order_depends_target_08Sort.App.SSSortByList: phony || CMakeF
 
 build CMakeFiles/08Sort.App.SSSortByList.dir/08Sort/App/SSSortByList.c.obj: C_COMPILER__08Sort.2eApp.2eSSSortByList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/SSSortByList.c || cmake_object_order_depends_target_08Sort.App.SSSortByList
   DEP_FILE = CMakeFiles\08Sort.App.SSSortByList.dir\08Sort\App\SSSortByList.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.App.SSSortByList.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.SSSortByList.dir\08Sort\App
@@ -1981,7 +2083,7 @@ build cmake_object_order_depends_target_08Sort.CSort.CSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj: C_COMPILER__08Sort.2eCSort.2eCSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/CSort/CSort.c || cmake_object_order_depends_target_08Sort.CSort.CSort
   DEP_FILE = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort\CSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.CSort.CSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort
@@ -2015,7 +2117,7 @@ build cmake_object_order_depends_target_08Sort.ESort.BSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj: C_COMPILER__08Sort.2eESort.2eBSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/BSort.c || cmake_object_order_depends_target_08Sort.ESort.BSort
   DEP_FILE = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort\BSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.ESort.BSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort
@@ -2049,7 +2151,7 @@ build cmake_object_order_depends_target_08Sort.ESort.QSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj: C_COMPILER__08Sort.2eESort.2eQSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/QSort.c || cmake_object_order_depends_target_08Sort.ESort.QSort
   DEP_FILE = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort\QSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.ESort.QSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort
@@ -2083,7 +2185,7 @@ build cmake_object_order_depends_target_08Sort.ISort.BISort: phony || CMakeFiles
 
 build CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj: C_COMPILER__08Sort.2eISort.2eBISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/BISort.c || cmake_object_order_depends_target_08Sort.ISort.BISort
   DEP_FILE = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort\BISort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.ISort.BISort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort
@@ -2117,7 +2219,7 @@ build cmake_object_order_depends_target_08Sort.ISort.SISort: phony || CMakeFiles
 
 build CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj: C_COMPILER__08Sort.2eISort.2eSISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SISort.c || cmake_object_order_depends_target_08Sort.ISort.SISort
   DEP_FILE = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort\SISort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SISort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort
@@ -2151,7 +2253,7 @@ build cmake_object_order_depends_target_08Sort.ISort.SSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj: C_COMPILER__08Sort.2eISort.2eSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SSort.c || cmake_object_order_depends_target_08Sort.ISort.SSort
   DEP_FILE = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort\SSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort
@@ -2185,7 +2287,7 @@ build cmake_object_order_depends_target_08Sort.MSort.MSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj: C_COMPILER__08Sort.2eMSort.2eMSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/MSort/MSort.c || cmake_object_order_depends_target_08Sort.MSort.MSort
   DEP_FILE = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort\MSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.MSort.MSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort
@@ -2219,7 +2321,7 @@ build cmake_object_order_depends_target_08Sort.RSort.RSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj: C_COMPILER__08Sort.2eRSort.2eRSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/RSort/RSort.c || cmake_object_order_depends_target_08Sort.RSort.RSort
   DEP_FILE = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort\RSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.RSort.RSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort
@@ -2253,7 +2355,7 @@ build cmake_object_order_depends_target_08Sort.SSort.HSort: phony || CMakeFiles/
 
 build CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj: C_COMPILER__08Sort.2eSSort.2eHSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/HSort.c || cmake_object_order_depends_target_08Sort.SSort.HSort
   DEP_FILE = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort\HSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.SSort.HSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort
@@ -2287,7 +2389,7 @@ build cmake_object_order_depends_target_08Sort.SSort.SSSort: phony || CMakeFiles
 
 build CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj: C_COMPILER__08Sort.2eSSort.2eSSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/SSSort.c || cmake_object_order_depends_target_08Sort.SSort.SSSort
   DEP_FILE = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort\SSSort.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\08Sort.SSort.SSSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort
@@ -2321,7 +2423,7 @@ build cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.Comp
 
 build CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj: C_COMPILER__cmake-build-debug.2eCMakeFiles.2e3.2e28.2e1.2eCompilerIdC.2eCMakeCCompilerId_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c || cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
   DEP_FILE = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC\CMakeCCompilerId.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
   OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC
@@ -2420,6 +2522,12 @@ build 01List.App.Day24: phony 01List.App.Day24.exe
 
 build 01List.App.Day25: phony 01List.App.Day25.exe
 
+build 01List.App.Day26: phony 01List.App.Day26.exe
+
+build 01List.App.Day27: phony 01List.App.Day27.exe
+
+build 01List.App.Day28: phony 01List.App.Day28.exe
+
 build 01List.LList.DLList: phony 01List.LList.DLList.exe
 
 build 01List.LList.SLList: phony 01List.LList.SLList.exe
@@ -2514,7 +2622,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony libDLList_lib.a libSLList_lib.a libDSList_lib.a libSSList_lib.a 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.App.Day06.exe 01List.App.Day07.exe 01List.App.Day08.exe 01List.App.Day09.exe 01List.App.Day10.exe 01List.App.Day11.exe 01List.App.Day12.exe 01List.App.Day13.exe 01List.App.Day14.exe 01List.App.Day15.exe 01List.App.Day16.exe 01List.App.Day17.exe 01List.App.Day18.exe 01List.App.Day19.exe 01List.App.Day20.exe 01List.App.Day21.exe 01List.App.Day22.exe 01List.App.Day23.exe 01List.App.Day24.exe 01List.App.Day25.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.InOrderByStack.exe 06Tree.BTree.BTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony libDLList_lib.a libSLList_lib.a libDSList_lib.a libSSList_lib.a 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.App.Day06.exe 01List.App.Day07.exe 01List.App.Day08.exe 01List.App.Day09.exe 01List.App.Day10.exe 01List.App.Day11.exe 01List.App.Day12.exe 01List.App.Day13.exe 01List.App.Day14.exe 01List.App.Day15.exe 01List.App.Day16.exe 01List.App.Day17.exe 01List.App.Day18.exe 01List.App.Day19.exe 01List.App.Day20.exe 01List.App.Day21.exe 01List.App.Day22.exe 01List.App.Day23.exe 01List.App.Day24.exe 01List.App.Day25.exe 01List.App.Day26.exe 01List.App.Day27.exe 01List.App.Day28.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.InOrderByStack.exe 06Tree.BTree.BTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

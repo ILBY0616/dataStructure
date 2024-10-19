@@ -1,9 +1,9 @@
 #include "SLList.h"
 
 // 合并两个循环单链表
-void judgeSymmetry(List* a, List* b)
+void judgeSymmetry(SLList* a, SLList* b)
 {
-    List tailA = *a, tailB = *b;
+    SLList tailA = *a, tailB = *b;
     while (tailA->next != *a)
     {
         tailA = tailA->next;
@@ -14,4 +14,9 @@ void judgeSymmetry(List* a, List* b)
     }
     tailA->next = *b;
     tailB->next = *a;
+}
+
+int main()
+{
+    return 0;
 }

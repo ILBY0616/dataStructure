@@ -9,7 +9,8 @@ string(REPLACE " " "." ProjectId ${ProjectId})
 project(${ProjectId} C)
 
 # 设置 C 标准
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # 查找所有 .c 和 .h 文件
 file(GLOB_RECURSE c_files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")

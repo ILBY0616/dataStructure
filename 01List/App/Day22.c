@@ -1,10 +1,10 @@
 #include "DLList.h"
 
-// 判断循环链表是否对称
-bool judgeSymmetry(List l)
+// 判断循环双链表是否对称
+bool judgeSymmetry(DLList l)
 {
-    List p = l->next, q = l->prior;
-    while (p != q && p->next != q)
+    DLList p = l->next, q = l->prior;
+    while (p != q)
     {
         if (p->data == q->data)
         {
@@ -17,4 +17,9 @@ bool judgeSymmetry(List l)
         }
     }
     return true;
+}
+
+int main()
+{
+    return 0;
 }

@@ -1,84 +1,26 @@
 #include "DLList.h"
 
-// 建立链表
-bool initiateList(List* list)
+bool initiateDLList(DLList* list)
 {
-    *list = (List)malloc(sizeof(Node));
+    if (*list != NULL)
+    {
+        return false;
+    }
+    *list = (DLList)malloc(sizeof(Node));
     if (*list == NULL)
     {
         return false;
     }
-    (*list)->data = 0;
     (*list)->prior = NULL;
     (*list)->next = NULL;
     return true;
 }
 
-// 插入数据
-bool insertData(List list, int location, type data)
-{
-    // 检查
-    if (list == NULL || location < 0 || location > list->data)
-    {
-        return false;
-    }
-    // 查找
-    List temp = list;
-    while (location > 0)
-    {
-        temp = temp->next;
-        location--;
-    }
-    // 插入
-    List node = malloc(sizeof(Node));
-    if (node != NULL)
-    {
-        node->data = data;
-        node->prior = temp;
-        node->next = temp->next;
-        if (temp->next != NULL)
-        {
-            temp->next->prior = node;
-        }
-        temp->next = node;
-        list->data++;
-    }
-    return true;
-}
-
-// 删除数据
-bool deleteData(List list, int location)
-{
-    // 检查
-    if (list == NULL || list->next == NULL || location < 0 || location > list->data - 1)
-    {
-        return false;
-    }
-    // 查找
-    List temp = list;
-    while (location > 0)
-    {
-        temp = temp->next;
-        location--;
-    }
-    // 删除
-    List node = temp->next;
-    temp->next = node->next;
-    if (node->next != NULL)
-    {
-        node->next->prior = temp;
-    }
-    free(node);
-    list->data--;
-    return true;
-}
-
-// 查找数据
-List selectData(List list, type data)
+DLList selectDLList(DLList list, type data)
 {
     if (list != NULL)
     {
-        List temp = list->next;
+        DLList temp = list->next;
         while (temp != NULL)
         {
             if (temp->data == data)
@@ -91,26 +33,111 @@ List selectData(List list, type data)
     return NULL;
 }
 
-// 获取长度
-int getLength(List list)
+bool insertDLList(DLList list, int location, type data)
 {
-    int length = 0;
+    // 检查
+    if (list == NULL || location < 0 || location > list->data)
+    {
+        return false;
+    }
+    // 查找
+    DLList temp = list;
+    while (location > 0)
+    {
+        temp = temp->next;
+        location--;
+    }
+    // 插入
+    DLList node = malloc(sizeof(Node));
+    if (node != NULL)
+    {
+        node->data = data;
+        node->prior = temp;
+        node->next = temp->next;
+        if (temp->next != NULL)
+        {
+            temp->next->prior = node;
+        }
+        temp->next = node;
+    }
+    return true;
+}
+
+bool deleteDLList(DLList list, int location)
+{
+    // 检查
+    if (list == NULL || list->next == NULL || location < 0 || location > list->data - 1)
+    {
+        return false;
+    }
+    // 查找
+    DLList temp = list;
+    while (location > 0)
+    {
+        temp = temp->next;
+        location--;
+    }
+    // 删除
+    DLList node = temp->next;
+    temp->next = node->next;
+    if (node->next != NULL)
+    {
+        node->next->prior = temp;
+    }
+    free(node);
+    return true;
+}
+
+bool printDLList(DLList list)
+{
+    if (list == NULL)
+    {
+        return false;
+    }
+    list = list->next;
     while (list != NULL)
     {
-        length++;
+        printf("%d ", list->data);
         list = list->next;
+    }
+    printf("\n");
+    return true;
+}
+
+int getLengthDLList(DLList list)
+{
+    if (list == NULL || list->next == NULL)
+    {
+        return 0;
+    }
+    DLList slow = list->next;
+    DLList fast = list->next;
+    int length = 1;
+    while (fast != NULL && fast->next != NULL)
+    {
+        slow = slow->next;
+        fast = fast->next->next;
+        length++;
+    }
+    if (fast != NULL)
+    {
+        length = length * 2 - 1;
+    }
+    else
+    {
+        length = length * 2;
     }
     return length;
 }
 
-// 销毁链表
-void destroyList(List* list)
+void destroyDLList(DLList* list)
 {
-    List temp = *list;
+    DLList temp = *list;
     while (temp != NULL)
     {
         *list = (*list)->next;
         free(temp);
         temp = *list;
     }
+    *list = NULL;
 }

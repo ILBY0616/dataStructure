@@ -1,21 +1,43 @@
 #include "SLList.h"
 
-// 删除链表中所有值为x的元素
-void deleteX(List* l,type x)
+// 删除带头结点单链表中所有值为x的元素
+bool deleteX(SLList* l,type x)
 {
-    List front = *l, rear = (*l)->next;
-    while (rear != NULL)
+    if (l == NULL)
     {
-        if (rear->data == x)
+        return false;
+    }
+    SLList f = *l, r = (*l)->next;
+    while (r != NULL)
+    {
+        if (r->data == x)
         {
-            front->next = rear->next;
-            free(rear);
-            rear = front->next;
+            f->next = r->next;
+            free(r);
+            r = f->next;
         }
         else
         {
-            front = rear;
-            rear = rear->next;
+            f = f->next;
+            r = r->next;
         }
     }
+    return true;
+}
+
+int main()
+{
+    SLList l;
+    initiateSLList(&l);
+    insertSLList(l, 0, 10);
+    insertSLList(l, 1, 20);
+    insertSLList(l, 2, 10);
+    insertSLList(l, 3, 30);
+    insertSLList(l, 4, 10);
+    insertSLList(l, 5, 40);
+    printSLList(l);
+    deleteX(&l, 10);
+    printSLList(l);
+    destroySLList(&l);
+    return 0;
 }

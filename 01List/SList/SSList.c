@@ -1,9 +1,9 @@
 #include "SSList.h"
 
 // 建立顺序表
-bool initiateNode(List* list)
+bool initiateSSList(SSList* list)
 {
-    *list = (List)malloc(sizeof(Node));
+    *list = (SSList)malloc(sizeof(Node));
     if (*list == NULL)
     {
         return false;
@@ -13,7 +13,7 @@ bool initiateNode(List* list)
 }
 
 // 查找数据
-int selectData(List list, type data)
+int selectSSList(SSList list, type data)
 {
     if (list != NULL)
     {
@@ -29,7 +29,7 @@ int selectData(List list, type data)
 }
 
 // 插入数据
-bool insertData(List list, int location, type data)
+bool insertSSList(SSList list, int location, type data)
 {
     // 检查
     if (list == NULL || list->length == size || location < 0 || location > list->length)
@@ -48,7 +48,7 @@ bool insertData(List list, int location, type data)
 }
 
 // 删除数据
-bool deleteData(List list, int location)
+bool deleteSSList(SSList list, int location)
 {
     // 检查
     if (list == NULL || list->length == 0 || location < 0 || location > list->length - 1)
@@ -65,8 +65,27 @@ bool deleteData(List list, int location)
     return true;
 }
 
-// 销毁顺序表
-void destroyNode(List* list)
+// 打印顺序表
+bool printSSList(SSList list)
 {
-    free(*list);
+    if (list == NULL)
+    {
+        return false;
+    }
+    for (int i = 0; i < list->length; i++)
+    {
+        printf("%d ", list->data[i]);
+    }
+    printf("\n");
+    return true;
+}
+
+// 销毁顺序表
+void destroySSList(SSList* list)
+{
+    if (*list != NULL)
+    {
+        free(*list);
+        *list = NULL;
+    }
 }

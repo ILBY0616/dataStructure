@@ -43,3 +43,8 @@ List getLocation(List* l, int data)
     }
     return NULL;
 }
+
+int main()
+{
+    return 0;
+}

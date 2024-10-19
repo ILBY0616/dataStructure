@@ -1,7 +1,7 @@
 #include "SSList.h"
 
 // 删除顺序表指定范围元素
-void deleteAToB01(List l,type a,type b)
+void deleteAToB01(SSList l,type a,type b)
 {
     int i = 0, j = 0;
     while (j < l->length)
@@ -20,7 +20,7 @@ void deleteAToB01(List l,type a,type b)
 }
 
 // 删除顺序表指定范围元素
-void deleteAToB02(List l,type a,type b)
+void deleteAToB02(SSList l,type a,type b)
 {
     int i = 0, j = 0;
     while (j < l->length)
@@ -32,4 +32,26 @@ void deleteAToB02(List l,type a,type b)
         j++;
     }
     l->length = i;
+}
+
+int main()
+{
+    SSList l = NULL;
+    initiateSSList(&l);
+    for (int i = 0; i < 20; i++)
+    {
+        insertSSList(l, l->length, i);
+    }
+    printSSList(l);
+    deleteAToB01(l, 5, 10);
+    printSSList(l);
+    for (int i = 0; i < 20; i++)
+    {
+        insertSSList(l, l->length, i);
+    }
+    printSSList(l);
+    deleteAToB02(l, 10, 15);
+    printSSList(l);
+    destroySSList(&l);
+    return 0;
 }

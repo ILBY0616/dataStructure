@@ -1,19 +1,24 @@
 #include "SLList.h"
 
-// 合并两个循环单链表
-void judgeSymmetry(SLList* a, SLList* b)
+// 合并两个带头结点循环单链表
+bool mergeCycleSLList(SLList* a, SLList* b)
 {
-    SLList tailA = *a, tailB = *b;
-    while (tailA->next != *a)
+    if (*a == NULL || *b == NULL)
     {
-        tailA = tailA->next;
+        return false;
     }
-    while (tailB->next != *b)
+    SLList p = *a, q = *b;
+    while (p->next != *a)
     {
-        tailB = tailB->next;
+        p = p->next;
     }
-    tailA->next = *b;
-    tailB->next = *a;
+    while (q->next != *b)
+    {
+        q = q->next;
+    }
+    p->next = *b;
+    q->next = *a;
+    return true;
 }
 
 int main()

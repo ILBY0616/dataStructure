@@ -21,10 +21,6 @@ bool initiateSLList(SLList* list);
 bool buildSLListByHead(type data[], int length, SLList* list);
 // 尾插法建立非循环单链表
 bool buildSLListByTail(type data[], int length, SLList* list);
-// 头插法建立循环单链表
-bool buildCycleSLListByHead(type data[], int length, SLList* list);
-// 尾插法建立循环单链表
-bool buildCycleSLListByTail(type data[], int length, SLList* list);
 // 查找非循环单链表数据
 SLList selectSLList(SLList list, type data);
 // 插入非循环单链表数据

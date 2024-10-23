@@ -28,7 +28,7 @@ bool reverseArray02(SSList l, int low, int high)
         type temp = l->data[low];
         l->data[low] = l->data[high];
         l->data[high] = temp;
-        reverseArray02(l->data, low + 1, high - 1);
+        reverseArray02(l, low + 1, high - 1);
     }
     return true;
 }

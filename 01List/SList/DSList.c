@@ -1,6 +1,5 @@
 #include "DSList.h"
 
-// 建立顺序表
 bool initiateDSList(DSList* list)
 {
     *list = (DSList)malloc(sizeof(Node));
@@ -18,7 +17,6 @@ bool initiateDSList(DSList* list)
     return true;
 }
 
-// 查找数据
 int selectDSList(DSList list, type data)
 {
     if (list != NULL)
@@ -34,7 +32,6 @@ int selectDSList(DSList list, type data)
     return -1;
 }
 
-// 插入数据
 bool insertDSList(DSList list, int location, type data)
 {
     // 检查位置
@@ -63,7 +60,6 @@ bool insertDSList(DSList list, int location, type data)
     return true;
 }
 
-// 删除数据
 bool deleteDSList(DSList list, int location)
 {
     // 检查
@@ -81,7 +77,6 @@ bool deleteDSList(DSList list, int location)
     return true;
 }
 
-// 打印顺序表
 bool printDSList(DSList list)
 {
     if (list == NULL)
@@ -96,7 +91,6 @@ bool printDSList(DSList list)
     return true;
 }
 
-// 销毁顺序表
 void destroyDSList(DSList* list)
 {
     if (*list != NULL)
@@ -106,3 +100,22 @@ void destroyDSList(DSList* list)
         *list = NULL;
     }
 }
+
+// int main()
+// {
+//     DSList list;
+//     initiateDSList(&list);
+//     for (int i = 0; i < 10; i++)
+//     {
+//         insertDSList(list, i, i + 1);
+//     }
+//     printDSList(list);
+//     int target = 5;
+//     int position = selectDSList(list, target);
+//     printf("%d in %d\n", target, position);
+//     deleteDSList(list, 3);
+//     insertDSList(list, 2, 99);
+//     printDSList(list);
+//     destroyDSList(&list);
+//     return 0;
+// }

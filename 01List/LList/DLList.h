@@ -12,8 +12,7 @@
 typedef struct Node
 {
     type data;
-    struct Node* prior;
-    struct Node* next;
+    struct Node *prior, *next;
 } Node, *DLList;
 
 // 初始化双链表头结点
@@ -22,10 +21,6 @@ bool initiateDLList(DLList* list);
 bool buildDLListByHead(type data[], int length, DLList* list);
 // 尾插法建立非循环双链表
 bool buildDLListByTail(type data[], int length, DLList* list);
-// 头插法建立循环双链表
-bool buildCycleDLListByHead(type data[], int length, DLList* list);
-// 尾插法建立循环双链表
-bool buildCycleDLListByTail(type data[], int length, DLList* list);
 // 查找非循环双链表数据
 DLList selectDLList(DLList list, type data);
 // 插入非循环双链表数据

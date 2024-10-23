@@ -1,6 +1,5 @@
 #include "SSList.h"
 
-// 建立顺序表
 bool initiateSSList(SSList* list)
 {
     *list = (SSList)malloc(sizeof(Node));
@@ -12,7 +11,6 @@ bool initiateSSList(SSList* list)
     return true;
 }
 
-// 查找数据
 int selectSSList(SSList list, type data)
 {
     if (list != NULL)
@@ -28,7 +26,6 @@ int selectSSList(SSList list, type data)
     return -1;
 }
 
-// 插入数据
 bool insertSSList(SSList list, int location, type data)
 {
     // 检查
@@ -47,7 +44,6 @@ bool insertSSList(SSList list, int location, type data)
     return true;
 }
 
-// 删除数据
 bool deleteSSList(SSList list, int location)
 {
     // 检查
@@ -65,7 +61,6 @@ bool deleteSSList(SSList list, int location)
     return true;
 }
 
-// 打印顺序表
 bool printSSList(SSList list)
 {
     if (list == NULL)
@@ -80,7 +75,6 @@ bool printSSList(SSList list)
     return true;
 }
 
-// 销毁顺序表
 void destroySSList(SSList* list)
 {
     if (*list != NULL)
@@ -89,3 +83,22 @@ void destroySSList(SSList* list)
         *list = NULL;
     }
 }
+
+// int main()
+// {
+//     SSList list;
+//     initiateSSList(&list);
+//     for (int i = 0; i < 10; i++)
+//     {
+//         insertSSList(list, i, i + 1);
+//     }
+//     printSSList(list);
+//     int target = 5;
+//     int position = selectSSList(list, target);
+//     printf("%d in %d\n", target, position);
+//     deleteSSList(list, 3);
+//     insertSSList(list, 2, 99);
+//     printSSList(list);
+//     destroySSList(&list);
+//     return 0;
+// }

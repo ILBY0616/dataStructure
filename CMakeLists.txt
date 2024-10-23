@@ -10,7 +10,6 @@ project(${ProjectId} C)
 
 # 设置 C 标准
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 # 查找所有 .c 和 .h 文件
 file(GLOB_RECURSE c_files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
@@ -59,6 +58,9 @@ foreach (file ${c_files})
 
     # 为当前 .c 文件创建可执行文件
     add_executable(${execName} ${file})
+
+    # 设置每个可执行文件为控制台应用程序
+    set_target_properties(${execName} PROPERTIES LINK_FLAGS "-mconsole")
 
     # 遍历所有头文件，检查当前文件是否包含某个头文件，如果包含则链接对应的库
     foreach (header ${h_files})

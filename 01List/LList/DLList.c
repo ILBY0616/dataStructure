@@ -16,6 +16,62 @@ bool initiateDLList(DLList* list)
     return true;
 }
 
+bool buildDLListByHead(type data[], int length, DLList* list)
+{
+    if (*list != NULL)
+    {
+        return false;
+    }
+    initiateDLList(list);
+    for (int i = 0; i < length; i++)
+    {
+        DLList node = malloc(sizeof(Node));
+        if (node != NULL)
+        {
+            node->data = data[i];
+            node->next = (*list)->next;
+            node->prior = *list;
+            if ((*list)->next != NULL)
+            {
+                (*list)->next->prior = node;
+            }
+            (*list)->next = node;
+        }
+        else
+        {
+            i--;
+        }
+    }
+    return true;
+}
+
+bool buildDLListByTail(type data[], int length, DLList* list)
+{
+    if (*list != NULL)
+    {
+        return false;
+    }
+    initiateDLList(list);
+    DLList tail = *list;
+    for (int i = 0; i < length; i++)
+    {
+        DLList node = malloc(sizeof(Node));
+        if (node != NULL)
+        {
+            node->data = data[i];
+            node->next = NULL;
+            node->prior = tail;
+            tail->next = node;
+            tail = node;
+        }
+        else
+        {
+            i--;
+        }
+    }
+    return true;
+}
+
 DLList selectDLList(DLList list, type data)
 {
     if (list != NULL)
@@ -141,3 +197,24 @@ void destroyDLList(DLList* list)
     }
     *list = NULL;
 }
+
+// int main()
+// {
+//     DLList list = NULL;
+//     type data[5] = {1, 2, 3, 4, 5};
+//     buildDLListByHead(data, 5, &list);
+//     printDLList(list);
+//     destroyDLList(&list);
+//     buildDLListByTail(data, 5, &list);
+//     printDLList(list);
+//     int target = 3;
+//     DLList position = selectDLList(list, target);
+//     printf("%d is %d\n", position->data, target);
+//     insertDLList(list, 2, 99);
+//     printDLList(list);
+//     deleteDLList(list, 4);
+//     printDLList(list);
+//     printf("%d\n", getLengthDLList(list));
+//     destroyDLList(&list);
+//     return 0;
+// }

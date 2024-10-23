@@ -65,64 +65,6 @@ bool buildSLListByTail(type data[], int length, SLList* list)
     return true;
 }
 
-bool buildCycleSLListByHead(type data[], int length, SLList* list)
-{
-    if (*list != NULL)
-    {
-        return false;
-    }
-    initiateSLList(list);
-    for (int i = 0; i < length; i++)
-    {
-        SLList node = malloc(sizeof(Node));
-        if (node != NULL)
-        {
-            node->data = data[i];
-            node->next = (*list)->next;
-            (*list)->next = node;
-            if (i == 0)
-            {
-                node->next = *list;
-            }
-        }
-        else
-        {
-            i--;
-        }
-    }
-    return true;
-}
-
-bool buildCycleSLListByTail(type data[], int length, SLList* list)
-{
-    if (*list != NULL)
-    {
-        return false;
-    }
-    initiateSLList(list);
-    SLList tail = *list;
-    for (int i = 0; i < length; i++)
-    {
-        SLList node = malloc(sizeof(Node));
-        if (node != NULL)
-        {
-            node->data = data[i];
-            node->next = NULL;
-            tail->next = node;
-            tail = tail->next;
-            if (i == length - 1)
-            {
-                node->next = *list;
-            }
-        }
-        else
-        {
-            i--;
-        }
-    }
-    return true;
-}
-
 SLList selectSLList(SLList list, type data)
 {
     if (list != NULL)
@@ -239,3 +181,24 @@ void destroySLList(SLList* list)
     }
     *list = NULL;
 }
+
+// int main()
+// {
+//     SLList list = NULL;
+//     type data[5] = {1, 2, 3, 4, 5};
+//     buildSLListByHead(data, 5, &list);
+//     printSLList(list);
+//     destroySLList(&list);
+//     buildSLListByTail(data, 5, &list);
+//     printSLList(list);
+//     int target = 3;
+//     SLList position = selectSLList(list, target);
+//     printf("%d is %d\n", position->data, target);
+//     insertSLList(list, 2, 99);
+//     printSLList(list);
+//     deleteSLList(list, 4);
+//     printSLList(list);
+//     printf("%d\n", getLengthSLList(list));
+//     destroySLList(&list);
+//     return 0;
+// }

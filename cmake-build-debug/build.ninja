@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_DLList_lib: phony || CMakeFiles/DLList_l
 build CMakeFiles/DLList_lib.dir/01List/LList/DLList.c.obj: C_COMPILER__DLList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/DLList.c || cmake_object_order_depends_target_DLList_lib
   DEP_FILE = CMakeFiles\DLList_lib.dir\01List\LList\DLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\DLList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\DLList_lib.dir\01List\LList
 
@@ -84,7 +84,7 @@ build cmake_object_order_depends_target_SLList_lib: phony || CMakeFiles/SLList_l
 build CMakeFiles/SLList_lib.dir/01List/LList/SLList.c.obj: C_COMPILER__SLList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/SLList.c || cmake_object_order_depends_target_SLList_lib
   DEP_FILE = CMakeFiles\SLList_lib.dir\01List\LList\SLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\SLList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\SLList_lib.dir\01List\LList
 
@@ -116,7 +116,7 @@ build cmake_object_order_depends_target_DSList_lib: phony || CMakeFiles/DSList_l
 build CMakeFiles/DSList_lib.dir/01List/SList/DSList.c.obj: C_COMPILER__DSList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/DSList.c || cmake_object_order_depends_target_DSList_lib
   DEP_FILE = CMakeFiles\DSList_lib.dir\01List\SList\DSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\DSList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\DSList_lib.dir\01List\SList
 
@@ -148,7 +148,7 @@ build cmake_object_order_depends_target_SSList_lib: phony || CMakeFiles/SSList_l
 build CMakeFiles/SSList_lib.dir/01List/SList/SSList.c.obj: C_COMPILER__SSList_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/SSList.c || cmake_object_order_depends_target_SSList_lib
   DEP_FILE = CMakeFiles\SSList_lib.dir\01List\SList\SSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\SSList_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\SSList_lib.dir\01List\SList
 
@@ -169,6 +169,134 @@ build libSSList_lib.a: C_STATIC_LIBRARY_LINKER__SSList_lib_Debug CMakeFiles/SSLi
   TARGET_PDB = SSList_lib.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target LStack_lib
+
+
+#############################################
+# Order-only phony target for LStack_lib
+
+build cmake_object_order_depends_target_LStack_lib: phony || CMakeFiles/LStack_lib.dir
+
+build CMakeFiles/LStack_lib.dir/02Stack/LStack/LStack.c.obj: C_COMPILER__LStack_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack/LStack.c || cmake_object_order_depends_target_LStack_lib
+  DEP_FILE = CMakeFiles\LStack_lib.dir\02Stack\LStack\LStack.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\LStack_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\LStack_lib.dir\02Stack\LStack
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target LStack_lib
+
+
+#############################################
+# Link the static library libLStack_lib.a
+
+build libLStack_lib.a: C_STATIC_LIBRARY_LINKER__LStack_lib_Debug CMakeFiles/LStack_lib.dir/02Stack/LStack/LStack.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\LStack_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libLStack_lib.a
+  TARGET_PDB = LStack_lib.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SStack_lib
+
+
+#############################################
+# Order-only phony target for SStack_lib
+
+build cmake_object_order_depends_target_SStack_lib: phony || CMakeFiles/SStack_lib.dir
+
+build CMakeFiles/SStack_lib.dir/02Stack/SStack/SStack.c.obj: C_COMPILER__SStack_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack/SStack.c || cmake_object_order_depends_target_SStack_lib
+  DEP_FILE = CMakeFiles\SStack_lib.dir\02Stack\SStack\SStack.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\SStack_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\SStack_lib.dir\02Stack\SStack
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SStack_lib
+
+
+#############################################
+# Link the static library libSStack_lib.a
+
+build libSStack_lib.a: C_STATIC_LIBRARY_LINKER__SStack_lib_Debug CMakeFiles/SStack_lib.dir/02Stack/SStack/SStack.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\SStack_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libSStack_lib.a
+  TARGET_PDB = SStack_lib.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target LBTree_lib
+
+
+#############################################
+# Order-only phony target for LBTree_lib
+
+build cmake_object_order_depends_target_LBTree_lib: phony || CMakeFiles/LBTree_lib.dir
+
+build CMakeFiles/LBTree_lib.dir/06Tree/LTree/LBTree.c.obj: C_COMPILER__LBTree_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/LTree/LBTree.c || cmake_object_order_depends_target_LBTree_lib
+  DEP_FILE = CMakeFiles\LBTree_lib.dir\06Tree\LTree\LBTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\LBTree_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\LBTree_lib.dir\06Tree\LTree
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target LBTree_lib
+
+
+#############################################
+# Link the static library libLBTree_lib.a
+
+build libLBTree_lib.a: C_STATIC_LIBRARY_LINKER__LBTree_lib_Debug CMakeFiles/LBTree_lib.dir/06Tree/LTree/LBTree.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\LBTree_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libLBTree_lib.a
+  TARGET_PDB = LBTree_lib.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SBTree_lib
+
+
+#############################################
+# Order-only phony target for SBTree_lib
+
+build cmake_object_order_depends_target_SBTree_lib: phony || CMakeFiles/SBTree_lib.dir
+
+build CMakeFiles/SBTree_lib.dir/06Tree/STree/SBTree.c.obj: C_COMPILER__SBTree_lib_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/STree/SBTree.c || cmake_object_order_depends_target_SBTree_lib
+  DEP_FILE = CMakeFiles\SBTree_lib.dir\06Tree\STree\SBTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\SBTree_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\SBTree_lib.dir\06Tree\STree
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SBTree_lib
+
+
+#############################################
+# Link the static library libSBTree_lib.a
+
+build libSBTree_lib.a: C_STATIC_LIBRARY_LINKER__SBTree_lib_Debug CMakeFiles/SBTree_lib.dir/06Tree/STree/SBTree.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\SBTree_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libSBTree_lib.a
+  TARGET_PDB = SBTree_lib.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 01List.App.Day01
 
 
@@ -180,7 +308,7 @@ build cmake_object_order_depends_target_01List.App.Day01: phony || cmake_object_
 build CMakeFiles/01List.App.Day01.dir/01List/App/Day01.c.obj: C_COMPILER__01List.2eApp.2eDay01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day01.c || cmake_object_order_depends_target_01List.App.Day01
   DEP_FILE = CMakeFiles\01List.App.Day01.dir\01List\App\Day01.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day01.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day01.dir\01List\App
 
@@ -194,6 +322,7 @@ build CMakeFiles/01List.App.Day01.dir/01List/App/Day01.c.obj: C_COMPILER__01List
 
 build 01List.App.Day01.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay01_Debug CMakeFiles/01List.App.Day01.dir/01List/App/Day01.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day01.dir
   POST_BUILD = cd .
@@ -214,7 +343,7 @@ build cmake_object_order_depends_target_01List.App.Day02: phony || cmake_object_
 build CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj: C_COMPILER__01List.2eApp.2eDay02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day02.c || cmake_object_order_depends_target_01List.App.Day02
   DEP_FILE = CMakeFiles\01List.App.Day02.dir\01List\App\Day02.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day02.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day02.dir\01List\App
 
@@ -228,6 +357,7 @@ build CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj: C_COMPILER__01List
 
 build 01List.App.Day02.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay02_Debug CMakeFiles/01List.App.Day02.dir/01List/App/Day02.c.obj | libDSList_lib.a || libDSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libDSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day02.dir
   POST_BUILD = cd .
@@ -248,7 +378,7 @@ build cmake_object_order_depends_target_01List.App.Day03: phony || cmake_object_
 build CMakeFiles/01List.App.Day03.dir/01List/App/Day03.c.obj: C_COMPILER__01List.2eApp.2eDay03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day03.c || cmake_object_order_depends_target_01List.App.Day03
   DEP_FILE = CMakeFiles\01List.App.Day03.dir\01List\App\Day03.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day03.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day03.dir\01List\App
 
@@ -262,6 +392,7 @@ build CMakeFiles/01List.App.Day03.dir/01List/App/Day03.c.obj: C_COMPILER__01List
 
 build 01List.App.Day03.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay03_Debug CMakeFiles/01List.App.Day03.dir/01List/App/Day03.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day03.dir
   POST_BUILD = cd .
@@ -282,7 +413,7 @@ build cmake_object_order_depends_target_01List.App.Day04: phony || cmake_object_
 build CMakeFiles/01List.App.Day04.dir/01List/App/Day04.c.obj: C_COMPILER__01List.2eApp.2eDay04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day04.c || cmake_object_order_depends_target_01List.App.Day04
   DEP_FILE = CMakeFiles\01List.App.Day04.dir\01List\App\Day04.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day04.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day04.dir\01List\App
 
@@ -296,6 +427,7 @@ build CMakeFiles/01List.App.Day04.dir/01List/App/Day04.c.obj: C_COMPILER__01List
 
 build 01List.App.Day04.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay04_Debug CMakeFiles/01List.App.Day04.dir/01List/App/Day04.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day04.dir
   POST_BUILD = cd .
@@ -316,7 +448,7 @@ build cmake_object_order_depends_target_01List.App.Day05: phony || cmake_object_
 build CMakeFiles/01List.App.Day05.dir/01List/App/Day05.c.obj: C_COMPILER__01List.2eApp.2eDay05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day05.c || cmake_object_order_depends_target_01List.App.Day05
   DEP_FILE = CMakeFiles\01List.App.Day05.dir\01List\App\Day05.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day05.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day05.dir\01List\App
 
@@ -330,6 +462,7 @@ build CMakeFiles/01List.App.Day05.dir/01List/App/Day05.c.obj: C_COMPILER__01List
 
 build 01List.App.Day05.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay05_Debug CMakeFiles/01List.App.Day05.dir/01List/App/Day05.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day05.dir
   POST_BUILD = cd .
@@ -350,7 +483,7 @@ build cmake_object_order_depends_target_01List.App.Day06: phony || cmake_object_
 build CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj: C_COMPILER__01List.2eApp.2eDay06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day06.c || cmake_object_order_depends_target_01List.App.Day06
   DEP_FILE = CMakeFiles\01List.App.Day06.dir\01List\App\Day06.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day06.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day06.dir\01List\App
 
@@ -364,6 +497,7 @@ build CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj: C_COMPILER__01List
 
 build 01List.App.Day06.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay06_Debug CMakeFiles/01List.App.Day06.dir/01List/App/Day06.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day06.dir
   POST_BUILD = cd .
@@ -384,7 +518,7 @@ build cmake_object_order_depends_target_01List.App.Day07: phony || cmake_object_
 build CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj: C_COMPILER__01List.2eApp.2eDay07_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day07.c || cmake_object_order_depends_target_01List.App.Day07
   DEP_FILE = CMakeFiles\01List.App.Day07.dir\01List\App\Day07.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day07.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day07.dir\01List\App
 
@@ -398,6 +532,7 @@ build CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj: C_COMPILER__01List
 
 build 01List.App.Day07.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay07_Debug CMakeFiles/01List.App.Day07.dir/01List/App/Day07.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day07.dir
   POST_BUILD = cd .
@@ -418,7 +553,7 @@ build cmake_object_order_depends_target_01List.App.Day08: phony || cmake_object_
 build CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj: C_COMPILER__01List.2eApp.2eDay08_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day08.c || cmake_object_order_depends_target_01List.App.Day08
   DEP_FILE = CMakeFiles\01List.App.Day08.dir\01List\App\Day08.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day08.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day08.dir\01List\App
 
@@ -432,6 +567,7 @@ build CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj: C_COMPILER__01List
 
 build 01List.App.Day08.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay08_Debug CMakeFiles/01List.App.Day08.dir/01List/App/Day08.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day08.dir
   POST_BUILD = cd .
@@ -452,7 +588,7 @@ build cmake_object_order_depends_target_01List.App.Day09: phony || cmake_object_
 build CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj: C_COMPILER__01List.2eApp.2eDay09_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day09.c || cmake_object_order_depends_target_01List.App.Day09
   DEP_FILE = CMakeFiles\01List.App.Day09.dir\01List\App\Day09.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day09.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day09.dir\01List\App
 
@@ -466,6 +602,7 @@ build CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj: C_COMPILER__01List
 
 build 01List.App.Day09.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay09_Debug CMakeFiles/01List.App.Day09.dir/01List/App/Day09.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day09.dir
   POST_BUILD = cd .
@@ -486,7 +623,7 @@ build cmake_object_order_depends_target_01List.App.Day10: phony || cmake_object_
 build CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj: C_COMPILER__01List.2eApp.2eDay10_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day10.c || cmake_object_order_depends_target_01List.App.Day10
   DEP_FILE = CMakeFiles\01List.App.Day10.dir\01List\App\Day10.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day10.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day10.dir\01List\App
 
@@ -500,6 +637,7 @@ build CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj: C_COMPILER__01List
 
 build 01List.App.Day10.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay10_Debug CMakeFiles/01List.App.Day10.dir/01List/App/Day10.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day10.dir
   POST_BUILD = cd .
@@ -520,7 +658,7 @@ build cmake_object_order_depends_target_01List.App.Day11: phony || cmake_object_
 build CMakeFiles/01List.App.Day11.dir/01List/App/Day11.c.obj: C_COMPILER__01List.2eApp.2eDay11_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day11.c || cmake_object_order_depends_target_01List.App.Day11
   DEP_FILE = CMakeFiles\01List.App.Day11.dir\01List\App\Day11.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day11.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day11.dir\01List\App
 
@@ -534,6 +672,7 @@ build CMakeFiles/01List.App.Day11.dir/01List/App/Day11.c.obj: C_COMPILER__01List
 
 build 01List.App.Day11.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay11_Debug CMakeFiles/01List.App.Day11.dir/01List/App/Day11.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day11.dir
   POST_BUILD = cd .
@@ -554,7 +693,7 @@ build cmake_object_order_depends_target_01List.App.Day12: phony || cmake_object_
 build CMakeFiles/01List.App.Day12.dir/01List/App/Day12.c.obj: C_COMPILER__01List.2eApp.2eDay12_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day12.c || cmake_object_order_depends_target_01List.App.Day12
   DEP_FILE = CMakeFiles\01List.App.Day12.dir\01List\App\Day12.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day12.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day12.dir\01List\App
 
@@ -568,6 +707,7 @@ build CMakeFiles/01List.App.Day12.dir/01List/App/Day12.c.obj: C_COMPILER__01List
 
 build 01List.App.Day12.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay12_Debug CMakeFiles/01List.App.Day12.dir/01List/App/Day12.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day12.dir
   POST_BUILD = cd .
@@ -588,7 +728,7 @@ build cmake_object_order_depends_target_01List.App.Day13: phony || cmake_object_
 build CMakeFiles/01List.App.Day13.dir/01List/App/Day13.c.obj: C_COMPILER__01List.2eApp.2eDay13_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day13.c || cmake_object_order_depends_target_01List.App.Day13
   DEP_FILE = CMakeFiles\01List.App.Day13.dir\01List\App\Day13.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day13.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day13.dir\01List\App
 
@@ -602,6 +742,7 @@ build CMakeFiles/01List.App.Day13.dir/01List/App/Day13.c.obj: C_COMPILER__01List
 
 build 01List.App.Day13.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay13_Debug CMakeFiles/01List.App.Day13.dir/01List/App/Day13.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day13.dir
   POST_BUILD = cd .
@@ -622,7 +763,7 @@ build cmake_object_order_depends_target_01List.App.Day14: phony || cmake_object_
 build CMakeFiles/01List.App.Day14.dir/01List/App/Day14.c.obj: C_COMPILER__01List.2eApp.2eDay14_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day14.c || cmake_object_order_depends_target_01List.App.Day14
   DEP_FILE = CMakeFiles\01List.App.Day14.dir\01List\App\Day14.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day14.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day14.dir\01List\App
 
@@ -636,6 +777,7 @@ build CMakeFiles/01List.App.Day14.dir/01List/App/Day14.c.obj: C_COMPILER__01List
 
 build 01List.App.Day14.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay14_Debug CMakeFiles/01List.App.Day14.dir/01List/App/Day14.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day14.dir
   POST_BUILD = cd .
@@ -656,7 +798,7 @@ build cmake_object_order_depends_target_01List.App.Day15: phony || cmake_object_
 build CMakeFiles/01List.App.Day15.dir/01List/App/Day15.c.obj: C_COMPILER__01List.2eApp.2eDay15_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day15.c || cmake_object_order_depends_target_01List.App.Day15
   DEP_FILE = CMakeFiles\01List.App.Day15.dir\01List\App\Day15.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day15.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day15.dir\01List\App
 
@@ -670,6 +812,7 @@ build CMakeFiles/01List.App.Day15.dir/01List/App/Day15.c.obj: C_COMPILER__01List
 
 build 01List.App.Day15.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay15_Debug CMakeFiles/01List.App.Day15.dir/01List/App/Day15.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day15.dir
   POST_BUILD = cd .
@@ -690,7 +833,7 @@ build cmake_object_order_depends_target_01List.App.Day16: phony || cmake_object_
 build CMakeFiles/01List.App.Day16.dir/01List/App/Day16.c.obj: C_COMPILER__01List.2eApp.2eDay16_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day16.c || cmake_object_order_depends_target_01List.App.Day16
   DEP_FILE = CMakeFiles\01List.App.Day16.dir\01List\App\Day16.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day16.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day16.dir\01List\App
 
@@ -704,6 +847,7 @@ build CMakeFiles/01List.App.Day16.dir/01List/App/Day16.c.obj: C_COMPILER__01List
 
 build 01List.App.Day16.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay16_Debug CMakeFiles/01List.App.Day16.dir/01List/App/Day16.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day16.dir
   POST_BUILD = cd .
@@ -724,7 +868,7 @@ build cmake_object_order_depends_target_01List.App.Day17: phony || cmake_object_
 build CMakeFiles/01List.App.Day17.dir/01List/App/Day17.c.obj: C_COMPILER__01List.2eApp.2eDay17_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day17.c || cmake_object_order_depends_target_01List.App.Day17
   DEP_FILE = CMakeFiles\01List.App.Day17.dir\01List\App\Day17.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day17.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day17.dir\01List\App
 
@@ -738,6 +882,7 @@ build CMakeFiles/01List.App.Day17.dir/01List/App/Day17.c.obj: C_COMPILER__01List
 
 build 01List.App.Day17.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay17_Debug CMakeFiles/01List.App.Day17.dir/01List/App/Day17.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day17.dir
   POST_BUILD = cd .
@@ -758,7 +903,7 @@ build cmake_object_order_depends_target_01List.App.Day18: phony || cmake_object_
 build CMakeFiles/01List.App.Day18.dir/01List/App/Day18.c.obj: C_COMPILER__01List.2eApp.2eDay18_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day18.c || cmake_object_order_depends_target_01List.App.Day18
   DEP_FILE = CMakeFiles\01List.App.Day18.dir\01List\App\Day18.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day18.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day18.dir\01List\App
 
@@ -772,6 +917,7 @@ build CMakeFiles/01List.App.Day18.dir/01List/App/Day18.c.obj: C_COMPILER__01List
 
 build 01List.App.Day18.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay18_Debug CMakeFiles/01List.App.Day18.dir/01List/App/Day18.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day18.dir
   POST_BUILD = cd .
@@ -792,7 +938,7 @@ build cmake_object_order_depends_target_01List.App.Day19: phony || cmake_object_
 build CMakeFiles/01List.App.Day19.dir/01List/App/Day19.c.obj: C_COMPILER__01List.2eApp.2eDay19_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day19.c || cmake_object_order_depends_target_01List.App.Day19
   DEP_FILE = CMakeFiles\01List.App.Day19.dir\01List\App\Day19.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day19.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day19.dir\01List\App
 
@@ -806,6 +952,7 @@ build CMakeFiles/01List.App.Day19.dir/01List/App/Day19.c.obj: C_COMPILER__01List
 
 build 01List.App.Day19.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay19_Debug CMakeFiles/01List.App.Day19.dir/01List/App/Day19.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day19.dir
   POST_BUILD = cd .
@@ -826,7 +973,7 @@ build cmake_object_order_depends_target_01List.App.Day20: phony || cmake_object_
 build CMakeFiles/01List.App.Day20.dir/01List/App/Day20.c.obj: C_COMPILER__01List.2eApp.2eDay20_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day20.c || cmake_object_order_depends_target_01List.App.Day20
   DEP_FILE = CMakeFiles\01List.App.Day20.dir\01List\App\Day20.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day20.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day20.dir\01List\App
 
@@ -840,6 +987,7 @@ build CMakeFiles/01List.App.Day20.dir/01List/App/Day20.c.obj: C_COMPILER__01List
 
 build 01List.App.Day20.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay20_Debug CMakeFiles/01List.App.Day20.dir/01List/App/Day20.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day20.dir
   POST_BUILD = cd .
@@ -860,7 +1008,7 @@ build cmake_object_order_depends_target_01List.App.Day21: phony || cmake_object_
 build CMakeFiles/01List.App.Day21.dir/01List/App/Day21.c.obj: C_COMPILER__01List.2eApp.2eDay21_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day21.c || cmake_object_order_depends_target_01List.App.Day21
   DEP_FILE = CMakeFiles\01List.App.Day21.dir\01List\App\Day21.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day21.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day21.dir\01List\App
 
@@ -874,6 +1022,7 @@ build CMakeFiles/01List.App.Day21.dir/01List/App/Day21.c.obj: C_COMPILER__01List
 
 build 01List.App.Day21.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay21_Debug CMakeFiles/01List.App.Day21.dir/01List/App/Day21.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day21.dir
   POST_BUILD = cd .
@@ -894,7 +1043,7 @@ build cmake_object_order_depends_target_01List.App.Day22: phony || cmake_object_
 build CMakeFiles/01List.App.Day22.dir/01List/App/Day22.c.obj: C_COMPILER__01List.2eApp.2eDay22_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day22.c || cmake_object_order_depends_target_01List.App.Day22
   DEP_FILE = CMakeFiles\01List.App.Day22.dir\01List\App\Day22.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day22.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day22.dir\01List\App
 
@@ -908,6 +1057,7 @@ build CMakeFiles/01List.App.Day22.dir/01List/App/Day22.c.obj: C_COMPILER__01List
 
 build 01List.App.Day22.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay22_Debug CMakeFiles/01List.App.Day22.dir/01List/App/Day22.c.obj | libDLList_lib.a || libDLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libDLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day22.dir
   POST_BUILD = cd .
@@ -928,7 +1078,7 @@ build cmake_object_order_depends_target_01List.App.Day23: phony || cmake_object_
 build CMakeFiles/01List.App.Day23.dir/01List/App/Day23.c.obj: C_COMPILER__01List.2eApp.2eDay23_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day23.c || cmake_object_order_depends_target_01List.App.Day23
   DEP_FILE = CMakeFiles\01List.App.Day23.dir\01List\App\Day23.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day23.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day23.dir\01List\App
 
@@ -942,6 +1092,7 @@ build CMakeFiles/01List.App.Day23.dir/01List/App/Day23.c.obj: C_COMPILER__01List
 
 build 01List.App.Day23.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay23_Debug CMakeFiles/01List.App.Day23.dir/01List/App/Day23.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day23.dir
   POST_BUILD = cd .
@@ -962,7 +1113,7 @@ build cmake_object_order_depends_target_01List.App.Day24: phony || cmake_object_
 build CMakeFiles/01List.App.Day24.dir/01List/App/Day24.c.obj: C_COMPILER__01List.2eApp.2eDay24_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day24.c || cmake_object_order_depends_target_01List.App.Day24
   DEP_FILE = CMakeFiles\01List.App.Day24.dir\01List\App\Day24.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day24.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day24.dir\01List\App
 
@@ -976,6 +1127,7 @@ build CMakeFiles/01List.App.Day24.dir/01List/App/Day24.c.obj: C_COMPILER__01List
 
 build 01List.App.Day24.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay24_Debug CMakeFiles/01List.App.Day24.dir/01List/App/Day24.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day24.dir
   POST_BUILD = cd .
@@ -996,7 +1148,7 @@ build cmake_object_order_depends_target_01List.App.Day25: phony || CMakeFiles/01
 build CMakeFiles/01List.App.Day25.dir/01List/App/Day25.c.obj: C_COMPILER__01List.2eApp.2eDay25_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day25.c || cmake_object_order_depends_target_01List.App.Day25
   DEP_FILE = CMakeFiles\01List.App.Day25.dir\01List\App\Day25.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day25.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day25.dir\01List\App
 
@@ -1010,6 +1162,7 @@ build CMakeFiles/01List.App.Day25.dir/01List/App/Day25.c.obj: C_COMPILER__01List
 
 build 01List.App.Day25.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay25_Debug CMakeFiles/01List.App.Day25.dir/01List/App/Day25.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day25.dir
   POST_BUILD = cd .
@@ -1030,7 +1183,7 @@ build cmake_object_order_depends_target_01List.App.Day26: phony || cmake_object_
 build CMakeFiles/01List.App.Day26.dir/01List/App/Day26.c.obj: C_COMPILER__01List.2eApp.2eDay26_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day26.c || cmake_object_order_depends_target_01List.App.Day26
   DEP_FILE = CMakeFiles\01List.App.Day26.dir\01List\App\Day26.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day26.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day26.dir\01List\App
 
@@ -1044,6 +1197,7 @@ build CMakeFiles/01List.App.Day26.dir/01List/App/Day26.c.obj: C_COMPILER__01List
 
 build 01List.App.Day26.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay26_Debug CMakeFiles/01List.App.Day26.dir/01List/App/Day26.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day26.dir
   POST_BUILD = cd .
@@ -1064,7 +1218,7 @@ build cmake_object_order_depends_target_01List.App.Day27: phony || cmake_object_
 build CMakeFiles/01List.App.Day27.dir/01List/App/Day27.c.obj: C_COMPILER__01List.2eApp.2eDay27_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day27.c || cmake_object_order_depends_target_01List.App.Day27
   DEP_FILE = CMakeFiles\01List.App.Day27.dir\01List\App\Day27.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day27.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day27.dir\01List\App
 
@@ -1078,6 +1232,7 @@ build CMakeFiles/01List.App.Day27.dir/01List/App/Day27.c.obj: C_COMPILER__01List
 
 build 01List.App.Day27.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay27_Debug CMakeFiles/01List.App.Day27.dir/01List/App/Day27.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day27.dir
   POST_BUILD = cd .
@@ -1098,7 +1253,7 @@ build cmake_object_order_depends_target_01List.App.Day28: phony || cmake_object_
 build CMakeFiles/01List.App.Day28.dir/01List/App/Day28.c.obj: C_COMPILER__01List.2eApp.2eDay28_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/App/Day28.c || cmake_object_order_depends_target_01List.App.Day28
   DEP_FILE = CMakeFiles\01List.App.Day28.dir\01List\App\Day28.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.App.Day28.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.App.Day28.dir\01List\App
 
@@ -1112,6 +1267,7 @@ build CMakeFiles/01List.App.Day28.dir/01List/App/Day28.c.obj: C_COMPILER__01List
 
 build 01List.App.Day28.exe: C_EXECUTABLE_LINKER__01List.2eApp.2eDay28_Debug CMakeFiles/01List.App.Day28.dir/01List/App/Day28.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.App.Day28.dir
   POST_BUILD = cd .
@@ -1132,7 +1288,7 @@ build cmake_object_order_depends_target_01List.LList.DLList: phony || cmake_obje
 build CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj: C_COMPILER__01List.2eLList.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/DLList.c || cmake_object_order_depends_target_01List.LList.DLList
   DEP_FILE = CMakeFiles\01List.LList.DLList.dir\01List\LList\DLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.LList.DLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.LList.DLList.dir\01List\LList
 
@@ -1146,6 +1302,7 @@ build CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj: C_COMPILER__
 
 build 01List.LList.DLList.exe: C_EXECUTABLE_LINKER__01List.2eLList.2eDLList_Debug CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj | libDLList_lib.a || libDLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libDLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.LList.DLList.dir
   POST_BUILD = cd .
@@ -1166,7 +1323,7 @@ build cmake_object_order_depends_target_01List.LList.SLList: phony || cmake_obje
 build CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj: C_COMPILER__01List.2eLList.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/SLList.c || cmake_object_order_depends_target_01List.LList.SLList
   DEP_FILE = CMakeFiles\01List.LList.SLList.dir\01List\LList\SLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.LList.SLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.LList.SLList.dir\01List\LList
 
@@ -1180,6 +1337,7 @@ build CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj: C_COMPILER__
 
 build 01List.LList.SLList.exe: C_EXECUTABLE_LINKER__01List.2eLList.2eSLList_Debug CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj | libSLList_lib.a || libSLList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSLList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.LList.SLList.dir
   POST_BUILD = cd .
@@ -1200,7 +1358,7 @@ build cmake_object_order_depends_target_01List.SList.DSList: phony || cmake_obje
 build CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj: C_COMPILER__01List.2eSList.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/DSList.c || cmake_object_order_depends_target_01List.SList.DSList
   DEP_FILE = CMakeFiles\01List.SList.DSList.dir\01List\SList\DSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.SList.DSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SList.DSList.dir\01List\SList
 
@@ -1214,6 +1372,7 @@ build CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj: C_COMPILER__
 
 build 01List.SList.DSList.exe: C_EXECUTABLE_LINKER__01List.2eSList.2eDSList_Debug CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj | libDSList_lib.a || libDSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libDSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.SList.DSList.dir
   POST_BUILD = cd .
@@ -1234,7 +1393,7 @@ build cmake_object_order_depends_target_01List.SList.SSList: phony || cmake_obje
 build CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj: C_COMPILER__01List.2eSList.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/SSList.c || cmake_object_order_depends_target_01List.SList.SSList
   DEP_FILE = CMakeFiles\01List.SList.SSList.dir\01List\SList\SSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\01List.SList.SSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SList.SSList.dir\01List\SList
 
@@ -1248,6 +1407,7 @@ build CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj: C_COMPILER__
 
 build 01List.SList.SSList.exe: C_EXECUTABLE_LINKER__01List.2eSList.2eSSList_Debug CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj | libSSList_lib.a || libSSList_lib.a
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = libSSList_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\01List.SList.SSList.dir
   POST_BUILD = cd .
@@ -1268,7 +1428,7 @@ build cmake_object_order_depends_target_02Stack.App.BaseConvert: phony || CMakeF
 build CMakeFiles/02Stack.App.BaseConvert.dir/02Stack/App/BaseConvert.c.obj: C_COMPILER__02Stack.2eApp.2eBaseConvert_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/BaseConvert.c || cmake_object_order_depends_target_02Stack.App.BaseConvert
   DEP_FILE = CMakeFiles\02Stack.App.BaseConvert.dir\02Stack\App\BaseConvert.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.App.BaseConvert.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.BaseConvert.dir\02Stack\App
 
@@ -1282,6 +1442,7 @@ build CMakeFiles/02Stack.App.BaseConvert.dir/02Stack/App/BaseConvert.c.obj: C_CO
 
 build 02Stack.App.BaseConvert.exe: C_EXECUTABLE_LINKER__02Stack.2eApp.2eBaseConvert_Debug CMakeFiles/02Stack.App.BaseConvert.dir/02Stack/App/BaseConvert.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.App.BaseConvert.dir
   POST_BUILD = cd .
@@ -1302,7 +1463,7 @@ build cmake_object_order_depends_target_02Stack.App.BracketMatch: phony || CMake
 build CMakeFiles/02Stack.App.BracketMatch.dir/02Stack/App/BracketMatch.c.obj: C_COMPILER__02Stack.2eApp.2eBracketMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/BracketMatch.c || cmake_object_order_depends_target_02Stack.App.BracketMatch
   DEP_FILE = CMakeFiles\02Stack.App.BracketMatch.dir\02Stack\App\BracketMatch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.App.BracketMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.BracketMatch.dir\02Stack\App
 
@@ -1316,6 +1477,7 @@ build CMakeFiles/02Stack.App.BracketMatch.dir/02Stack/App/BracketMatch.c.obj: C_
 
 build 02Stack.App.BracketMatch.exe: C_EXECUTABLE_LINKER__02Stack.2eApp.2eBracketMatch_Debug CMakeFiles/02Stack.App.BracketMatch.dir/02Stack/App/BracketMatch.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.App.BracketMatch.dir
   POST_BUILD = cd .
@@ -1336,7 +1498,7 @@ build cmake_object_order_depends_target_02Stack.App.Expression: phony || CMakeFi
 build CMakeFiles/02Stack.App.Expression.dir/02Stack/App/Expression.c.obj: C_COMPILER__02Stack.2eApp.2eExpression_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/Expression.c || cmake_object_order_depends_target_02Stack.App.Expression
   DEP_FILE = CMakeFiles\02Stack.App.Expression.dir\02Stack\App\Expression.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.App.Expression.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.Expression.dir\02Stack\App
 
@@ -1350,6 +1512,7 @@ build CMakeFiles/02Stack.App.Expression.dir/02Stack/App/Expression.c.obj: C_COMP
 
 build 02Stack.App.Expression.exe: C_EXECUTABLE_LINKER__02Stack.2eApp.2eExpression_Debug CMakeFiles/02Stack.App.Expression.dir/02Stack/App/Expression.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.App.Expression.dir
   POST_BUILD = cd .
@@ -1370,7 +1533,7 @@ build cmake_object_order_depends_target_02Stack.App.RowEdit: phony || CMakeFiles
 build CMakeFiles/02Stack.App.RowEdit.dir/02Stack/App/RowEdit.c.obj: C_COMPILER__02Stack.2eApp.2eRowEdit_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/App/RowEdit.c || cmake_object_order_depends_target_02Stack.App.RowEdit
   DEP_FILE = CMakeFiles\02Stack.App.RowEdit.dir\02Stack\App\RowEdit.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.App.RowEdit.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.App.RowEdit.dir\02Stack\App
 
@@ -1384,6 +1547,7 @@ build CMakeFiles/02Stack.App.RowEdit.dir/02Stack/App/RowEdit.c.obj: C_COMPILER__
 
 build 02Stack.App.RowEdit.exe: C_EXECUTABLE_LINKER__02Stack.2eApp.2eRowEdit_Debug CMakeFiles/02Stack.App.RowEdit.dir/02Stack/App/RowEdit.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.App.RowEdit.dir
   POST_BUILD = cd .
@@ -1399,12 +1563,12 @@ build 02Stack.App.RowEdit.exe: C_EXECUTABLE_LINKER__02Stack.2eApp.2eRowEdit_Debu
 #############################################
 # Order-only phony target for 02Stack.LStack.LStack
 
-build cmake_object_order_depends_target_02Stack.LStack.LStack: phony || CMakeFiles/02Stack.LStack.LStack.dir
+build cmake_object_order_depends_target_02Stack.LStack.LStack: phony || cmake_object_order_depends_target_LStack_lib
 
 build CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj: C_COMPILER__02Stack.2eLStack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack/LStack.c || cmake_object_order_depends_target_02Stack.LStack.LStack
   DEP_FILE = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack\LStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.LStack.LStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack
 
@@ -1416,9 +1580,10 @@ build CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj: C_COMPIL
 #############################################
 # Link the executable 02Stack.LStack.LStack.exe
 
-build 02Stack.LStack.LStack.exe: C_EXECUTABLE_LINKER__02Stack.2eLStack.2eLStack_Debug CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj
+build 02Stack.LStack.LStack.exe: C_EXECUTABLE_LINKER__02Stack.2eLStack.2eLStack_Debug CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj | libLStack_lib.a || libLStack_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLStack_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.LStack.LStack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1433,12 +1598,12 @@ build 02Stack.LStack.LStack.exe: C_EXECUTABLE_LINKER__02Stack.2eLStack.2eLStack_
 #############################################
 # Order-only phony target for 02Stack.SStack.SStack
 
-build cmake_object_order_depends_target_02Stack.SStack.SStack: phony || CMakeFiles/02Stack.SStack.SStack.dir
+build cmake_object_order_depends_target_02Stack.SStack.SStack: phony || cmake_object_order_depends_target_SStack_lib
 
 build CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj: C_COMPILER__02Stack.2eSStack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack/SStack.c || cmake_object_order_depends_target_02Stack.SStack.SStack
   DEP_FILE = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack\SStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\02Stack.SStack.SStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack
 
@@ -1450,9 +1615,10 @@ build CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj: C_COMPIL
 #############################################
 # Link the executable 02Stack.SStack.SStack.exe
 
-build 02Stack.SStack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack.2eSStack_Debug CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj
+build 02Stack.SStack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack.2eSStack_Debug CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj | libSStack_lib.a || libSStack_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libSStack_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\02Stack.SStack.SStack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1472,7 +1638,7 @@ build cmake_object_order_depends_target_03Queue.LQueue.LQueue: phony || CMakeFil
 build CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj: C_COMPILER__03Queue.2eLQueue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/LQueue/LQueue.c || cmake_object_order_depends_target_03Queue.LQueue.LQueue
   DEP_FILE = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue\LQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue
 
@@ -1486,6 +1652,7 @@ build CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj: C_COMPIL
 
 build 03Queue.LQueue.LQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eLQueue.2eLQueue_Debug CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir
   POST_BUILD = cd .
@@ -1506,7 +1673,7 @@ build cmake_object_order_depends_target_03Queue.SQueue.SQueue: phony || CMakeFil
 build CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj: C_COMPILER__03Queue.2eSQueue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/SQueue/SQueue.c || cmake_object_order_depends_target_03Queue.SQueue.SQueue
   DEP_FILE = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue\SQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue
 
@@ -1520,6 +1687,7 @@ build CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj: C_COMPIL
 
 build 03Queue.SQueue.SQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eSQueue.2eSQueue_Debug CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir
   POST_BUILD = cd .
@@ -1540,7 +1708,7 @@ build cmake_object_order_depends_target_04Array.Matrix: phony || CMakeFiles/04Ar
 build CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj: C_COMPILER__04Array.2eMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/Matrix.c || cmake_object_order_depends_target_04Array.Matrix
   DEP_FILE = CMakeFiles\04Array.Matrix.dir\04Array\Matrix.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\04Array.Matrix.dir
   OBJECT_FILE_DIR = CMakeFiles\04Array.Matrix.dir\04Array
 
@@ -1554,6 +1722,7 @@ build CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj: C_COMPILER__04Array.2e
 
 build 04Array.Matrix.exe: C_EXECUTABLE_LINKER__04Array.2eMatrix_Debug CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\04Array.Matrix.dir
   POST_BUILD = cd .
@@ -1574,7 +1743,7 @@ build cmake_object_order_depends_target_05String.LString.BFMatch: phony || CMake
 build CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj: C_COMPILER__05String.2eLString.2eBFMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/LString/BFMatch.c || cmake_object_order_depends_target_05String.LString.BFMatch
   DEP_FILE = CMakeFiles\05String.LString.BFMatch.dir\05String\LString\BFMatch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\05String.LString.BFMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.LString.BFMatch.dir\05String\LString
 
@@ -1588,6 +1757,7 @@ build CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj: C_
 
 build 05String.LString.BFMatch.exe: C_EXECUTABLE_LINKER__05String.2eLString.2eBFMatch_Debug CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\05String.LString.BFMatch.dir
   POST_BUILD = cd .
@@ -1608,7 +1778,7 @@ build cmake_object_order_depends_target_05String.SString.KMPMatch: phony || CMak
 build CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj: C_COMPILER__05String.2eSString.2eKMPMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/SString/KMPMatch.c || cmake_object_order_depends_target_05String.SString.KMPMatch
   DEP_FILE = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString\KMPMatch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\05String.SString.KMPMatch.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString
 
@@ -1622,6 +1792,7 @@ build CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj: 
 
 build 05String.SString.KMPMatch.exe: C_EXECUTABLE_LINKER__05String.2eSString.2eKMPMatch_Debug CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\05String.SString.KMPMatch.dir
   POST_BUILD = cd .
@@ -1631,72 +1802,389 @@ build 05String.SString.KMPMatch.exe: C_EXECUTABLE_LINKER__05String.2eSString.2eK
   TARGET_PDB = 05String.SString.KMPMatch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 06Tree.App.InOrderByStack
+# Object build statements for EXECUTABLE target 06Tree.App.FindAncestry
 
 
 #############################################
-# Order-only phony target for 06Tree.App.InOrderByStack
+# Order-only phony target for 06Tree.App.FindAncestry
 
-build cmake_object_order_depends_target_06Tree.App.InOrderByStack: phony || CMakeFiles/06Tree.App.InOrderByStack.dir
+build cmake_object_order_depends_target_06Tree.App.FindAncestry: phony || cmake_object_order_depends_target_SBTree_lib
 
-build CMakeFiles/06Tree.App.InOrderByStack.dir/06Tree/App/InOrderByStack.c.obj: C_COMPILER__06Tree.2eApp.2eInOrderByStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/InOrderByStack.c || cmake_object_order_depends_target_06Tree.App.InOrderByStack
-  DEP_FILE = CMakeFiles\06Tree.App.InOrderByStack.dir\06Tree\App\InOrderByStack.c.obj.d
+build CMakeFiles/06Tree.App.FindAncestry.dir/06Tree/App/FindAncestry.c.obj: C_COMPILER__06Tree.2eApp.2eFindAncestry_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/FindAncestry.c || cmake_object_order_depends_target_06Tree.App.FindAncestry
+  DEP_FILE = CMakeFiles\06Tree.App.FindAncestry.dir\06Tree\App\FindAncestry.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
-  OBJECT_DIR = CMakeFiles\06Tree.App.InOrderByStack.dir
-  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.InOrderByStack.dir\06Tree\App
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.FindAncestry.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.FindAncestry.dir\06Tree\App
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 06Tree.App.InOrderByStack
+# Link build statements for EXECUTABLE target 06Tree.App.FindAncestry
 
 
 #############################################
-# Link the executable 06Tree.App.InOrderByStack.exe
+# Link the executable 06Tree.App.FindAncestry.exe
 
-build 06Tree.App.InOrderByStack.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eInOrderByStack_Debug CMakeFiles/06Tree.App.InOrderByStack.dir/06Tree/App/InOrderByStack.c.obj
+build 06Tree.App.FindAncestry.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eFindAncestry_Debug CMakeFiles/06Tree.App.FindAncestry.dir/06Tree/App/FindAncestry.c.obj | libSBTree_lib.a || libSBTree_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\06Tree.App.InOrderByStack.dir
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libSBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.FindAncestry.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 06Tree.App.InOrderByStack.exe
-  TARGET_IMPLIB = lib06Tree.App.InOrderByStack.dll.a
-  TARGET_PDB = 06Tree.App.InOrderByStack.exe.dbg
+  TARGET_FILE = 06Tree.App.FindAncestry.exe
+  TARGET_IMPLIB = lib06Tree.App.FindAncestry.dll.a
+  TARGET_PDB = 06Tree.App.FindAncestry.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 06Tree.BTree.BTree
+# Object build statements for EXECUTABLE target 06Tree.App.GetDegree
 
 
 #############################################
-# Order-only phony target for 06Tree.BTree.BTree
+# Order-only phony target for 06Tree.App.GetDegree
 
-build cmake_object_order_depends_target_06Tree.BTree.BTree: phony || CMakeFiles/06Tree.BTree.BTree.dir
+build cmake_object_order_depends_target_06Tree.App.GetDegree: phony || cmake_object_order_depends_target_LBTree_lib
 
-build CMakeFiles/06Tree.BTree.BTree.dir/06Tree/BTree/BTree.c.obj: C_COMPILER__06Tree.2eBTree.2eBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/BTree/BTree.c || cmake_object_order_depends_target_06Tree.BTree.BTree
-  DEP_FILE = CMakeFiles\06Tree.BTree.BTree.dir\06Tree\BTree\BTree.c.obj.d
+build CMakeFiles/06Tree.App.GetDegree.dir/06Tree/App/GetDegree.c.obj: C_COMPILER__06Tree.2eApp.2eGetDegree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/GetDegree.c || cmake_object_order_depends_target_06Tree.App.GetDegree
+  DEP_FILE = CMakeFiles\06Tree.App.GetDegree.dir\06Tree\App\GetDegree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
-  OBJECT_DIR = CMakeFiles\06Tree.BTree.BTree.dir
-  OBJECT_FILE_DIR = CMakeFiles\06Tree.BTree.BTree.dir\06Tree\BTree
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetDegree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.GetDegree.dir\06Tree\App
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 06Tree.BTree.BTree
+# Link build statements for EXECUTABLE target 06Tree.App.GetDegree
 
 
 #############################################
-# Link the executable 06Tree.BTree.BTree.exe
+# Link the executable 06Tree.App.GetDegree.exe
 
-build 06Tree.BTree.BTree.exe: C_EXECUTABLE_LINKER__06Tree.2eBTree.2eBTree_Debug CMakeFiles/06Tree.BTree.BTree.dir/06Tree/BTree/BTree.c.obj
+build 06Tree.App.GetDegree.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eGetDegree_Debug CMakeFiles/06Tree.App.GetDegree.dir/06Tree/App/GetDegree.c.obj | libLBTree_lib.a || libLBTree_lib.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\06Tree.BTree.BTree.dir
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetDegree.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 06Tree.BTree.BTree.exe
-  TARGET_IMPLIB = lib06Tree.BTree.BTree.dll.a
-  TARGET_PDB = 06Tree.BTree.BTree.exe.dbg
+  TARGET_FILE = 06Tree.App.GetDegree.exe
+  TARGET_IMPLIB = lib06Tree.App.GetDegree.dll.a
+  TARGET_PDB = 06Tree.App.GetDegree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.GetKeyNode
+
+
+#############################################
+# Order-only phony target for 06Tree.App.GetKeyNode
+
+build cmake_object_order_depends_target_06Tree.App.GetKeyNode: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.GetKeyNode.dir/06Tree/App/GetKeyNode.c.obj: C_COMPILER__06Tree.2eApp.2eGetKeyNode_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/GetKeyNode.c || cmake_object_order_depends_target_06Tree.App.GetKeyNode
+  DEP_FILE = CMakeFiles\06Tree.App.GetKeyNode.dir\06Tree\App\GetKeyNode.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetKeyNode.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.GetKeyNode.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.GetKeyNode
+
+
+#############################################
+# Link the executable 06Tree.App.GetKeyNode.exe
+
+build 06Tree.App.GetKeyNode.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eGetKeyNode_Debug CMakeFiles/06Tree.App.GetKeyNode.dir/06Tree/App/GetKeyNode.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetKeyNode.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.GetKeyNode.exe
+  TARGET_IMPLIB = lib06Tree.App.GetKeyNode.dll.a
+  TARGET_PDB = 06Tree.App.GetKeyNode.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.GetKthValue
+
+
+#############################################
+# Order-only phony target for 06Tree.App.GetKthValue
+
+build cmake_object_order_depends_target_06Tree.App.GetKthValue: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.GetKthValue.dir/06Tree/App/GetKthValue.c.obj: C_COMPILER__06Tree.2eApp.2eGetKthValue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/GetKthValue.c || cmake_object_order_depends_target_06Tree.App.GetKthValue
+  DEP_FILE = CMakeFiles\06Tree.App.GetKthValue.dir\06Tree\App\GetKthValue.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetKthValue.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.GetKthValue.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.GetKthValue
+
+
+#############################################
+# Link the executable 06Tree.App.GetKthValue.exe
+
+build 06Tree.App.GetKthValue.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eGetKthValue_Debug CMakeFiles/06Tree.App.GetKthValue.dir/06Tree/App/GetKthValue.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetKthValue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.GetKthValue.exe
+  TARGET_IMPLIB = lib06Tree.App.GetKthValue.dll.a
+  TARGET_PDB = 06Tree.App.GetKthValue.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.GetNode
+
+
+#############################################
+# Order-only phony target for 06Tree.App.GetNode
+
+build cmake_object_order_depends_target_06Tree.App.GetNode: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.GetNode.dir/06Tree/App/GetNode.c.obj: C_COMPILER__06Tree.2eApp.2eGetNode_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/GetNode.c || cmake_object_order_depends_target_06Tree.App.GetNode
+  DEP_FILE = CMakeFiles\06Tree.App.GetNode.dir\06Tree\App\GetNode.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetNode.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.GetNode.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.GetNode
+
+
+#############################################
+# Link the executable 06Tree.App.GetNode.exe
+
+build 06Tree.App.GetNode.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eGetNode_Debug CMakeFiles/06Tree.App.GetNode.dir/06Tree/App/GetNode.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.GetNode.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.GetNode.exe
+  TARGET_IMPLIB = lib06Tree.App.GetNode.dll.a
+  TARGET_PDB = 06Tree.App.GetNode.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.LevelOrder
+
+
+#############################################
+# Order-only phony target for 06Tree.App.LevelOrder
+
+build cmake_object_order_depends_target_06Tree.App.LevelOrder: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.LevelOrder.dir/06Tree/App/LevelOrder.c.obj: C_COMPILER__06Tree.2eApp.2eLevelOrder_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/LevelOrder.c || cmake_object_order_depends_target_06Tree.App.LevelOrder
+  DEP_FILE = CMakeFiles\06Tree.App.LevelOrder.dir\06Tree\App\LevelOrder.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.LevelOrder.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.LevelOrder.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.LevelOrder
+
+
+#############################################
+# Link the executable 06Tree.App.LevelOrder.exe
+
+build 06Tree.App.LevelOrder.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eLevelOrder_Debug CMakeFiles/06Tree.App.LevelOrder.dir/06Tree/App/LevelOrder.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.LevelOrder.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.LevelOrder.exe
+  TARGET_IMPLIB = lib06Tree.App.LevelOrder.dll.a
+  TARGET_PDB = 06Tree.App.LevelOrder.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.SwapLBTree
+
+
+#############################################
+# Order-only phony target for 06Tree.App.SwapLBTree
+
+build cmake_object_order_depends_target_06Tree.App.SwapLBTree: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.SwapLBTree.dir/06Tree/App/SwapLBTree.c.obj: C_COMPILER__06Tree.2eApp.2eSwapLBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/SwapLBTree.c || cmake_object_order_depends_target_06Tree.App.SwapLBTree
+  DEP_FILE = CMakeFiles\06Tree.App.SwapLBTree.dir\06Tree\App\SwapLBTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.SwapLBTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.SwapLBTree.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.SwapLBTree
+
+
+#############################################
+# Link the executable 06Tree.App.SwapLBTree.exe
+
+build 06Tree.App.SwapLBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eSwapLBTree_Debug CMakeFiles/06Tree.App.SwapLBTree.dir/06Tree/App/SwapLBTree.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.SwapLBTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.SwapLBTree.exe
+  TARGET_IMPLIB = lib06Tree.App.SwapLBTree.dll.a
+  TARGET_PDB = 06Tree.App.SwapLBTree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.App.ToList
+
+
+#############################################
+# Order-only phony target for 06Tree.App.ToList
+
+build cmake_object_order_depends_target_06Tree.App.ToList: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.App.ToList.dir/06Tree/App/ToList.c.obj: C_COMPILER__06Tree.2eApp.2eToList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/App/ToList.c || cmake_object_order_depends_target_06Tree.App.ToList
+  DEP_FILE = CMakeFiles\06Tree.App.ToList.dir\06Tree\App\ToList.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.App.ToList.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.App.ToList.dir\06Tree\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.App.ToList
+
+
+#############################################
+# Link the executable 06Tree.App.ToList.exe
+
+build 06Tree.App.ToList.exe: C_EXECUTABLE_LINKER__06Tree.2eApp.2eToList_Debug CMakeFiles/06Tree.App.ToList.dir/06Tree/App/ToList.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.App.ToList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.App.ToList.exe
+  TARGET_IMPLIB = lib06Tree.App.ToList.dll.a
+  TARGET_PDB = 06Tree.App.ToList.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.LTree.LBTree
+
+
+#############################################
+# Order-only phony target for 06Tree.LTree.LBTree
+
+build cmake_object_order_depends_target_06Tree.LTree.LBTree: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/06Tree.LTree.LBTree.dir/06Tree/LTree/LBTree.c.obj: C_COMPILER__06Tree.2eLTree.2eLBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/LTree/LBTree.c || cmake_object_order_depends_target_06Tree.LTree.LBTree
+  DEP_FILE = CMakeFiles\06Tree.LTree.LBTree.dir\06Tree\LTree\LBTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.LTree.LBTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.LTree.LBTree.dir\06Tree\LTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.LTree.LBTree
+
+
+#############################################
+# Link the executable 06Tree.LTree.LBTree.exe
+
+build 06Tree.LTree.LBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eLTree.2eLBTree_Debug CMakeFiles/06Tree.LTree.LBTree.dir/06Tree/LTree/LBTree.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.LTree.LBTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.LTree.LBTree.exe
+  TARGET_IMPLIB = lib06Tree.LTree.LBTree.dll.a
+  TARGET_PDB = 06Tree.LTree.LBTree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.STree.SBTree
+
+
+#############################################
+# Order-only phony target for 06Tree.STree.SBTree
+
+build cmake_object_order_depends_target_06Tree.STree.SBTree: phony || cmake_object_order_depends_target_SBTree_lib
+
+build CMakeFiles/06Tree.STree.SBTree.dir/06Tree/STree/SBTree.c.obj: C_COMPILER__06Tree.2eSTree.2eSBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/STree/SBTree.c || cmake_object_order_depends_target_06Tree.STree.SBTree
+  DEP_FILE = CMakeFiles\06Tree.STree.SBTree.dir\06Tree\STree\SBTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\06Tree.STree.SBTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.STree.SBTree.dir\06Tree\STree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.STree.SBTree
+
+
+#############################################
+# Link the executable 06Tree.STree.SBTree.exe
+
+build 06Tree.STree.SBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eSTree.2eSBTree_Debug CMakeFiles/06Tree.STree.SBTree.dir/06Tree/STree/SBTree.c.obj | libSBTree_lib.a || libSBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libSBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.STree.SBTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.STree.SBTree.exe
+  TARGET_IMPLIB = lib06Tree.STree.SBTree.dll.a
+  TARGET_PDB = 06Tree.STree.SBTree.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 07Search.App.find
+
+
+#############################################
+# Order-only phony target for 07Search.App.find
+
+build cmake_object_order_depends_target_07Search.App.find: phony || CMakeFiles/07Search.App.find.dir
+
+build CMakeFiles/07Search.App.find.dir/07Search/App/find.c.obj: C_COMPILER__07Search.2eApp.2efind_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/App/find.c || cmake_object_order_depends_target_07Search.App.find
+  DEP_FILE = CMakeFiles\07Search.App.find.dir\07Search\App\find.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\07Search.App.find.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.App.find.dir\07Search\App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 07Search.App.find
+
+
+#############################################
+# Link the executable 07Search.App.find.exe
+
+build 07Search.App.find.exe: C_EXECUTABLE_LINKER__07Search.2eApp.2efind_Debug CMakeFiles/07Search.App.find.dir/07Search/App/find.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\07Search.App.find.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 07Search.App.find.exe
+  TARGET_IMPLIB = lib07Search.App.find.dll.a
+  TARGET_PDB = 07Search.App.find.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 07Search.Line.BSearch
@@ -1710,7 +2198,7 @@ build cmake_object_order_depends_target_07Search.Line.BSearch: phony || CMakeFil
 build CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj: C_COMPILER__07Search.2eLine.2eBSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/BSearch.c || cmake_object_order_depends_target_07Search.Line.BSearch
   DEP_FILE = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line\BSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\07Search.Line.BSearch.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line
 
@@ -1724,6 +2212,7 @@ build CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj: C_COMPIL
 
 build 07Search.Line.BSearch.exe: C_EXECUTABLE_LINKER__07Search.2eLine.2eBSearch_Debug CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\07Search.Line.BSearch.dir
   POST_BUILD = cd .
@@ -1744,7 +2233,7 @@ build cmake_object_order_depends_target_07Search.Line.SSearch: phony || CMakeFil
 build CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj: C_COMPILER__07Search.2eLine.2eSSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/SSearch.c || cmake_object_order_depends_target_07Search.Line.SSearch
   DEP_FILE = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line\SSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\07Search.Line.SSearch.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line
 
@@ -1758,6 +2247,7 @@ build CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj: C_COMPIL
 
 build 07Search.Line.SSearch.exe: C_EXECUTABLE_LINKER__07Search.2eLine.2eSSearch_Debug CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\07Search.Line.SSearch.dir
   POST_BUILD = cd .
@@ -1778,7 +2268,7 @@ build cmake_object_order_depends_target_07Search.Tree.BSTree: phony || CMakeFile
 build CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj: C_COMPILER__07Search.2eTree.2eBSTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Tree/BSTree.c || cmake_object_order_depends_target_07Search.Tree.BSTree
   DEP_FILE = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree\BSTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\07Search.Tree.BSTree.dir
   OBJECT_FILE_DIR = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree
 
@@ -1792,6 +2282,7 @@ build CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj: C_COMPILER
 
 build 07Search.Tree.BSTree.exe: C_EXECUTABLE_LINKER__07Search.2eTree.2eBSTree_Debug CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\07Search.Tree.BSTree.dir
   POST_BUILD = cd .
@@ -1812,7 +2303,7 @@ build cmake_object_order_depends_target_08Sort.App.Job01: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job01.dir/08Sort/App/Job01.c.obj: C_COMPILER__08Sort.2eApp.2eJob01_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job01.c || cmake_object_order_depends_target_08Sort.App.Job01
   DEP_FILE = CMakeFiles\08Sort.App.Job01.dir\08Sort\App\Job01.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job01.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job01.dir\08Sort\App
 
@@ -1826,6 +2317,7 @@ build CMakeFiles/08Sort.App.Job01.dir/08Sort/App/Job01.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job01.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob01_Debug CMakeFiles/08Sort.App.Job01.dir/08Sort/App/Job01.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job01.dir
   POST_BUILD = cd .
@@ -1846,7 +2338,7 @@ build cmake_object_order_depends_target_08Sort.App.Job02: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job02.dir/08Sort/App/Job02.c.obj: C_COMPILER__08Sort.2eApp.2eJob02_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job02.c || cmake_object_order_depends_target_08Sort.App.Job02
   DEP_FILE = CMakeFiles\08Sort.App.Job02.dir\08Sort\App\Job02.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job02.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job02.dir\08Sort\App
 
@@ -1860,6 +2352,7 @@ build CMakeFiles/08Sort.App.Job02.dir/08Sort/App/Job02.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job02.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob02_Debug CMakeFiles/08Sort.App.Job02.dir/08Sort/App/Job02.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job02.dir
   POST_BUILD = cd .
@@ -1880,7 +2373,7 @@ build cmake_object_order_depends_target_08Sort.App.Job03: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job03.dir/08Sort/App/Job03.c.obj: C_COMPILER__08Sort.2eApp.2eJob03_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job03.c || cmake_object_order_depends_target_08Sort.App.Job03
   DEP_FILE = CMakeFiles\08Sort.App.Job03.dir\08Sort\App\Job03.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job03.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job03.dir\08Sort\App
 
@@ -1894,6 +2387,7 @@ build CMakeFiles/08Sort.App.Job03.dir/08Sort/App/Job03.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job03.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob03_Debug CMakeFiles/08Sort.App.Job03.dir/08Sort/App/Job03.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job03.dir
   POST_BUILD = cd .
@@ -1914,7 +2408,7 @@ build cmake_object_order_depends_target_08Sort.App.Job04: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job04.dir/08Sort/App/Job04.c.obj: C_COMPILER__08Sort.2eApp.2eJob04_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job04.c || cmake_object_order_depends_target_08Sort.App.Job04
   DEP_FILE = CMakeFiles\08Sort.App.Job04.dir\08Sort\App\Job04.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job04.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job04.dir\08Sort\App
 
@@ -1928,6 +2422,7 @@ build CMakeFiles/08Sort.App.Job04.dir/08Sort/App/Job04.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job04.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob04_Debug CMakeFiles/08Sort.App.Job04.dir/08Sort/App/Job04.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job04.dir
   POST_BUILD = cd .
@@ -1948,7 +2443,7 @@ build cmake_object_order_depends_target_08Sort.App.Job05: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job05.dir/08Sort/App/Job05.c.obj: C_COMPILER__08Sort.2eApp.2eJob05_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job05.c || cmake_object_order_depends_target_08Sort.App.Job05
   DEP_FILE = CMakeFiles\08Sort.App.Job05.dir\08Sort\App\Job05.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job05.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job05.dir\08Sort\App
 
@@ -1962,6 +2457,7 @@ build CMakeFiles/08Sort.App.Job05.dir/08Sort/App/Job05.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job05.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob05_Debug CMakeFiles/08Sort.App.Job05.dir/08Sort/App/Job05.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job05.dir
   POST_BUILD = cd .
@@ -1982,7 +2478,7 @@ build cmake_object_order_depends_target_08Sort.App.Job06: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job06.dir/08Sort/App/Job06.c.obj: C_COMPILER__08Sort.2eApp.2eJob06_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job06.c || cmake_object_order_depends_target_08Sort.App.Job06
   DEP_FILE = CMakeFiles\08Sort.App.Job06.dir\08Sort\App\Job06.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job06.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job06.dir\08Sort\App
 
@@ -1996,6 +2492,7 @@ build CMakeFiles/08Sort.App.Job06.dir/08Sort/App/Job06.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job06.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob06_Debug CMakeFiles/08Sort.App.Job06.dir/08Sort/App/Job06.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job06.dir
   POST_BUILD = cd .
@@ -2016,7 +2513,7 @@ build cmake_object_order_depends_target_08Sort.App.Job07: phony || CMakeFiles/08
 build CMakeFiles/08Sort.App.Job07.dir/08Sort/App/Job07.c.obj: C_COMPILER__08Sort.2eApp.2eJob07_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/Job07.c || cmake_object_order_depends_target_08Sort.App.Job07
   DEP_FILE = CMakeFiles\08Sort.App.Job07.dir\08Sort\App\Job07.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.Job07.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.Job07.dir\08Sort\App
 
@@ -2030,6 +2527,7 @@ build CMakeFiles/08Sort.App.Job07.dir/08Sort/App/Job07.c.obj: C_COMPILER__08Sort
 
 build 08Sort.App.Job07.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eJob07_Debug CMakeFiles/08Sort.App.Job07.dir/08Sort/App/Job07.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.Job07.dir
   POST_BUILD = cd .
@@ -2050,7 +2548,7 @@ build cmake_object_order_depends_target_08Sort.App.SSSortByList: phony || CMakeF
 build CMakeFiles/08Sort.App.SSSortByList.dir/08Sort/App/SSSortByList.c.obj: C_COMPILER__08Sort.2eApp.2eSSSortByList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/App/SSSortByList.c || cmake_object_order_depends_target_08Sort.App.SSSortByList
   DEP_FILE = CMakeFiles\08Sort.App.SSSortByList.dir\08Sort\App\SSSortByList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.App.SSSortByList.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.App.SSSortByList.dir\08Sort\App
 
@@ -2064,6 +2562,7 @@ build CMakeFiles/08Sort.App.SSSortByList.dir/08Sort/App/SSSortByList.c.obj: C_CO
 
 build 08Sort.App.SSSortByList.exe: C_EXECUTABLE_LINKER__08Sort.2eApp.2eSSSortByList_Debug CMakeFiles/08Sort.App.SSSortByList.dir/08Sort/App/SSSortByList.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.App.SSSortByList.dir
   POST_BUILD = cd .
@@ -2084,7 +2583,7 @@ build cmake_object_order_depends_target_08Sort.CSort.CSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj: C_COMPILER__08Sort.2eCSort.2eCSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/CSort/CSort.c || cmake_object_order_depends_target_08Sort.CSort.CSort
   DEP_FILE = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort\CSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.CSort.CSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort
 
@@ -2098,6 +2597,7 @@ build CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj: C_COMPILER__08
 
 build 08Sort.CSort.CSort.exe: C_EXECUTABLE_LINKER__08Sort.2eCSort.2eCSort_Debug CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.CSort.CSort.dir
   POST_BUILD = cd .
@@ -2118,7 +2618,7 @@ build cmake_object_order_depends_target_08Sort.ESort.BSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj: C_COMPILER__08Sort.2eESort.2eBSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/BSort.c || cmake_object_order_depends_target_08Sort.ESort.BSort
   DEP_FILE = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort\BSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.ESort.BSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort
 
@@ -2132,6 +2632,7 @@ build CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj: C_COMPILER__08
 
 build 08Sort.ESort.BSort.exe: C_EXECUTABLE_LINKER__08Sort.2eESort.2eBSort_Debug CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.ESort.BSort.dir
   POST_BUILD = cd .
@@ -2152,7 +2653,7 @@ build cmake_object_order_depends_target_08Sort.ESort.QSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj: C_COMPILER__08Sort.2eESort.2eQSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/QSort.c || cmake_object_order_depends_target_08Sort.ESort.QSort
   DEP_FILE = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort\QSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.ESort.QSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort
 
@@ -2166,6 +2667,7 @@ build CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj: C_COMPILER__08
 
 build 08Sort.ESort.QSort.exe: C_EXECUTABLE_LINKER__08Sort.2eESort.2eQSort_Debug CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.ESort.QSort.dir
   POST_BUILD = cd .
@@ -2186,7 +2688,7 @@ build cmake_object_order_depends_target_08Sort.ISort.BISort: phony || CMakeFiles
 build CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj: C_COMPILER__08Sort.2eISort.2eBISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/BISort.c || cmake_object_order_depends_target_08Sort.ISort.BISort
   DEP_FILE = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort\BISort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.ISort.BISort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort
 
@@ -2200,6 +2702,7 @@ build CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj: C_COMPILER__
 
 build 08Sort.ISort.BISort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eBISort_Debug CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.ISort.BISort.dir
   POST_BUILD = cd .
@@ -2220,7 +2723,7 @@ build cmake_object_order_depends_target_08Sort.ISort.SISort: phony || CMakeFiles
 build CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj: C_COMPILER__08Sort.2eISort.2eSISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SISort.c || cmake_object_order_depends_target_08Sort.ISort.SISort
   DEP_FILE = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort\SISort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SISort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort
 
@@ -2234,6 +2737,7 @@ build CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj: C_COMPILER__
 
 build 08Sort.ISort.SISort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eSISort_Debug CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SISort.dir
   POST_BUILD = cd .
@@ -2254,7 +2758,7 @@ build cmake_object_order_depends_target_08Sort.ISort.SSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj: C_COMPILER__08Sort.2eISort.2eSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SSort.c || cmake_object_order_depends_target_08Sort.ISort.SSort
   DEP_FILE = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort\SSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort
 
@@ -2268,6 +2772,7 @@ build CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj: C_COMPILER__08
 
 build 08Sort.ISort.SSort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eSSort_Debug CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.ISort.SSort.dir
   POST_BUILD = cd .
@@ -2288,7 +2793,7 @@ build cmake_object_order_depends_target_08Sort.MSort.MSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj: C_COMPILER__08Sort.2eMSort.2eMSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/MSort/MSort.c || cmake_object_order_depends_target_08Sort.MSort.MSort
   DEP_FILE = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort\MSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.MSort.MSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort
 
@@ -2302,6 +2807,7 @@ build CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj: C_COMPILER__08
 
 build 08Sort.MSort.MSort.exe: C_EXECUTABLE_LINKER__08Sort.2eMSort.2eMSort_Debug CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.MSort.MSort.dir
   POST_BUILD = cd .
@@ -2322,7 +2828,7 @@ build cmake_object_order_depends_target_08Sort.RSort.RSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj: C_COMPILER__08Sort.2eRSort.2eRSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/RSort/RSort.c || cmake_object_order_depends_target_08Sort.RSort.RSort
   DEP_FILE = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort\RSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.RSort.RSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort
 
@@ -2336,6 +2842,7 @@ build CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj: C_COMPILER__08
 
 build 08Sort.RSort.RSort.exe: C_EXECUTABLE_LINKER__08Sort.2eRSort.2eRSort_Debug CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.RSort.RSort.dir
   POST_BUILD = cd .
@@ -2356,7 +2863,7 @@ build cmake_object_order_depends_target_08Sort.SSort.HSort: phony || CMakeFiles/
 build CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj: C_COMPILER__08Sort.2eSSort.2eHSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/HSort.c || cmake_object_order_depends_target_08Sort.SSort.HSort
   DEP_FILE = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort\HSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.SSort.HSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort
 
@@ -2370,6 +2877,7 @@ build CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj: C_COMPILER__08
 
 build 08Sort.SSort.HSort.exe: C_EXECUTABLE_LINKER__08Sort.2eSSort.2eHSort_Debug CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.SSort.HSort.dir
   POST_BUILD = cd .
@@ -2390,7 +2898,7 @@ build cmake_object_order_depends_target_08Sort.SSort.SSSort: phony || CMakeFiles
 build CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj: C_COMPILER__08Sort.2eSSort.2eSSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/SSSort.c || cmake_object_order_depends_target_08Sort.SSort.SSSort
   DEP_FILE = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort\SSSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\08Sort.SSort.SSSort.dir
   OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort
 
@@ -2404,6 +2912,7 @@ build CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj: C_COMPILER__
 
 build 08Sort.SSort.SSSort.exe: C_EXECUTABLE_LINKER__08Sort.2eSSort.2eSSSort_Debug CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\08Sort.SSort.SSSort.dir
   POST_BUILD = cd .
@@ -2411,6 +2920,76 @@ build 08Sort.SSort.SSSort.exe: C_EXECUTABLE_LINKER__08Sort.2eSSort.2eSSSort_Debu
   TARGET_FILE = 08Sort.SSort.SSSort.exe
   TARGET_IMPLIB = lib08Sort.SSort.SSSort.dll.a
   TARGET_PDB = 08Sort.SSort.SSSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 09App.2006
+
+
+#############################################
+# Order-only phony target for 09App.2006
+
+build cmake_object_order_depends_target_09App.2006: phony || CMakeFiles/09App.2006.dir
+
+build CMakeFiles/09App.2006.dir/09App/2006.c.obj: C_COMPILER__09App.2e2006_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09App/2006.c || cmake_object_order_depends_target_09App.2006
+  DEP_FILE = CMakeFiles\09App.2006.dir\09App\2006.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\09App.2006.dir
+  OBJECT_FILE_DIR = CMakeFiles\09App.2006.dir\09App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 09App.2006
+
+
+#############################################
+# Link the executable 09App.2006.exe
+
+build 09App.2006.exe: C_EXECUTABLE_LINKER__09App.2e2006_Debug CMakeFiles/09App.2006.dir/09App/2006.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\09App.2006.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 09App.2006.exe
+  TARGET_IMPLIB = lib09App.2006.dll.a
+  TARGET_PDB = 09App.2006.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 09App.2007
+
+
+#############################################
+# Order-only phony target for 09App.2007
+
+build cmake_object_order_depends_target_09App.2007: phony || cmake_object_order_depends_target_LBTree_lib
+
+build CMakeFiles/09App.2007.dir/09App/2007.c.obj: C_COMPILER__09App.2e2007_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09App/2007.c || cmake_object_order_depends_target_09App.2007
+  DEP_FILE = CMakeFiles\09App.2007.dir\09App\2007.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
+  OBJECT_DIR = CMakeFiles\09App.2007.dir
+  OBJECT_FILE_DIR = CMakeFiles\09App.2007.dir\09App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 09App.2007
+
+
+#############################################
+# Link the executable 09App.2007.exe
+
+build 09App.2007.exe: C_EXECUTABLE_LINKER__09App.2e2007_Debug CMakeFiles/09App.2007.dir/09App/2007.c.obj | libLBTree_lib.a || libLBTree_lib.a
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = libLBTree_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\09App.2007.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 09App.2007.exe
+  TARGET_IMPLIB = lib09App.2007.dll.a
+  TARGET_PDB = 09App.2007.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
@@ -2424,7 +3003,7 @@ build cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.Comp
 build CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj: C_COMPILER__cmake-build-debug.2eCMakeFiles.2e3.2e28.2e1.2eCompilerIdC.2eCMakeCCompilerId_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c || cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
   DEP_FILE = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC\CMakeCCompilerId.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List/LList -ID:/CLion/WorkPlace/dataStructure/01List/SList -ID:/CLion/WorkPlace/dataStructure/02Stack/LStack -ID:/CLion/WorkPlace/dataStructure/02Stack/SStack -ID:/CLion/WorkPlace/dataStructure/06Tree/LTree -ID:/CLion/WorkPlace/dataStructure/06Tree/STree
   OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.28.1\CompilerIdC
 
@@ -2438,6 +3017,7 @@ build CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerI
 
 build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe: C_EXECUTABLE_LINKER__cmake-build-debug.2eCMakeFiles.2e3.2e28.2e1.2eCompilerIdC.2eCMakeCCompilerId_Debug CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.28.1/CompilerIdC/CMakeCCompilerId.c.obj
   FLAGS = -g
+  LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
   POST_BUILD = cd .
@@ -2558,9 +3138,27 @@ build 05String.LString.BFMatch: phony 05String.LString.BFMatch.exe
 
 build 05String.SString.KMPMatch: phony 05String.SString.KMPMatch.exe
 
-build 06Tree.App.InOrderByStack: phony 06Tree.App.InOrderByStack.exe
+build 06Tree.App.FindAncestry: phony 06Tree.App.FindAncestry.exe
 
-build 06Tree.BTree.BTree: phony 06Tree.BTree.BTree.exe
+build 06Tree.App.GetDegree: phony 06Tree.App.GetDegree.exe
+
+build 06Tree.App.GetKeyNode: phony 06Tree.App.GetKeyNode.exe
+
+build 06Tree.App.GetKthValue: phony 06Tree.App.GetKthValue.exe
+
+build 06Tree.App.GetNode: phony 06Tree.App.GetNode.exe
+
+build 06Tree.App.LevelOrder: phony 06Tree.App.LevelOrder.exe
+
+build 06Tree.App.SwapLBTree: phony 06Tree.App.SwapLBTree.exe
+
+build 06Tree.App.ToList: phony 06Tree.App.ToList.exe
+
+build 06Tree.LTree.LBTree: phony 06Tree.LTree.LBTree.exe
+
+build 06Tree.STree.SBTree: phony 06Tree.STree.SBTree.exe
+
+build 07Search.App.find: phony 07Search.App.find.exe
 
 build 07Search.Line.BSearch: phony 07Search.Line.BSearch.exe
 
@@ -2604,13 +3202,25 @@ build 08Sort.SSort.HSort: phony 08Sort.SSort.HSort.exe
 
 build 08Sort.SSort.SSSort: phony 08Sort.SSort.SSSort.exe
 
+build 09App.2006: phony 09App.2006.exe
+
+build 09App.2007: phony 09App.2007.exe
+
 build DLList_lib: phony libDLList_lib.a
 
 build DSList_lib: phony libDSList_lib.a
 
+build LBTree_lib: phony libLBTree_lib.a
+
+build LStack_lib: phony libLStack_lib.a
+
+build SBTree_lib: phony libSBTree_lib.a
+
 build SLList_lib: phony libSLList_lib.a
 
 build SSList_lib: phony libSSList_lib.a
+
+build SStack_lib: phony libSStack_lib.a
 
 build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
@@ -2622,7 +3232,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony libDLList_lib.a libSLList_lib.a libDSList_lib.a libSSList_lib.a 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.App.Day06.exe 01List.App.Day07.exe 01List.App.Day08.exe 01List.App.Day09.exe 01List.App.Day10.exe 01List.App.Day11.exe 01List.App.Day12.exe 01List.App.Day13.exe 01List.App.Day14.exe 01List.App.Day15.exe 01List.App.Day16.exe 01List.App.Day17.exe 01List.App.Day18.exe 01List.App.Day19.exe 01List.App.Day20.exe 01List.App.Day21.exe 01List.App.Day22.exe 01List.App.Day23.exe 01List.App.Day24.exe 01List.App.Day25.exe 01List.App.Day26.exe 01List.App.Day27.exe 01List.App.Day28.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.InOrderByStack.exe 06Tree.BTree.BTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony libDLList_lib.a libSLList_lib.a libDSList_lib.a libSSList_lib.a libLStack_lib.a libSStack_lib.a libLBTree_lib.a libSBTree_lib.a 01List.App.Day01.exe 01List.App.Day02.exe 01List.App.Day03.exe 01List.App.Day04.exe 01List.App.Day05.exe 01List.App.Day06.exe 01List.App.Day07.exe 01List.App.Day08.exe 01List.App.Day09.exe 01List.App.Day10.exe 01List.App.Day11.exe 01List.App.Day12.exe 01List.App.Day13.exe 01List.App.Day14.exe 01List.App.Day15.exe 01List.App.Day16.exe 01List.App.Day17.exe 01List.App.Day18.exe 01List.App.Day19.exe 01List.App.Day20.exe 01List.App.Day21.exe 01List.App.Day22.exe 01List.App.Day23.exe 01List.App.Day24.exe 01List.App.Day25.exe 01List.App.Day26.exe 01List.App.Day27.exe 01List.App.Day28.exe 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.App.BaseConvert.exe 02Stack.App.BracketMatch.exe 02Stack.App.Expression.exe 02Stack.App.RowEdit.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.App.FindAncestry.exe 06Tree.App.GetDegree.exe 06Tree.App.GetKeyNode.exe 06Tree.App.GetKthValue.exe 06Tree.App.GetNode.exe 06Tree.App.LevelOrder.exe 06Tree.App.SwapLBTree.exe 06Tree.App.ToList.exe 06Tree.LTree.LBTree.exe 06Tree.STree.SBTree.exe 07Search.App.find.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.App.Job01.exe 08Sort.App.Job02.exe 08Sort.App.Job03.exe 08Sort.App.Job04.exe 08Sort.App.Job05.exe 08Sort.App.Job06.exe 08Sort.App.Job07.exe 08Sort.App.SSSortByList.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe 09App.2006.exe 09App.2007.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

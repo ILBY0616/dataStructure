@@ -1,29 +1,20 @@
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "SStack.h"
 
-#define size 10
-#define type int
-
-typedef struct Stack
+bool initiateSStack(SStack* s)
 {
-    type data[size];
-    int top;
-} Stack;
-
-typedef Stack* SStack;
-
-SStack initiateStack(SStack s)
-{
-    s = (SStack)malloc(sizeof(Stack));
-    if (s != NULL)
+    if (*s != NULL)
     {
-        s->top = -1;
+        return false;
     }
-    return s;
+    *s = (SStack)malloc(sizeof(Node));
+    if (*s != NULL)
+    {
+        (*s)->top = -1;
+    }
+    return true;;
 }
 
-type getTop(SStack s)
+type getSStack(SStack s)
 {
     if (s == NULL || s->top == -1)
     {
@@ -32,7 +23,7 @@ type getTop(SStack s)
     return s->data[s->top];
 }
 
-bool pushData(SStack s, type data)
+bool pushSStack(SStack s, type data)
 {
     if (s == NULL || s->top == size - 1)
     {
@@ -42,36 +33,39 @@ bool pushData(SStack s, type data)
     return true;
 }
 
-type popData(SStack s)
+bool popSStack(SStack s,type* data)
 {
     if (s == NULL || s->top == -1)
     {
-        return -1;
+        *data = -1;
+        return false;
     }
-    return s->data[s->top--];
+    *data = s->data[s->top--];
+    return true;
 }
 
-void destroyStack(SStack s)
+void destroySStack(SStack* s)
 {
-    free(s);
+    free(*s);
+    *s = NULL;
 }
 
-int main()
-{
-    int i = 0;
-    type data[size];
-    SStack s = NULL;
-    s = initiateStack(s);
-    while (scanf("%d ", &data[i]) == 1)
-    {
-        pushData(s, data[i]);
-        i++;
-    }
-    for (int j = 0; j < i; j++)
-    {
-        printf("%d ", getTop(s));
-        popData(s);
-    }
-    destroyStack(s);
-    return 0;
-}
+// int main()
+// {
+//     int i = 0;
+//     type data[size];
+//     SStack s = NULL;
+//     initiateSStack(&s);
+//     while (scanf("%d ", &data[i]) == 1)
+//     {
+//         pushSStack(s, data[i]);
+//         i++;
+//     }
+//     for (int j = 0; j < i; j++)
+//     {
+//         printf("%d ", getSStack(s));
+//         popSStack(s, &data[i]);
+//     }
+//     destroySStack(&s);
+//     return 0;
+// }

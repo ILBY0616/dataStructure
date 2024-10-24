@@ -13,101 +13,110 @@ typedef struct Node
 typedef struct Queue
 {
     Node *front, *rear;
-} Queue;
+} Queue, *LQueue;
 
-typedef Queue* LQueue;
-LQueue initiateQueue(LQueue q)
+bool initiateLQueue(LQueue* queue);
+type getLQueue(LQueue queue);
+bool inLQueue(LQueue queue, type data);
+type outLQueue(LQueue queue);
+bool destroyLQueue(LQueue* queue);
+
+int main()
 {
-    q = (LQueue)malloc(sizeof(Queue));
-    if (q != NULL)
+    int i = 0;
+    type data[10];
+    LQueue queue = NULL;
+    initiateLQueue(&queue);
+    while (scanf("%d ", &data[i]) == 1)
     {
-        q->front = NULL;
-        q->rear = NULL;
+        inLQueue(queue, data[i]);
+        i++;
     }
-    return q;
+    for (int j = 0; j < i; j++)
+    {
+        data[j] = outLQueue(queue);
+        printf("%d ", data[j]);
+    }
+    destroyLQueue(&queue);
+    return 0;
 }
 
-type getFront(LQueue q)
+bool initiateLQueue(LQueue* queue)
 {
-    if (q == NULL || q->front == NULL)
+    if (*queue != NULL)
+    {
+        return false;
+    }
+    *queue = (LQueue)malloc(sizeof(Queue));
+    if (*queue != NULL)
+    {
+        (*queue)->front = NULL;
+        (*queue)->rear = NULL;
+    }
+    return true;
+}
+
+type getLQueue(LQueue queue)
+{
+    if (queue == NULL || queue->front == NULL)
     {
         return -1;
     }
-    return q->front->data;
+    return queue->front->data;
 }
 
-LQueue inQueue(LQueue q, type data)
+bool inLQueue(LQueue queue, type data)
 {
-    if (q == NULL)
+    if (queue == NULL)
     {
-        return q;
+        return false;
     }
     Node* node = malloc(sizeof(Node));
     if (node != NULL)
     {
         node->data = data;
         node->next = NULL;
-        if (q->front == NULL)
+        if (queue->front == NULL)
         {
-            q->front = node;
-            q->rear = node;
+            queue->front = node;
+            queue->rear = node;
         }
         else
         {
-            q->rear->next = node;
-            q->rear = node;
+            queue->rear->next = node;
+            queue->rear = node;
         }
     }
-    return q;
-}
-
-LQueue outQueue(LQueue q,type* data)
-{
-    if (q == NULL || q->front == NULL)
-    {
-        return q;
-    }
-    *data = q->front->data;
-    Node* node = q->front;
-    q->front = q->front->next;
-    free(node);
-    return q;
-}
-
-bool destroyQueue(LQueue q)
-{
-    if (q == NULL || q->front == NULL || q->rear == NULL)
-    {
-        return false;
-    }
-    while (q->front != NULL)
-    {
-        Node* node = q->front;
-        q->front = q->front->next;
-        free(node);
-    }
-    q->rear = NULL;
-    free(q);
     return true;
 }
 
-
-int main()
+type outLQueue(LQueue queue)
 {
-    int i = 0;
-    type data[10];
-    LQueue q = NULL;
-    q = initiateQueue(q);
-    while (scanf("%d ", &data[i]) == 1)
+    if (queue == NULL || queue->front == NULL)
     {
-        inQueue(q, data[i]);
-        i++;
+        return -1;
     }
-    for (int j = 0; j < i; j++)
+    type data = queue->front->data;
+    Node* node = queue->front;
+    queue->front = queue->front->next;
+    free(node);
+    return data;
+}
+
+bool destroyLQueue(LQueue* queue)
+{
+    if (*queue == NULL || (*queue)->front == NULL || (*queue)->rear == NULL)
     {
-        q = outQueue(q, &data[j]);
-        printf("%d ", data[j]);
+        return false;
     }
-    destroyQueue(q);
-    return 0;
+    while ((*queue)->front != NULL)
+    {
+        Node* node = (*queue)->front;
+        (*queue)->front = (*queue)->front->next;
+        free(node);
+    }
+    (*queue)->rear = NULL;
+    free(queue);
+    *queue = NULL;
+    return true;
 }

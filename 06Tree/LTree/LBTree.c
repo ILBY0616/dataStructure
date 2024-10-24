@@ -1,4 +1,73 @@
-#include "LBTree.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+#define size 100
+#define type char
+
+typedef struct Node
+{
+    type data;
+    struct Node *left, *right;
+} Node, *LBTree;
+
+void initiateLBTree(LBTree* tree);
+void preOrderByRecursion(LBTree tree);
+void preOrderByStack(LBTree tree);
+void inOrderByRecursion(LBTree tree);
+void inOrderByStack(LBTree tree);
+void postOrderByRecursion(LBTree tree);
+void postOrderByStack(LBTree tree);
+void levelOrderByRecursion(LBTree tree);
+void levelOrderByQueue(LBTree tree);
+int getHeightByRecursion(LBTree tree);
+int getHeightByQueue(LBTree tree);
+void destroyLBTree(LBTree* tree);
+
+int main()
+{
+    LBTree tree = NULL;
+    // 初始化树
+    printf("请依次输入树节点数据(输入'^'表示该节点为空)：\n");
+    initiateLBTree(&tree);
+    // 先序遍历
+    printf("先序遍历(递归)：\n");
+    preOrderByRecursion(tree);
+    printf("\n");
+    printf("先序遍历(非递归)：\n");
+    preOrderByStack(tree);
+    printf("\n");
+    // 中序遍历
+    printf("中序遍历(递归)：\n");
+    inOrderByRecursion(tree);
+    printf("\n");
+    printf("中序遍历(非递归)：\n");
+    inOrderByStack(tree);
+    printf("\n");
+    // 后序遍历
+    printf("后序遍历(递归)：\n");
+    postOrderByRecursion(tree);
+    printf("\n");
+    printf("后序遍历(非递归)：\n");
+    postOrderByStack(tree);
+    printf("\n");
+    // 层序遍历
+    printf("层序遍历(递归)：\n");
+    levelOrderByRecursion(tree);
+    printf("\n");
+    printf("层序遍历(队列)：\n");
+    levelOrderByQueue(tree);
+    printf("\n");
+    // 获取树的高度
+    printf("树的高度(递归)：%d\n", getHeightByRecursion(tree));
+    printf("树的高度(队列)：%d\n", getHeightByQueue(tree));
+    // 销毁树
+    destroyLBTree(&tree);
+    if (tree == NULL)
+    {
+        printf("树已成功销毁。\n");
+    }
+    return 0;
+}
 
 void initiateLBTree(LBTree* tree)
 {

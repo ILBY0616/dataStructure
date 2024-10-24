@@ -1,25 +1,62 @@
-#include "LStack.h"
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-bool initiateLStack(LStack* s)
+#define size 10
+#define type int
+
+typedef struct Node
 {
-    if (*s != NULL)
+    type data;
+    struct Node* next;
+} Node, *LStack;
+
+bool initiateLStack(LStack* stack);
+type getLStack(LStack stack);
+bool pushLStack(LStack* stack, type data);
+type popLStack(LStack* stack);
+bool destroyLStack(LStack* stack);
+
+int main()
+{
+    int i = 0;
+    type data[size];
+    LStack stack = NULL;
+    initiateLStack(&stack);
+    while (scanf("%d ", &data[i]) == 1)
+    {
+        pushLStack(&stack, data[i]);
+        i++;
+    }
+    for (int j = 0; j < i; j++)
+    {
+        printf("%d ", getLStack(stack));
+        data[i] = popLStack(&stack);
+    }
+    destroyLStack(&stack);
+    return 0;
+}
+
+bool initiateLStack(LStack* stack)
+{
+    if (*stack != NULL)
     {
         return false;
     }
-    *s = NULL;
+    *stack = NULL;
     return true;
 }
 
-type getLStack(LStack s)
+type getLStack(LStack stack)
 {
-    if (s == NULL)
+    if (stack == NULL)
     {
         return -1;
     }
-    return s->data;
+    return stack->data;
 }
 
-bool pushLStack(LStack* s, type data)
+bool pushLStack(LStack* stack, type data)
 {
     LStack node = malloc(sizeof(Node));
     if (node == NULL)
@@ -27,52 +64,37 @@ bool pushLStack(LStack* s, type data)
         return false;
     }
     node->data = data;
-    node->next = *s;
-    *s = node;
+    node->next = *stack;
+    *stack = node;
     return true;;
 }
 
-bool popLStack(LStack* s, type* data)
+type popLStack(LStack* stack)
 {
-    if (*s == NULL)
+    if (*stack == NULL)
     {
         return false;
     }
-    LStack node = *s;
-    *data = node->data;
-    *s = (*s)->next;
+    LStack node = *stack;
+    type data = node->data;
+    *stack = (*stack)->next;
     free(node);
-    return true;;
+    return data;
 }
 
-void destroyLStack(LStack* s)
+bool destroyLStack(LStack* stack)
 {
-    LStack node = *s;
+    if (*stack == NULL)
+    {
+        return false;
+    }
+    LStack node = *stack;
     while (node != NULL)
     {
-        *s = (*s)->next;
+        *stack = (*stack)->next;
         free(node);
-        node = *s;
+        node = *stack;
     }
-    *s = NULL;
+    *stack = NULL;
+    return true;
 }
-
-// int main()
-// {
-//     int i = 0;
-//     type data[size];
-//     LStack s = NULL;
-//     initiateLStack(&s);
-//     while (scanf("%d ", &data[i]) == 1)
-//     {
-//         pushLStack(&s, data[i]);
-//         i++;
-//     }
-//     for (int j = 0; j < i; j++)
-//     {
-//         printf("%d ", getLStack(s));
-//         popLStack(&s, &data[i]);
-//     }
-//     destroyLStack(&s);
-//     return 0;
-// }

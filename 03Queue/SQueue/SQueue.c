@@ -9,71 +9,85 @@ typedef struct Queue
 {
     type data[size];
     int front, rear;
-} Queue;
+} Queue, *SQueue;
 
-typedef Queue* SQueue;
-
-SQueue initiateQueue(SQueue q)
-{
-    q = (SQueue)malloc(sizeof(Queue));
-    if (q != NULL)
-    {
-        q->front = q->rear = 0;
-    }
-    return q;
-}
-
-type getFront(SQueue q)
-{
-    if (q == NULL || q->front == q->rear)
-    {
-        return -1;
-    }
-    return q->data[q->front];
-}
-
-bool inQueue(SQueue q, type data)
-{
-    if (q == NULL || (q->rear + 1) % size == q->front)
-    {
-        return false;
-    }
-    q->data[q->rear] = data;
-    q->rear = (q->rear + 1) % size;
-    return true;
-}
-
-type outQueue(SQueue q)
-{
-    if (q == NULL || q->front == q->rear)
-    {
-        return -1;
-    }
-    type data = q->data[q->front];
-    q->front = (q->front + 1) % size;
-    return data;
-}
-
-void destroyQueue(SQueue q)
-{
-    free(q);
-}
+bool initiateSQueue(SQueue* queue);
+type getSQueue(SQueue queue);
+bool inSQueue(SQueue queue, type data);
+type outSQueue(SQueue queue);
+bool destroySQueue(SQueue* queue);
 
 int main()
 {
     int i = 0;
     type data[size];
-    SQueue q = NULL;
-    q = initiateQueue(q);
+    SQueue queue = NULL;
+    initiateSQueue(&queue);
     while (scanf("%d ", &data[i]) == 1)
     {
-        inQueue(q, data[i]);
+        inSQueue(queue, data[i]);
         i++;
     }
     for (int j = 0; j < i; j++)
     {
-        printf("%d ", outQueue(q));
+        printf("%d ", outSQueue(queue));
     }
-    destroyQueue(q);
+    destroySQueue(&queue);
     return 0;
+}
+
+bool initiateSQueue(SQueue* queue)
+{
+    if (*queue != NULL)
+    {
+        return false;
+    }
+    *queue = (SQueue)malloc(sizeof(Queue));
+    if (*queue != NULL)
+    {
+        (*queue)->front = (*queue)->rear = 0;
+    }
+    return true;
+}
+
+type getSQueue(SQueue queue)
+{
+    if (queue == NULL || queue->front == queue->rear)
+    {
+        return -1;
+    }
+    return queue->data[queue->front];
+}
+
+bool inSQueue(SQueue queue, type data)
+{
+    if (queue == NULL || (queue->rear + 1) % size == queue->front)
+    {
+        return false;
+    }
+    queue->data[queue->rear] = data;
+    queue->rear = (queue->rear + 1) % size;
+    return true;
+}
+
+type outSQueue(SQueue queue)
+{
+    if (queue == NULL || queue->front == queue->rear)
+    {
+        return -1;
+    }
+    type data = queue->data[queue->front];
+    queue->front = (queue->front + 1) % size;
+    return data;
+}
+
+bool destroySQueue(SQueue* queue)
+{
+    if (*queue == NULL)
+    {
+        return false;
+    }
+    free(*queue);
+    *queue = NULL;
+    return true;
 }

@@ -1,8 +1,71 @@
-#include "SSList.h"
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+#define type int
+#define size 100
+
+typedef struct List
+{
+    type data[size];
+    int length;
+} List, *SSList;
+
+bool initiateSSList(SSList* list);
+int selectSSList(SSList list, type data);
+bool insertSSList(SSList list, int location, type data);
+bool deleteSSList(SSList list, int location);
+bool printSSList(SSList list);
+bool destroySSList(SSList* list);
+
+int main()
+{
+    SSList list;
+    if (!initiateSSList(&list))
+    {
+        printf("Failed to initiate list.\n");
+        return 1;
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        if (!insertSSList(list, i, i + 1))
+        {
+            printf("Failed to insert %d at position %d.\n", i + 1, i);
+        }
+    }
+    printf("Current List: ");
+    printSSList(list);
+    int target = 5;
+    int position = selectSSList(list, target);
+    printf("%d is at position %d\n", target, position);
+    if (deleteSSList(list, 3))
+    {
+        printf("Deleted element at position 3.\n");
+    }
+    else
+    {
+        printf("Failed to delete element at position 3.\n");
+    }
+    printf("List after deletion: ");
+    printSSList(list);
+    if (insertSSList(list, 2, 99))
+    {
+        printf("Inserted 99 at position 2.\n");
+    }
+    else
+    {
+        printf("Failed to insert 99 at position 2.\n");
+    }
+    printf("Final List: ");
+    printSSList(list);
+    destroySSList(&list);
+    printf("List destroyed.\n");
+    return 0;
+}
 
 bool initiateSSList(SSList* list)
 {
-    *list = (SSList)malloc(sizeof(Node));
+    *list = (SSList)malloc(sizeof(List));
     if (*list == NULL)
     {
         return false;
@@ -75,30 +138,13 @@ bool printSSList(SSList list)
     return true;
 }
 
-void destroySSList(SSList* list)
+bool destroySSList(SSList* list)
 {
-    if (*list != NULL)
+    if (*list == NULL)
     {
-        free(*list);
-        *list = NULL;
+        return false;
     }
+    free(*list);
+    *list = NULL;
+    return true;
 }
-
-// int main()
-// {
-//     SSList list;
-//     initiateSSList(&list);
-//     for (int i = 0; i < 10; i++)
-//     {
-//         insertSSList(list, i, i + 1);
-//     }
-//     printSSList(list);
-//     int target = 5;
-//     int position = selectSSList(list, target);
-//     printf("%d in %d\n", target, position);
-//     deleteSSList(list, 3);
-//     insertSSList(list, 2, 99);
-//     printSSList(list);
-//     destroySSList(&list);
-//     return 0;
-// }

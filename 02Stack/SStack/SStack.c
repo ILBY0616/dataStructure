@@ -1,71 +1,92 @@
-#include "SStack.h"
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-bool initiateSStack(SStack* s)
+#define size 10
+#define type int
+
+typedef struct Stack
 {
-    if (*s != NULL)
+    type data[size];
+    int top;
+} Stack, *SStack;
+
+bool initiateSStack(SStack* stack);
+type getSStack(SStack stack);
+bool pushSStack(SStack stack, type data);
+type popSStack(SStack stack);
+bool destroySStack(SStack* stack);
+
+int main()
+{
+    int i = 0;
+    type data[size];
+    SStack stack = NULL;
+    initiateSStack(&stack);
+    while (scanf("%d ", &data[i]) == 1)
+    {
+        pushSStack(stack, data[i]);
+        i++;
+    }
+    for (int j = 0; j < i; j++)
+    {
+        printf("%d ", getSStack(stack));
+        data[i] = popSStack(stack);
+    }
+    destroySStack(&stack);
+    return 0;
+}
+
+bool initiateSStack(SStack* stack)
+{
+    if (*stack != NULL)
     {
         return false;
     }
-    *s = (SStack)malloc(sizeof(Node));
-    if (*s != NULL)
+    *stack = (SStack)malloc(sizeof(Stack));
+    if (*stack != NULL)
     {
-        (*s)->top = -1;
+        (*stack)->top = -1;
     }
     return true;;
 }
 
-type getSStack(SStack s)
+type getSStack(SStack stack)
 {
-    if (s == NULL || s->top == -1)
+    if (stack == NULL || stack->top == -1)
     {
         return -1;
     }
-    return s->data[s->top];
+    return stack->data[stack->top];
 }
 
-bool pushSStack(SStack s, type data)
+bool pushSStack(SStack stack, type data)
 {
-    if (s == NULL || s->top == size - 1)
+    if (stack == NULL || stack->top == size - 1)
     {
         return false;
     }
-    s->data[++s->top] = data;
+    stack->data[++stack->top] = data;
     return true;
 }
 
-bool popSStack(SStack s,type* data)
+type popSStack(SStack stack)
 {
-    if (s == NULL || s->top == -1)
+    if (stack == NULL || stack->top == -1)
     {
-        *data = -1;
+        return -1;
+    }
+    type data = stack->data[stack->top--];
+    return data;
+}
+
+bool destroySStack(SStack* stack)
+{
+    if (*stack == NULL)
+    {
         return false;
     }
-    *data = s->data[s->top--];
+    free(*stack);
+    *stack = NULL;
     return true;
 }
-
-void destroySStack(SStack* s)
-{
-    free(*s);
-    *s = NULL;
-}
-
-// int main()
-// {
-//     int i = 0;
-//     type data[size];
-//     SStack s = NULL;
-//     initiateSStack(&s);
-//     while (scanf("%d ", &data[i]) == 1)
-//     {
-//         pushSStack(s, data[i]);
-//         i++;
-//     }
-//     for (int j = 0; j < i; j++)
-//     {
-//         printf("%d ", getSStack(s));
-//         popSStack(s, &data[i]);
-//     }
-//     destroySStack(&s);
-//     return 0;
-// }

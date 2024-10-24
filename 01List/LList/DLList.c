@@ -1,4 +1,52 @@
-#include "DLList.h"
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+#define type int
+
+typedef struct Node
+{
+    type data;
+    struct Node *prior, *next;
+} Node, *DLList;
+
+bool initiateDLList(DLList* list);
+bool buildDLListByHead(type data[], int length, DLList* list);
+bool buildDLListByTail(type data[], int length, DLList* list);
+DLList selectDLList(DLList list, type data);
+bool insertDLList(DLList list, int location, type data);
+bool deleteDLList(DLList list, int location);
+bool printDLList(DLList list);
+int getLengthDLList(DLList list);
+void destroyDLList(DLList* list);
+
+int main()
+{
+    DLList list = NULL;
+    type data[5] = {1, 2, 3, 4, 5};
+    buildDLListByHead(data, 5, &list);
+    printDLList(list);
+    destroyDLList(&list);
+    buildDLListByTail(data, 5, &list);
+    printDLList(list);
+    int target = 3;
+    DLList position = selectDLList(list, target);
+    if (position != NULL)
+    {
+        printf("%d is found\n", target);
+    }
+    else
+    {
+        printf("%d is not found\n", target);
+    }
+    insertDLList(list, 2, 99);
+    printDLList(list);
+    deleteDLList(list, 4);
+    printDLList(list);
+    printf("Length: %d\n", getLengthDLList(list));
+    destroyDLList(&list);
+    return 0;
+}
 
 bool initiateDLList(DLList* list)
 {
@@ -91,19 +139,16 @@ DLList selectDLList(DLList list, type data)
 
 bool insertDLList(DLList list, int location, type data)
 {
-    // 检查
-    if (list == NULL || location < 0 || location > list->data)
+    if (list == NULL || location < 0)
     {
         return false;
     }
-    // 查找
     DLList temp = list;
-    while (location > 0)
+    while (location > 0 && temp->next != NULL)
     {
         temp = temp->next;
         location--;
     }
-    // 插入
     DLList node = malloc(sizeof(Node));
     if (node != NULL)
     {
@@ -121,26 +166,29 @@ bool insertDLList(DLList list, int location, type data)
 
 bool deleteDLList(DLList list, int location)
 {
-    // 检查
-    if (list == NULL || list->next == NULL || location < 0 || location > list->data - 1)
+    if (list == NULL || list->next == NULL || location < 0)
     {
         return false;
     }
-    // 查找
-    DLList temp = list;
-    while (location > 0)
+    DLList temp = list->next;
+    while (location > 0 && temp->next != NULL)
     {
         temp = temp->next;
         location--;
     }
-    // 删除
-    DLList node = temp->next;
-    temp->next = node->next;
-    if (node->next != NULL)
+    if (temp == NULL)
     {
-        node->next->prior = temp;
+        return false;
     }
-    free(node);
+    if (temp->prior != NULL)
+    {
+        temp->prior->next = temp->next;
+    }
+    if (temp->next != NULL)
+    {
+        temp->next->prior = temp->prior;
+    }
+    free(temp);
     return true;
 }
 
@@ -166,22 +214,12 @@ int getLengthDLList(DLList list)
     {
         return 0;
     }
-    DLList slow = list->next;
-    DLList fast = list->next;
-    int length = 1;
-    while (fast != NULL && fast->next != NULL)
+    DLList temp = list->next;
+    int length = 0;
+    while (temp != NULL)
     {
-        slow = slow->next;
-        fast = fast->next->next;
         length++;
-    }
-    if (fast != NULL)
-    {
-        length = length * 2 - 1;
-    }
-    else
-    {
-        length = length * 2;
+        temp = temp->next;
     }
     return length;
 }
@@ -197,24 +235,3 @@ void destroyDLList(DLList* list)
     }
     *list = NULL;
 }
-
-// int main()
-// {
-//     DLList list = NULL;
-//     type data[5] = {1, 2, 3, 4, 5};
-//     buildDLListByHead(data, 5, &list);
-//     printDLList(list);
-//     destroyDLList(&list);
-//     buildDLListByTail(data, 5, &list);
-//     printDLList(list);
-//     int target = 3;
-//     DLList position = selectDLList(list, target);
-//     printf("%d is %d\n", position->data, target);
-//     insertDLList(list, 2, 99);
-//     printDLList(list);
-//     deleteDLList(list, 4);
-//     printDLList(list);
-//     printf("%d\n", getLengthDLList(list));
-//     destroyDLList(&list);
-//     return 0;
-// }

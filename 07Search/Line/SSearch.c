@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define size 10
+#define size 100
 #define type int
 
 int searchData(type data[size], type key, int length)
@@ -15,7 +15,7 @@ int searchData(type data[size], type key, int length)
 
 int main()
 {
-    type data[8] = {0, 7, 6, 5, 4, 3, 2, 1};
-    printf("%d", searchData(data, -1, 7));
-    return 0;
+    // type data[10] = {0, 7, 6, 5, 4, 3, 2, 1};
+    // printf("%d", searchData(data, -1, 7));
+    // return 0;
 }

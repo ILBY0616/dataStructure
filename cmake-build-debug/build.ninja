@@ -41,956 +41,1092 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target 01List.LList.DLList
+# Object build statements for EXECUTABLE target 01List.DLList
 
 
 #############################################
-# Order-only phony target for 01List.LList.DLList
+# Order-only phony target for 01List.DLList
 
-build cmake_object_order_depends_target_01List.LList.DLList: phony || CMakeFiles/01List.LList.DLList.dir
+build cmake_object_order_depends_target_01List.DLList: phony || CMakeFiles/01List.DLList.dir
 
-build CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj: C_COMPILER__01List.2eLList.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/DLList.c || cmake_object_order_depends_target_01List.LList.DLList
-  DEP_FILE = CMakeFiles\01List.LList.DLList.dir\01List\LList\DLList.c.obj.d
+build CMakeFiles/01List.DLList.dir/01List/DLList.c.obj: C_COMPILER__01List.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/DLList.c || cmake_object_order_depends_target_01List.DLList
+  DEP_FILE = CMakeFiles\01List.DLList.dir\01List\DLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\01List.LList.DLList.dir
-  OBJECT_FILE_DIR = CMakeFiles\01List.LList.DLList.dir\01List\LList
+  OBJECT_DIR = CMakeFiles\01List.DLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.DLList.dir\01List
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 01List.LList.DLList
+# Link build statements for EXECUTABLE target 01List.DLList
 
 
 #############################################
-# Link the executable 01List.LList.DLList.exe
+# Link the executable 01List.DLList.exe
 
-build 01List.LList.DLList.exe: C_EXECUTABLE_LINKER__01List.2eLList.2eDLList_Debug CMakeFiles/01List.LList.DLList.dir/01List/LList/DLList.c.obj
+build 01List.DLList.exe: C_EXECUTABLE_LINKER__01List.2eDLList_Debug CMakeFiles/01List.DLList.dir/01List/DLList.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\01List.LList.DLList.dir
+  OBJECT_DIR = CMakeFiles\01List.DLList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 01List.LList.DLList.exe
-  TARGET_IMPLIB = lib01List.LList.DLList.dll.a
-  TARGET_PDB = 01List.LList.DLList.exe.dbg
+  TARGET_FILE = 01List.DLList.exe
+  TARGET_IMPLIB = lib01List.DLList.dll.a
+  TARGET_PDB = 01List.DLList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 01List.LList.SLList
+# Object build statements for EXECUTABLE target 01List.DSList
 
 
 #############################################
-# Order-only phony target for 01List.LList.SLList
+# Order-only phony target for 01List.DSList
 
-build cmake_object_order_depends_target_01List.LList.SLList: phony || CMakeFiles/01List.LList.SLList.dir
+build cmake_object_order_depends_target_01List.DSList: phony || CMakeFiles/01List.DSList.dir
 
-build CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj: C_COMPILER__01List.2eLList.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/LList/SLList.c || cmake_object_order_depends_target_01List.LList.SLList
-  DEP_FILE = CMakeFiles\01List.LList.SLList.dir\01List\LList\SLList.c.obj.d
+build CMakeFiles/01List.DSList.dir/01List/DSList.c.obj: C_COMPILER__01List.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/DSList.c || cmake_object_order_depends_target_01List.DSList
+  DEP_FILE = CMakeFiles\01List.DSList.dir\01List\DSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\01List.LList.SLList.dir
-  OBJECT_FILE_DIR = CMakeFiles\01List.LList.SLList.dir\01List\LList
+  OBJECT_DIR = CMakeFiles\01List.DSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.DSList.dir\01List
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 01List.LList.SLList
+# Link build statements for EXECUTABLE target 01List.DSList
 
 
 #############################################
-# Link the executable 01List.LList.SLList.exe
+# Link the executable 01List.DSList.exe
 
-build 01List.LList.SLList.exe: C_EXECUTABLE_LINKER__01List.2eLList.2eSLList_Debug CMakeFiles/01List.LList.SLList.dir/01List/LList/SLList.c.obj
+build 01List.DSList.exe: C_EXECUTABLE_LINKER__01List.2eDSList_Debug CMakeFiles/01List.DSList.dir/01List/DSList.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\01List.LList.SLList.dir
+  OBJECT_DIR = CMakeFiles\01List.DSList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 01List.LList.SLList.exe
-  TARGET_IMPLIB = lib01List.LList.SLList.dll.a
-  TARGET_PDB = 01List.LList.SLList.exe.dbg
+  TARGET_FILE = 01List.DSList.exe
+  TARGET_IMPLIB = lib01List.DSList.dll.a
+  TARGET_PDB = 01List.DSList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 01List.SList.DSList
+# Object build statements for EXECUTABLE target 01List.SLList
 
 
 #############################################
-# Order-only phony target for 01List.SList.DSList
+# Order-only phony target for 01List.SLList
 
-build cmake_object_order_depends_target_01List.SList.DSList: phony || CMakeFiles/01List.SList.DSList.dir
+build cmake_object_order_depends_target_01List.SLList: phony || CMakeFiles/01List.SLList.dir
 
-build CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj: C_COMPILER__01List.2eSList.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/DSList.c || cmake_object_order_depends_target_01List.SList.DSList
-  DEP_FILE = CMakeFiles\01List.SList.DSList.dir\01List\SList\DSList.c.obj.d
+build CMakeFiles/01List.SLList.dir/01List/SLList.c.obj: C_COMPILER__01List.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SLList.c || cmake_object_order_depends_target_01List.SLList
+  DEP_FILE = CMakeFiles\01List.SLList.dir\01List\SLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\01List.SList.DSList.dir
-  OBJECT_FILE_DIR = CMakeFiles\01List.SList.DSList.dir\01List\SList
+  OBJECT_DIR = CMakeFiles\01List.SLList.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.SLList.dir\01List
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 01List.SList.DSList
+# Link build statements for EXECUTABLE target 01List.SLList
 
 
 #############################################
-# Link the executable 01List.SList.DSList.exe
+# Link the executable 01List.SLList.exe
 
-build 01List.SList.DSList.exe: C_EXECUTABLE_LINKER__01List.2eSList.2eDSList_Debug CMakeFiles/01List.SList.DSList.dir/01List/SList/DSList.c.obj
+build 01List.SLList.exe: C_EXECUTABLE_LINKER__01List.2eSLList_Debug CMakeFiles/01List.SLList.dir/01List/SLList.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\01List.SList.DSList.dir
+  OBJECT_DIR = CMakeFiles\01List.SLList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 01List.SList.DSList.exe
-  TARGET_IMPLIB = lib01List.SList.DSList.dll.a
-  TARGET_PDB = 01List.SList.DSList.exe.dbg
+  TARGET_FILE = 01List.SLList.exe
+  TARGET_IMPLIB = lib01List.SLList.dll.a
+  TARGET_PDB = 01List.SLList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 01List.SList.SSList
+# Object build statements for EXECUTABLE target 01List.SSList
 
 
 #############################################
-# Order-only phony target for 01List.SList.SSList
+# Order-only phony target for 01List.SSList
 
-build cmake_object_order_depends_target_01List.SList.SSList: phony || CMakeFiles/01List.SList.SSList.dir
+build cmake_object_order_depends_target_01List.SSList: phony || CMakeFiles/01List.SSList.dir
 
-build CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj: C_COMPILER__01List.2eSList.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SList/SSList.c || cmake_object_order_depends_target_01List.SList.SSList
-  DEP_FILE = CMakeFiles\01List.SList.SSList.dir\01List\SList\SSList.c.obj.d
+build CMakeFiles/01List.SSList.dir/01List/SSList.c.obj: C_COMPILER__01List.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SSList.c || cmake_object_order_depends_target_01List.SSList
+  DEP_FILE = CMakeFiles\01List.SSList.dir\01List\SSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\01List.SList.SSList.dir
-  OBJECT_FILE_DIR = CMakeFiles\01List.SList.SSList.dir\01List\SList
+  OBJECT_DIR = CMakeFiles\01List.SSList.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.SSList.dir\01List
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 01List.SList.SSList
+# Link build statements for EXECUTABLE target 01List.SSList
 
 
 #############################################
-# Link the executable 01List.SList.SSList.exe
+# Link the executable 01List.SSList.exe
 
-build 01List.SList.SSList.exe: C_EXECUTABLE_LINKER__01List.2eSList.2eSSList_Debug CMakeFiles/01List.SList.SSList.dir/01List/SList/SSList.c.obj
+build 01List.SSList.exe: C_EXECUTABLE_LINKER__01List.2eSSList_Debug CMakeFiles/01List.SSList.dir/01List/SSList.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\01List.SList.SSList.dir
+  OBJECT_DIR = CMakeFiles\01List.SSList.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 01List.SList.SSList.exe
-  TARGET_IMPLIB = lib01List.SList.SSList.dll.a
-  TARGET_PDB = 01List.SList.SSList.exe.dbg
+  TARGET_FILE = 01List.SSList.exe
+  TARGET_IMPLIB = lib01List.SSList.dll.a
+  TARGET_PDB = 01List.SSList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 02Stack.LStack.LStack
+# Object build statements for EXECUTABLE target 02Stack.LStack
 
 
 #############################################
-# Order-only phony target for 02Stack.LStack.LStack
+# Order-only phony target for 02Stack.LStack
 
-build cmake_object_order_depends_target_02Stack.LStack.LStack: phony || CMakeFiles/02Stack.LStack.LStack.dir
+build cmake_object_order_depends_target_02Stack.LStack: phony || CMakeFiles/02Stack.LStack.dir
 
-build CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj: C_COMPILER__02Stack.2eLStack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack/LStack.c || cmake_object_order_depends_target_02Stack.LStack.LStack
-  DEP_FILE = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack\LStack.c.obj.d
+build CMakeFiles/02Stack.LStack.dir/02Stack/LStack.c.obj: C_COMPILER__02Stack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack.c || cmake_object_order_depends_target_02Stack.LStack
+  DEP_FILE = CMakeFiles\02Stack.LStack.dir\02Stack\LStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\02Stack.LStack.LStack.dir
-  OBJECT_FILE_DIR = CMakeFiles\02Stack.LStack.LStack.dir\02Stack\LStack
+  OBJECT_DIR = CMakeFiles\02Stack.LStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\02Stack.LStack.dir\02Stack
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 02Stack.LStack.LStack
+# Link build statements for EXECUTABLE target 02Stack.LStack
 
 
 #############################################
-# Link the executable 02Stack.LStack.LStack.exe
+# Link the executable 02Stack.LStack.exe
 
-build 02Stack.LStack.LStack.exe: C_EXECUTABLE_LINKER__02Stack.2eLStack.2eLStack_Debug CMakeFiles/02Stack.LStack.LStack.dir/02Stack/LStack/LStack.c.obj
+build 02Stack.LStack.exe: C_EXECUTABLE_LINKER__02Stack.2eLStack_Debug CMakeFiles/02Stack.LStack.dir/02Stack/LStack.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\02Stack.LStack.LStack.dir
+  OBJECT_DIR = CMakeFiles\02Stack.LStack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 02Stack.LStack.LStack.exe
-  TARGET_IMPLIB = lib02Stack.LStack.LStack.dll.a
-  TARGET_PDB = 02Stack.LStack.LStack.exe.dbg
+  TARGET_FILE = 02Stack.LStack.exe
+  TARGET_IMPLIB = lib02Stack.LStack.dll.a
+  TARGET_PDB = 02Stack.LStack.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 02Stack.SStack.SStack
+# Object build statements for EXECUTABLE target 02Stack.SStack
 
 
 #############################################
-# Order-only phony target for 02Stack.SStack.SStack
+# Order-only phony target for 02Stack.SStack
 
-build cmake_object_order_depends_target_02Stack.SStack.SStack: phony || CMakeFiles/02Stack.SStack.SStack.dir
+build cmake_object_order_depends_target_02Stack.SStack: phony || CMakeFiles/02Stack.SStack.dir
 
-build CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj: C_COMPILER__02Stack.2eSStack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack/SStack.c || cmake_object_order_depends_target_02Stack.SStack.SStack
-  DEP_FILE = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack\SStack.c.obj.d
+build CMakeFiles/02Stack.SStack.dir/02Stack/SStack.c.obj: C_COMPILER__02Stack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack.c || cmake_object_order_depends_target_02Stack.SStack
+  DEP_FILE = CMakeFiles\02Stack.SStack.dir\02Stack\SStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\02Stack.SStack.SStack.dir
-  OBJECT_FILE_DIR = CMakeFiles\02Stack.SStack.SStack.dir\02Stack\SStack
+  OBJECT_DIR = CMakeFiles\02Stack.SStack.dir
+  OBJECT_FILE_DIR = CMakeFiles\02Stack.SStack.dir\02Stack
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 02Stack.SStack.SStack
+# Link build statements for EXECUTABLE target 02Stack.SStack
 
 
 #############################################
-# Link the executable 02Stack.SStack.SStack.exe
+# Link the executable 02Stack.SStack.exe
 
-build 02Stack.SStack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack.2eSStack_Debug CMakeFiles/02Stack.SStack.SStack.dir/02Stack/SStack/SStack.c.obj
+build 02Stack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack_Debug CMakeFiles/02Stack.SStack.dir/02Stack/SStack.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\02Stack.SStack.SStack.dir
+  OBJECT_DIR = CMakeFiles\02Stack.SStack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 02Stack.SStack.SStack.exe
-  TARGET_IMPLIB = lib02Stack.SStack.SStack.dll.a
-  TARGET_PDB = 02Stack.SStack.SStack.exe.dbg
+  TARGET_FILE = 02Stack.SStack.exe
+  TARGET_IMPLIB = lib02Stack.SStack.dll.a
+  TARGET_PDB = 02Stack.SStack.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 03Queue.LQueue.LQueue
+# Object build statements for EXECUTABLE target 03Queue.LQueue
 
 
 #############################################
-# Order-only phony target for 03Queue.LQueue.LQueue
+# Order-only phony target for 03Queue.LQueue
 
-build cmake_object_order_depends_target_03Queue.LQueue.LQueue: phony || CMakeFiles/03Queue.LQueue.LQueue.dir
+build cmake_object_order_depends_target_03Queue.LQueue: phony || CMakeFiles/03Queue.LQueue.dir
 
-build CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj: C_COMPILER__03Queue.2eLQueue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/LQueue/LQueue.c || cmake_object_order_depends_target_03Queue.LQueue.LQueue
-  DEP_FILE = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue\LQueue.c.obj.d
+build CMakeFiles/03Queue.LQueue.dir/03Queue/LQueue.c.obj: C_COMPILER__03Queue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/LQueue.c || cmake_object_order_depends_target_03Queue.LQueue
+  DEP_FILE = CMakeFiles\03Queue.LQueue.dir\03Queue\LQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir
-  OBJECT_FILE_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir\03Queue\LQueue
+  OBJECT_DIR = CMakeFiles\03Queue.LQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\03Queue.LQueue.dir\03Queue
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 03Queue.LQueue.LQueue
+# Link build statements for EXECUTABLE target 03Queue.LQueue
 
 
 #############################################
-# Link the executable 03Queue.LQueue.LQueue.exe
+# Link the executable 03Queue.LQueue.exe
 
-build 03Queue.LQueue.LQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eLQueue.2eLQueue_Debug CMakeFiles/03Queue.LQueue.LQueue.dir/03Queue/LQueue/LQueue.c.obj
+build 03Queue.LQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eLQueue_Debug CMakeFiles/03Queue.LQueue.dir/03Queue/LQueue.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\03Queue.LQueue.LQueue.dir
+  OBJECT_DIR = CMakeFiles\03Queue.LQueue.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 03Queue.LQueue.LQueue.exe
-  TARGET_IMPLIB = lib03Queue.LQueue.LQueue.dll.a
-  TARGET_PDB = 03Queue.LQueue.LQueue.exe.dbg
+  TARGET_FILE = 03Queue.LQueue.exe
+  TARGET_IMPLIB = lib03Queue.LQueue.dll.a
+  TARGET_PDB = 03Queue.LQueue.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 03Queue.SQueue.SQueue
+# Object build statements for EXECUTABLE target 03Queue.SQueue
 
 
 #############################################
-# Order-only phony target for 03Queue.SQueue.SQueue
+# Order-only phony target for 03Queue.SQueue
 
-build cmake_object_order_depends_target_03Queue.SQueue.SQueue: phony || CMakeFiles/03Queue.SQueue.SQueue.dir
+build cmake_object_order_depends_target_03Queue.SQueue: phony || CMakeFiles/03Queue.SQueue.dir
 
-build CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj: C_COMPILER__03Queue.2eSQueue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/SQueue/SQueue.c || cmake_object_order_depends_target_03Queue.SQueue.SQueue
-  DEP_FILE = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue\SQueue.c.obj.d
+build CMakeFiles/03Queue.SQueue.dir/03Queue/SQueue.c.obj: C_COMPILER__03Queue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/SQueue.c || cmake_object_order_depends_target_03Queue.SQueue
+  DEP_FILE = CMakeFiles\03Queue.SQueue.dir\03Queue\SQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir
-  OBJECT_FILE_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir\03Queue\SQueue
+  OBJECT_DIR = CMakeFiles\03Queue.SQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\03Queue.SQueue.dir\03Queue
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 03Queue.SQueue.SQueue
+# Link build statements for EXECUTABLE target 03Queue.SQueue
 
 
 #############################################
-# Link the executable 03Queue.SQueue.SQueue.exe
+# Link the executable 03Queue.SQueue.exe
 
-build 03Queue.SQueue.SQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eSQueue.2eSQueue_Debug CMakeFiles/03Queue.SQueue.SQueue.dir/03Queue/SQueue/SQueue.c.obj
+build 03Queue.SQueue.exe: C_EXECUTABLE_LINKER__03Queue.2eSQueue_Debug CMakeFiles/03Queue.SQueue.dir/03Queue/SQueue.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\03Queue.SQueue.SQueue.dir
+  OBJECT_DIR = CMakeFiles\03Queue.SQueue.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 03Queue.SQueue.SQueue.exe
-  TARGET_IMPLIB = lib03Queue.SQueue.SQueue.dll.a
-  TARGET_PDB = 03Queue.SQueue.SQueue.exe.dbg
+  TARGET_FILE = 03Queue.SQueue.exe
+  TARGET_IMPLIB = lib03Queue.SQueue.dll.a
+  TARGET_PDB = 03Queue.SQueue.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 04Array.Matrix
+# Object build statements for EXECUTABLE target 04Array.DMartrix
 
 
 #############################################
-# Order-only phony target for 04Array.Matrix
+# Order-only phony target for 04Array.DMartrix
 
-build cmake_object_order_depends_target_04Array.Matrix: phony || CMakeFiles/04Array.Matrix.dir
+build cmake_object_order_depends_target_04Array.DMartrix: phony || CMakeFiles/04Array.DMartrix.dir
 
-build CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj: C_COMPILER__04Array.2eMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/Matrix.c || cmake_object_order_depends_target_04Array.Matrix
-  DEP_FILE = CMakeFiles\04Array.Matrix.dir\04Array\Matrix.c.obj.d
+build CMakeFiles/04Array.DMartrix.dir/04Array/DMartrix.c.obj: C_COMPILER__04Array.2eDMartrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/DMartrix.c || cmake_object_order_depends_target_04Array.DMartrix
+  DEP_FILE = CMakeFiles\04Array.DMartrix.dir\04Array\DMartrix.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\04Array.Matrix.dir
-  OBJECT_FILE_DIR = CMakeFiles\04Array.Matrix.dir\04Array
+  OBJECT_DIR = CMakeFiles\04Array.DMartrix.dir
+  OBJECT_FILE_DIR = CMakeFiles\04Array.DMartrix.dir\04Array
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 04Array.Matrix
+# Link build statements for EXECUTABLE target 04Array.DMartrix
 
 
 #############################################
-# Link the executable 04Array.Matrix.exe
+# Link the executable 04Array.DMartrix.exe
 
-build 04Array.Matrix.exe: C_EXECUTABLE_LINKER__04Array.2eMatrix_Debug CMakeFiles/04Array.Matrix.dir/04Array/Matrix.c.obj
+build 04Array.DMartrix.exe: C_EXECUTABLE_LINKER__04Array.2eDMartrix_Debug CMakeFiles/04Array.DMartrix.dir/04Array/DMartrix.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\04Array.Matrix.dir
+  OBJECT_DIR = CMakeFiles\04Array.DMartrix.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 04Array.Matrix.exe
-  TARGET_IMPLIB = lib04Array.Matrix.dll.a
-  TARGET_PDB = 04Array.Matrix.exe.dbg
+  TARGET_FILE = 04Array.DMartrix.exe
+  TARGET_IMPLIB = lib04Array.DMartrix.dll.a
+  TARGET_PDB = 04Array.DMartrix.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 05String.LString.BFMatch
+# Object build statements for EXECUTABLE target 04Array.SMatrix
 
 
 #############################################
-# Order-only phony target for 05String.LString.BFMatch
+# Order-only phony target for 04Array.SMatrix
 
-build cmake_object_order_depends_target_05String.LString.BFMatch: phony || CMakeFiles/05String.LString.BFMatch.dir
+build cmake_object_order_depends_target_04Array.SMatrix: phony || CMakeFiles/04Array.SMatrix.dir
 
-build CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj: C_COMPILER__05String.2eLString.2eBFMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/LString/BFMatch.c || cmake_object_order_depends_target_05String.LString.BFMatch
-  DEP_FILE = CMakeFiles\05String.LString.BFMatch.dir\05String\LString\BFMatch.c.obj.d
+build CMakeFiles/04Array.SMatrix.dir/04Array/SMatrix.c.obj: C_COMPILER__04Array.2eSMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/SMatrix.c || cmake_object_order_depends_target_04Array.SMatrix
+  DEP_FILE = CMakeFiles\04Array.SMatrix.dir\04Array\SMatrix.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\05String.LString.BFMatch.dir
-  OBJECT_FILE_DIR = CMakeFiles\05String.LString.BFMatch.dir\05String\LString
+  OBJECT_DIR = CMakeFiles\04Array.SMatrix.dir
+  OBJECT_FILE_DIR = CMakeFiles\04Array.SMatrix.dir\04Array
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 05String.LString.BFMatch
+# Link build statements for EXECUTABLE target 04Array.SMatrix
 
 
 #############################################
-# Link the executable 05String.LString.BFMatch.exe
+# Link the executable 04Array.SMatrix.exe
 
-build 05String.LString.BFMatch.exe: C_EXECUTABLE_LINKER__05String.2eLString.2eBFMatch_Debug CMakeFiles/05String.LString.BFMatch.dir/05String/LString/BFMatch.c.obj
+build 04Array.SMatrix.exe: C_EXECUTABLE_LINKER__04Array.2eSMatrix_Debug CMakeFiles/04Array.SMatrix.dir/04Array/SMatrix.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\05String.LString.BFMatch.dir
+  OBJECT_DIR = CMakeFiles\04Array.SMatrix.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 05String.LString.BFMatch.exe
-  TARGET_IMPLIB = lib05String.LString.BFMatch.dll.a
-  TARGET_PDB = 05String.LString.BFMatch.exe.dbg
+  TARGET_FILE = 04Array.SMatrix.exe
+  TARGET_IMPLIB = lib04Array.SMatrix.dll.a
+  TARGET_PDB = 04Array.SMatrix.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 05String.SString.KMPMatch
+# Object build statements for EXECUTABLE target 05String.BFMatch
 
 
 #############################################
-# Order-only phony target for 05String.SString.KMPMatch
+# Order-only phony target for 05String.BFMatch
 
-build cmake_object_order_depends_target_05String.SString.KMPMatch: phony || CMakeFiles/05String.SString.KMPMatch.dir
+build cmake_object_order_depends_target_05String.BFMatch: phony || CMakeFiles/05String.BFMatch.dir
 
-build CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj: C_COMPILER__05String.2eSString.2eKMPMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/SString/KMPMatch.c || cmake_object_order_depends_target_05String.SString.KMPMatch
-  DEP_FILE = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString\KMPMatch.c.obj.d
+build CMakeFiles/05String.BFMatch.dir/05String/BFMatch.c.obj: C_COMPILER__05String.2eBFMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/BFMatch.c || cmake_object_order_depends_target_05String.BFMatch
+  DEP_FILE = CMakeFiles\05String.BFMatch.dir\05String\BFMatch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\05String.SString.KMPMatch.dir
-  OBJECT_FILE_DIR = CMakeFiles\05String.SString.KMPMatch.dir\05String\SString
+  OBJECT_DIR = CMakeFiles\05String.BFMatch.dir
+  OBJECT_FILE_DIR = CMakeFiles\05String.BFMatch.dir\05String
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 05String.SString.KMPMatch
+# Link build statements for EXECUTABLE target 05String.BFMatch
 
 
 #############################################
-# Link the executable 05String.SString.KMPMatch.exe
+# Link the executable 05String.BFMatch.exe
 
-build 05String.SString.KMPMatch.exe: C_EXECUTABLE_LINKER__05String.2eSString.2eKMPMatch_Debug CMakeFiles/05String.SString.KMPMatch.dir/05String/SString/KMPMatch.c.obj
+build 05String.BFMatch.exe: C_EXECUTABLE_LINKER__05String.2eBFMatch_Debug CMakeFiles/05String.BFMatch.dir/05String/BFMatch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\05String.SString.KMPMatch.dir
+  OBJECT_DIR = CMakeFiles\05String.BFMatch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 05String.SString.KMPMatch.exe
-  TARGET_IMPLIB = lib05String.SString.KMPMatch.dll.a
-  TARGET_PDB = 05String.SString.KMPMatch.exe.dbg
+  TARGET_FILE = 05String.BFMatch.exe
+  TARGET_IMPLIB = lib05String.BFMatch.dll.a
+  TARGET_PDB = 05String.BFMatch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 06Tree.LTree.LBTree
+# Object build statements for EXECUTABLE target 05String.KMPMatch
 
 
 #############################################
-# Order-only phony target for 06Tree.LTree.LBTree
+# Order-only phony target for 05String.KMPMatch
 
-build cmake_object_order_depends_target_06Tree.LTree.LBTree: phony || CMakeFiles/06Tree.LTree.LBTree.dir
+build cmake_object_order_depends_target_05String.KMPMatch: phony || CMakeFiles/05String.KMPMatch.dir
 
-build CMakeFiles/06Tree.LTree.LBTree.dir/06Tree/LTree/LBTree.c.obj: C_COMPILER__06Tree.2eLTree.2eLBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/LTree/LBTree.c || cmake_object_order_depends_target_06Tree.LTree.LBTree
-  DEP_FILE = CMakeFiles\06Tree.LTree.LBTree.dir\06Tree\LTree\LBTree.c.obj.d
+build CMakeFiles/05String.KMPMatch.dir/05String/KMPMatch.c.obj: C_COMPILER__05String.2eKMPMatch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/KMPMatch.c || cmake_object_order_depends_target_05String.KMPMatch
+  DEP_FILE = CMakeFiles\05String.KMPMatch.dir\05String\KMPMatch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\06Tree.LTree.LBTree.dir
-  OBJECT_FILE_DIR = CMakeFiles\06Tree.LTree.LBTree.dir\06Tree\LTree
+  OBJECT_DIR = CMakeFiles\05String.KMPMatch.dir
+  OBJECT_FILE_DIR = CMakeFiles\05String.KMPMatch.dir\05String
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 06Tree.LTree.LBTree
+# Link build statements for EXECUTABLE target 05String.KMPMatch
 
 
 #############################################
-# Link the executable 06Tree.LTree.LBTree.exe
+# Link the executable 05String.KMPMatch.exe
 
-build 06Tree.LTree.LBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eLTree.2eLBTree_Debug CMakeFiles/06Tree.LTree.LBTree.dir/06Tree/LTree/LBTree.c.obj
+build 05String.KMPMatch.exe: C_EXECUTABLE_LINKER__05String.2eKMPMatch_Debug CMakeFiles/05String.KMPMatch.dir/05String/KMPMatch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\06Tree.LTree.LBTree.dir
+  OBJECT_DIR = CMakeFiles\05String.KMPMatch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 06Tree.LTree.LBTree.exe
-  TARGET_IMPLIB = lib06Tree.LTree.LBTree.dll.a
-  TARGET_PDB = 06Tree.LTree.LBTree.exe.dbg
+  TARGET_FILE = 05String.KMPMatch.exe
+  TARGET_IMPLIB = lib05String.KMPMatch.dll.a
+  TARGET_PDB = 05String.KMPMatch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 06Tree.STree.SBTree
+# Object build statements for EXECUTABLE target 06Tree.LBTree
 
 
 #############################################
-# Order-only phony target for 06Tree.STree.SBTree
+# Order-only phony target for 06Tree.LBTree
 
-build cmake_object_order_depends_target_06Tree.STree.SBTree: phony || CMakeFiles/06Tree.STree.SBTree.dir
+build cmake_object_order_depends_target_06Tree.LBTree: phony || CMakeFiles/06Tree.LBTree.dir
 
-build CMakeFiles/06Tree.STree.SBTree.dir/06Tree/STree/SBTree.c.obj: C_COMPILER__06Tree.2eSTree.2eSBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/STree/SBTree.c || cmake_object_order_depends_target_06Tree.STree.SBTree
-  DEP_FILE = CMakeFiles\06Tree.STree.SBTree.dir\06Tree\STree\SBTree.c.obj.d
+build CMakeFiles/06Tree.LBTree.dir/06Tree/LBTree.c.obj: C_COMPILER__06Tree.2eLBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/LBTree.c || cmake_object_order_depends_target_06Tree.LBTree
+  DEP_FILE = CMakeFiles\06Tree.LBTree.dir\06Tree\LBTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\06Tree.STree.SBTree.dir
-  OBJECT_FILE_DIR = CMakeFiles\06Tree.STree.SBTree.dir\06Tree\STree
+  OBJECT_DIR = CMakeFiles\06Tree.LBTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.LBTree.dir\06Tree
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 06Tree.STree.SBTree
+# Link build statements for EXECUTABLE target 06Tree.LBTree
 
 
 #############################################
-# Link the executable 06Tree.STree.SBTree.exe
+# Link the executable 06Tree.LBTree.exe
 
-build 06Tree.STree.SBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eSTree.2eSBTree_Debug CMakeFiles/06Tree.STree.SBTree.dir/06Tree/STree/SBTree.c.obj
+build 06Tree.LBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eLBTree_Debug CMakeFiles/06Tree.LBTree.dir/06Tree/LBTree.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\06Tree.STree.SBTree.dir
+  OBJECT_DIR = CMakeFiles\06Tree.LBTree.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 06Tree.STree.SBTree.exe
-  TARGET_IMPLIB = lib06Tree.STree.SBTree.dll.a
-  TARGET_PDB = 06Tree.STree.SBTree.exe.dbg
+  TARGET_FILE = 06Tree.LBTree.exe
+  TARGET_IMPLIB = lib06Tree.LBTree.dll.a
+  TARGET_PDB = 06Tree.LBTree.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.Line.BSearch
+# Object build statements for EXECUTABLE target 06Tree.SBTree
 
 
 #############################################
-# Order-only phony target for 07Search.Line.BSearch
+# Order-only phony target for 06Tree.SBTree
 
-build cmake_object_order_depends_target_07Search.Line.BSearch: phony || CMakeFiles/07Search.Line.BSearch.dir
+build cmake_object_order_depends_target_06Tree.SBTree: phony || CMakeFiles/06Tree.SBTree.dir
 
-build CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj: C_COMPILER__07Search.2eLine.2eBSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/BSearch.c || cmake_object_order_depends_target_07Search.Line.BSearch
-  DEP_FILE = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line\BSearch.c.obj.d
+build CMakeFiles/06Tree.SBTree.dir/06Tree/SBTree.c.obj: C_COMPILER__06Tree.2eSBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/SBTree.c || cmake_object_order_depends_target_06Tree.SBTree
+  DEP_FILE = CMakeFiles\06Tree.SBTree.dir\06Tree\SBTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\07Search.Line.BSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.Line.BSearch.dir\07Search\Line
+  OBJECT_DIR = CMakeFiles\06Tree.SBTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.SBTree.dir\06Tree
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.Line.BSearch
+# Link build statements for EXECUTABLE target 06Tree.SBTree
 
 
 #############################################
-# Link the executable 07Search.Line.BSearch.exe
+# Link the executable 06Tree.SBTree.exe
 
-build 07Search.Line.BSearch.exe: C_EXECUTABLE_LINKER__07Search.2eLine.2eBSearch_Debug CMakeFiles/07Search.Line.BSearch.dir/07Search/Line/BSearch.c.obj
+build 06Tree.SBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eSBTree_Debug CMakeFiles/06Tree.SBTree.dir/06Tree/SBTree.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.Line.BSearch.dir
+  OBJECT_DIR = CMakeFiles\06Tree.SBTree.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.Line.BSearch.exe
-  TARGET_IMPLIB = lib07Search.Line.BSearch.dll.a
-  TARGET_PDB = 07Search.Line.BSearch.exe.dbg
+  TARGET_FILE = 06Tree.SBTree.exe
+  TARGET_IMPLIB = lib06Tree.SBTree.dll.a
+  TARGET_PDB = 06Tree.SBTree.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.Line.SSearch
+# Object build statements for EXECUTABLE target 07Search.BSTree
 
 
 #############################################
-# Order-only phony target for 07Search.Line.SSearch
+# Order-only phony target for 07Search.BSTree
 
-build cmake_object_order_depends_target_07Search.Line.SSearch: phony || CMakeFiles/07Search.Line.SSearch.dir
+build cmake_object_order_depends_target_07Search.BSTree: phony || CMakeFiles/07Search.BSTree.dir
 
-build CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj: C_COMPILER__07Search.2eLine.2eSSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Line/SSearch.c || cmake_object_order_depends_target_07Search.Line.SSearch
-  DEP_FILE = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line\SSearch.c.obj.d
+build CMakeFiles/07Search.BSTree.dir/07Search/BSTree.c.obj: C_COMPILER__07Search.2eBSTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/BSTree.c || cmake_object_order_depends_target_07Search.BSTree
+  DEP_FILE = CMakeFiles\07Search.BSTree.dir\07Search\BSTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\07Search.Line.SSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.Line.SSearch.dir\07Search\Line
+  OBJECT_DIR = CMakeFiles\07Search.BSTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.BSTree.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.Line.SSearch
+# Link build statements for EXECUTABLE target 07Search.BSTree
 
 
 #############################################
-# Link the executable 07Search.Line.SSearch.exe
+# Link the executable 07Search.BSTree.exe
 
-build 07Search.Line.SSearch.exe: C_EXECUTABLE_LINKER__07Search.2eLine.2eSSearch_Debug CMakeFiles/07Search.Line.SSearch.dir/07Search/Line/SSearch.c.obj
+build 07Search.BSTree.exe: C_EXECUTABLE_LINKER__07Search.2eBSTree_Debug CMakeFiles/07Search.BSTree.dir/07Search/BSTree.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.Line.SSearch.dir
+  OBJECT_DIR = CMakeFiles\07Search.BSTree.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.Line.SSearch.exe
-  TARGET_IMPLIB = lib07Search.Line.SSearch.dll.a
-  TARGET_PDB = 07Search.Line.SSearch.exe.dbg
+  TARGET_FILE = 07Search.BSTree.exe
+  TARGET_IMPLIB = lib07Search.BSTree.dll.a
+  TARGET_PDB = 07Search.BSTree.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.Tree.BSTree
+# Object build statements for EXECUTABLE target 07Search.BSearch
 
 
 #############################################
-# Order-only phony target for 07Search.Tree.BSTree
+# Order-only phony target for 07Search.BSearch
 
-build cmake_object_order_depends_target_07Search.Tree.BSTree: phony || CMakeFiles/07Search.Tree.BSTree.dir
+build cmake_object_order_depends_target_07Search.BSearch: phony || CMakeFiles/07Search.BSearch.dir
 
-build CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj: C_COMPILER__07Search.2eTree.2eBSTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/Tree/BSTree.c || cmake_object_order_depends_target_07Search.Tree.BSTree
-  DEP_FILE = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree\BSTree.c.obj.d
+build CMakeFiles/07Search.BSearch.dir/07Search/BSearch.c.obj: C_COMPILER__07Search.2eBSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/BSearch.c || cmake_object_order_depends_target_07Search.BSearch
+  DEP_FILE = CMakeFiles\07Search.BSearch.dir\07Search\BSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\07Search.Tree.BSTree.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.Tree.BSTree.dir\07Search\Tree
+  OBJECT_DIR = CMakeFiles\07Search.BSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.BSearch.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.Tree.BSTree
+# Link build statements for EXECUTABLE target 07Search.BSearch
 
 
 #############################################
-# Link the executable 07Search.Tree.BSTree.exe
+# Link the executable 07Search.BSearch.exe
 
-build 07Search.Tree.BSTree.exe: C_EXECUTABLE_LINKER__07Search.2eTree.2eBSTree_Debug CMakeFiles/07Search.Tree.BSTree.dir/07Search/Tree/BSTree.c.obj
+build 07Search.BSearch.exe: C_EXECUTABLE_LINKER__07Search.2eBSearch_Debug CMakeFiles/07Search.BSearch.dir/07Search/BSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.Tree.BSTree.dir
+  OBJECT_DIR = CMakeFiles\07Search.BSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.Tree.BSTree.exe
-  TARGET_IMPLIB = lib07Search.Tree.BSTree.dll.a
-  TARGET_PDB = 07Search.Tree.BSTree.exe.dbg
+  TARGET_FILE = 07Search.BSearch.exe
+  TARGET_IMPLIB = lib07Search.BSearch.dll.a
+  TARGET_PDB = 07Search.BSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.CSort.CSort
+# Object build statements for EXECUTABLE target 07Search.SSearch
 
 
 #############################################
-# Order-only phony target for 08Sort.CSort.CSort
+# Order-only phony target for 07Search.SSearch
 
-build cmake_object_order_depends_target_08Sort.CSort.CSort: phony || CMakeFiles/08Sort.CSort.CSort.dir
+build cmake_object_order_depends_target_07Search.SSearch: phony || CMakeFiles/07Search.SSearch.dir
 
-build CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj: C_COMPILER__08Sort.2eCSort.2eCSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/CSort/CSort.c || cmake_object_order_depends_target_08Sort.CSort.CSort
-  DEP_FILE = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort\CSort.c.obj.d
+build CMakeFiles/07Search.SSearch.dir/07Search/SSearch.c.obj: C_COMPILER__07Search.2eSSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/SSearch.c || cmake_object_order_depends_target_07Search.SSearch
+  DEP_FILE = CMakeFiles\07Search.SSearch.dir\07Search\SSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.CSort.CSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.CSort.CSort.dir\08Sort\CSort
+  OBJECT_DIR = CMakeFiles\07Search.SSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.SSearch.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.CSort.CSort
+# Link build statements for EXECUTABLE target 07Search.SSearch
 
 
 #############################################
-# Link the executable 08Sort.CSort.CSort.exe
+# Link the executable 07Search.SSearch.exe
 
-build 08Sort.CSort.CSort.exe: C_EXECUTABLE_LINKER__08Sort.2eCSort.2eCSort_Debug CMakeFiles/08Sort.CSort.CSort.dir/08Sort/CSort/CSort.c.obj
+build 07Search.SSearch.exe: C_EXECUTABLE_LINKER__07Search.2eSSearch_Debug CMakeFiles/07Search.SSearch.dir/07Search/SSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.CSort.CSort.dir
+  OBJECT_DIR = CMakeFiles\07Search.SSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.CSort.CSort.exe
-  TARGET_IMPLIB = lib08Sort.CSort.CSort.dll.a
-  TARGET_PDB = 08Sort.CSort.CSort.exe.dbg
+  TARGET_FILE = 07Search.SSearch.exe
+  TARGET_IMPLIB = lib07Search.SSearch.dll.a
+  TARGET_PDB = 07Search.SSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.ESort.BSort
+# Object build statements for EXECUTABLE target 08Graph.LGraph
 
 
 #############################################
-# Order-only phony target for 08Sort.ESort.BSort
+# Order-only phony target for 08Graph.LGraph
 
-build cmake_object_order_depends_target_08Sort.ESort.BSort: phony || CMakeFiles/08Sort.ESort.BSort.dir
+build cmake_object_order_depends_target_08Graph.LGraph: phony || CMakeFiles/08Graph.LGraph.dir
 
-build CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj: C_COMPILER__08Sort.2eESort.2eBSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/BSort.c || cmake_object_order_depends_target_08Sort.ESort.BSort
-  DEP_FILE = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort\BSort.c.obj.d
+build CMakeFiles/08Graph.LGraph.dir/08Graph/LGraph.c.obj: C_COMPILER__08Graph.2eLGraph_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Graph/LGraph.c || cmake_object_order_depends_target_08Graph.LGraph
+  DEP_FILE = CMakeFiles\08Graph.LGraph.dir\08Graph\LGraph.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.ESort.BSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.BSort.dir\08Sort\ESort
+  OBJECT_DIR = CMakeFiles\08Graph.LGraph.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Graph.LGraph.dir\08Graph
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.ESort.BSort
+# Link build statements for EXECUTABLE target 08Graph.LGraph
 
 
 #############################################
-# Link the executable 08Sort.ESort.BSort.exe
+# Link the executable 08Graph.LGraph.exe
 
-build 08Sort.ESort.BSort.exe: C_EXECUTABLE_LINKER__08Sort.2eESort.2eBSort_Debug CMakeFiles/08Sort.ESort.BSort.dir/08Sort/ESort/BSort.c.obj
+build 08Graph.LGraph.exe: C_EXECUTABLE_LINKER__08Graph.2eLGraph_Debug CMakeFiles/08Graph.LGraph.dir/08Graph/LGraph.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.ESort.BSort.dir
+  OBJECT_DIR = CMakeFiles\08Graph.LGraph.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.ESort.BSort.exe
-  TARGET_IMPLIB = lib08Sort.ESort.BSort.dll.a
-  TARGET_PDB = 08Sort.ESort.BSort.exe.dbg
+  TARGET_FILE = 08Graph.LGraph.exe
+  TARGET_IMPLIB = lib08Graph.LGraph.dll.a
+  TARGET_PDB = 08Graph.LGraph.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.ESort.QSort
+# Object build statements for EXECUTABLE target 09Sort.BISort
 
 
 #############################################
-# Order-only phony target for 08Sort.ESort.QSort
+# Order-only phony target for 09Sort.BISort
 
-build cmake_object_order_depends_target_08Sort.ESort.QSort: phony || CMakeFiles/08Sort.ESort.QSort.dir
+build cmake_object_order_depends_target_09Sort.BISort: phony || CMakeFiles/09Sort.BISort.dir
 
-build CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj: C_COMPILER__08Sort.2eESort.2eQSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ESort/QSort.c || cmake_object_order_depends_target_08Sort.ESort.QSort
-  DEP_FILE = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort\QSort.c.obj.d
+build CMakeFiles/09Sort.BISort.dir/09Sort/BISort.c.obj: C_COMPILER__09Sort.2eBISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/BISort.c || cmake_object_order_depends_target_09Sort.BISort
+  DEP_FILE = CMakeFiles\09Sort.BISort.dir\09Sort\BISort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.ESort.QSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.ESort.QSort.dir\08Sort\ESort
+  OBJECT_DIR = CMakeFiles\09Sort.BISort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.BISort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.ESort.QSort
+# Link build statements for EXECUTABLE target 09Sort.BISort
 
 
 #############################################
-# Link the executable 08Sort.ESort.QSort.exe
+# Link the executable 09Sort.BISort.exe
 
-build 08Sort.ESort.QSort.exe: C_EXECUTABLE_LINKER__08Sort.2eESort.2eQSort_Debug CMakeFiles/08Sort.ESort.QSort.dir/08Sort/ESort/QSort.c.obj
+build 09Sort.BISort.exe: C_EXECUTABLE_LINKER__09Sort.2eBISort_Debug CMakeFiles/09Sort.BISort.dir/09Sort/BISort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.ESort.QSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.BISort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.ESort.QSort.exe
-  TARGET_IMPLIB = lib08Sort.ESort.QSort.dll.a
-  TARGET_PDB = 08Sort.ESort.QSort.exe.dbg
+  TARGET_FILE = 09Sort.BISort.exe
+  TARGET_IMPLIB = lib09Sort.BISort.dll.a
+  TARGET_PDB = 09Sort.BISort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.ISort.BISort
+# Object build statements for EXECUTABLE target 09Sort.BSort
 
 
 #############################################
-# Order-only phony target for 08Sort.ISort.BISort
+# Order-only phony target for 09Sort.BSort
 
-build cmake_object_order_depends_target_08Sort.ISort.BISort: phony || CMakeFiles/08Sort.ISort.BISort.dir
+build cmake_object_order_depends_target_09Sort.BSort: phony || CMakeFiles/09Sort.BSort.dir
 
-build CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj: C_COMPILER__08Sort.2eISort.2eBISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/BISort.c || cmake_object_order_depends_target_08Sort.ISort.BISort
-  DEP_FILE = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort\BISort.c.obj.d
+build CMakeFiles/09Sort.BSort.dir/09Sort/BSort.c.obj: C_COMPILER__09Sort.2eBSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/BSort.c || cmake_object_order_depends_target_09Sort.BSort
+  DEP_FILE = CMakeFiles\09Sort.BSort.dir\09Sort\BSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.BISort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.BISort.dir\08Sort\ISort
+  OBJECT_DIR = CMakeFiles\09Sort.BSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.BSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.ISort.BISort
+# Link build statements for EXECUTABLE target 09Sort.BSort
 
 
 #############################################
-# Link the executable 08Sort.ISort.BISort.exe
+# Link the executable 09Sort.BSort.exe
 
-build 08Sort.ISort.BISort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eBISort_Debug CMakeFiles/08Sort.ISort.BISort.dir/08Sort/ISort/BISort.c.obj
+build 09Sort.BSort.exe: C_EXECUTABLE_LINKER__09Sort.2eBSort_Debug CMakeFiles/09Sort.BSort.dir/09Sort/BSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.BISort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.BSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.ISort.BISort.exe
-  TARGET_IMPLIB = lib08Sort.ISort.BISort.dll.a
-  TARGET_PDB = 08Sort.ISort.BISort.exe.dbg
+  TARGET_FILE = 09Sort.BSort.exe
+  TARGET_IMPLIB = lib09Sort.BSort.dll.a
+  TARGET_PDB = 09Sort.BSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.ISort.SISort
+# Object build statements for EXECUTABLE target 09Sort.CSort
 
 
 #############################################
-# Order-only phony target for 08Sort.ISort.SISort
+# Order-only phony target for 09Sort.CSort
 
-build cmake_object_order_depends_target_08Sort.ISort.SISort: phony || CMakeFiles/08Sort.ISort.SISort.dir
+build cmake_object_order_depends_target_09Sort.CSort: phony || CMakeFiles/09Sort.CSort.dir
 
-build CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj: C_COMPILER__08Sort.2eISort.2eSISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SISort.c || cmake_object_order_depends_target_08Sort.ISort.SISort
-  DEP_FILE = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort\SISort.c.obj.d
+build CMakeFiles/09Sort.CSort.dir/09Sort/CSort.c.obj: C_COMPILER__09Sort.2eCSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/CSort.c || cmake_object_order_depends_target_09Sort.CSort
+  DEP_FILE = CMakeFiles\09Sort.CSort.dir\09Sort\CSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.SISort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SISort.dir\08Sort\ISort
+  OBJECT_DIR = CMakeFiles\09Sort.CSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.CSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.ISort.SISort
+# Link build statements for EXECUTABLE target 09Sort.CSort
 
 
 #############################################
-# Link the executable 08Sort.ISort.SISort.exe
+# Link the executable 09Sort.CSort.exe
 
-build 08Sort.ISort.SISort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eSISort_Debug CMakeFiles/08Sort.ISort.SISort.dir/08Sort/ISort/SISort.c.obj
+build 09Sort.CSort.exe: C_EXECUTABLE_LINKER__09Sort.2eCSort_Debug CMakeFiles/09Sort.CSort.dir/09Sort/CSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.SISort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.CSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.ISort.SISort.exe
-  TARGET_IMPLIB = lib08Sort.ISort.SISort.dll.a
-  TARGET_PDB = 08Sort.ISort.SISort.exe.dbg
+  TARGET_FILE = 09Sort.CSort.exe
+  TARGET_IMPLIB = lib09Sort.CSort.dll.a
+  TARGET_PDB = 09Sort.CSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.ISort.SSort
+# Object build statements for EXECUTABLE target 09Sort.HSort
 
 
 #############################################
-# Order-only phony target for 08Sort.ISort.SSort
+# Order-only phony target for 09Sort.HSort
 
-build cmake_object_order_depends_target_08Sort.ISort.SSort: phony || CMakeFiles/08Sort.ISort.SSort.dir
+build cmake_object_order_depends_target_09Sort.HSort: phony || CMakeFiles/09Sort.HSort.dir
 
-build CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj: C_COMPILER__08Sort.2eISort.2eSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/ISort/SSort.c || cmake_object_order_depends_target_08Sort.ISort.SSort
-  DEP_FILE = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort\SSort.c.obj.d
+build CMakeFiles/09Sort.HSort.dir/09Sort/HSort.c.obj: C_COMPILER__09Sort.2eHSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/HSort.c || cmake_object_order_depends_target_09Sort.HSort
+  DEP_FILE = CMakeFiles\09Sort.HSort.dir\09Sort\HSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.SSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.ISort.SSort.dir\08Sort\ISort
+  OBJECT_DIR = CMakeFiles\09Sort.HSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.HSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.ISort.SSort
+# Link build statements for EXECUTABLE target 09Sort.HSort
 
 
 #############################################
-# Link the executable 08Sort.ISort.SSort.exe
+# Link the executable 09Sort.HSort.exe
 
-build 08Sort.ISort.SSort.exe: C_EXECUTABLE_LINKER__08Sort.2eISort.2eSSort_Debug CMakeFiles/08Sort.ISort.SSort.dir/08Sort/ISort/SSort.c.obj
+build 09Sort.HSort.exe: C_EXECUTABLE_LINKER__09Sort.2eHSort_Debug CMakeFiles/09Sort.HSort.dir/09Sort/HSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.ISort.SSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.HSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.ISort.SSort.exe
-  TARGET_IMPLIB = lib08Sort.ISort.SSort.dll.a
-  TARGET_PDB = 08Sort.ISort.SSort.exe.dbg
+  TARGET_FILE = 09Sort.HSort.exe
+  TARGET_IMPLIB = lib09Sort.HSort.dll.a
+  TARGET_PDB = 09Sort.HSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.MSort.MSort
+# Object build statements for EXECUTABLE target 09Sort.MSort
 
 
 #############################################
-# Order-only phony target for 08Sort.MSort.MSort
+# Order-only phony target for 09Sort.MSort
 
-build cmake_object_order_depends_target_08Sort.MSort.MSort: phony || CMakeFiles/08Sort.MSort.MSort.dir
+build cmake_object_order_depends_target_09Sort.MSort: phony || CMakeFiles/09Sort.MSort.dir
 
-build CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj: C_COMPILER__08Sort.2eMSort.2eMSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/MSort/MSort.c || cmake_object_order_depends_target_08Sort.MSort.MSort
-  DEP_FILE = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort\MSort.c.obj.d
+build CMakeFiles/09Sort.MSort.dir/09Sort/MSort.c.obj: C_COMPILER__09Sort.2eMSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/MSort.c || cmake_object_order_depends_target_09Sort.MSort
+  DEP_FILE = CMakeFiles\09Sort.MSort.dir\09Sort\MSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.MSort.MSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.MSort.MSort.dir\08Sort\MSort
+  OBJECT_DIR = CMakeFiles\09Sort.MSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.MSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.MSort.MSort
+# Link build statements for EXECUTABLE target 09Sort.MSort
 
 
 #############################################
-# Link the executable 08Sort.MSort.MSort.exe
+# Link the executable 09Sort.MSort.exe
 
-build 08Sort.MSort.MSort.exe: C_EXECUTABLE_LINKER__08Sort.2eMSort.2eMSort_Debug CMakeFiles/08Sort.MSort.MSort.dir/08Sort/MSort/MSort.c.obj
+build 09Sort.MSort.exe: C_EXECUTABLE_LINKER__09Sort.2eMSort_Debug CMakeFiles/09Sort.MSort.dir/09Sort/MSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.MSort.MSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.MSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.MSort.MSort.exe
-  TARGET_IMPLIB = lib08Sort.MSort.MSort.dll.a
-  TARGET_PDB = 08Sort.MSort.MSort.exe.dbg
+  TARGET_FILE = 09Sort.MSort.exe
+  TARGET_IMPLIB = lib09Sort.MSort.dll.a
+  TARGET_PDB = 09Sort.MSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.RSort.RSort
+# Object build statements for EXECUTABLE target 09Sort.QSort
 
 
 #############################################
-# Order-only phony target for 08Sort.RSort.RSort
+# Order-only phony target for 09Sort.QSort
 
-build cmake_object_order_depends_target_08Sort.RSort.RSort: phony || CMakeFiles/08Sort.RSort.RSort.dir
+build cmake_object_order_depends_target_09Sort.QSort: phony || CMakeFiles/09Sort.QSort.dir
 
-build CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj: C_COMPILER__08Sort.2eRSort.2eRSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/RSort/RSort.c || cmake_object_order_depends_target_08Sort.RSort.RSort
-  DEP_FILE = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort\RSort.c.obj.d
+build CMakeFiles/09Sort.QSort.dir/09Sort/QSort.c.obj: C_COMPILER__09Sort.2eQSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/QSort.c || cmake_object_order_depends_target_09Sort.QSort
+  DEP_FILE = CMakeFiles\09Sort.QSort.dir\09Sort\QSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.RSort.RSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.RSort.RSort.dir\08Sort\RSort
+  OBJECT_DIR = CMakeFiles\09Sort.QSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.QSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.RSort.RSort
+# Link build statements for EXECUTABLE target 09Sort.QSort
 
 
 #############################################
-# Link the executable 08Sort.RSort.RSort.exe
+# Link the executable 09Sort.QSort.exe
 
-build 08Sort.RSort.RSort.exe: C_EXECUTABLE_LINKER__08Sort.2eRSort.2eRSort_Debug CMakeFiles/08Sort.RSort.RSort.dir/08Sort/RSort/RSort.c.obj
+build 09Sort.QSort.exe: C_EXECUTABLE_LINKER__09Sort.2eQSort_Debug CMakeFiles/09Sort.QSort.dir/09Sort/QSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.RSort.RSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.QSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.RSort.RSort.exe
-  TARGET_IMPLIB = lib08Sort.RSort.RSort.dll.a
-  TARGET_PDB = 08Sort.RSort.RSort.exe.dbg
+  TARGET_FILE = 09Sort.QSort.exe
+  TARGET_IMPLIB = lib09Sort.QSort.dll.a
+  TARGET_PDB = 09Sort.QSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.SSort.HSort
+# Object build statements for EXECUTABLE target 09Sort.RSort
 
 
 #############################################
-# Order-only phony target for 08Sort.SSort.HSort
+# Order-only phony target for 09Sort.RSort
 
-build cmake_object_order_depends_target_08Sort.SSort.HSort: phony || CMakeFiles/08Sort.SSort.HSort.dir
+build cmake_object_order_depends_target_09Sort.RSort: phony || CMakeFiles/09Sort.RSort.dir
 
-build CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj: C_COMPILER__08Sort.2eSSort.2eHSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/HSort.c || cmake_object_order_depends_target_08Sort.SSort.HSort
-  DEP_FILE = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort\HSort.c.obj.d
+build CMakeFiles/09Sort.RSort.dir/09Sort/RSort.c.obj: C_COMPILER__09Sort.2eRSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/RSort.c || cmake_object_order_depends_target_09Sort.RSort
+  DEP_FILE = CMakeFiles\09Sort.RSort.dir\09Sort\RSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.SSort.HSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.HSort.dir\08Sort\SSort
+  OBJECT_DIR = CMakeFiles\09Sort.RSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.RSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.SSort.HSort
+# Link build statements for EXECUTABLE target 09Sort.RSort
 
 
 #############################################
-# Link the executable 08Sort.SSort.HSort.exe
+# Link the executable 09Sort.RSort.exe
 
-build 08Sort.SSort.HSort.exe: C_EXECUTABLE_LINKER__08Sort.2eSSort.2eHSort_Debug CMakeFiles/08Sort.SSort.HSort.dir/08Sort/SSort/HSort.c.obj
+build 09Sort.RSort.exe: C_EXECUTABLE_LINKER__09Sort.2eRSort_Debug CMakeFiles/09Sort.RSort.dir/09Sort/RSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.SSort.HSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.RSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.SSort.HSort.exe
-  TARGET_IMPLIB = lib08Sort.SSort.HSort.dll.a
-  TARGET_PDB = 08Sort.SSort.HSort.exe.dbg
+  TARGET_FILE = 09Sort.RSort.exe
+  TARGET_IMPLIB = lib09Sort.RSort.dll.a
+  TARGET_PDB = 09Sort.RSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Sort.SSort.SSSort
+# Object build statements for EXECUTABLE target 09Sort.SISort
 
 
 #############################################
-# Order-only phony target for 08Sort.SSort.SSSort
+# Order-only phony target for 09Sort.SISort
 
-build cmake_object_order_depends_target_08Sort.SSort.SSSort: phony || CMakeFiles/08Sort.SSort.SSSort.dir
+build cmake_object_order_depends_target_09Sort.SISort: phony || CMakeFiles/09Sort.SISort.dir
 
-build CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj: C_COMPILER__08Sort.2eSSort.2eSSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Sort/SSort/SSSort.c || cmake_object_order_depends_target_08Sort.SSort.SSSort
-  DEP_FILE = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort\SSSort.c.obj.d
+build CMakeFiles/09Sort.SISort.dir/09Sort/SISort.c.obj: C_COMPILER__09Sort.2eSISort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SISort.c || cmake_object_order_depends_target_09Sort.SISort
+  DEP_FILE = CMakeFiles\09Sort.SISort.dir\09Sort\SISort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\08Sort.SSort.SSSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Sort.SSort.SSSort.dir\08Sort\SSort
+  OBJECT_DIR = CMakeFiles\09Sort.SISort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.SISort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Sort.SSort.SSSort
+# Link build statements for EXECUTABLE target 09Sort.SISort
 
 
 #############################################
-# Link the executable 08Sort.SSort.SSSort.exe
+# Link the executable 09Sort.SISort.exe
 
-build 08Sort.SSort.SSSort.exe: C_EXECUTABLE_LINKER__08Sort.2eSSort.2eSSSort_Debug CMakeFiles/08Sort.SSort.SSSort.dir/08Sort/SSort/SSSort.c.obj
+build 09Sort.SISort.exe: C_EXECUTABLE_LINKER__09Sort.2eSISort_Debug CMakeFiles/09Sort.SISort.dir/09Sort/SISort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Sort.SSort.SSSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.SISort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Sort.SSort.SSSort.exe
-  TARGET_IMPLIB = lib08Sort.SSort.SSSort.dll.a
-  TARGET_PDB = 08Sort.SSort.SSSort.exe.dbg
+  TARGET_FILE = 09Sort.SISort.exe
+  TARGET_IMPLIB = lib09Sort.SISort.dll.a
+  TARGET_PDB = 09Sort.SISort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09App.2006
+# Object build statements for EXECUTABLE target 09Sort.SSSort
 
 
 #############################################
-# Order-only phony target for 09App.2006
+# Order-only phony target for 09Sort.SSSort
 
-build cmake_object_order_depends_target_09App.2006: phony || CMakeFiles/09App.2006.dir
+build cmake_object_order_depends_target_09Sort.SSSort: phony || CMakeFiles/09Sort.SSSort.dir
 
-build CMakeFiles/09App.2006.dir/09App/2006.c.obj: C_COMPILER__09App.2e2006_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09App/2006.c || cmake_object_order_depends_target_09App.2006
-  DEP_FILE = CMakeFiles\09App.2006.dir\09App\2006.c.obj.d
+build CMakeFiles/09Sort.SSSort.dir/09Sort/SSSort.c.obj: C_COMPILER__09Sort.2eSSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SSSort.c || cmake_object_order_depends_target_09Sort.SSSort
+  DEP_FILE = CMakeFiles\09Sort.SSSort.dir\09Sort\SSSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\09App.2006.dir
-  OBJECT_FILE_DIR = CMakeFiles\09App.2006.dir\09App
+  OBJECT_DIR = CMakeFiles\09Sort.SSSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.SSSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09App.2006
+# Link build statements for EXECUTABLE target 09Sort.SSSort
 
 
 #############################################
-# Link the executable 09App.2006.exe
+# Link the executable 09Sort.SSSort.exe
 
-build 09App.2006.exe: C_EXECUTABLE_LINKER__09App.2e2006_Debug CMakeFiles/09App.2006.dir/09App/2006.c.obj
+build 09Sort.SSSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSSSort_Debug CMakeFiles/09Sort.SSSort.dir/09Sort/SSSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09App.2006.dir
+  OBJECT_DIR = CMakeFiles\09Sort.SSSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09App.2006.exe
-  TARGET_IMPLIB = lib09App.2006.dll.a
-  TARGET_PDB = 09App.2006.exe.dbg
+  TARGET_FILE = 09Sort.SSSort.exe
+  TARGET_IMPLIB = lib09Sort.SSSort.dll.a
+  TARGET_PDB = 09Sort.SSSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09App.2007
+# Object build statements for EXECUTABLE target 09Sort.SSort
 
 
 #############################################
-# Order-only phony target for 09App.2007
+# Order-only phony target for 09Sort.SSort
 
-build cmake_object_order_depends_target_09App.2007: phony || CMakeFiles/09App.2007.dir
+build cmake_object_order_depends_target_09Sort.SSort: phony || CMakeFiles/09Sort.SSort.dir
 
-build CMakeFiles/09App.2007.dir/09App/2007.c.obj: C_COMPILER__09App.2e2007_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09App/2007.c || cmake_object_order_depends_target_09App.2007
-  DEP_FILE = CMakeFiles\09App.2007.dir\09App\2007.c.obj.d
+build CMakeFiles/09Sort.SSort.dir/09Sort/SSort.c.obj: C_COMPILER__09Sort.2eSSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SSort.c || cmake_object_order_depends_target_09Sort.SSort
+  DEP_FILE = CMakeFiles\09Sort.SSort.dir\09Sort\SSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\09App.2007.dir
-  OBJECT_FILE_DIR = CMakeFiles\09App.2007.dir\09App
+  OBJECT_DIR = CMakeFiles\09Sort.SSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.SSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09App.2007
+# Link build statements for EXECUTABLE target 09Sort.SSort
 
 
 #############################################
-# Link the executable 09App.2007.exe
+# Link the executable 09Sort.SSort.exe
 
-build 09App.2007.exe: C_EXECUTABLE_LINKER__09App.2e2007_Debug CMakeFiles/09App.2007.dir/09App/2007.c.obj
+build 09Sort.SSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSSort_Debug CMakeFiles/09Sort.SSort.dir/09Sort/SSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09App.2007.dir
+  OBJECT_DIR = CMakeFiles\09Sort.SSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09App.2007.exe
-  TARGET_IMPLIB = lib09App.2007.dll.a
-  TARGET_PDB = 09App.2007.exe.dbg
+  TARGET_FILE = 09Sort.SSort.exe
+  TARGET_IMPLIB = lib09Sort.SSort.dll.a
+  TARGET_PDB = 09Sort.SSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2006
+
+
+#############################################
+# Order-only phony target for 10App.2006
+
+build cmake_object_order_depends_target_10App.2006: phony || CMakeFiles/10App.2006.dir
+
+build CMakeFiles/10App.2006.dir/10App/2006.c.obj: C_COMPILER__10App.2e2006_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2006.c || cmake_object_order_depends_target_10App.2006
+  DEP_FILE = CMakeFiles\10App.2006.dir\10App\2006.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\10App.2006.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2006.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2006
+
+
+#############################################
+# Link the executable 10App.2006.exe
+
+build 10App.2006.exe: C_EXECUTABLE_LINKER__10App.2e2006_Debug CMakeFiles/10App.2006.dir/10App/2006.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2006.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2006.exe
+  TARGET_IMPLIB = lib10App.2006.dll.a
+  TARGET_PDB = 10App.2006.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2007
+
+
+#############################################
+# Order-only phony target for 10App.2007
+
+build cmake_object_order_depends_target_10App.2007: phony || CMakeFiles/10App.2007.dir
+
+build CMakeFiles/10App.2007.dir/10App/2007.c.obj: C_COMPILER__10App.2e2007_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2007.c || cmake_object_order_depends_target_10App.2007
+  DEP_FILE = CMakeFiles\10App.2007.dir\10App\2007.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\10App.2007.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2007.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2007
+
+
+#############################################
+# Link the executable 10App.2007.exe
+
+build 10App.2007.exe: C_EXECUTABLE_LINKER__10App.2e2007_Debug CMakeFiles/10App.2007.dir/10App/2007.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2007.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2007.exe
+  TARGET_IMPLIB = lib10App.2007.dll.a
+  TARGET_PDB = 10App.2007.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2008
+
+
+#############################################
+# Order-only phony target for 10App.2008
+
+build cmake_object_order_depends_target_10App.2008: phony || CMakeFiles/10App.2008.dir
+
+build CMakeFiles/10App.2008.dir/10App/2008.c.obj: C_COMPILER__10App.2e2008_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2008.c || cmake_object_order_depends_target_10App.2008
+  DEP_FILE = CMakeFiles\10App.2008.dir\10App\2008.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\10App.2008.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2008.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2008
+
+
+#############################################
+# Link the executable 10App.2008.exe
+
+build 10App.2008.exe: C_EXECUTABLE_LINKER__10App.2e2008_Debug CMakeFiles/10App.2008.dir/10App/2008.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2008.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2008.exe
+  TARGET_IMPLIB = lib10App.2008.dll.a
+  TARGET_PDB = 10App.2008.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2009
+
+
+#############################################
+# Order-only phony target for 10App.2009
+
+build cmake_object_order_depends_target_10App.2009: phony || CMakeFiles/10App.2009.dir
+
+build CMakeFiles/10App.2009.dir/10App/2009.c.obj: C_COMPILER__10App.2e2009_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2009.c || cmake_object_order_depends_target_10App.2009
+  DEP_FILE = CMakeFiles\10App.2009.dir\10App\2009.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\10App.2009.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2009.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2009
+
+
+#############################################
+# Link the executable 10App.2009.exe
+
+build 10App.2009.exe: C_EXECUTABLE_LINKER__10App.2e2009_Debug CMakeFiles/10App.2009.dir/10App/2009.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2009.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2009.exe
+  TARGET_IMPLIB = lib10App.2009.dll.a
+  TARGET_PDB = 10App.2009.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId
@@ -1052,61 +1188,69 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build 01List.LList.DLList: phony 01List.LList.DLList.exe
+build 01List.DLList: phony 01List.DLList.exe
 
-build 01List.LList.SLList: phony 01List.LList.SLList.exe
+build 01List.DSList: phony 01List.DSList.exe
 
-build 01List.SList.DSList: phony 01List.SList.DSList.exe
+build 01List.SLList: phony 01List.SLList.exe
 
-build 01List.SList.SSList: phony 01List.SList.SSList.exe
+build 01List.SSList: phony 01List.SSList.exe
 
-build 02Stack.LStack.LStack: phony 02Stack.LStack.LStack.exe
+build 02Stack.LStack: phony 02Stack.LStack.exe
 
-build 02Stack.SStack.SStack: phony 02Stack.SStack.SStack.exe
+build 02Stack.SStack: phony 02Stack.SStack.exe
 
-build 03Queue.LQueue.LQueue: phony 03Queue.LQueue.LQueue.exe
+build 03Queue.LQueue: phony 03Queue.LQueue.exe
 
-build 03Queue.SQueue.SQueue: phony 03Queue.SQueue.SQueue.exe
+build 03Queue.SQueue: phony 03Queue.SQueue.exe
 
-build 04Array.Matrix: phony 04Array.Matrix.exe
+build 04Array.DMartrix: phony 04Array.DMartrix.exe
 
-build 05String.LString.BFMatch: phony 05String.LString.BFMatch.exe
+build 04Array.SMatrix: phony 04Array.SMatrix.exe
 
-build 05String.SString.KMPMatch: phony 05String.SString.KMPMatch.exe
+build 05String.BFMatch: phony 05String.BFMatch.exe
 
-build 06Tree.LTree.LBTree: phony 06Tree.LTree.LBTree.exe
+build 05String.KMPMatch: phony 05String.KMPMatch.exe
 
-build 06Tree.STree.SBTree: phony 06Tree.STree.SBTree.exe
+build 06Tree.LBTree: phony 06Tree.LBTree.exe
 
-build 07Search.Line.BSearch: phony 07Search.Line.BSearch.exe
+build 06Tree.SBTree: phony 06Tree.SBTree.exe
 
-build 07Search.Line.SSearch: phony 07Search.Line.SSearch.exe
+build 07Search.BSTree: phony 07Search.BSTree.exe
 
-build 07Search.Tree.BSTree: phony 07Search.Tree.BSTree.exe
+build 07Search.BSearch: phony 07Search.BSearch.exe
 
-build 08Sort.CSort.CSort: phony 08Sort.CSort.CSort.exe
+build 07Search.SSearch: phony 07Search.SSearch.exe
 
-build 08Sort.ESort.BSort: phony 08Sort.ESort.BSort.exe
+build 08Graph.LGraph: phony 08Graph.LGraph.exe
 
-build 08Sort.ESort.QSort: phony 08Sort.ESort.QSort.exe
+build 09Sort.BISort: phony 09Sort.BISort.exe
 
-build 08Sort.ISort.BISort: phony 08Sort.ISort.BISort.exe
+build 09Sort.BSort: phony 09Sort.BSort.exe
 
-build 08Sort.ISort.SISort: phony 08Sort.ISort.SISort.exe
+build 09Sort.CSort: phony 09Sort.CSort.exe
 
-build 08Sort.ISort.SSort: phony 08Sort.ISort.SSort.exe
+build 09Sort.HSort: phony 09Sort.HSort.exe
 
-build 08Sort.MSort.MSort: phony 08Sort.MSort.MSort.exe
+build 09Sort.MSort: phony 09Sort.MSort.exe
 
-build 08Sort.RSort.RSort: phony 08Sort.RSort.RSort.exe
+build 09Sort.QSort: phony 09Sort.QSort.exe
 
-build 08Sort.SSort.HSort: phony 08Sort.SSort.HSort.exe
+build 09Sort.RSort: phony 09Sort.RSort.exe
 
-build 08Sort.SSort.SSSort: phony 08Sort.SSort.SSSort.exe
+build 09Sort.SISort: phony 09Sort.SISort.exe
 
-build 09App.2006: phony 09App.2006.exe
+build 09Sort.SSSort: phony 09Sort.SSSort.exe
 
-build 09App.2007: phony 09App.2007.exe
+build 09Sort.SSort: phony 09Sort.SSort.exe
+
+build 10App.2006: phony 10App.2006.exe
+
+build 10App.2007: phony 10App.2007.exe
+
+build 10App.2008: phony 10App.2008.exe
+
+build 10App.2009: phony 10App.2009.exe
 
 build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
@@ -1118,7 +1262,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.LList.DLList.exe 01List.LList.SLList.exe 01List.SList.DSList.exe 01List.SList.SSList.exe 02Stack.LStack.LStack.exe 02Stack.SStack.SStack.exe 03Queue.LQueue.LQueue.exe 03Queue.SQueue.SQueue.exe 04Array.Matrix.exe 05String.LString.BFMatch.exe 05String.SString.KMPMatch.exe 06Tree.LTree.LBTree.exe 06Tree.STree.SBTree.exe 07Search.Line.BSearch.exe 07Search.Line.SSearch.exe 07Search.Tree.BSTree.exe 08Sort.CSort.CSort.exe 08Sort.ESort.BSort.exe 08Sort.ESort.QSort.exe 08Sort.ISort.BISort.exe 08Sort.ISort.SISort.exe 08Sort.ISort.SSort.exe 08Sort.MSort.MSort.exe 08Sort.RSort.RSort.exe 08Sort.SSort.HSort.exe 08Sort.SSort.SSSort.exe 09App.2006.exe 09App.2007.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.BFMatch.exe 05String.KMPMatch.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 07Search.BSTree.exe 07Search.BSearch.exe 07Search.SSearch.exe 08Graph.LGraph.exe 09Sort.BISort.exe 09Sort.BSort.exe 09Sort.CSort.exe 09Sort.HSort.exe 09Sort.MSort.exe 09Sort.QSort.exe 09Sort.RSort.exe 09Sort.SISort.exe 09Sort.SSSort.exe 09Sort.SSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

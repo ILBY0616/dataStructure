@@ -16,7 +16,8 @@ typedef struct Node
 bool iniStacck();
 bool iniQueue();
 bool popStack();
-bool pushStack()
+bool pushStack();
+
 int main()
 {
     printf("Hello, World!\n");

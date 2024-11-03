@@ -1,21 +1,22 @@
 #include <stdio.h>
-#define size 100
-#define type int
 
-int searchData(type data[size], type key, int length)
+// 顺序查找
+int sequenceSearch(int data[], int key, int length);
+
+int main()
+{
+    int data[10] = {0, 8, 2, 6, 4, 5, 3, 7, 1, 9};
+    printf("%d", sequenceSearch(data, 5, 10));
+    return 0;
+}
+
+int sequenceSearch(int data[], int key, int length)
 {
     data[0] = key;
-    int i = length;
+    int i = length - 1;
     while (data[i] != key)
     {
         i--;
     }
     return i;
-}
-
-int main()
-{
-    // type data[10] = {0, 7, 6, 5, 4, 3, 2, 1};
-    // printf("%d", searchData(data, -1, 7));
-    // return 0;
 }

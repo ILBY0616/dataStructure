@@ -1,100 +1,24 @@
-#include <stdbool.h>
-#include <stdlib.h>
+#include "LStack.h"
 #include <stdio.h>
 
-#define type int
-#define size 10
-
-typedef struct Node
-{
-    type data;
-    struct Node* next;
-} Node, *LStack;
-
-bool initiateLStack(LStack* stack);
-type getLStack(LStack stack);
-bool pushLStack(LStack* stack, type data);
-type popLStack(LStack* stack);
-bool destroyLStack(LStack* stack);
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\02Stack.LStack.exe
+// 10 9 8 7 6 5 4 3 2 1
+// Process finished with exit code 0
 
 int main()
 {
-    int i = 0;
-    type data[size];
+    int i;
     LStack stack = NULL;
     initiateLStack(&stack);
-    while (scanf("%d ", &data[i]) == 1)
+    for (i = 0; i < 10; i++)
     {
-        pushLStack(&stack, data[i]);
-        i++;
+        pushLStack(&stack, i + 1);
     }
     for (int j = 0; j < i; j++)
     {
         printf("%d ", getLStack(stack));
-        data[i] = popLStack(&stack);
+        popLStack(&stack);
     }
     destroyLStack(&stack);
     return 0;
-}
-
-bool initiateLStack(LStack* stack)
-{
-    if (*stack != NULL)
-    {
-        return false;
-    }
-    *stack = NULL;
-    return true;
-}
-
-type getLStack(LStack stack)
-{
-    if (stack == NULL)
-    {
-        return -1;
-    }
-    return stack->data;
-}
-
-bool pushLStack(LStack* stack, type data)
-{
-    LStack node = malloc(sizeof(Node));
-    if (node == NULL)
-    {
-        return false;
-    }
-    node->data = data;
-    node->next = *stack;
-    *stack = node;
-    return true;;
-}
-
-type popLStack(LStack* stack)
-{
-    if (*stack == NULL)
-    {
-        return false;
-    }
-    LStack node = *stack;
-    type data = node->data;
-    *stack = (*stack)->next;
-    free(node);
-    return data;
-}
-
-bool destroyLStack(LStack* stack)
-{
-    if (*stack == NULL)
-    {
-        return false;
-    }
-    LStack node = *stack;
-    while (node != NULL)
-    {
-        *stack = (*stack)->next;
-        free(node);
-        node = *stack;
-    }
-    *stack = NULL;
-    return true;
 }

@@ -72,20 +72,21 @@ inline void preOrderByStack(LBTree tree)
 {
     int top = -1;
     LBTree stack[100];
-    while (tree != NULL || top != -1)
+    LBTree node = tree;
+    while (node != NULL || top != -1)
     {
         // 一路向左，直到为空
-        while (tree != NULL)
+        while (node != NULL)
         {
-            printf("%c", tree->data);
-            stack[++top] = tree;
-            tree = tree->left;
+            printf("%c", node->data);
+            stack[++top] = node;
+            node = node->left;
         }
         // 退一向右，重新开始
         if (top != -1)
         {
-            tree = stack[top--];
-            tree = tree->right;
+            node = stack[top--];
+            node = node->right;
         }
     }
 }
@@ -104,20 +105,21 @@ inline void inOrderByStack(LBTree tree)
 {
     int top = -1;
     LBTree stack[100];
-    while (tree != NULL || top != -1)
+    LBTree node = tree;
+    while (node != NULL || top != -1)
     {
         // 一路向左，直到为空
-        while (tree != NULL)
+        while (node != NULL)
         {
-            stack[++top] = tree;
-            tree = tree->left;
+            stack[++top] = node;
+            node = node->left;
         }
         // 退一向右，重新开始
         if (top != -1)
         {
-            tree = stack[top--];
-            printf("%c", tree->data);
-            tree = tree->right;
+            node = stack[top--];
+            printf("%c", node->data);
+            node = node->right;
         }
     }
 }
@@ -135,27 +137,28 @@ inline void postOrderByRecursion(LBTree tree)
 inline void postOrderByStack(LBTree tree)
 {
     int top = -1;
+    LBTree node = tree;
     int flagStack[100];
     LBTree nodeStack[100];
-    while (tree != NULL || top != -1)
+    while (node != NULL || top != -1)
     {
-        while (tree != NULL)
+        while (node != NULL)
         {
-            nodeStack[++top] = tree;
+            nodeStack[++top] = node;
             flagStack[top] = 0;
-            tree = tree->left;
+            node = node->left;
         }
-        tree = nodeStack[top];
+        node = nodeStack[top];
         if (flagStack[top--] == 0)
         {
-            nodeStack[++top] = tree;
+            nodeStack[++top] = node;
             flagStack[top] = 1;
-            tree = tree->right;
+            node = node->right;
         }
         else
         {
-            printf("%c", tree->data);
-            tree = NULL;
+            printf("%c", node->data);
+            node = NULL;
         }
     }
 }

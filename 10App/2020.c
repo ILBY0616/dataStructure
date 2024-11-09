@@ -1,11 +1,15 @@
-#include <stddef.h>
-#include <stdio.h>
-
 #include "SLList.h"
 #include "LBTree.h"
 
-// 直接插入排序带头结点单链表
-bool sortSLList(SLList list);
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2020.exe
+// 5 2 3 1 4
+// 1 2 3 4 5
+// ab^^c^^
+// a
+// Process finished with exit code 0
+
+// 直接插入排序带头结点单链表（一趟排序不可以确定最终位置，必须换指针）
+bool straightInsertSortSLList(SLList list);
 // 求结点在二叉树中的父结点
 void findParent(LBTree tree, LBTree child, LBTree* parent);
 
@@ -15,7 +19,7 @@ int main()
     int data[5] = {5, 2, 3, 1, 4};
     buildSLListByTail(data, 5, &list);
     printSLList(list);
-    sortSLList(list);
+    straightInsertSortSLList(list);
     printSLList(list);
     destroySLList(&list);
 
@@ -28,36 +32,36 @@ int main()
     return 0;
 }
 
-bool sortSLList(SLList list)
+bool straightInsertSortSLList(SLList list)
 {
     if (list == NULL || list->next == NULL)
     {
         return false;
     }
     SLList inserPrior = list->next;
-    SLList inserNext = list->next;
+    SLList inserNext = list->next->next;
     while (inserNext != NULL)
     {
         SLList findPrior = list, findNext = list->next;
         // 找到合适位置
-        while (findNext->data < inserNext->data)
+        while (findNext->data <= inserNext->data)
         {
             findPrior = findPrior->next;
             findNext = findNext->next;
         }
         // 插入合适位置
-        SLList temp = inserNext;
+        SLList pointer = inserNext;
         inserPrior->next = inserNext->next;
         inserNext = inserNext->next;
-        temp->next = findNext;
-        findPrior->next = temp;
+        pointer->next = findNext;
+        findPrior->next = pointer;
     }
     return true;
 }
 
 void findParent(LBTree tree, LBTree child, LBTree* parent)
 {
-    if (tree->left == child || tree->right == child)
+    if (tree == NULL || tree->left == child || tree->right == child)
     {
         *parent = tree;
         return;

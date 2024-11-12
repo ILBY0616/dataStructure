@@ -58,6 +58,8 @@ void doubleBubble(int data[], int length)
     }
 }
 
+// n个元素通过n-1趟冒泡实现排序，每一趟冒泡将一个当前最大元素放到最终位置
+// 每一趟包括比较和交换，比较次数无关于待排序序列初始状态，只有关于待排序序列长度，交换次数既相关待排序序列初始状态，又相关待排序序列长度
 void bubbleSort(int data[], int length)
 {
     for (int i = 0; i < length; i++)

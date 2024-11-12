@@ -40,6 +40,10 @@ int divideData(int data[], int low, int high)
     return low;
 }
 
+// 快速排序的交换更加宽广，不是两两通过temp交换，而是nn通过temp交换
+// 这个交换的过程称之为划分，每次划分首先确定枢纽元素，然后以枢纽元素将整个序列划为左右两半，左边<=枢纽元素<=右边
+// 每趟划分将一个枢纽元素确定在最终位置
+// 采用递归实现产生了递归工作栈空间消耗
 void quickSort(int data[], int low, int high)
 {
     if (low < high)

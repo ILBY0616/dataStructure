@@ -50,6 +50,9 @@ void mergeData(int data[], int low, int mid, int high)
     }
 }
 
+// 首先将序列划分为两个序列
+// 递归使得两个序列有序（数量为一，天然有序）
+// 归并为一个有序表
 void mergeSort(int data[], int low, int high)
 {
     if (low < high)

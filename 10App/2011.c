@@ -1,14 +1,7 @@
+#include "LBTree.h"
 #include "SLList.h"
 
-bool minToFront(SLList list);
-
-bool findMaxValue(int data[], int length);
-
-int main()
-{
-    return 0;
-}
-
+// 将带头结点单链表中最小结点移到最前面
 bool minToFront(SLList list)
 {
     if (list == NULL || list->next == NULL)
@@ -32,11 +25,54 @@ bool minToFront(SLList list)
     return true;
 }
 
-bool findMaxValue(int data[], int length)
+// 递归找到数组最大值
+int findMaxValue(int data[], int length)
 {
-    if (length < 0)
+    if (length > 0)
     {
-        return false;
+        int a = data[length - 1];
+        int b = findMaxValue(data, length - 1);
+        return a > b ? a : b;
     }
-    return true;
+    return data[0];
+}
+
+
+// 计算叶子结点数目和非叶结点数目
+int leafNode = 0, branchNode = 0;
+
+void countNode(LBTree tree)
+{
+    if (tree != NULL)
+    {
+        if (tree->left != NULL || tree->right != NULL)
+        {
+            branchNode++;
+        }
+        else
+        {
+            leafNode++;
+        }
+        countNode(tree->left);
+        countNode(tree->right);
+    }
+}
+
+int main()
+{
+    int data[5] = {-1, -2, -3, -4, -5};
+    printf("%d\n", findMaxValue(data, 5));
+
+    SLList list = NULL;
+    buildSLListByTail(data, 5, &list);
+    printSLList(list);
+    minToFront(list);
+    printSLList(list);
+    destroySLList(&list);
+
+    LBTree tree = NULL;
+    createLBTree(&tree);
+    countNode(tree);
+    printf("%d %d", leafNode, branchNode);
+    return 0;
 }

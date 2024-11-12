@@ -18,14 +18,14 @@ void insertSort(int data[], int length)
 {
     for (int i = 1; i < length; i++)
     {
-        // 比较
         if (data[i] < data[i - 1])
         {
             int temp = data[i];
             int j = i - 1;
-            // 移动
+            // 比较
             while (j >= 0 && data[j] > temp)
             {
+                // 移动
                 data[j + 1] = data[j];
                 j--;
             }

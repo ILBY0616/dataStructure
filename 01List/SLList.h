@@ -196,12 +196,12 @@ inline int getLengthSLList(SLList list)
 
 inline void destroySLList(SLList* list)
 {
-    SLList temp = *list;
-    while (temp != NULL)
+    SLList node = *list;
+    while (node != NULL)
     {
         *list = (*list)->next;
-        free(temp);
-        temp = *list;
+        free(node);
+        node = *list;
     }
     *list = NULL;
 }

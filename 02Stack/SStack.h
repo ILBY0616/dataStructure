@@ -7,7 +7,7 @@
 typedef struct Stack
 {
     int data[100];
-    int top;
+    int top, size;
 } Stack, *SStack;
 
 // 开辟顺序栈
@@ -31,6 +31,7 @@ inline bool initiateSStack(SStack* stack)
     if (*stack != NULL)
     {
         (*stack)->top = -1;
+        (*stack)->size = 100;
     }
     return true;;
 }
@@ -46,7 +47,7 @@ inline int getSStack(SStack stack)
 
 inline bool pushSStack(SStack stack, int data)
 {
-    if (stack == NULL || stack->top == 100 - 1)
+    if (stack == NULL || stack->top == stack->size - 1)
     {
         return false;
     }

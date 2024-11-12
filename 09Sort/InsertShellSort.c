@@ -21,14 +21,14 @@ void shellSort(int data[], int length)
         // 分割
         for (int i = d; i < length; i += d)
         {
-            // 比较
             if (data[i] < data[i - d])
             {
                 int temp = data[i];
                 int j = i - d;
-                // 移动
-                while ( j >= 0 && data[j] > temp)
+                // 比较
+                while (j >= 0 && data[j] > temp)
                 {
+                    // 移动
                     data[j + d] = data[j];
                     j -= d;
                 }

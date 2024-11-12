@@ -1021,6 +1021,41 @@ build 09Sort.SwapQuickSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSwapQuickSort_Debu
   TARGET_PDB = 09Sort.SwapQuickSort.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 10App.2000
+
+
+#############################################
+# Order-only phony target for 10App.2000
+
+build cmake_object_order_depends_target_10App.2000: phony || CMakeFiles/10App.2000.dir
+
+build CMakeFiles/10App.2000.dir/10App/2000.c.obj: C_COMPILER__10App.2e2000_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2000.c || cmake_object_order_depends_target_10App.2000
+  DEP_FILE = CMakeFiles\10App.2000.dir\10App\2000.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2000.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2000.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2000
+
+
+#############################################
+# Link the executable 10App.2000.exe
+
+build 10App.2000.exe: C_EXECUTABLE_LINKER__10App.2e2000_Debug CMakeFiles/10App.2000.dir/10App/2000.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2000.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2000.exe
+  TARGET_IMPLIB = lib10App.2000.dll.a
+  TARGET_PDB = 10App.2000.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 10App.2006
 
 
@@ -1161,6 +1196,41 @@ build 10App.2009.exe: C_EXECUTABLE_LINKER__10App.2e2009_Debug CMakeFiles/10App.2
   TARGET_PDB = 10App.2009.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 10App.2010
+
+
+#############################################
+# Order-only phony target for 10App.2010
+
+build cmake_object_order_depends_target_10App.2010: phony || CMakeFiles/10App.2010.dir
+
+build CMakeFiles/10App.2010.dir/10App/2010.c.obj: C_COMPILER__10App.2e2010_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2010.c || cmake_object_order_depends_target_10App.2010
+  DEP_FILE = CMakeFiles\10App.2010.dir\10App\2010.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2010.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2010.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2010
+
+
+#############################################
+# Link the executable 10App.2010.exe
+
+build 10App.2010.exe: C_EXECUTABLE_LINKER__10App.2e2010_Debug CMakeFiles/10App.2010.dir/10App/2010.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2010.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2010.exe
+  TARGET_IMPLIB = lib10App.2010.dll.a
+  TARGET_PDB = 10App.2010.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 10App.2011
 
 
@@ -1194,6 +1264,111 @@ build 10App.2011.exe: C_EXECUTABLE_LINKER__10App.2e2011_Debug CMakeFiles/10App.2
   TARGET_FILE = 10App.2011.exe
   TARGET_IMPLIB = lib10App.2011.dll.a
   TARGET_PDB = 10App.2011.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2012
+
+
+#############################################
+# Order-only phony target for 10App.2012
+
+build cmake_object_order_depends_target_10App.2012: phony || CMakeFiles/10App.2012.dir
+
+build CMakeFiles/10App.2012.dir/10App/2012.c.obj: C_COMPILER__10App.2e2012_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2012.c || cmake_object_order_depends_target_10App.2012
+  DEP_FILE = CMakeFiles\10App.2012.dir\10App\2012.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2012.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2012.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2012
+
+
+#############################################
+# Link the executable 10App.2012.exe
+
+build 10App.2012.exe: C_EXECUTABLE_LINKER__10App.2e2012_Debug CMakeFiles/10App.2012.dir/10App/2012.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2012.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2012.exe
+  TARGET_IMPLIB = lib10App.2012.dll.a
+  TARGET_PDB = 10App.2012.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2017
+
+
+#############################################
+# Order-only phony target for 10App.2017
+
+build cmake_object_order_depends_target_10App.2017: phony || CMakeFiles/10App.2017.dir
+
+build CMakeFiles/10App.2017.dir/10App/2017.c.obj: C_COMPILER__10App.2e2017_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2017.c || cmake_object_order_depends_target_10App.2017
+  DEP_FILE = CMakeFiles\10App.2017.dir\10App\2017.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2017.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2017.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2017
+
+
+#############################################
+# Link the executable 10App.2017.exe
+
+build 10App.2017.exe: C_EXECUTABLE_LINKER__10App.2e2017_Debug CMakeFiles/10App.2017.dir/10App/2017.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2017.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2017.exe
+  TARGET_IMPLIB = lib10App.2017.dll.a
+  TARGET_PDB = 10App.2017.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2018
+
+
+#############################################
+# Order-only phony target for 10App.2018
+
+build cmake_object_order_depends_target_10App.2018: phony || CMakeFiles/10App.2018.dir
+
+build CMakeFiles/10App.2018.dir/10App/2018.c.obj: C_COMPILER__10App.2e2018_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2018.c || cmake_object_order_depends_target_10App.2018
+  DEP_FILE = CMakeFiles\10App.2018.dir\10App\2018.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2018.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2018.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2018
+
+
+#############################################
+# Link the executable 10App.2018.exe
+
+build 10App.2018.exe: C_EXECUTABLE_LINKER__10App.2e2018_Debug CMakeFiles/10App.2018.dir/10App/2018.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2018.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2018.exe
+  TARGET_IMPLIB = lib10App.2018.dll.a
+  TARGET_PDB = 10App.2018.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 10App.2019
@@ -1417,6 +1592,8 @@ build 09Sort.SwapBubbleSort: phony 09Sort.SwapBubbleSort.exe
 
 build 09Sort.SwapQuickSort: phony 09Sort.SwapQuickSort.exe
 
+build 10App.2000: phony 10App.2000.exe
+
 build 10App.2006: phony 10App.2006.exe
 
 build 10App.2007: phony 10App.2007.exe
@@ -1425,7 +1602,15 @@ build 10App.2008: phony 10App.2008.exe
 
 build 10App.2009: phony 10App.2009.exe
 
+build 10App.2010: phony 10App.2010.exe
+
 build 10App.2011: phony 10App.2011.exe
+
+build 10App.2012: phony 10App.2012.exe
+
+build 10App.2017: phony 10App.2017.exe
+
+build 10App.2018: phony 10App.2018.exe
 
 build 10App.2019: phony 10App.2019.exe
 
@@ -1443,7 +1628,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.FSearch.exe 07Search.SSearch.exe 07Search.TSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeBinarySort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2011.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.FSearch.exe 07Search.SSearch.exe 07Search.TSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeBinarySort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2000.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

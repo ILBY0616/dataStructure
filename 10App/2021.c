@@ -60,10 +60,10 @@ int main()
 
     LBTree tree = NULL;
     createLBTree(&tree);
-    preOrderByRecursion(tree);
+    preOrderLBTree(tree);
     printf("\n");
     swapChild(tree);
-    preOrderByRecursion(tree);
+    preOrderLBTree(tree);
     printf("\n");
     destroyLBTree(&tree);
     return 0;

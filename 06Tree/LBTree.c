@@ -1,17 +1,13 @@
 #include "LBTree.h"
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\06Tree.LBTree.exe
-// ab^^c^^
-// abc
-// abc
-// bac
-// bac
-// bca
-// bca
-// abc
-// abc
-// 2
-// 2
+// abd^^e^^cf^^g^^
+// abdecfg
+// dbeafcg
+// debfgca
+// abcdefg
+// 3
+// 4
 //
 // Process finished with exit code 0
 
@@ -19,24 +15,16 @@ int main()
 {
     LBTree tree = NULL;
     createLBTree(&tree);
-    preOrderByRecursion(tree);
+    preOrderLBTree(tree);
     printf("\n");
-    preOrderByStack(tree);
+    inOrderLBTree(tree);
     printf("\n");
-    inOrderByRecursion(tree);
+    postOrderLBTree(tree);
     printf("\n");
-    inOrderByStack(tree);
+    levelOrderLBTree(tree);
     printf("\n");
-    postOrderByRecursion(tree);
-    printf("\n");
-    postOrderByStack(tree);
-    printf("\n");
-    levelOrderByRecursion(tree);
-    printf("\n");
-    levelOrderByQueue(tree);
-    printf("\n");
-    printf("%d\n", getHeightByRecursion(tree));
-    printf("%d\n", getHeightByQueue(tree));
+    printf("%d\n", getHeightLBTree(tree));
+    printf("%d\n", getWidthLBTree(tree));
     destroyLBTree(&tree);
     return 0;
 }

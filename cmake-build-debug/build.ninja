@@ -1406,6 +1406,76 @@ build 10App.2012.exe: C_EXECUTABLE_LINKER__10App.2e2012_Debug CMakeFiles/10App.2
   TARGET_PDB = 10App.2012.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 10App.2013
+
+
+#############################################
+# Order-only phony target for 10App.2013
+
+build cmake_object_order_depends_target_10App.2013: phony || CMakeFiles/10App.2013.dir
+
+build CMakeFiles/10App.2013.dir/10App/2013.c.obj: C_COMPILER__10App.2e2013_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2013.c || cmake_object_order_depends_target_10App.2013
+  DEP_FILE = CMakeFiles\10App.2013.dir\10App\2013.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2013.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2013.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2013
+
+
+#############################################
+# Link the executable 10App.2013.exe
+
+build 10App.2013.exe: C_EXECUTABLE_LINKER__10App.2e2013_Debug CMakeFiles/10App.2013.dir/10App/2013.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2013.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2013.exe
+  TARGET_IMPLIB = lib10App.2013.dll.a
+  TARGET_PDB = 10App.2013.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10App.2014
+
+
+#############################################
+# Order-only phony target for 10App.2014
+
+build cmake_object_order_depends_target_10App.2014: phony || CMakeFiles/10App.2014.dir
+
+build CMakeFiles/10App.2014.dir/10App/2014.c.obj: C_COMPILER__10App.2e2014_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2014.c || cmake_object_order_depends_target_10App.2014
+  DEP_FILE = CMakeFiles\10App.2014.dir\10App\2014.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2014.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2014.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2014
+
+
+#############################################
+# Link the executable 10App.2014.exe
+
+build 10App.2014.exe: C_EXECUTABLE_LINKER__10App.2e2014_Debug CMakeFiles/10App.2014.dir/10App/2014.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2014.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2014.exe
+  TARGET_IMPLIB = lib10App.2014.dll.a
+  TARGET_PDB = 10App.2014.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 10App.2017
 
 
@@ -1719,6 +1789,10 @@ build 10App.2011: phony 10App.2011.exe
 
 build 10App.2012: phony 10App.2012.exe
 
+build 10App.2013: phony 10App.2013.exe
+
+build 10App.2014: phony 10App.2014.exe
+
 build 10App.2017: phony 10App.2017.exe
 
 build 10App.2018: phony 10App.2018.exe
@@ -1739,7 +1813,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.FSearch.exe 07Search.SSearch.exe 07Search.TSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2000.exe 10App.2001.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.FSearch.exe 07Search.SSearch.exe 07Search.TSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2000.exe 10App.2001.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

@@ -13,13 +13,13 @@ typedef struct StackNode
 // 开辟链栈
 bool initiateLStack(LStack* stack);
 // 读栈
-int getLStack(LStack stack);
+bool getLStack(LStack stack, int* data);
 // 入栈
 bool pushLStack(LStack* stack, int data);
 // 出栈
-int popLStack(LStack* stack);
+bool popLStack(LStack* stack, int* data);
 // 销毁链栈
-bool destroyLStack(LStack* stack);
+void destroyLStack(LStack* stack);
 
 inline bool initiateLStack(LStack* stack)
 {
@@ -31,13 +31,14 @@ inline bool initiateLStack(LStack* stack)
     return true;
 }
 
-inline int getLStack(LStack stack)
+inline bool getLStack(LStack stack, int* data)
 {
     if (stack == NULL)
     {
-        return -1;
+        return false;
     }
-    return stack->data;
+    *data = stack->data;
+    return true;
 }
 
 inline bool pushLStack(LStack* stack, int data)
@@ -53,34 +54,27 @@ inline bool pushLStack(LStack* stack, int data)
     return true;;
 }
 
-inline int popLStack(LStack* stack)
+inline bool popLStack(LStack* stack, int* data)
 {
     if (*stack == NULL)
     {
         return false;
     }
     LStack node = *stack;
-    int data = node->data;
+    *data = node->data;
     *stack = (*stack)->next;
     free(node);
-    return data;
+    return true;
 }
 
-inline bool destroyLStack(LStack* stack)
+inline void destroyLStack(LStack* stack)
 {
-    if (*stack == NULL)
+    while (*stack != NULL)
     {
-        return false;
-    }
-    LStack node = *stack;
-    while (node != NULL)
-    {
+        LStack node = *stack;
         *stack = (*stack)->next;
         free(node);
-        node = *stack;
     }
-    *stack = NULL;
-    return true;
 }
 
 #endif

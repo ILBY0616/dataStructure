@@ -1,5 +1,5 @@
-#include "LBTree.h"
-#include "SLList.h"
+#include <LBTree.h>
+#include <SLList.h>
 
 // 将带头结点单链表中最小结点移到最前面
 bool minToFront(SLList list)
@@ -37,32 +37,35 @@ int findMaxValue(int data[], int length)
     return data[0];
 }
 
-
 // 计算叶子结点数目和非叶结点数目
-int leafNode = 0, branchNode = 0;
-
-void countNode(LBTree tree)
+void countNode(LBTree tree, int* leafNode, int* branchNode)
 {
     if (tree != NULL)
     {
         if (tree->left != NULL || tree->right != NULL)
         {
-            branchNode++;
+            (*branchNode)++;
         }
         else
         {
-            leafNode++;
+            (*leafNode)++;
         }
-        countNode(tree->left);
-        countNode(tree->right);
+        countNode(tree->left, leafNode, branchNode);
+        countNode(tree->right, leafNode, branchNode);
     }
 }
+
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2011.exe
+// -1 -2 -3 -4 -5
+// -5 -1 -2 -3 -4
+// -1
+// ab^^c^^
+// 2 1
+// Process finished with exit code 0
 
 int main()
 {
     int data[5] = {-1, -2, -3, -4, -5};
-    printf("%d\n", findMaxValue(data, 5));
-
     SLList list = NULL;
     buildSLListByTail(data, 5, &list);
     printSLList(list);
@@ -70,9 +73,13 @@ int main()
     printSLList(list);
     destroySLList(&list);
 
+    printf("%d\n", findMaxValue(data, 5));
+
+    int leafNode = 0, branchNode = 0;
     LBTree tree = NULL;
     createLBTree(&tree);
-    countNode(tree);
+    countNode(tree, &leafNode, &branchNode);
     printf("%d %d", leafNode, branchNode);
+    destroyLBTree(&tree);
     return 0;
 }

@@ -37,12 +37,17 @@ inline void createLBTree(LBTree* tree)
     }
     else
     {
-        *tree = (LBTree)malloc(sizeof(TreeNode));
-        if (*tree != NULL)
+        LBTree node = NULL;
+        while (node == NULL)
         {
-            (*tree)->data = data;
-            createLBTree(&(*tree)->left);
-            createLBTree(&(*tree)->right);
+            node = (LBTree)malloc(sizeof(TreeNode));
+            if (node != NULL)
+            {
+                *tree = node;
+                (*tree)->data = data;
+                createLBTree(&(*tree)->left);
+                createLBTree(&(*tree)->right);
+            }
         }
     }
 }
@@ -96,9 +101,9 @@ inline void inOrderLBTree(LBTree tree)
 inline void postOrderLBTree(LBTree tree)
 {
     int top = -1;
-    LBTree node = tree;
     int flagStack[100];
     LBTree nodeStack[100];
+    LBTree node = tree;
     while (node != NULL || top != -1)
     {
         while (node != NULL)

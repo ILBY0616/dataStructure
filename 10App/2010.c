@@ -1,4 +1,4 @@
-#include "SStack.h"
+#include <SStack.h>
 #include <stdio.h>
 
 // 十进制正整数化为八进制正整数
@@ -11,9 +11,14 @@ void baseConversion(SStack stack, int data)
     }
     while (stack->top != -1)
     {
-        printf("%d", popSStack(stack));
+        popSStack(stack, &data);
+        printf("%d", data);
     }
 }
+
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2010.exe
+// 12
+// Process finished with exit code 0
 
 int main()
 {

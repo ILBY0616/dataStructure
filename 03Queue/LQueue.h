@@ -18,13 +18,13 @@ typedef struct Queue
 // 开辟链队
 bool initiateLQueue(LQueue* queue);
 // 读队
-int getLQueue(LQueue queue);
+bool getLQueue(LQueue queue, int* data);
 // 入队
 bool inLQueue(LQueue queue, int data);
 // 出队
-int outLQueue(LQueue queue);
+bool outLQueue(LQueue queue, int* data);
 // 销毁链队
-bool destroyLQueue(LQueue* queue);
+void destroyLQueue(LQueue* queue);
 
 inline bool initiateLQueue(LQueue* queue)
 {
@@ -33,21 +33,23 @@ inline bool initiateLQueue(LQueue* queue)
         return false;
     }
     *queue = (LQueue)malloc(sizeof(Queue));
-    if (*queue != NULL)
+    if (*queue == NULL)
     {
-        (*queue)->front = NULL;
-        (*queue)->rear = NULL;
+        return false;
     }
+    (*queue)->front = NULL;
+    (*queue)->rear = NULL;
     return true;
 }
 
-inline int getLQueue(LQueue queue)
+inline bool getLQueue(LQueue queue, int* data)
 {
-    if (queue == NULL || queue->front == NULL)
+    if (queue == NULL || queue->front == NULL || queue->rear == NULL)
     {
-        return -1;
+        return false;
     }
-    return queue->front->data;
+    *data = queue->front->data;
+    return true;
 }
 
 inline bool inLQueue(LQueue queue, int data)
@@ -57,44 +59,40 @@ inline bool inLQueue(LQueue queue, int data)
         return false;
     }
     QueueNode* node = malloc(sizeof(QueueNode));
-    if (node != NULL)
-    {
-        node->data = data;
-        node->next = NULL;
-        if (queue->front == NULL)
-        {
-            queue->front = node;
-            queue->rear = node;
-        }
-        else
-        {
-            queue->rear->next = node;
-            queue->rear = node;
-        }
-    }
-    return true;
-}
-
-inline int outLQueue(LQueue queue)
-{
-    if (queue == NULL || queue->front == NULL)
-    {
-        return -1;
-    }
-    int data = queue->front->data;
-    QueueNode* node = queue->front;
-    queue->front = queue->front->next;
-    free(node);
-    return data;
-}
-
-inline bool destroyLQueue(LQueue* queue)
-{
-    if (*queue == NULL || (*queue)->front == NULL || (*queue)->rear == NULL)
+    if (node == NULL)
     {
         return false;
     }
-    while ((*queue)->front != NULL)
+    node->data = data;
+    node->next = NULL;
+    if (queue->front == NULL)
+    {
+        queue->front = node;
+    }
+    else
+    {
+        queue->rear->next = node;
+    }
+    queue->rear = node;
+    return true;
+}
+
+inline bool outLQueue(LQueue queue, int* data)
+{
+    if (queue == NULL || queue->front == NULL || queue->rear == NULL)
+    {
+        return false;
+    }
+    *data = queue->front->data;
+    QueueNode* node = queue->front;
+    queue->front = queue->front->next;
+    free(node);
+    return true;
+}
+
+inline void destroyLQueue(LQueue* queue)
+{
+    while (*queue != NULL && (*queue)->front != NULL)
     {
         QueueNode* node = (*queue)->front;
         (*queue)->front = (*queue)->front->next;
@@ -103,7 +101,6 @@ inline bool destroyLQueue(LQueue* queue)
     (*queue)->rear = NULL;
     free(queue);
     *queue = NULL;
-    return true;
 }
 
 #endif

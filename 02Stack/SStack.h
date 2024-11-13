@@ -13,13 +13,13 @@ typedef struct Stack
 // 开辟顺序栈
 bool initiateSStack(SStack* stack);
 // 读栈
-int getSStack(SStack stack);
+bool getSStack(SStack stack, int* data);
 // 入栈
 bool pushSStack(SStack stack, int data);
 // 出栈
-int popSStack(SStack stack);
+bool popSStack(SStack stack, int* data);
 // 销毁顺序栈
-bool destroySStack(SStack* stack);
+void destroySStack(SStack* stack);
 
 inline bool initiateSStack(SStack* stack)
 {
@@ -28,21 +28,23 @@ inline bool initiateSStack(SStack* stack)
         return false;
     }
     *stack = (SStack)malloc(sizeof(Stack));
-    if (*stack != NULL)
+    if (*stack == NULL)
     {
-        (*stack)->top = -1;
-        (*stack)->size = 100;
+        return false;
     }
+    (*stack)->top = -1;
+    (*stack)->size = 100;
     return true;;
 }
 
-inline int getSStack(SStack stack)
+inline bool getSStack(SStack stack, int* data)
 {
     if (stack == NULL || stack->top == -1)
     {
-        return -1;
+        return false;
     }
-    return stack->data[stack->top];
+    *data = stack->data[stack->top];
+    return true;
 }
 
 inline bool pushSStack(SStack stack, int data)
@@ -55,25 +57,20 @@ inline bool pushSStack(SStack stack, int data)
     return true;
 }
 
-inline int popSStack(SStack stack)
+inline bool popSStack(SStack stack, int* data)
 {
     if (stack == NULL || stack->top == -1)
     {
-        return -1;
-    }
-    int data = stack->data[stack->top--];
-    return data;
-}
-
-inline bool destroySStack(SStack* stack)
-{
-    if (*stack == NULL)
-    {
         return false;
     }
+    *data = stack->data[stack->top--];
+    return true;
+}
+
+inline void destroySStack(SStack* stack)
+{
     free(*stack);
     *stack = NULL;
-    return true;
 }
 
 #endif

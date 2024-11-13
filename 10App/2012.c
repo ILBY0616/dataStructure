@@ -1,9 +1,9 @@
-#include "LBTree.h"
-#include "SLList.h"
+#include <LBTree.h>
+#include <SLList.h>
 #include <stdio.h>
 
 // 统计带头结点单链表中值为data的结点数
-int countListNode(SLList list, int data)
+int countNode(SLList list, int data)
 {
     int count = 0;
     SLList node = list->next;
@@ -18,16 +18,14 @@ int countListNode(SLList list, int data)
     return count;
 }
 
-// 递归统计树结点数
-int total = 0;
-
-void countTreeNode(LBTree tree)
+// 递归统计链二叉树结点数
+void getTotal(LBTree tree, int* total)
 {
     if (tree != NULL)
     {
-        total++;
-        countTreeNode(tree->left);
-        countTreeNode(tree->right);
+        (*total)++;
+        getTotal(tree->left, total);
+        getTotal(tree->right, total);
     }
 }
 
@@ -54,9 +52,28 @@ void oddToFront(int data[], int length)
     }
 }
 
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2012.exe
+// 1
+// ab^^c^^
+// 3
+// 1 3 5 7 2 4 6 8
+// Process finished with exit code 0
+
 int main()
 {
+    SLList list = NULL;
     int data[8] = {1, 3, 5, 7, 2, 4, 6, 8};
+    buildSLListByTail(data, 8, &list);
+    printf("%d\n", countNode(list, 7));
+    destroySLList(&list);
+
+    int total = 0;
+    LBTree tree = NULL;
+    createLBTree(&tree);
+    getTotal(tree, &total);
+    printf("%d\n", total);
+    destroyLBTree(&tree);
+
     oddToFront(data, 8);
     for (int i = 0; i < 8; i++)
     {

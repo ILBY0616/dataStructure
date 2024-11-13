@@ -13,13 +13,13 @@ typedef struct Queue
 // 开辟顺序队
 bool initiateSQueue(SQueue* queue);
 // 读队
-int getSQueue(SQueue queue);
+bool getSQueue(SQueue queue, int* data);
 // 入队
 bool inSQueue(SQueue queue, int data);
 // 出队
-int outSQueue(SQueue queue);
+bool outSQueue(SQueue queue, int* data);
 // 销毁顺序队
-bool destroySQueue(SQueue* queue);
+void destroySQueue(SQueue* queue);
 
 inline bool initiateSQueue(SQueue* queue)
 {
@@ -28,21 +28,23 @@ inline bool initiateSQueue(SQueue* queue)
         return false;
     }
     *queue = (SQueue)malloc(sizeof(Queue));
-    if (*queue != NULL)
+    if (*queue == NULL)
     {
-        (*queue)->size = 100;
-        (*queue)->front = (*queue)->rear = 0;
+        return false;
     }
+    (*queue)->size = 100;
+    (*queue)->front = (*queue)->rear = 0;
     return true;
 }
 
-inline int getSQueue(SQueue queue)
+inline bool getSQueue(SQueue queue, int* data)
 {
     if (queue == NULL || queue->front == queue->rear)
     {
-        return -1;
+        return false;
     }
-    return queue->data[queue->front];
+    *data = queue->data[queue->front];;
+    return true;
 }
 
 inline bool inSQueue(SQueue queue, int data)
@@ -56,26 +58,21 @@ inline bool inSQueue(SQueue queue, int data)
     return true;
 }
 
-inline int outSQueue(SQueue queue)
+inline bool outSQueue(SQueue queue, int* data)
 {
     if (queue == NULL || queue->front == queue->rear)
     {
-        return -1;
-    }
-    int data = queue->data[queue->front];
-    queue->front = (queue->front + 1) % queue->size;
-    return data;
-}
-
-inline bool destroySQueue(SQueue* queue)
-{
-    if (*queue == NULL)
-    {
         return false;
     }
+    *data = queue->data[queue->front];
+    queue->front = (queue->front + 1) % queue->size;
+    return true;
+}
+
+inline void destroySQueue(SQueue* queue)
+{
     free(*queue);
     *queue = NULL;
-    return true;
 }
 
 #endif

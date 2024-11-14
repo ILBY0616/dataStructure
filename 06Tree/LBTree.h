@@ -59,15 +59,15 @@ inline void preOrderLBTree(LBTree tree)
     LBTree node = tree;
     while (node != NULL || top != -1)
     {
-        // 一路向左，直到为空
-        while (node != NULL)
+        // node非空，入栈向左
+        if (node != NULL)
         {
             printf("%c", node->data);
             stack[++top] = node;
             node = node->left;
         }
-        // 退一向右，重新开始
-        if (top != -1)
+        // node为空，出栈向右
+        else
         {
             node = stack[top--];
             node = node->right;
@@ -82,14 +82,14 @@ inline void inOrderLBTree(LBTree tree)
     LBTree node = tree;
     while (node != NULL || top != -1)
     {
-        // 一路向左，直到为空
-        while (node != NULL)
+        // node非空，入栈向左
+        if (node != NULL)
         {
             stack[++top] = node;
             node = node->left;
         }
-        // 退一向右，重新开始
-        if (top != -1)
+        // node为空，出栈向右
+        else
         {
             node = stack[top--];
             printf("%c", node->data);
@@ -101,28 +101,34 @@ inline void inOrderLBTree(LBTree tree)
 inline void postOrderLBTree(LBTree tree)
 {
     int top = -1;
-    int flagStack[100];
-    LBTree nodeStack[100];
+    LBTree stack[100];
     LBTree node = tree;
+    LBTree visited = NULL;
     while (node != NULL || top != -1)
     {
-        while (node != NULL)
+        // node非空，入栈向左
+        if (node != NULL)
         {
-            nodeStack[++top] = node;
-            flagStack[top] = 0;
+            stack[++top] = node;
             node = node->left;
         }
-        node = nodeStack[top];
-        if (flagStack[top--] == 0)
-        {
-            nodeStack[++top] = node;
-            flagStack[top] = 1;
-            node = node->right;
-        }
+        // node为空，读栈看右
         else
         {
-            printf("%c", node->data);
-            node = NULL;
+            node = stack[top];
+            // 有右未访，便要访右
+            if (node->right != NULL && node->right != visited)
+            {
+                node = node->right;
+            }
+            // 无右已访，出栈标记
+            else
+            {
+                stack[top--];
+                printf("%c", node->data);
+                visited = node;
+                node = NULL;
+            }
         }
     }
 }
@@ -132,18 +138,21 @@ inline void levelOrderLBTree(LBTree tree)
     if (tree != NULL)
     {
         LBTree queue[100];
-        int front = 0, rear = 0;
-        // 入根队
-        queue[rear++] = tree;
-        // 出子队
+        int front = -1, rear = -1;
+        // 入队
+        queue[++rear] = tree;
         while (front != rear)
         {
-            LBTree node = queue[front++];
-            if (node != NULL)
+            // 出队
+            LBTree node = queue[++front];
+            printf("%c", node->data);
+            if (node->left != NULL)
             {
-                printf("%c", node->data);
-                queue[rear++] = node->left;
-                queue[rear++] = node->right;
+                queue[++rear] = node->left;
+            }
+            if (node->right != NULL)
+            {
+                queue[++rear] = node->right;
             }
         }
     }

@@ -1,31 +1,21 @@
 #include <LBTree.h>
-#include <LQueue.h>
 #include <SStack.h>
 #include <stdio.h>
 
-// 用顺序栈和链队判断回文
-bool isPalindrome(SStack stack, LQueue queue, int data[], int length)
+// 十进制正整数化为八进制正整数
+void baseConversion(SStack stack, int data)
 {
-    for (int i = 0; i < length; i++)
+    while (data > 0)
     {
-        // 入栈
-        pushSStack(stack, data[i]);
-        // 入队
-        inLQueue(queue, data[i]);
+        pushSStack(stack, data % 8);
+        data /= 8;
     }
-    for (int j = 0; j < length; j++)
+    while (stack->top != -1)
     {
-        int stackData, queueData;
-        // 出栈
-        popSStack(stack, &stackData);
-        // 出队
-        outLQueue(queue, &queueData);
-        if (stackData != queueData)
-        {
-            return false;
-        }
+        popSStack(stack, &data);
+        printf("%d", data);
     }
-    return true;
+    printf("\n");
 }
 
 // 递归先序遍历二叉树
@@ -61,8 +51,8 @@ void postOrderByRecursion(LBTree tree)
     }
 }
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2009.exe
-// YES
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2015.exe
+// 12
 // ab^^c^^
 // abc
 // bac
@@ -72,21 +62,10 @@ void postOrderByRecursion(LBTree tree)
 
 int main()
 {
-    int data[6] = {1, 2, 3, 3, 2, 1};
-    SStack stack = NULL;
-    LQueue queue = NULL;
+    SStack stack;
     initiateSStack(&stack);
-    initiateLQueue(&queue);
-    if (isPalindrome(stack, queue, data, 6))
-    {
-        printf("YES\n");
-    }
-    else
-    {
-        printf("NO\n");
-    }
+    baseConversion(stack, 10);
     destroySStack(&stack);
-    destroyLQueue(&queue);
 
     LBTree tree = NULL;
     createLBTree(&tree);

@@ -1,34 +1,23 @@
+#include <stdbool.h>
 #include <stdio.h>
 
-// 找到递增数组T[1-n]中T[i]=i的下标
-int findI(int T[], int n);
-// A、B为两个起始下标为0的n阶对称矩阵，用两个起始下标为0一维数组压缩存储了两个矩阵的下三角元素，编写A、B矩阵相乘的函数，注意结果不一定是对称矩阵
-// 见DMatrix void multiplyDMartrix(DMatrix leftFactor, DMatrix rightFactor, int finalProduct[100][100]);
-// 双向交替冒泡排序，一趟大的放后，一趟小的放前
-// 见SwapBubbleSort void doubleBubble(int data[], int length);
-
-int main()
+// 找到递增数组data[]中data[i]=i的下标
+bool findIndex(int data[], int length, int* index)
 {
-    int data[10] = {9, 8, 7, 6, 4, 5, 3, 2, 1, 0};
-    printf("%d\n", findI(data, 10));
-    return 0;
-}
-
-int findI(int T[], int n)
-{
-    if (n < 1)
+    if (length < 1)
     {
-        return -1;
+        return false;
     }
-    int low = 1, high = n;
+    int low = 0, high = length - 1;
     while (low <= high)
     {
         int mid = (low + high) / 2;
-        if (T[mid] == mid)
+        if (data[mid] == mid)
         {
-            return mid;
+            *index = mid;
+            return true;
         }
-        if (T[mid] > mid)
+        if (data[mid] > mid)
         {
             high = mid - 1;
         }
@@ -37,5 +26,68 @@ int findI(int T[], int n)
             low = mid + 1;
         }
     }
-    return -1;
+    return false;
+}
+
+// 双向交替冒泡排序，一趟大的放后，一趟小的放前
+void doubleBubble(int data[], int length)
+{
+    int i = 0, j = length - 1, k;
+    while (i < j)
+    {
+        int flag = 0;
+        for (k = i; k < j; k++)
+        {
+            if (data[k] > data[k + 1])
+            {
+                flag = data[k];
+                data[k] = data[k + 1];
+                data[k + 1] = flag;
+                flag = flag != 0 ? flag : 1;
+            }
+        }
+        if (flag == 0)
+        {
+            break;
+        }
+        j--;
+        flag = 0;
+        for (k = j; k > i; k--)
+        {
+            if (data[k] < data[k - 1])
+            {
+                flag = data[k];
+                data[k] = data[k - 1];
+                data[k - 1] = flag;
+                flag = flag != 0 ? flag : 1;
+            }
+        }
+        if (flag == 0)
+        {
+            break;
+        }
+        i++;
+    }
+}
+
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2006.exe
+// 4
+// 0 1 2 3 4 5 6 7 8 9
+//
+// Process finished with exit code 0
+
+int main()
+{
+    int index = -1;
+    int data[10] = {9, 8, 7, 6, 4, 5, 3, 2, 1, 0};
+    findIndex(data, 10, &index);
+    printf("%d\n", index);
+
+    doubleBubble(data, 10);
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d ", data[i]);
+    }
+    printf("\n");
+    return 0;
 }

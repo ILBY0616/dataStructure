@@ -1,74 +1,8 @@
-#include "ATGraph.h"
-#include "SLList.h"
-#include "LBTree.h"
-
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2021.exe
-// 5 2 3 1 4
-// 1 2 3 4 5
-// Input vertexSum edgeSum:
-// 3 2
-// Input vertex 0's value:
-// a
-// Input vertex 1's value:
-// b
-// Input vertex 2's value:
-// c
-// Input startIndex endIndex:
-// 0 1
-// Input startIndex endIndex:
-// 1 2
-// ATGraph:
-// a->b
-// b->c
-// c
-// ATGraph:
-// a
-// b->a
-// c->b
-// ab^^c^^
-// abc
-// acb
-//
-// Process finished with exit code 0
+#include <ATGraph.h>
+#include <LBTree.h>
+#include <SLList.h>
 
 // 简单选择排序带头结点单链表（一趟排序可以确定最终位置，可以只交换值不换指针）
-bool straightSelectSortSLList(SLList list);
-// 求n个结点的逆邻接表
-ATGraph createInverseGraph(ATGraph graph);
-// 递归交换左右子树
-void swapChild(LBTree tree);
-
-int main()
-{
-    SLList list = NULL;
-    int data[5] = {5, 2, 3, 1, 4};
-    buildSLListByTail(data, 5, &list);
-    printSLList(list);
-    straightSelectSortSLList(list);
-    printSLList(list);
-    destroySLList(&list);
-
-    ATGraph graph = NULL;
-    initiateATGraph(&graph);
-    createDATGraph(graph);
-    printATGraph(graph);
-    ATGraph inverseGraph = createInverseGraph(graph);
-    printATGraph(inverseGraph);
-    destroyATGraph(&graph);
-    destroyATGraph(&inverseGraph);
-    getchar();
-
-    LBTree tree = NULL;
-    createLBTree(&tree);
-    preOrderLBTree(tree);
-    printf("\n");
-    swapChild(tree);
-    preOrderLBTree(tree);
-    printf("\n");
-    destroyLBTree(&tree);
-    return 0;
-}
-
 bool straightSelectSortSLList(SLList list)
 {
     if (list == NULL || list->next == NULL)
@@ -91,9 +25,9 @@ bool straightSelectSortSLList(SLList list)
         // 交换最小数据
         if (currentMin != pointer)
         {
-            int data = currentMin->data;
-            currentMin->data = pointer->data;
-            pointer->data = data;
+            int data = pointer->data;
+            pointer->data = currentMin->data;
+            currentMin->data = data;
         }
         // 进入下轮查找
         pointer = pointer->next;
@@ -101,6 +35,7 @@ bool straightSelectSortSLList(SLList list)
     return true;
 }
 
+// 求n个结点的逆邻接表
 ATGraph createInverseGraph(ATGraph graph)
 {
     ATGraph inverseGraph = NULL;
@@ -146,6 +81,7 @@ ATGraph createInverseGraph(ATGraph graph)
     return inverseGraph;
 }
 
+// 递归交换左右子树
 void swapChild(LBTree tree)
 {
     if (tree != NULL)
@@ -156,4 +92,58 @@ void swapChild(LBTree tree)
         swapChild(tree->left);
         swapChild(tree->right);
     }
+}
+
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2021.exe
+// 5 2 3 1 4
+// 1 2 3 4 5
+// Input vertexSum edgeSum:
+// 2 1
+// Input vertex 0's value:
+// a
+// Input vertex 1's value:
+// b
+// Input startIndex endIndex:
+// 0 1
+// ATGraph:
+// a->b
+// b
+// ATGraph:
+// a
+// b->a
+// ab^^c^^
+// abc
+// acb
+//
+// Process finished with exit code 0
+
+int main()
+{
+    SLList list = NULL;
+    int data[5] = {5, 2, 3, 1, 4};
+    buildSLListByTail(data, 5, &list);
+    printSLList(list);
+    straightSelectSortSLList(list);
+    printSLList(list);
+    destroySLList(&list);
+
+    ATGraph graph = NULL;
+    initiateATGraph(&graph);
+    createDATGraph(graph);
+    printATGraph(graph);
+    ATGraph inverseGraph = createInverseGraph(graph);
+    printATGraph(inverseGraph);
+    destroyATGraph(&graph);
+    destroyATGraph(&inverseGraph);
+    getchar();
+
+    LBTree tree = NULL;
+    createLBTree(&tree);
+    preOrderLBTree(tree);
+    printf("\n");
+    swapChild(tree);
+    preOrderLBTree(tree);
+    printf("\n");
+    destroyLBTree(&tree);
+    return 0;
 }

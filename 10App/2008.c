@@ -1,77 +1,29 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <LBTree.h>
 
-#define type int
-#define size 100
-
-typedef struct Edge
+// 递归统计链二叉树结点数
+void getTotal(LBTree tree, int* total)
 {
-    type endVertex;
-    struct Edge* next;
-} Edge;
-
-typedef struct Vertex
-{
-    type startVertex;
-    Edge* first;
-} Vertex;
-
-typedef struct Graph
-{
-    Vertex vertexList[size];
-    int vertexSum, edgeSum;
-} Graph;
-
-// 创建有向图
-void createGraph(Graph* graph) // 传指针
-{
-    printf("请输入顶点的数量和边的数量:\n");
-    scanf("%d %d", &graph->vertexSum, &graph->edgeSum);
-
-    // 输入顶点
-    for (int i = 0; i < graph->vertexSum; i++)
+    if (tree != NULL)
     {
-        printf("请输入顶点 %d 的值: ", i);
-        scanf("%d", &graph->vertexList[i].startVertex);
-        graph->vertexList[i].first = NULL;
-    }
-
-    // 输入边
-    for (int i = 0; i < graph->edgeSum; i++)
-    {
-        type startVertex, endVertex;
-        printf("请输入边的起点和终点: ");
-        scanf("%d %d", &startVertex, &endVertex);
-        Edge* edge = malloc(sizeof(Edge));
-        if (edge != NULL)
-        {
-            edge->endVertex = endVertex;
-            edge->next = graph->vertexList[startVertex].first;
-            graph->vertexList[startVertex].first = edge;
-        }
+        (*total)++;
+        getTotal(tree->left, total);
+        getTotal(tree->right, total);
     }
 }
 
-// 打印邻接表
-void printGraph(Graph* graph) // 传指针
-{
-    for (int i = 0; i < graph->vertexSum; i++)
-    {
-        printf("顶点 %d: ", graph->vertexList[i].startVertex);
-        Edge* edge = graph->vertexList[i].first;
-        while (edge != NULL)
-        {
-            printf("-> %d ", edge->endVertex);
-            edge = edge->next;
-        }
-        printf("\n");
-    }
-}
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2008.exe
+// ab^^c^^
+// 3
+//
+// Process finished with exit code 0
 
 int main()
 {
-    Graph graph;
-    createGraph(&graph); // 传递指针
-    printGraph(&graph); // 传递指针
+    int total = 0;
+    LBTree tree = NULL;
+    createLBTree(&tree);
+    getTotal(tree, &total);
+    printf("%d\n", total);
+    destroyLBTree(&tree);
     return 0;
 }

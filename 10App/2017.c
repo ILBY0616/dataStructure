@@ -1,8 +1,8 @@
-#include "SLList.h"
-#include "LBTree.h"
+#include <LBTree.h>
+#include <SLList.h>
 
 // 判断带头结点单链表是否中心对称
-bool judgeSLListSymmetry(SLList list)
+bool judgeSymmetry(SLList list)
 {
     if (list == NULL)
     {
@@ -10,17 +10,17 @@ bool judgeSLListSymmetry(SLList list)
     }
     char stack[100];
     char queue[100];
-    int top = -1, front = 0, rear = 0;
+    int top = -1, front = -1, rear = -1;
     SLList node = list->next;
     while (node != NULL)
     {
         stack[++top] = node->data;
-        queue[rear++] = node->data;
+        queue[++rear] = node->data;
         node = node->next;
     }
     while (top != -1 && front != rear)
     {
-        if (stack[top--] != queue[front++])
+        if (stack[top--] != queue[++front])
         {
             return false;
         }
@@ -29,7 +29,7 @@ bool judgeSLListSymmetry(SLList list)
 }
 
 // 求带头结点单链表a和b的交集c
-bool generateIntersection(SLList a, SLList b, SLList c)
+bool getIntersection(SLList a, SLList b, SLList c)
 {
     if (a == NULL || b == NULL || c == NULL)
     {
@@ -48,10 +48,6 @@ bool generateIntersection(SLList a, SLList b, SLList c)
                     k->next = c->next;
                     c->next = k;
                 }
-                else
-                {
-                    return false;
-                }
                 break;
             }
         }
@@ -59,8 +55,60 @@ bool generateIntersection(SLList a, SLList b, SLList c)
     return true;
 }
 
-// 计算二叉树的高度和宽度
-// 见LBTree int getHeightLBTree(LBTree tree); int getWidthLBTree(LBTree tree);
+// 递归计算二叉树的高度
+int getHeight(LBTree tree)
+{
+    if (tree == NULL)
+    {
+        return 0;
+    }
+    int leftHeight = getHeight(tree->left);
+    int rightHeight = getHeight(tree->right);
+    return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
+}
+
+// 计算二叉树的宽度
+int getWidth(LBTree tree)
+{
+    if (tree == NULL)
+    {
+        return 0;
+    }
+    LBTree queue[100];
+    int front = -1, rear = -1, last = 0, width = 0;
+    queue[++rear] = tree;
+    while (front != rear)
+    {
+        if (rear == last)
+        {
+            width = rear - front > width ? rear - front : width;
+        }
+        LBTree node = queue[++front];
+        if (node->left != NULL)
+        {
+            queue[++rear] = node->left;
+        }
+        if (node->right != NULL)
+        {
+            queue[++rear] = node->right;
+        }
+        if (front == last)
+        {
+            last = rear;
+        }
+    }
+    return width;
+}
+
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2017.exe
+// 1 2 3 4 5
+// 5 6 7 8 9
+// 5
+// right
+// ab^^c^^
+// 2 2
+//
+// Process finished with exit code 0
 
 int main()
 {
@@ -70,11 +118,13 @@ int main()
     buildSLListByTail(dataA, 5, &a);
     buildSLListByTail(dataB, 5, &b);
     initiateSLList(&c);
-    generateIntersection(a, b, c);
+    getIntersection(a, b, c);
     printSLList(a);
     printSLList(b);
     printSLList(c);
-    if (judgeSLListSymmetry(c))
+
+
+    if (judgeSymmetry(c))
     {
         printf("right\n");
     }
@@ -85,5 +135,10 @@ int main()
     destroySLList(&a);
     destroySLList(&b);
     destroySLList(&c);
+
+    LBTree tree = NULL;
+    createLBTree(&tree);
+    printf("%d %d\n", getHeight(tree), getWidth(tree));
+    destroyLBTree(&tree);
     return 0;
 }

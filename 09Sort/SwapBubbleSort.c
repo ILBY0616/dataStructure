@@ -5,6 +5,12 @@ void bubbleSort(int data[], int length);
 // 打印序列
 void printBubble(int data[], int length);
 
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.SwapBubbleSort.exe
+// 9 8 7 6 5 4 3 2 1 0
+// 0 1 2 3 4 5 6 7 8 9
+//
+// Process finished with exit code 0
+
 int main()
 {
     int data[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
@@ -25,7 +31,7 @@ void bubbleSort(int data[], int length)
         for (int j = 0; j < length - i - 1; j++)
         {
             // 比较
-            if (data[j] < data[j + 1])
+            if (data[j] > data[j + 1])
             {
                 // 交换
                 int value = data[j];

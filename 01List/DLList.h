@@ -5,11 +5,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct Node
+// 带头结点双链表
+typedef struct ListNode
 {
     int data;
-    struct Node *prior, *next;
-} Node, *DLList;
+    struct ListNode *prior, *next;
+} ListNode, *DLList;
 
 // 开辟带头结点双链表
 bool initiateDLList(DLList* list);
@@ -17,7 +18,7 @@ bool initiateDLList(DLList* list);
 bool buildDLListByHead(int data[], int length, DLList* list);
 // 尾插法创建带头结点双链表
 bool buildDLListByTail(int data[], int length, DLList* list);
-// 查询数据
+// 查找数据
 DLList selectDLList(DLList list, int data);
 // 插入数据
 bool insertDLList(DLList list, int location, int data);
@@ -36,7 +37,7 @@ inline bool initiateDLList(DLList* list)
     {
         return false;
     }
-    *list = (DLList)malloc(sizeof(Node));
+    *list = (DLList)malloc(sizeof(ListNode));
     if (*list == NULL)
     {
         return false;
@@ -55,7 +56,7 @@ inline bool buildDLListByHead(int data[], int length, DLList* list)
     initiateDLList(list);
     for (int i = 0; i < length; i++)
     {
-        DLList node = malloc(sizeof(Node));
+        DLList node = malloc(sizeof(ListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -85,7 +86,7 @@ inline bool buildDLListByTail(int data[], int length, DLList* list)
     DLList tail = *list;
     for (int i = 0; i < length; i++)
     {
-        DLList node = malloc(sizeof(Node));
+        DLList node = malloc(sizeof(ListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -131,7 +132,7 @@ inline bool insertDLList(DLList list, int location, int data)
         temp = temp->next;
         location--;
     }
-    DLList node = malloc(sizeof(Node));
+    DLList node = malloc(sizeof(ListNode));
     if (node != NULL)
     {
         node->data = data;

@@ -4,13 +4,14 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+// 循环队
 typedef struct Queue
 {
     int data[100];
     int size, front, rear;
 } Queue, *SQueue;
 
-// 开辟顺序队
+// 开辟循环队
 bool initiateSQueue(SQueue* queue);
 // 读队
 bool getSQueue(SQueue queue, int* data);
@@ -18,7 +19,7 @@ bool getSQueue(SQueue queue, int* data);
 bool inSQueue(SQueue queue, int data);
 // 出队
 bool outSQueue(SQueue queue, int* data);
-// 销毁顺序队
+// 销毁循环队
 void destroySQueue(SQueue* queue);
 
 inline bool initiateSQueue(SQueue* queue)
@@ -39,7 +40,7 @@ inline bool initiateSQueue(SQueue* queue)
 
 inline bool getSQueue(SQueue queue, int* data)
 {
-    if (queue == NULL || queue->front == queue->rear)
+    if (queue == NULL || queue->rear == queue->front)
     {
         return false;
     }
@@ -60,7 +61,7 @@ inline bool inSQueue(SQueue queue, int data)
 
 inline bool outSQueue(SQueue queue, int* data)
 {
-    if (queue == NULL || queue->front == queue->rear)
+    if (queue == NULL || queue->rear == queue->front)
     {
         return false;
     }

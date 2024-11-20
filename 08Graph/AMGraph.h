@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 邻接矩阵
 typedef struct Graph
 {
     char vertex[100];

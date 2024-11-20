@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+// 稠密矩阵
 typedef struct Matrix
 {
     int data[100];
@@ -40,7 +41,7 @@ inline void multiplyDMartrix(DMatrix leftFactor, DMatrix rightFactor, int finalP
         {
             // finalProduct[i][j] != finalProduct[j][i];
             finalProduct[i][j] = 0;
-            // finalProduct[i][j]等于leftFactor[i]行与rightFactor[j]列 累加乘积
+            // finalProduct[i][j]等于leftFactor[i]行与rightFactor[j]列的乘积累加
             for (int k = 0; k < leftFactor.column; k++)
             {
                 // leftFactor[i][k]索引

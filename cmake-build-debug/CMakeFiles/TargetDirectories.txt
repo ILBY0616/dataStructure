@@ -13,9 +13,9 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.SString.d
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.LBTree.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.SBTree.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.TBTree.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.FSearch.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.SSearch.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.TSearch.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.BlockSearch.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.FoldSearch.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.SequenceSearch.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/08Graph.AMGraph.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/08Graph.ATGraph.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.CountSort.dir

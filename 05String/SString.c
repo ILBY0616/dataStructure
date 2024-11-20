@@ -3,7 +3,7 @@
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.SString.exe
 // goodgoogle
 // google
-// 4
+// 5
 // Process finished with exit code 0
 
 int main()
@@ -11,11 +11,11 @@ int main()
     char* a = "goodgoogle";
     char* b = "google";
     SString mainString = NULL, patternString = NULL;
-    createSString(a, &mainString);
-    createSString(b, &patternString);
+    buildSString(a, &mainString);
+    buildSString(b, &patternString);
     printSString(mainString);
     printSString(patternString);
-    printf("%d", matchSString(mainString, patternString));
+    printf("%d", matchSString(mainString, patternString) + 1);
     destroySString(&mainString);
     destroySString(&patternString);
     return 0;

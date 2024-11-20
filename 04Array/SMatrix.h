@@ -4,12 +4,14 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+// 三元组表
 typedef struct Triple
 {
     int data;
     int row, column;
 } Triple;
 
+// 稀疏矩阵
 typedef struct Matrix
 {
     Triple data[100];

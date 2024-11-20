@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdio.h>
 
+// 链串
 typedef struct StringNode
 {
     char data;
@@ -13,15 +14,15 @@ typedef struct StringNode
 } StringNode, *LString;
 
 // 创建链串
-bool createLString(char* data, LString* string);
+bool buildLString(char data[], LString* string);
 // 匹配链串
-int matchLString(LString mainString, LString patternString);
+int matchLString(LString mainString, LString subString);
 // 打印链串
 void printLString(LString string);
 // 销毁链串
 void destroyLString(LString* string);
 
-inline bool createLString(char* data, LString* string)
+inline bool buildLString(char data[], LString* string)
 {
     if (*string != NULL)
     {
@@ -39,13 +40,12 @@ inline bool createLString(char* data, LString* string)
             if (head == NULL || tail == NULL)
             {
                 head = node;
-                tail = node;
             }
             else
             {
                 tail->next = node;
-                tail = node;
             }
+            tail = node;
         }
         else
         {
@@ -56,18 +56,17 @@ inline bool createLString(char* data, LString* string)
     return true;
 }
 
-inline int matchLString(LString mainString, LString patternString)
+inline int matchLString(LString mainString, LString subString)
 {
-    if (mainString == NULL || patternString == NULL)
+    if (mainString == NULL || subString == NULL)
     {
         return -1;
     }
     int location = 0;
-    LString i = mainString;
-    while (i != NULL)
+    for (LString i = mainString; i != NULL; i = i->next)
     {
         LString j = i;
-        LString k = patternString;
+        LString k = subString;
         while (j != NULL && k != NULL && j->data == k->data)
         {
             j = j->next;
@@ -78,7 +77,6 @@ inline int matchLString(LString mainString, LString patternString)
             return location;
         }
         location++;
-        i = i->next;
     }
     return -1;
 }

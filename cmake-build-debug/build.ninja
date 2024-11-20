@@ -566,109 +566,109 @@ build 06Tree.TBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eTBTree_Debug CMakeFiles/0
   TARGET_PDB = 06Tree.TBTree.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.FSearch
+# Object build statements for EXECUTABLE target 07Search.BlockSearch
 
 
 #############################################
-# Order-only phony target for 07Search.FSearch
+# Order-only phony target for 07Search.BlockSearch
 
-build cmake_object_order_depends_target_07Search.FSearch: phony || CMakeFiles/07Search.FSearch.dir
+build cmake_object_order_depends_target_07Search.BlockSearch: phony || CMakeFiles/07Search.BlockSearch.dir
 
-build CMakeFiles/07Search.FSearch.dir/07Search/FSearch.c.obj: C_COMPILER__07Search.2eFSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/FSearch.c || cmake_object_order_depends_target_07Search.FSearch
-  DEP_FILE = CMakeFiles\07Search.FSearch.dir\07Search\FSearch.c.obj.d
+build CMakeFiles/07Search.BlockSearch.dir/07Search/BlockSearch.c.obj: C_COMPILER__07Search.2eBlockSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/BlockSearch.c || cmake_object_order_depends_target_07Search.BlockSearch
+  DEP_FILE = CMakeFiles\07Search.BlockSearch.dir\07Search\BlockSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.FSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.FSearch.dir\07Search
+  OBJECT_DIR = CMakeFiles\07Search.BlockSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.BlockSearch.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.FSearch
+# Link build statements for EXECUTABLE target 07Search.BlockSearch
 
 
 #############################################
-# Link the executable 07Search.FSearch.exe
+# Link the executable 07Search.BlockSearch.exe
 
-build 07Search.FSearch.exe: C_EXECUTABLE_LINKER__07Search.2eFSearch_Debug CMakeFiles/07Search.FSearch.dir/07Search/FSearch.c.obj
+build 07Search.BlockSearch.exe: C_EXECUTABLE_LINKER__07Search.2eBlockSearch_Debug CMakeFiles/07Search.BlockSearch.dir/07Search/BlockSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.FSearch.dir
+  OBJECT_DIR = CMakeFiles\07Search.BlockSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.FSearch.exe
-  TARGET_IMPLIB = lib07Search.FSearch.dll.a
-  TARGET_PDB = 07Search.FSearch.exe.dbg
+  TARGET_FILE = 07Search.BlockSearch.exe
+  TARGET_IMPLIB = lib07Search.BlockSearch.dll.a
+  TARGET_PDB = 07Search.BlockSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.SSearch
+# Object build statements for EXECUTABLE target 07Search.FoldSearch
 
 
 #############################################
-# Order-only phony target for 07Search.SSearch
+# Order-only phony target for 07Search.FoldSearch
 
-build cmake_object_order_depends_target_07Search.SSearch: phony || CMakeFiles/07Search.SSearch.dir
+build cmake_object_order_depends_target_07Search.FoldSearch: phony || CMakeFiles/07Search.FoldSearch.dir
 
-build CMakeFiles/07Search.SSearch.dir/07Search/SSearch.c.obj: C_COMPILER__07Search.2eSSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/SSearch.c || cmake_object_order_depends_target_07Search.SSearch
-  DEP_FILE = CMakeFiles\07Search.SSearch.dir\07Search\SSearch.c.obj.d
+build CMakeFiles/07Search.FoldSearch.dir/07Search/FoldSearch.c.obj: C_COMPILER__07Search.2eFoldSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/FoldSearch.c || cmake_object_order_depends_target_07Search.FoldSearch
+  DEP_FILE = CMakeFiles\07Search.FoldSearch.dir\07Search\FoldSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.SSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.SSearch.dir\07Search
+  OBJECT_DIR = CMakeFiles\07Search.FoldSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.FoldSearch.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.SSearch
+# Link build statements for EXECUTABLE target 07Search.FoldSearch
 
 
 #############################################
-# Link the executable 07Search.SSearch.exe
+# Link the executable 07Search.FoldSearch.exe
 
-build 07Search.SSearch.exe: C_EXECUTABLE_LINKER__07Search.2eSSearch_Debug CMakeFiles/07Search.SSearch.dir/07Search/SSearch.c.obj
+build 07Search.FoldSearch.exe: C_EXECUTABLE_LINKER__07Search.2eFoldSearch_Debug CMakeFiles/07Search.FoldSearch.dir/07Search/FoldSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.SSearch.dir
+  OBJECT_DIR = CMakeFiles\07Search.FoldSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.SSearch.exe
-  TARGET_IMPLIB = lib07Search.SSearch.dll.a
-  TARGET_PDB = 07Search.SSearch.exe.dbg
+  TARGET_FILE = 07Search.FoldSearch.exe
+  TARGET_IMPLIB = lib07Search.FoldSearch.dll.a
+  TARGET_PDB = 07Search.FoldSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.TSearch
+# Object build statements for EXECUTABLE target 07Search.SequenceSearch
 
 
 #############################################
-# Order-only phony target for 07Search.TSearch
+# Order-only phony target for 07Search.SequenceSearch
 
-build cmake_object_order_depends_target_07Search.TSearch: phony || CMakeFiles/07Search.TSearch.dir
+build cmake_object_order_depends_target_07Search.SequenceSearch: phony || CMakeFiles/07Search.SequenceSearch.dir
 
-build CMakeFiles/07Search.TSearch.dir/07Search/TSearch.c.obj: C_COMPILER__07Search.2eTSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/TSearch.c || cmake_object_order_depends_target_07Search.TSearch
-  DEP_FILE = CMakeFiles\07Search.TSearch.dir\07Search\TSearch.c.obj.d
+build CMakeFiles/07Search.SequenceSearch.dir/07Search/SequenceSearch.c.obj: C_COMPILER__07Search.2eSequenceSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/SequenceSearch.c || cmake_object_order_depends_target_07Search.SequenceSearch
+  DEP_FILE = CMakeFiles\07Search.SequenceSearch.dir\07Search\SequenceSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.TSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.TSearch.dir\07Search
+  OBJECT_DIR = CMakeFiles\07Search.SequenceSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Search.SequenceSearch.dir\07Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.TSearch
+# Link build statements for EXECUTABLE target 07Search.SequenceSearch
 
 
 #############################################
-# Link the executable 07Search.TSearch.exe
+# Link the executable 07Search.SequenceSearch.exe
 
-build 07Search.TSearch.exe: C_EXECUTABLE_LINKER__07Search.2eTSearch_Debug CMakeFiles/07Search.TSearch.dir/07Search/TSearch.c.obj
+build 07Search.SequenceSearch.exe: C_EXECUTABLE_LINKER__07Search.2eSequenceSearch_Debug CMakeFiles/07Search.SequenceSearch.dir/07Search/SequenceSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.TSearch.dir
+  OBJECT_DIR = CMakeFiles\07Search.SequenceSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.TSearch.exe
-  TARGET_IMPLIB = lib07Search.TSearch.dll.a
-  TARGET_PDB = 07Search.TSearch.exe.dbg
+  TARGET_FILE = 07Search.SequenceSearch.exe
+  TARGET_IMPLIB = lib07Search.SequenceSearch.dll.a
+  TARGET_PDB = 07Search.SequenceSearch.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 08Graph.AMGraph
@@ -1776,11 +1776,11 @@ build 06Tree.SBTree: phony 06Tree.SBTree.exe
 
 build 06Tree.TBTree: phony 06Tree.TBTree.exe
 
-build 07Search.FSearch: phony 07Search.FSearch.exe
+build 07Search.BlockSearch: phony 07Search.BlockSearch.exe
 
-build 07Search.SSearch: phony 07Search.SSearch.exe
+build 07Search.FoldSearch: phony 07Search.FoldSearch.exe
 
-build 07Search.TSearch: phony 07Search.TSearch.exe
+build 07Search.SequenceSearch: phony 07Search.SequenceSearch.exe
 
 build 08Graph.AMGraph: phony 08Graph.AMGraph.exe
 
@@ -1850,7 +1850,7 @@ build cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.FSearch.exe 07Search.SSearch.exe 07Search.TSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMartrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SBTree.exe 06Tree.TBTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

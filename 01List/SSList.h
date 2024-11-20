@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 静态顺序表
 typedef struct List
 {
     int data[100];
@@ -13,7 +14,7 @@ typedef struct List
 
 // 开辟静态顺序表
 bool initiateSSList(SSList* list);
-// 查询数据
+// 查找数据
 int selectSSList(SSList list, int data);
 // 插入数据
 bool insertSSList(SSList list, int location, int data);

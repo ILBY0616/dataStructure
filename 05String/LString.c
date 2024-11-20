@@ -3,7 +3,7 @@
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.LString.exe
 // goodgoogle
 // google
-// 4
+// 5
 // Process finished with exit code 0
 
 int main()
@@ -11,11 +11,11 @@ int main()
     char* a = "goodgoogle";
     char* b = "google";
     LString mainString = NULL, patternString = NULL;
-    createLString(a, &mainString);
-    createLString(b, &patternString);
+    buildLString(a, &mainString);
+    buildLString(b, &patternString);
     printLString(mainString);
     printLString(patternString);
-    printf("%d", matchLString(mainString, patternString));
+    printf("%d", matchLString(mainString, patternString) + 1);
     destroyLString(&mainString);
     destroyLString(&patternString);
     return 0;

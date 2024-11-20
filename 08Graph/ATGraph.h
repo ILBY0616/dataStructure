@@ -5,18 +5,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 边
 typedef struct Edge
 {
     char data;
     struct Edge* next;
 } Edge;
 
+// 点
 typedef struct Vertex
 {
     char data;
     Edge* first;
 } Vertex;
 
+// 邻接表
 typedef struct Graph
 {
     Vertex vertex[100];

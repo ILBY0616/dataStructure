@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 动态顺序表
 typedef struct List
 {
     int* data;
@@ -13,7 +14,7 @@ typedef struct List
 
 // 开辟动态顺序表
 bool initiateDSList(DSList* list);
-// 查询数据
+// 查找数据
 int selectDSList(DSList list, int data);
 // 插入数据
 bool insertDSList(DSList list, int location, int data);
@@ -21,22 +22,27 @@ bool insertDSList(DSList list, int location, int data);
 bool deleteDSList(DSList list, int location);
 // 打印动态顺序表
 bool printDSList(DSList list);
-// 销毁静态顺序表
+// 销毁动态顺序表
 bool destroyDSList(DSList* list);
 
 inline bool initiateDSList(DSList* list)
 {
+    if (*list != NULL)
+    {
+        return false;
+    }
     *list = (DSList)malloc(sizeof(List));
     if (*list == NULL)
     {
         return false;
     }
-    (*list)->data = (int*)malloc(10 * sizeof(int));
+    (*list)->data = (int*)malloc(100 * sizeof(int));
     if ((*list)->data == NULL)
     {
+        free(*list);
         return false;
     }
-    (*list)->size = 10;
+    (*list)->size = 100;
     (*list)->length = 0;
     return true;
 }
@@ -64,7 +70,7 @@ inline bool insertDSList(DSList list, int location, int data)
     }
     if (list->length == list->size)
     {
-        list->size += 10;
+        list->size += 100;
         list->data = (int*)realloc(list->data, list->size * sizeof(int));
         if (list->data == NULL)
         {

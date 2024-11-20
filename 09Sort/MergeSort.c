@@ -7,6 +7,12 @@ void mergeSort(int data[], int low, int high);
 // 打印序列
 void printMerge(int data[], int length);
 
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.MergeSort.exe
+// 9 8 7 6 5 4 3 2 1 0
+// 0 1 2 3 4 5 6 7 8 9
+//
+// Process finished with exit code 0
+
 int main()
 {
     int data[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};

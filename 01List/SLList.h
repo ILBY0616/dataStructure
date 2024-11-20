@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 带头结点单链表
 typedef struct ListNode
 {
     int data;
@@ -13,11 +14,11 @@ typedef struct ListNode
 
 // 开辟带头结点单链表
 bool initiateSLList(SLList* list);
-// 头插法创建带头结点单列表
+// 头插法创建带头结点单链表
 bool buildSLListByHead(int data[], int length, SLList* list);
-// 尾插法创建带头结点单列表
+// 尾插法创建带头结点单链表
 bool buildSLListByTail(int data[], int length, SLList* list);
-// 查询数据
+// 查找数据
 SLList selectSLList(SLList list, int data);
 // 插入数据
 bool insertSLList(SLList list, int location, int data);

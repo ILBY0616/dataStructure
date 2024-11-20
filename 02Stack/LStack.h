@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+// 链栈
 typedef struct StackNode
 {
     int data;

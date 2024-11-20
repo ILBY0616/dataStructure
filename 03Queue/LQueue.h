@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+// 链队
 typedef struct QueueNode
 {
     int data;

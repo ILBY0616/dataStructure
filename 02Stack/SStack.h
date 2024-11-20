@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+// 顺序栈
 typedef struct Stack
 {
     int data[100];

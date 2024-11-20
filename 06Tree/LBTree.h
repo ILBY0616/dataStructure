@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// 链式二叉树结点
 typedef struct TreeNode
 {
     char data;
@@ -11,7 +12,7 @@ typedef struct TreeNode
 } TreeNode, *LBTree;
 
 // 先序创建链式二叉树
-void createLBTree(LBTree* tree);
+void buildLBTree(LBTree* tree);
 // 先序遍历链式二叉树
 void preOrderLBTree(LBTree tree);
 // 中序遍历链式二叉树
@@ -27,7 +28,7 @@ int getWidthLBTree(LBTree tree);
 // 后序销毁链式二叉树
 void destroyLBTree(LBTree* tree);
 
-inline void createLBTree(LBTree* tree)
+inline void buildLBTree(LBTree* tree)
 {
     char data;
     scanf("%c", &data);
@@ -45,8 +46,8 @@ inline void createLBTree(LBTree* tree)
             {
                 *tree = node;
                 (*tree)->data = data;
-                createLBTree(&(*tree)->left);
-                createLBTree(&(*tree)->right);
+                buildLBTree(&(*tree)->left);
+                buildLBTree(&(*tree)->right);
             }
         }
     }

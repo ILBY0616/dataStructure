@@ -14,7 +14,7 @@
 int main()
 {
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     preOrderLBTree(tree);
     printf("\n");
     inOrderLBTree(tree);

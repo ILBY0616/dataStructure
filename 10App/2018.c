@@ -98,7 +98,7 @@ int main()
     destroySLList(&c);
 
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     printf("%d %d\n", getHeight(tree), getWidth(tree));
     destroyLBTree(&tree);
     return 0;

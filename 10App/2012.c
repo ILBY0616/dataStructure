@@ -69,7 +69,7 @@ int main()
 
     int total = 0;
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     getTotal(tree, &total);
     printf("%d\n", total);
     destroyLBTree(&tree);

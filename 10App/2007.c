@@ -64,7 +64,7 @@ int main()
 
     char key = 'k';
     LBTree tree = NULL, pointer = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     pointer = findKeyNode(tree, key);
     if (pointer != NULL)
     {

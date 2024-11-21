@@ -77,7 +77,7 @@ int main()
 
     int leafNode = 0, branchNode = 0;
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     countNode(tree, &leafNode, &branchNode);
     printf("%d %d", leafNode, branchNode);
     destroyLBTree(&tree);

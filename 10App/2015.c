@@ -68,7 +68,7 @@ int main()
     destroySStack(&stack);
 
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     preOrderByRecursion(tree);
     printf("\n");
     inOrderByRecursion(tree);

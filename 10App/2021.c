@@ -138,7 +138,7 @@ int main()
     getchar();
 
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     preOrderLBTree(tree);
     printf("\n");
     swapChild(tree);

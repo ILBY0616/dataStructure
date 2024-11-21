@@ -111,7 +111,7 @@ int main()
     printf("\n");
 
     LBTree tree = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     levelOrder(tree);
     destroyLBTree(&tree);
     return 0;

@@ -61,7 +61,7 @@ int main()
     destroySLList(&list);
 
     LBTree tree = NULL, child = NULL, parent = NULL;
-    createLBTree(&tree);
+    buildLBTree(&tree);
     child = tree->left;
     findParentNode(tree, child, &parent);
     printf("%c", parent->data);

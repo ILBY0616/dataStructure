@@ -10,11 +10,11 @@ typedef struct Matrix
     int row, column, length;
 } Matrix, DMatrix;
 
-// 创建压缩矩阵
+// 创建稠密矩阵
 DMatrix initiateDMatrix(int data[100][100], int row, int column);
-// 相乘压缩矩阵
+// 相乘稠密矩阵
 void multiplyDMartrix(DMatrix leftFactor, DMatrix rightFactor, int finalProduct[100][100]);
-// 打印压缩矩阵
+// 打印稠密矩阵
 void printDMatrix(DMatrix matrix);
 
 inline DMatrix initiateDMatrix(int data[100][100], int row, int column)
@@ -25,6 +25,7 @@ inline DMatrix initiateDMatrix(int data[100][100], int row, int column)
     matrix.length = 0;
     for (int i = 0; i < row; i++)
     {
+        // 数组只存储下三角元素
         for (int j = 0; j <= i; j++)
         {
             matrix.data[matrix.length++] = data[i][j];

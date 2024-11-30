@@ -6,7 +6,7 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/02Stack.LStack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/02Stack.SStack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/03Queue.LQueue.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/03Queue.SQueue.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.DMartrix.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.DMatrix.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.SMatrix.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.LString.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.SString.dir
@@ -43,6 +43,6 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2019.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2020.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2021.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2022.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/cmake-build-debug.CMakeFiles.3.28.1.CompilerIdC.CMakeCCompilerId.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

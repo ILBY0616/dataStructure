@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <LBTree.h>
 
-// 用栈和队列判断回文
+// 用栈和队列判断输入序列是否是回文
 bool isPalindrome()
 {
     char stack[100];
@@ -10,7 +10,7 @@ bool isPalindrome()
     char data;
     while (scanf("%c", &data) == 1 && data != '@')
     {
-        // 入栈入队
+        // 输入字符入栈入队
         stack[++top] = data;
         queue[++rear] = data;
     }
@@ -26,7 +26,7 @@ bool isPalindrome()
 }
 
 // 在二叉排序树中找到值为X的结点
-LBTree findKeyNode(LBTree tree, int key)
+LBTree findKeyNode(LBTree tree, char key)
 {
     while (tree != NULL && tree->data != key)
     {
@@ -42,10 +42,11 @@ LBTree findKeyNode(LBTree tree, int key)
     return tree;
 }
 
+// 用邻接矩阵存储n的顶点有向图，计算从某一顶点出发到其他所有顶点路径的和的最小值
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2007.exe
 // abcba@
 // YES
-// ij^^k^^
+// ji^^k^^
 // k in tree
 //
 // Process finished with exit code 0

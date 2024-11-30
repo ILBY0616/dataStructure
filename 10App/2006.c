@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 // 找到递增数组data[]中data[i]=i的下标
-bool findIndex(int data[], int length, int* index)
+bool findIndex(const int* data, int length, int* index)
 {
-    if (length < 1)
+    if (data == NULL || length < 1)
     {
         return false;
     }
@@ -29,9 +29,16 @@ bool findIndex(int data[], int length, int* index)
     return false;
 }
 
+// 对称矩阵的压缩存储的矩阵乘法
+// 见DMartrix.中hvoid multiplyDMartrix(DMatrix leftFactor, DMatrix rightFactor, int finalProduct[100][100]);
+
 // 双向交替冒泡排序，一趟大的放后，一趟小的放前
-void doubleBubble(int data[], int length)
+bool doubleBubble(int* data, int length)
 {
+    if (data == NULL || length < 1)
+    {
+        return false;
+    }
     int i = 0, j = length - 1, k;
     while (i < j)
     {
@@ -68,6 +75,7 @@ void doubleBubble(int data[], int length)
         }
         i++;
     }
+    return true;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2006.exe

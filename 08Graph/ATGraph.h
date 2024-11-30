@@ -8,7 +8,8 @@
 // 边
 typedef struct Edge
 {
-    char data;
+    int index;
+    int weight;
     struct Edge* next;
 } Edge;
 
@@ -27,22 +28,34 @@ typedef struct Graph
 } Graph, *ATGraph;
 
 // 开辟邻接表
-void initiateATGraph(ATGraph* graph);
+bool initiateATGraph(ATGraph* graph);
 // 创建有向图
 void createDATGraph(ATGraph graph);
 // 创建无向图
 void createUATGraph(ATGraph graph);
+// 判断边存在
+bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex);
+// 深度优先遍历
+void DFSATGraph(ATGraph graph, int startIndex,bool visited[]);
+// 广度优先遍历
+void BFSATGraph(ATGraph graph, int startIndex,bool visited[]);
 // 打印邻接表
 void printATGraph(ATGraph graph);
 // 销毁邻接表
 void destroyATGraph(ATGraph* graph);
 
-inline void initiateATGraph(ATGraph* graph)
+inline bool initiateATGraph(ATGraph* graph)
 {
-    while (*graph == NULL)
+    if (*graph != NULL)
     {
-        *graph = (ATGraph)malloc(sizeof(Graph));
+        return false;
     }
+    *graph = (ATGraph)malloc(sizeof(Graph));
+    if (*graph == NULL)
+    {
+        return false;
+    }
+    return true;
 }
 
 inline void createDATGraph(ATGraph graph)
@@ -60,31 +73,22 @@ inline void createDATGraph(ATGraph graph)
     // 建立起边
     for (int i = 0; i < graph->edgeSum; i++)
     {
-        int startIndex, endIndex;
-        printf("Input startIndex endIndex:\n");
-        scanf("%d %d", &startIndex, &endIndex);
-        // 检查重边
-        Edge* current = graph->vertex[startIndex].first;
-        bool edgeExist = false;
-        while (current != NULL)
-        {
-            if (current->data == graph->vertex[endIndex].data)
-            {
-                edgeExist = true;
-                break;
-            }
-            current = current->next;
-        }
-        if (edgeExist == true)
-        {
-            printf("StartIndex and endIndex is invalid:\n");
-        }
-        else
+        int weight, startIndex, endIndex;
+        printf("Input weight startIndex endIndex:\n");
+        scanf("%d %d %d", &weight, &startIndex, &endIndex);
+        // 无边 edge is NULL
+        // 有边 weight in [0,INT_MAX-1]
+        if (
+            0 <= weight && weight < INT_MAX &&
+            0 <= startIndex && startIndex < graph->vertexSum &&
+            0 <= endIndex && endIndex < graph->vertexSum
+        )
         {
             Edge* edge = malloc(sizeof(Edge));
             if (edge != NULL)
             {
-                edge->data = graph->vertex[endIndex].data;
+                edge->index = endIndex;
+                edge->weight = weight;
                 edge->next = graph->vertex[startIndex].first;
                 graph->vertex[startIndex].first = edge;
             }
@@ -93,6 +97,11 @@ inline void createDATGraph(ATGraph graph)
                 free(edge);
                 i--;
             }
+        }
+        else
+        {
+            i--;
+            printf("StartIndex and endIndex is invalid\n");
         }
     }
 }
@@ -109,39 +118,30 @@ inline void createUATGraph(ATGraph graph)
         scanf("%c", &graph->vertex[i].data);
         graph->vertex[i].first = NULL;
     }
-    // 初始化边
+    // 建立起边
     for (int i = 0; i < graph->edgeSum; i++)
     {
-        int startIndex, endIndex;
-        printf("Input startIndex endIndex:\n");
-        getchar();
-        scanf("%d %d", &startIndex, &endIndex);
-        // 检查重边
-        Edge* current = graph->vertex[startIndex].first;
-        bool edgeExist = false;
-        while (current != NULL)
-        {
-            if (current->data == graph->vertex[endIndex].data)
-            {
-                edgeExist = true;
-                break;
-            }
-            current = current->next;
-        }
-        if (edgeExist == true)
-        {
-            printf("StartIndex and endIndex is invalid:\n");
-        }
-        else
+        int weight, startIndex, endIndex;
+        printf("Input weight startIndex endIndex:\n");
+        scanf("%d %d %d", &weight, &startIndex, &endIndex);
+        // 无边 edge is NULL
+        // 有边 weight in [0,INT_MAX-1]
+        if (
+            0 <= weight && weight < INT_MAX &&
+            0 <= startIndex && startIndex < graph->vertexSum &&
+            0 <= endIndex && endIndex < graph->vertexSum
+        )
         {
             Edge* edgeOne = malloc(sizeof(Edge));
             Edge* edgeTwo = malloc(sizeof(Edge));
             if (edgeOne != NULL && edgeTwo != NULL)
             {
-                edgeOne->data = graph->vertex[endIndex].data;
+                edgeOne->index = endIndex;
+                edgeOne->weight = weight;
                 edgeOne->next = graph->vertex[startIndex].first;
                 graph->vertex[startIndex].first = edgeOne;
-                edgeTwo->data = graph->vertex[startIndex].data;
+                edgeTwo->index = startIndex;
+                edgeTwo->weight = weight;
                 edgeTwo->next = graph->vertex[endIndex].first;
                 graph->vertex[endIndex].first = edgeTwo;
             }
@@ -151,6 +151,70 @@ inline void createUATGraph(ATGraph graph)
                 free(edgeTwo);
                 i--;
             }
+        }
+        else
+        {
+            i--;
+            printf("StartIndex and endIndex is invalid\n");
+        }
+    }
+}
+
+inline bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex)
+{
+    if (
+        graph->vertexSum <= startIndex || startIndex < 0 ||
+        graph->vertexSum <= endIndex || endIndex < 0
+    )
+    {
+        return false;
+    }
+    Edge* edge = graph->vertex[startIndex].first;
+    while (edge != NULL)
+    {
+        if (edge->index == endIndex)
+        {
+            return true;
+        }
+        edge = edge->next;
+    }
+    return false;
+}
+
+inline void DFSATGraph(ATGraph graph, int startIndex,bool visited[])
+{
+    visited[startIndex] = true;
+    printf("%c", graph->vertex[startIndex].data);
+    Edge* edge = graph->vertex[startIndex].first;
+    while (edge != NULL)
+    {
+        if (visited[edge->index] == false)
+        {
+            DFSATGraph(graph, edge->index, visited);
+        }
+        edge = edge->next;
+    }
+}
+
+inline void BFSATGraph(ATGraph graph, int startIndex,bool visited[])
+{
+    int front = -1, rear = -1;
+    int queue[graph->vertexSum];
+    queue[++rear] = startIndex;
+    visited[startIndex] = true;
+    while (front < rear)
+    {
+        int currentIndex = queue[++front];
+        printf("%c", graph->vertex[currentIndex].data);
+        Edge* edge = graph->vertex[currentIndex].first;
+        while (edge != NULL)
+        {
+            if (!visited[edge->index])
+            {
+                queue[++rear] = edge->index;
+                visited[edge->index] = true;
+            }
+            edge = edge->next;
         }
     }
 }
@@ -164,7 +228,7 @@ inline void printATGraph(Graph* graph)
         Edge* edge = graph->vertex[i].first;
         while (edge != NULL)
         {
-            printf("->%c", edge->data);
+            printf("->%d", edge->index);
             edge = edge->next;
         }
         printf("\n");

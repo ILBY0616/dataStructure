@@ -30,7 +30,7 @@ bool getIntersection(SLList a, SLList b, SLList c)
 }
 
 // 奇数在前偶数在后
-void oddToFront(int data[], int length)
+void oddToFront(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

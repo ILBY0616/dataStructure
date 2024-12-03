@@ -6,11 +6,11 @@
 #include <stdio.h>
 
 // 静态顺序表
-typedef struct List
+typedef struct SList
 {
     int data[100];
     int size, length;
-} List, *SSList;
+} SList, *SSList;
 
 // 开辟静态顺序表
 bool initiateSSList(SSList* list);
@@ -31,7 +31,7 @@ inline bool initiateSSList(SSList* list)
     {
         return false;
     }
-    *list = (SSList)malloc(sizeof(List));
+    *list = (SSList)malloc(sizeof(SList));
     if (*list == NULL)
     {
         return false;

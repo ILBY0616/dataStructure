@@ -26,7 +26,7 @@ bool minToFront(SLList list)
 }
 
 // 递归找到数组最大值
-int findMaxValue(int data[], int length)
+int findMaxValue(int* data, int length)
 {
     if (length > 0)
     {

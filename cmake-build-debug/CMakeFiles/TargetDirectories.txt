@@ -27,6 +27,7 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SelectHeapS
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SelectStraightSort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SwapBubbleSort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SwapQuickSort.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2005.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2006.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2007.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2008.dir

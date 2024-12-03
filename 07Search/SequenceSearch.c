@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 顺序查找
-int sequenceSearch(int data[], int key, int length);
+int sequenceSearch(int* data, int key, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\07Search.SequenceSearch.exe
 // 5
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-int sequenceSearch(int data[], int key, int length)
+int sequenceSearch(int* data, int key, int length)
 {
     data[0] = key;
     int i = length - 1;

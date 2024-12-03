@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 // 合并数据
-void mergeData(int data[], int low, int mid, int high);
+void mergeData(int* data, int low, int mid, int high);
 // 归并排序
-void mergeSort(int data[], int low, int high);
+void mergeSort(int* data, int low, int high);
 // 打印序列
-void printMerge(int data[], int length);
+void printMerge(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.MergeSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -24,7 +24,7 @@ int main()
 
 int copy[10];
 
-void mergeData(int data[], int low, int mid, int high)
+void mergeData(int* data, int low, int mid, int high)
 {
     int i, j, k;
     // 复制数据
@@ -67,7 +67,7 @@ void mergeData(int data[], int low, int mid, int high)
 //    因此，整个排序过程的比较次数为 O(nlog_2^n)。
 // 3. 移动次数：在归并过程中，每个元素需要移动到正确的位置，所有元素的移动总数大约为 O(n)，每次合并时都需要移动元素。
 // 4. 交换次数：归并排序没有交换操作。每次合并操作时，只是通过赋值来重排元素的位置。
-void mergeSort(int data[], int low, int high)
+void mergeSort(int* data, int low, int high)
 {
     if (low < high)
     {
@@ -78,7 +78,7 @@ void mergeSort(int data[], int low, int high)
     }
 }
 
-void printMerge(int data[], int length)
+void printMerge(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

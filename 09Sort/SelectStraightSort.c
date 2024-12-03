@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 简单选择排序
-void selectSort(int data[], int length);
+void selectSort(int* data, int length);
 // 打印序列
-void printSelect(int data[], int length);
+void printSelect(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.SelectStraightSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -31,7 +31,7 @@ int main()
 // 2. 比较次数：每一趟排序都需要遍历剩余未排序的元素，查找最小值。对于每一趟，最坏情况下需要进行 n-i 次比较（i 是已排序部分的元素个数）。总的比较次数为 O(n^2)。
 // 3. 移动次数：每次选择最小值后，将其与当前元素交换，每次交换会涉及两个元素的交换。总的交换次数也为 O(n^2)。
 // 4. 交换次数：每一趟都可能需要交换一次，最坏情况下进行 n-1 次交换。
-void selectSort(int data[], int length)
+void selectSort(int* data, int length)
 {
     // 选择
     for (int i = 0; i < length; i++)
@@ -55,7 +55,7 @@ void selectSort(int data[], int length)
     }
 }
 
-void printSelect(int data[], int length)
+void printSelect(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

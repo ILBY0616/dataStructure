@@ -15,16 +15,16 @@ typedef struct ListNode
 // 开辟带头结点单链表
 bool initiateSLList(SLList* list);
 // 头插法创建带头结点单链表
-bool buildSLListByHead(int data[], int length, SLList* list);
+bool buildSLListByHead(int* data, int length, SLList* list);
 // 尾插法创建带头结点单链表
-bool buildSLListByTail(int data[], int length, SLList* list);
+bool buildSLListByTail(int* data, int length, SLList* list);
 // 查找数据
 SLList selectSLList(SLList list, int data);
 // 插入数据
 bool insertSLList(SLList list, int location, int data);
 // 删除数据
 bool deleteSLList(SLList list, int location);
-// 开辟带头结点单链表
+// 打印带头结点单链表
 bool printSLList(SLList list);
 // 获取长度
 int getLengthSLList(SLList list);
@@ -46,7 +46,7 @@ inline bool initiateSLList(SLList* list)
     return true;
 }
 
-inline bool buildSLListByHead(int data[], int length, SLList* list)
+inline bool buildSLListByHead(int* data, int length, SLList* list)
 {
     if (*list != NULL)
     {
@@ -70,7 +70,7 @@ inline bool buildSLListByHead(int data[], int length, SLList* list)
     return true;
 }
 
-inline bool buildSLListByTail(int data[], int length, SLList* list)
+inline bool buildSLListByTail(int* data, int length, SLList* list)
 {
     if (*list != NULL)
     {
@@ -86,7 +86,7 @@ inline bool buildSLListByTail(int data[], int length, SLList* list)
             node->data = data[i];
             node->next = NULL;
             tail->next = node;
-            tail = tail->next;
+            tail = node;
         }
         else
         {

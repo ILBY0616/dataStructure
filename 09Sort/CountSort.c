@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 计数排序
-void countSort(int data[], int length);
+void countSort(int* data, int length);
 // 打印序列
-void printCount(int data[], int length);
+void printCount(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.CountSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -29,7 +29,7 @@ int main()
 // 2. 比较次数：使用双重循环比较元素，每个元素与其后所有元素比较，共计 n(n-1)/2 次比较。
 // 3. 移动次数：将每个元素放入新位置，每个元素仅需移动一次，总计 n 次。
 // 4. 交换次数：无直接交换操作，仅有统计和赋值过程。
-void countSort(int data[], int length)
+void countSort(int* data, int length)
 {
     int temp[length];
     int count[length];
@@ -54,7 +54,7 @@ void countSort(int data[], int length)
     }
 }
 
-void printCount(int data[], int length)
+void printCount(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

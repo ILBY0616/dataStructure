@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 希尔排序
-void shellSort(int data[], int length);
+void shellSort(int* data, int length);
 // 打印序列
-void printShell(int data[], int length);
+void printShell(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.InsertShellSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -33,7 +33,7 @@ int main()
 // 3. 移动次数：由于是插入排序的变种，每次排序会涉及元素的移动。最坏情况下，每个元素可能需要移动多次，整体移动次数为 O(n^2)。
 //    不过，通过分组排序，希尔排序大大减少了实际的移动次数，因此在大多数情况下，它的效率要高于普通的插入排序。
 // 4. 交换次数：与普通插入排序类似，希尔排序也没有显式的交换操作，元素的重排是通过移动完成的。交换次数可以认为是 0。
-void shellSort(int data[], int length)
+void shellSort(int* data, int length)
 {
     for (int d = length / 2; d >= 1; d = d / 2)
     {
@@ -58,7 +58,7 @@ void shellSort(int data[], int length)
     }
 }
 
-void printShell(int data[], int length)
+void printShell(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

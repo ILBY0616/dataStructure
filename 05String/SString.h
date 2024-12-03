@@ -14,7 +14,7 @@ typedef struct String
 } String, *SString;
 
 // 创建定长串
-bool buildSString(char data[], SString* string);
+bool buildSString(char* data, SString* string);
 // 获取新下标
 void getNext(SString string, int next[]);
 // 获取新下标
@@ -26,7 +26,7 @@ void printSString(SString string);
 // 销毁定长串
 void destroySString(SString* string);
 
-inline bool buildSString(char data[], SString* string)
+inline bool buildSString(char* data, SString* string)
 {
     if (*string != NULL)
     {

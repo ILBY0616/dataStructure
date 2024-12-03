@@ -37,9 +37,9 @@ void createUATGraph(ATGraph graph);
 // 判断边存在
 bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex);
 // 深度优先遍历
-bool DFSATGraph(ATGraph graph, int startIndex,bool visited[]);
+bool DFSATGraph(ATGraph graph, int startIndex,bool* visited);
 // 广度优先遍历
-bool BFSATGraph(ATGraph graph, int startIndex,bool visited[]);
+bool BFSATGraph(ATGraph graph, int startIndex,bool* visited);
 // 打印邻接表
 void printATGraph(ATGraph graph);
 // 销毁邻接表
@@ -180,7 +180,7 @@ inline bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex)
     return false;
 }
 
-inline bool DFSATGraph(ATGraph graph, int startIndex,bool visited[])
+inline bool DFSATGraph(ATGraph graph, int startIndex,bool* visited)
 {
     if (graph->vertexSum <= startIndex || startIndex < 0)
     {
@@ -200,7 +200,7 @@ inline bool DFSATGraph(ATGraph graph, int startIndex,bool visited[])
     return true;
 }
 
-inline bool BFSATGraph(ATGraph graph, int startIndex,bool visited[])
+inline bool BFSATGraph(ATGraph graph, int startIndex,bool* visited)
 {
     if (graph->vertexSum <= startIndex || startIndex < 0)
     {

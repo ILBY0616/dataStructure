@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 折半插入排序
-void foldSort(int data[], int length);
+void foldSort(int* data, int length);
 // 打印序列
-void printFold(int data[], int length);
+void printFold(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.InsertFoldSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -32,7 +32,7 @@ int main()
 // 3. 移动次数：每趟排序中，待插入元素后的所有元素都需要向后移动以腾出插入位置，最多需要移动 i 次（i 从 1 到 n-1）。
 //    所以总的移动次数为 O(n^2)，与普通插入排序相同。
 // 4. 交换次数：没有直接的交换操作，只有移动元素的操作，因此交换次数为 0。所有的重排操作通过移动元素来完成。
-void foldSort(int data[], int length)
+void foldSort(int* data, int length)
 {
     for (int i = 1; i < length; i++)
     {
@@ -60,7 +60,7 @@ void foldSort(int data[], int length)
     }
 }
 
-void printFold(int data[], int length)
+void printFold(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

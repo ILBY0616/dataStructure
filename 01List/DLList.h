@@ -15,9 +15,9 @@ typedef struct ListNode
 // 开辟带头结点双链表
 bool initiateDLList(DLList* list);
 // 头插法创建带头结点双链表
-bool buildDLListByHead(int data[], int length, DLList* list);
+bool buildDLListByHead(int* data, int length, DLList* list);
 // 尾插法创建带头结点双链表
-bool buildDLListByTail(int data[], int length, DLList* list);
+bool buildDLListByTail(int* data, int length, DLList* list);
 // 查找数据
 DLList selectDLList(DLList list, int data);
 // 插入数据
@@ -47,7 +47,7 @@ inline bool initiateDLList(DLList* list)
     return true;
 }
 
-inline bool buildDLListByHead(int data[], int length, DLList* list)
+inline bool buildDLListByHead(int* data, int length, DLList* list)
 {
     if (*list != NULL)
     {
@@ -76,7 +76,7 @@ inline bool buildDLListByHead(int data[], int length, DLList* list)
     return true;
 }
 
-inline bool buildDLListByTail(int data[], int length, DLList* list)
+inline bool buildDLListByTail(int* data, int length, DLList* list)
 {
     if (*list != NULL)
     {

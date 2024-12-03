@@ -29,7 +29,7 @@ void outQueue(Queue queue, int* data)
 }
 
 // 查找有序数组中值为key的下标，找不到则插入到合适位置，保持数组有序
-int findKeyIndex(int data[], int* length, int key)
+int findKeyIndex(int* data, int* length, int key)
 {
     int low = 0, mid = 0, high = *length - 1;
     while (low <= high)

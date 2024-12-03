@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 冒泡排序
-void bubbleSort(int data[], int length);
+void bubbleSort(int* data, int length);
 // 打印序列
-void printBubble(int data[], int length);
+void printBubble(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.SwapBubbleSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -29,7 +29,7 @@ int main()
 // 2. 比较次数：每次遍历序列时，比较相邻的元素。每一趟比较的次数与待排序序列的长度成正比，即每次外层循环进行 n-i-1 次比较。
 // 3. 移动次数：元素的移动是通过交换实现的，移动次数与交换次数相同。最坏情况下，每个元素都可能需要交换，导致 O(n^2) 的移动次数。
 // 4. 交换次数：每次有相邻元素比较时，如果顺序错误，则进行交换。交换次数与元素的初始顺序密切相关，最坏情况下需要交换 O(n^2) 次。
-void bubbleSort(int data[], int length)
+void bubbleSort(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {
@@ -54,7 +54,7 @@ void bubbleSort(int data[], int length)
     }
 }
 
-void printBubble(int data[], int length)
+void printBubble(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 // 划分序列
-int divideData(int data[], int low, int high);
+int divideData(int* data, int low, int high);
 // 快速排序
-void quickSort(int data[], int low, int high);
+void quickSort(int* data, int low, int high);
 // 打印序列
-void printQuick(int data[], int length);
+void printQuick(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.SwapQuickSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -22,7 +22,7 @@ int main()
     return 0;
 }
 
-int divideData(int data[], int low, int high)
+int divideData(int* data, int low, int high)
 {
     int temp = data[low];
     // 划分
@@ -55,7 +55,7 @@ int divideData(int data[], int low, int high)
 // 2. 比较次数：每次划分都会比较左右两个元素，直到它们满足排序条件。每一趟划分的比较次数大约是当前子序列的长度。
 // 3. 移动次数：每次比较并交换元素时，都会将元素从一个位置移动到另一个位置，最坏情况下需要 O(n^2) 次交换。
 // 4. 交换次数：每次划分过程中会进行交换操作，将比枢纽元素大的元素放到右边，小的放到左边。交换次数是递归深度的函数，与元素的初始顺序有关。
-void quickSort(int data[], int low, int high)
+void quickSort(int* data, int low, int high)
 {
     if (low < high)
     {
@@ -65,7 +65,7 @@ void quickSort(int data[], int low, int high)
     }
 }
 
-void printQuick(int data[], int length)
+void printQuick(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 分块查找
-int blockSearch(int data[], int key, int blockSize, int length);
+int blockSearch(int* data, int key, int blockSize, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\07Search.BlockSearch.exe
 // 5
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-int blockSearch(int data[], int key, int blockSize, int length)
+int blockSearch(int* data, int key, int blockSize, int length)
 {
     // 向上取整进行分块
     int blockSum = (length + blockSize - 1) / blockSize;

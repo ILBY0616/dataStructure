@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 折半查找
-int foldSearch(int data[], int key, int length);
+int foldSearch(int* data, int key, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\07Search.FoldSearch.exe
 // 5
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-int foldSearch(int data[], int key, int length)
+int foldSearch(int* data, int key, int length)
 {
     int low = 0, high = length - 1;
     while (low <= high)

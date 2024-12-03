@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 基数排序
-void radixSort(int data[], int length);
+void radixSort(int* data, int length);
 // 打印序列
-void printData(int data[], int length);
+void printData(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.RadixSort.exe
 // 190 180 170 160 150 140 130 120 110 100
@@ -30,7 +30,7 @@ int main()
 // 2. 比较次数：基数排序并不直接进行元素之间的比较。每一趟排序中，系统只会根据当前位的数字进行分配，因此没有传统排序算法中的比较操作。
 // 3. 移动次数：每一趟排序会遍历所有元素，每个元素根据当前位的数字值进行移动，总的移动次数大约为 O(n)，每趟排序的复杂度为 O(n)。
 // 4. 交换次数：基数排序没有直接的交换操作，数据位置的重排通过稳定排序（计数排序）来完成。
-void radixSort(int data[], int length)
+void radixSort(int* data, int length)
 {
     int max = data[0];
     for (int i = 1; i < length; i++)
@@ -77,7 +77,7 @@ void radixSort(int data[], int length)
     }
 }
 
-void printData(int data[], int length)
+void printData(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

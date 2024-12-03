@@ -14,7 +14,7 @@ typedef struct StringNode
 } StringNode, *LString;
 
 // 创建链串
-bool buildLString(char data[], LString* string);
+bool buildLString(char* data, LString* string);
 // 匹配链串
 int matchLString(LString mainString, LString subString);
 // 打印链串
@@ -22,7 +22,7 @@ void printLString(LString string);
 // 销毁链串
 void destroyLString(LString* string);
 
-inline bool buildLString(char data[], LString* string)
+inline bool buildLString(char* data, LString* string)
 {
     if (*string != NULL)
     {

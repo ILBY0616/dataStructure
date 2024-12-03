@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 // 直接插入排序
-void insertSort(int data[], int length);
+void insertSort(int* data, int length);
 // 打印序列
-void printInsert(int data[], int length);
+void printInsert(int* data, int length);
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.InsertStraightSort.exe
 // 9 8 7 6 5 4 3 2 1 0
@@ -29,7 +29,7 @@ int main()
 // 2. 比较次数：每次插入一个元素时，需要与已排序的元素逐一比较，直到找到合适的位置。最坏情况下，比较次数为 O(n^2)，而最佳情况下（已排序序列）为 O(n)。
 // 3. 移动次数：每次插入元素时，已排序序列中大于该元素的部分都需要后移。最坏情况下，每个元素都需要移动到最前面，总的移动次数为 O(n^2)。
 // 4. 交换次数：在直接插入排序中，没有显式的交换操作，而是通过移动元素来实现排序，因此交换次数为 0。
-void insertSort(int data[], int length)
+void insertSort(int* data, int length)
 {
     for (int i = 1; i < length; i++)
     {
@@ -50,7 +50,7 @@ void insertSort(int data[], int length)
     }
 }
 
-void printInsert(int data[], int length)
+void printInsert(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

@@ -1056,6 +1056,41 @@ build 09Sort.SwapQuickSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSwapQuickSort_Debu
   TARGET_PDB = 09Sort.SwapQuickSort.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 10App.2005
+
+
+#############################################
+# Order-only phony target for 10App.2005
+
+build cmake_object_order_depends_target_10App.2005: phony || .
+
+build CMakeFiles/10App.2005.dir/10App/2005.c.obj: C_COMPILER__10App.2e2005_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2005.c || cmake_object_order_depends_target_10App.2005
+  DEP_FILE = CMakeFiles\10App.2005.dir\10App\2005.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\10App.2005.dir
+  OBJECT_FILE_DIR = CMakeFiles\10App.2005.dir\10App
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10App.2005
+
+
+#############################################
+# Link the executable 10App.2005.exe
+
+build 10App.2005.exe: C_EXECUTABLE_LINKER__10App.2e2005_Debug CMakeFiles/10App.2005.dir/10App/2005.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\10App.2005.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 10App.2005.exe
+  TARGET_IMPLIB = lib10App.2005.dll.a
+  TARGET_PDB = 10App.2005.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 10App.2006
 
 
@@ -1769,6 +1804,8 @@ build 09Sort.SwapBubbleSort: phony 09Sort.SwapBubbleSort.exe
 
 build 09Sort.SwapQuickSort: phony 09Sort.SwapQuickSort.exe
 
+build 10App.2005: phony 10App.2005.exe
+
 build 10App.2006: phony 10App.2006.exe
 
 build 10App.2007: phony 10App.2007.exe
@@ -1813,7 +1850,7 @@ build cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2005.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

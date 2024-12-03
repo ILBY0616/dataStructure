@@ -23,9 +23,9 @@ void createUAMGraph(AMGraph graph);
 // 判断边存在
 bool judgeEdgeAMGraph(AMGraph graph, int startIndex, int endIndex);
 // 深度优先遍历
-bool DFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+bool DFSAMGraph(AMGraph graph, int startIndex,bool* visited);
 // 广度优先遍历
-bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+bool BFSAMGraph(AMGraph graph, int startIndex,bool* visited);
 // 打印邻接矩阵
 void printAMGraph(AMGraph graph);
 // 销毁邻接矩阵
@@ -157,7 +157,7 @@ inline bool judgeEdgeAMGraph(AMGraph graph, int startIndex, int endIndex)
     return true;
 }
 
-inline bool DFSAMGraph(AMGraph graph, int startIndex,bool visited[])
+inline bool DFSAMGraph(AMGraph graph, int startIndex,bool* visited)
 {
     if (graph->vertexSum <= startIndex || startIndex < 0)
     {
@@ -175,7 +175,7 @@ inline bool DFSAMGraph(AMGraph graph, int startIndex,bool visited[])
     return true;
 }
 
-inline bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[])
+inline bool BFSAMGraph(AMGraph graph, int startIndex,bool* visited)
 {
     if (graph->vertexSum <= startIndex || startIndex < 0)
     {

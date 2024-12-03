@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 // 用顺序栈和链队判断回文
-bool isPalindrome(SStack stack, LQueue queue, int data[], int length)
+bool isPalindrome(SStack stack, LQueue queue, int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

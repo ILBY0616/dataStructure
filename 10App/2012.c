@@ -30,7 +30,7 @@ void getTotal(LBTree tree, int* total)
 }
 
 // 奇数在前偶数在后
-void oddToFront(int data[], int length)
+void oddToFront(int* data, int length)
 {
     for (int i = 0; i < length; i++)
     {

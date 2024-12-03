@@ -1,4 +1,4 @@
-#include "SMatrix.h"
+#include <SMatrix.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\04Array.SSMatrix.exe
 // 1 2 3

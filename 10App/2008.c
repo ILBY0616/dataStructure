@@ -1,5 +1,11 @@
 #include <LBTree.h>
 
+// 用邻接表存储、创建、打印无向图
+// 见ATGraph.h中void createDATGraph(ATGraph graph);void printATGraph(ATGraph graph);
+
+// 用三元数组存储、装置稀疏矩阵
+// 见SMartrix.h中SMatrix transposeSMatrix(SMatrix matrix);
+
 // 递归统计链二叉树结点数
 void getTotal(LBTree tree, int* total)
 {

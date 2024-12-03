@@ -1,4 +1,4 @@
-#include "ATGraph.h"
+#include <ATGraph.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\08Graph.ATGraph.exe
 // Input vertexSum edgeSum:
@@ -11,12 +11,12 @@
 // c
 // Input vertex 3's value:
 // d
-// Input weight startIndex endIndex:
-// 1 0 1
-// Input weight startIndex endIndex:
-// 1 1 2
-// Input weight startIndex endIndex:
-// 1 2 0
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 0 3
 // DFS:
 // abc
 // BFS:
@@ -36,12 +36,12 @@
 // c
 // Input vertex 3's value:
 // d
-// Input weight startIndex endIndex:
-// 1 0 1
-// Input weight startIndex endIndex:
-// 1 1 2
-// Input weight startIndex endIndex:
-// 1 2 0
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 0 3
 // DFS:
 // acb
 // BFS:

@@ -11,6 +11,7 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.SMatrix.di
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.LString.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.SString.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.LBTree.dir
+D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.SHTree.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.BlockSearch.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.FoldSearch.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/07Search.SequenceSearch.dir

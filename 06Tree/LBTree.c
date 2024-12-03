@@ -1,4 +1,4 @@
-#include "LBTree.h"
+#include <LBTree.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\06Tree.LBTree.exe
 // abd^^e^^cf^^g^^

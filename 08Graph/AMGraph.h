@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <limits.h>
 #include <stdio.h>
 
 // 邻接矩阵
@@ -22,9 +23,9 @@ void createUAMGraph(AMGraph graph);
 // 判断边存在
 bool judgeEdgeAMGraph(AMGraph graph, int startIndex, int endIndex);
 // 深度优先遍历
-void DFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+bool DFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
 // 广度优先遍历
-void BFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
 // 打印邻接矩阵
 void printAMGraph(AMGraph graph);
 // 销毁邻接矩阵
@@ -52,8 +53,7 @@ inline void createDAMGraph(AMGraph graph)
     for (int i = 0; i < graph->vertexSum; i++)
     {
         printf("Input vertex %d's value:\n", i);
-        getchar();
-        scanf("%c", &graph->vertex[i]);
+        scanf(" %c", &graph->vertex[i]);
     }
     // 初始化边
     for (int i = 0; i < graph->vertexSum; i++)
@@ -74,14 +74,14 @@ inline void createDAMGraph(AMGraph graph)
     for (int i = 0; i < graph->edgeSum; i++)
     {
         int weight, startIndex, endIndex;
-        printf("Input weight startIndex endIndex:\n");
-        scanf("%d %d %d", &weight, &startIndex, &endIndex);
-        // 无边 weight is INT_MAX
-        // 有边 weight in [0,INT_MAX-1]
+        printf("Input startIndex endIndex weight:\n");
+        scanf("%d %d %d", &startIndex, &endIndex, &weight);
+        // 无边 weight is (0,INT_MAX)
+        // 有边 weight in [1,INT_MAX-1]
         if (
-            0 <= weight && weight < INT_MAX &&
             0 <= startIndex && startIndex < graph->vertexSum &&
-            0 <= endIndex && endIndex < graph->vertexSum
+            0 <= endIndex && endIndex < graph->vertexSum &&
+            0 < weight && weight < INT_MAX
         )
         {
             graph->edge[startIndex][endIndex] = weight;
@@ -89,7 +89,7 @@ inline void createDAMGraph(AMGraph graph)
         else
         {
             i--;
-            printf("StartIndex and endIndex is invalid\n");
+            printf("StartIndex or endIndex or weight is invalid\n");
         }
     }
 }
@@ -102,8 +102,7 @@ inline void createUAMGraph(AMGraph graph)
     for (int i = 0; i < graph->vertexSum; i++)
     {
         printf("Input vertex %d's value:\n", i);
-        getchar();
-        scanf("%c", &graph->vertex[i]);
+        scanf(" %c", &graph->vertex[i]);
     }
     // 初始化边
     for (int i = 0; i < graph->vertexSum; i++)
@@ -124,14 +123,14 @@ inline void createUAMGraph(AMGraph graph)
     for (int i = 0; i < graph->edgeSum; i++)
     {
         int weight, startIndex, endIndex;
-        printf("Input weight startIndex endIndex:\n");
-        scanf("%d %d %d", &weight, &startIndex, &endIndex);
-        // 无边 weight is INT_MAX
-        // 有边 weight in [0,INT_MAX-1]
+        printf("Input startIndex endIndex weight:\n");
+        scanf("%d %d %d", &startIndex, &endIndex, &weight);
+        // 无边 weight is (0,INT_MAX)
+        // 有边 weight in [1,INT_MAX-1]
         if (
-            0 <= weight && weight < INT_MAX &&
             0 <= startIndex && startIndex < graph->vertexSum &&
-            0 <= endIndex && endIndex < graph->vertexSum
+            0 <= endIndex && endIndex < graph->vertexSum &&
+            0 < weight && weight < INT_MAX
         )
         {
             graph->edge[startIndex][endIndex] = weight;
@@ -140,7 +139,7 @@ inline void createUAMGraph(AMGraph graph)
         else
         {
             i--;
-            printf("StartIndex and endIndex is invalid\n");
+            printf("StartIndex or endIndex or weight is invalid\n");
         }
     }
 }
@@ -150,7 +149,7 @@ inline bool judgeEdgeAMGraph(AMGraph graph, int startIndex, int endIndex)
     if (
         graph->vertexSum <= startIndex || startIndex < 0 ||
         graph->vertexSum <= endIndex || endIndex < 0 ||
-        INT_MAX <= graph->edge[startIndex][endIndex] || graph->edge[startIndex][endIndex] < 0
+        INT_MAX <= graph->edge[startIndex][endIndex] || graph->edge[startIndex][endIndex] <= 0
     )
     {
         return false;
@@ -158,38 +157,48 @@ inline bool judgeEdgeAMGraph(AMGraph graph, int startIndex, int endIndex)
     return true;
 }
 
-inline void DFSAMGraph(AMGraph graph, int startIndex,bool visited[])
+inline bool DFSAMGraph(AMGraph graph, int startIndex,bool visited[])
 {
+    if (graph->vertexSum <= startIndex || startIndex < 0)
+    {
+        return false;
+    }
     visited[startIndex] = true;
     printf("%c", graph->vertex[startIndex]);
-    for (int i = 0; i < graph->vertexSum; i++)
+    for (int endIndex = 0; endIndex < graph->vertexSum; endIndex++)
     {
-        if (judgeEdgeAMGraph(graph, startIndex, i) == true && visited[i] == false)
+        if (judgeEdgeAMGraph(graph, startIndex, endIndex) == true && visited[endIndex] == false)
         {
-            DFSAMGraph(graph, i, visited);
+            DFSAMGraph(graph, endIndex, visited);
         }
     }
+    return true;
 }
 
-inline void BFSAMGraph(AMGraph graph, int startIndex,bool visited[])
+inline bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[])
 {
+    if (graph->vertexSum <= startIndex || startIndex < 0)
+    {
+        return false;
+    }
     int front = -1, rear = -1;
     int queue[graph->vertexSum];
     queue[++rear] = startIndex;
     visited[startIndex] = true;
     while (front < rear)
     {
-        int index = queue[++front];
-        printf("%c", graph->vertex[index]);
-        for (int i = 0; i < graph->vertexSum; i++)
+        startIndex = queue[++front];
+        printf("%c", graph->vertex[startIndex]);
+        for (int endIndex = 0; endIndex < graph->vertexSum; endIndex++)
         {
-            if (judgeEdgeAMGraph(graph, index, i) && !visited[i])
+            if (judgeEdgeAMGraph(graph, startIndex, endIndex) && !visited[endIndex])
             {
-                queue[++rear] = i;
-                visited[i] = true;
+                queue[++rear] = endIndex;
+                visited[endIndex] = true;
             }
         }
     }
+    return true;
 }
 
 inline void printAMGraph(AMGraph graph)
@@ -199,7 +208,14 @@ inline void printAMGraph(AMGraph graph)
     {
         for (int j = 0; j < graph->vertexSum; j++)
         {
-            printf("%d ", graph->edge[i][j]);
+            if (0 < graph->edge[i][j] && graph->edge[i][j] < INT_MAX)
+            {
+                printf("%d ", graph->edge[i][j]);
+            }
+            else
+            {
+                printf("^ ");
+            }
         }
         printf("\n");
     }

@@ -61,6 +61,9 @@ void postOrderByRecursion(LBTree tree)
     }
 }
 
+// 用邻接矩阵存储、广度优先遍历图
+// 见AMGraph.h中void createUAMGraph(AMGraph graph);bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2009.exe
 // YES
 // ab^^c^^

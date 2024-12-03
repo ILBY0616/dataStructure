@@ -1,4 +1,4 @@
-#include "LString.h"
+#include <LString.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.LString.exe
 // goodgoogle

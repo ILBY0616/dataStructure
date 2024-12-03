@@ -496,6 +496,41 @@ build 06Tree.LBTree.exe: C_EXECUTABLE_LINKER__06Tree.2eLBTree_Debug CMakeFiles/0
   TARGET_PDB = 06Tree.LBTree.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 06Tree.SHTree
+
+
+#############################################
+# Order-only phony target for 06Tree.SHTree
+
+build cmake_object_order_depends_target_06Tree.SHTree: phony || .
+
+build CMakeFiles/06Tree.SHTree.dir/06Tree/SHTree.c.obj: C_COMPILER__06Tree.2eSHTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/SHTree.c || cmake_object_order_depends_target_06Tree.SHTree
+  DEP_FILE = CMakeFiles\06Tree.SHTree.dir\06Tree\SHTree.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  OBJECT_DIR = CMakeFiles\06Tree.SHTree.dir
+  OBJECT_FILE_DIR = CMakeFiles\06Tree.SHTree.dir\06Tree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 06Tree.SHTree
+
+
+#############################################
+# Link the executable 06Tree.SHTree.exe
+
+build 06Tree.SHTree.exe: C_EXECUTABLE_LINKER__06Tree.2eSHTree_Debug CMakeFiles/06Tree.SHTree.dir/06Tree/SHTree.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\06Tree.SHTree.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 06Tree.SHTree.exe
+  TARGET_IMPLIB = lib06Tree.SHTree.dll.a
+  TARGET_PDB = 06Tree.SHTree.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 07Search.BlockSearch
 
 
@@ -1702,6 +1737,8 @@ build 05String.SString: phony 05String.SString.exe
 
 build 06Tree.LBTree: phony 06Tree.LBTree.exe
 
+build 06Tree.SHTree: phony 06Tree.SHTree.exe
+
 build 07Search.BlockSearch: phony 07Search.BlockSearch.exe
 
 build 07Search.FoldSearch: phony 07Search.FoldSearch.exe
@@ -1776,7 +1813,7 @@ build cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2013.exe 10App.2014.exe 10App.2015.exe 10App.2016.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2022.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

@@ -39,6 +39,9 @@ void getTotal(LBTree tree, int* total)
     }
 }
 
+// 用邻接矩阵定义、创建、深度优先遍历图
+// 见AMGraph.h中
+
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2013.exe
 // YES
 // ab^^c^^

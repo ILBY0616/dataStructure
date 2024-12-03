@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <limits.h>
 #include <stdio.h>
 
 // 边
@@ -36,9 +37,9 @@ void createUATGraph(ATGraph graph);
 // 判断边存在
 bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex);
 // 深度优先遍历
-void DFSATGraph(ATGraph graph, int startIndex,bool visited[]);
+bool DFSATGraph(ATGraph graph, int startIndex,bool visited[]);
 // 广度优先遍历
-void BFSATGraph(ATGraph graph, int startIndex,bool visited[]);
+bool BFSATGraph(ATGraph graph, int startIndex,bool visited[]);
 // 打印邻接表
 void printATGraph(ATGraph graph);
 // 销毁邻接表
@@ -66,22 +67,21 @@ inline void createDATGraph(ATGraph graph)
     for (int i = 0; i < graph->vertexSum; i++)
     {
         printf("Input vertex %d's value:\n", i);
-        getchar();
-        scanf("%c", &graph->vertex[i].data);
+        scanf(" %c", &graph->vertex[i].data);
         graph->vertex[i].first = NULL;
     }
     // 建立起边
     for (int i = 0; i < graph->edgeSum; i++)
     {
         int weight, startIndex, endIndex;
-        printf("Input weight startIndex endIndex:\n");
-        scanf("%d %d %d", &weight, &startIndex, &endIndex);
+        printf("Input startIndex endIndex weight:\n");
+        scanf("%d %d %d", &startIndex, &endIndex, &weight);
         // 无边 edge is NULL
-        // 有边 weight in [0,INT_MAX-1]
+        // 有边 weight in [1,INT_MAX-1]
         if (
-            0 <= weight && weight < INT_MAX &&
             0 <= startIndex && startIndex < graph->vertexSum &&
-            0 <= endIndex && endIndex < graph->vertexSum
+            0 <= endIndex && endIndex < graph->vertexSum &&
+            0 < weight && weight < INT_MAX
         )
         {
             Edge* edge = malloc(sizeof(Edge));
@@ -101,7 +101,7 @@ inline void createDATGraph(ATGraph graph)
         else
         {
             i--;
-            printf("StartIndex and endIndex is invalid\n");
+            printf("StartIndex or endIndex or weight is invalid\n");
         }
     }
 }
@@ -114,22 +114,21 @@ inline void createUATGraph(ATGraph graph)
     for (int i = 0; i < graph->vertexSum; i++)
     {
         printf("Input vertex %d's value:\n", i);
-        getchar();
-        scanf("%c", &graph->vertex[i].data);
+        scanf(" %c", &graph->vertex[i].data);
         graph->vertex[i].first = NULL;
     }
     // 建立起边
     for (int i = 0; i < graph->edgeSum; i++)
     {
         int weight, startIndex, endIndex;
-        printf("Input weight startIndex endIndex:\n");
-        scanf("%d %d %d", &weight, &startIndex, &endIndex);
+        printf("Input startIndex endIndex weight:\n");
+        scanf("%d %d %d", &startIndex, &endIndex, &weight);
         // 无边 edge is NULL
-        // 有边 weight in [0,INT_MAX-1]
+        // 有边 weight in [1,INT_MAX-1]
         if (
-            0 <= weight && weight < INT_MAX &&
             0 <= startIndex && startIndex < graph->vertexSum &&
-            0 <= endIndex && endIndex < graph->vertexSum
+            0 <= endIndex && endIndex < graph->vertexSum &&
+            0 < weight && weight < INT_MAX
         )
         {
             Edge* edgeOne = malloc(sizeof(Edge));
@@ -155,7 +154,7 @@ inline void createUATGraph(ATGraph graph)
         else
         {
             i--;
-            printf("StartIndex and endIndex is invalid\n");
+            printf("StartIndex or endIndex or weight is invalid\n");
         }
     }
 }
@@ -181,8 +180,12 @@ inline bool judgeEdgeATGraph(ATGraph graph, int startIndex, int endIndex)
     return false;
 }
 
-inline void DFSATGraph(ATGraph graph, int startIndex,bool visited[])
+inline bool DFSATGraph(ATGraph graph, int startIndex,bool visited[])
 {
+    if (graph->vertexSum <= startIndex || startIndex < 0)
+    {
+        return false;
+    }
     visited[startIndex] = true;
     printf("%c", graph->vertex[startIndex].data);
     Edge* edge = graph->vertex[startIndex].first;
@@ -194,10 +197,15 @@ inline void DFSATGraph(ATGraph graph, int startIndex,bool visited[])
         }
         edge = edge->next;
     }
+    return true;
 }
 
-inline void BFSATGraph(ATGraph graph, int startIndex,bool visited[])
+inline bool BFSATGraph(ATGraph graph, int startIndex,bool visited[])
 {
+    if (graph->vertexSum <= startIndex || startIndex < 0)
+    {
+        return false;
+    }
     int front = -1, rear = -1;
     int queue[graph->vertexSum];
     queue[++rear] = startIndex;
@@ -217,9 +225,10 @@ inline void BFSATGraph(ATGraph graph, int startIndex,bool visited[])
             edge = edge->next;
         }
     }
+    return true;
 }
 
-inline void printATGraph(Graph* graph)
+inline void printATGraph(ATGraph graph)
 {
     printf("ATGraph:\n");
     for (int i = 0; i < graph->vertexSum; i++)

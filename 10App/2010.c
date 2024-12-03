@@ -16,6 +16,12 @@ void baseConversion(SStack stack, int data)
     }
 }
 
+// 根据字符数组创建哈夫曼树并且输出其哈夫曼编码
+// 见SHTree.h中
+
+// 用邻接矩阵存储、深度优先遍历图
+// 见AMGraph.h中
+
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2010.exe
 // 12
 // Process finished with exit code 0

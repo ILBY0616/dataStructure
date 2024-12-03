@@ -1,4 +1,4 @@
-#include "SStack.h"
+#include <SStack.h>
 #include <stdio.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\02Stack.SStack.exe

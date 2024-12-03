@@ -51,6 +51,9 @@ void postOrderByRecursion(LBTree tree)
     }
 }
 
+// 创建大小无序长度为20000的顺序表，运用堆排序的思想打印出前20大的数
+// 见SelectHeap.h中
+
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2015.exe
 // 12
 // ab^^c^^

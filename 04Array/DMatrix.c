@@ -1,4 +1,4 @@
-#include "DMatrix.h"
+#include <DMatrix.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\04Array.DMartrix.exe
 // 1 0 2 1 0 0

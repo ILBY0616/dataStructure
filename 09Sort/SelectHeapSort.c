@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+// 输入序列
+void inputData(int data[], int length);
 // 调整大根堆
 void adjustHeap(int data[], int root, int length);
 // 建造大根堆
 void buildHeap(int data[], int length);
 // 堆选择排序
-void heapSort(int data[], int length);
+void heapSort(int data[], int length, int sortSum);
 // 打印序列
 void printHeap(int data[], int length);
 
@@ -17,11 +19,20 @@ void printHeap(int data[], int length);
 
 int main()
 {
-    int data[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-    printHeap(data, 10);
-    heapSort(data, 10);
-    printHeap(data, 10);
+    int data[10];
+    int length = 10, sortSum = 10;
+    inputData(data, length);
+    heapSort(data, length, sortSum);
+    printHeap(data, length);
     return 0;
+}
+
+void inputData(int data[], int length)
+{
+    for (int i = 0; i < length; i++)
+    {
+        scanf("%d", &data[i]);
+    }
 }
 
 void adjustHeap(int data[], int root, int length)
@@ -76,14 +87,14 @@ void buildHeap(int data[], int length)
 // 2. 比较次数：每次调整堆时，需要比较父节点与其子节点，总的比较次数约为 O(nlog_2^n)，每次调整堆的时间复杂度为 O(log_2^n)。
 // 3. 移动次数：每次交换堆顶元素与最后一个元素时，涉及两个元素的移动。总的移动次数较少，主要集中在交换操作中。
 // 4. 交换次数：每次堆顶元素与最后一个元素交换，通常在每一趟排序中都进行一次交换，总的交换次数为 O(n)。
-void heapSort(int data[], int length)
+void heapSort(int data[], int length, int sortSum)
 {
     buildHeap(data, length);
-    for (int i = length - 1; i > 0; i--)
+    for (int i = length - 1; i > length - sortSum - 1; i--)
     {
-        int temp = data[0];
+        int max = data[0];
         data[0] = data[i];
-        data[i] = temp;
+        data[i] = max;
         adjustHeap(data, 0, i);
     }
 }

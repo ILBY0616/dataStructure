@@ -55,6 +55,9 @@ void countNode(LBTree tree, int* leafNode, int* branchNode)
     }
 }
 
+// 用邻接矩阵定义、创建图
+// 见AMGraph.h中
+
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2011.exe
 // -1 -2 -3 -4 -5
 // -5 -1 -2 -3 -4

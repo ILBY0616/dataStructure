@@ -1,4 +1,4 @@
-#include "SQueue.h"
+#include <SQueue.h>
 #include <stdio.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\03Queue.SQueue.exe

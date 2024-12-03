@@ -1,58 +1,58 @@
-#include "AMGraph.h"
+#include <AMGraph.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\08Graph.AMGraph.exe
-//// Input vertexSum edgeSum:
-//// 4 3
-//// Input vertex 0's value:
-//// a
-//// Input vertex 1's value:
-//// b
-//// Input vertex 2's value:
-//// c
-//// Input vertex 3's value:
-//// d
-//// Input weight startIndex endIndex:
-//// 1 0 1
-//// Input weight startIndex endIndex:
-//// 1 1 2
-//// Input weight startIndex endIndex:
-//// 1 2 0
-//// DFS:
-//// abc
-//// BFS:
-//// abc
-//// AMGraph:
-//// 0 1 2147483647 2147483647
-//// 2147483647 0 1 2147483647
-//// 1 2147483647 0 2147483647
-//// 2147483647 2147483647 2147483647 0
-//// Input vertexSum edgeSum:
-//// 4 3
-//// Input vertex 0's value:
-//// a
-//// Input vertex 1's value:
-//// b
-//// Input vertex 2's value:
-//// c
-//// Input vertex 3's value:
-//// d
-//// Input weight startIndex endIndex:
-//// 1 0 1
-//// Input weight startIndex endIndex:
-//// 1 1 2
-//// Input weight startIndex endIndex:
-//// 1 2 0
-//// DFS:
-//// abc
-//// BFS:
-//// abc
-//// AMGraph:
-//// 0 1 1 2147483647
-//// 1 0 1 2147483647
-//// 1 1 0 2147483647
-//// 2147483647 2147483647 2147483647 0
-////
-//// Process finished with exit code 0
+// Input vertexSum edgeSum:
+// 4 3
+// Input vertex 0's value:
+// a
+// Input vertex 1's value:
+// b
+// Input vertex 2's value:
+// c
+// Input vertex 3's value:
+// d
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 0 3
+// DFS:
+// abc
+// BFS:
+// abc
+// AMGraph:
+// ^ 1 ^ ^
+// ^ ^ 2 ^
+// 3 ^ ^ ^
+// ^ ^ ^ ^
+// Input vertexSum edgeSum:
+// 4 3
+// Input vertex 0's value:
+// a
+// Input vertex 1's value:
+// b
+// Input vertex 2's value:
+// c
+// Input vertex 3's value:
+// d
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 0 3
+// DFS:
+// abc
+// BFS:
+// abc
+// AMGraph:
+// ^ 1 3 ^
+// 1 ^ 2 ^
+// 3 2 ^ ^
+// ^ ^ ^ ^
+//
+// Process finished with exit code 0
 
 int main()
 {

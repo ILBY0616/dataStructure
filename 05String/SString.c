@@ -1,4 +1,4 @@
-#include "SString.h"
+#include <SString.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.SString.exe
 // goodgoogle

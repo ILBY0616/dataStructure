@@ -1,4 +1,4 @@
-#include "LQueue.h"
+#include <LQueue.h>
 #include <stdio.h>
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\03Queue.LQueue.exe

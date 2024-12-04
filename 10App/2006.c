@@ -1,21 +1,15 @@
-#include <stdbool.h>
 #include <stdio.h>
 
-// 找到递增数组data[]中data[i]=i的下标
-bool findIndex(const int* data, int length, int* index)
+// 找到递增互异整数数组中data[i]=i的下标i
+int findIndex(int* data, int length)
 {
-    if (data == NULL || length < 1)
-    {
-        return false;
-    }
     int low = 0, high = length - 1;
     while (low <= high)
     {
         int mid = (low + high) / 2;
         if (data[mid] == mid)
         {
-            *index = mid;
-            return true;
+            return mid;
         }
         if (data[mid] > mid)
         {
@@ -26,19 +20,15 @@ bool findIndex(const int* data, int length, int* index)
             low = mid + 1;
         }
     }
-    return false;
+    return -1;
 }
 
-// 对称矩阵的压缩存储的矩阵乘法
-// 见DMartrix.中hvoid multiplyDMartrix(DMatrix leftFactor, DMatrix rightFactor, int finalProduct[100][100]);
+// 编写压缩存储的对称矩阵乘法程序
+// 见04Array.DMartrix.h中
 
-// 双向交替冒泡排序，一趟大的放后，一趟小的放前
-bool doubleBubble(int* data, int length)
+// 编写实现双向交替冒泡排序算法的程序
+void doubleBubble(int* data, int length)
 {
-    if (data == NULL || length < 1)
-    {
-        return false;
-    }
     int i = 0, j = length - 1, k;
     while (i < j)
     {
@@ -75,7 +65,6 @@ bool doubleBubble(int* data, int length)
         }
         i++;
     }
-    return true;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2006.exe
@@ -86,16 +75,14 @@ bool doubleBubble(int* data, int length)
 
 int main()
 {
-    int index = -1;
+    int length = 10;
     int data[10] = {9, 8, 7, 6, 4, 5, 3, 2, 1, 0};
-    findIndex(data, 10, &index);
-    printf("%d\n", index);
+    printf("%d\n", findIndex(data, length));
 
-    doubleBubble(data, 10);
-    for (int i = 0; i < 10; i++)
+    doubleBubble(data, length);
+    for (int i = 0; i < length; i++)
     {
         printf("%d ", data[i]);
     }
-    printf("\n");
     return 0;
 }

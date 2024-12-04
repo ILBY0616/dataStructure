@@ -2,7 +2,7 @@
 #include <AMGraph.h>
 #include <LBTree.h>
 
-// 用栈和队列判断输入序列是否是回文
+// 判断输入序列是否是回文
 bool isPalindrome()
 {
     char stack[100];
@@ -26,7 +26,7 @@ bool isPalindrome()
     return true;
 }
 
-// 在二叉排序树中找到值为X的结点
+// 返回二叉排序树中值为key的结点
 LBTree findKeyNode(LBTree tree, char key)
 {
     while (tree != NULL && tree->data != key)
@@ -43,74 +43,50 @@ LBTree findKeyNode(LBTree tree, char key)
     return tree;
 }
 
-// 用邻接矩阵存储n的顶点有向图，计算从某一顶点出发到其他所有顶点路径的和的最小值
-void dijkstraAMGraph(AMGraph graph, int startIndex)
+// 求解邻接矩阵存储的有向图中指定顶点到所有其他顶点路径之和的最小值
+void getMinPathAMGraph(AMGraph graph, int startIndex, int* prior, int* distance,bool* visited)
 {
-    int prior[graph->vertexSum];
-    int distance[graph->vertexSum];
-    bool visited[graph->vertexSum];
     for (int i = 0; i < graph->vertexSum; i++)
     {
+        // 初始化最短距离
         distance[i] = INT_MAX;
+        // 初始化访问状态
         visited[i] = false;
+        // 初始化前驱结点
         prior[i] = -1;
     }
     distance[startIndex] = 0;
     for (int i = 0; i < graph->vertexSum; i++)
     {
+        // 查找当前所有未访问顶点中距离最小的顶点
+        int minNode = -1;
         int minDistance = INT_MAX;
-        int u = -1;
         for (int j = 0; j < graph->vertexSum; j++)
         {
-            if (!visited[j] && distance[j] < minDistance)
+            if (visited[j] == false && distance[j] < minDistance)
             {
                 minDistance = distance[j];
-                u = j;
+                minNode = j;
             }
         }
-        if (u == -1)
+        if (minNode == -1)
         {
             break;
         }
-        visited[u] = true;
-        for (int v = 0; v < graph->vertexSum; v++)
+        // 更改最小顶点访问状态和所有结点最短距离
+        visited[minNode] = true;
+        for (int j = 0; j < graph->vertexSum; j++)
         {
-            if (!visited[v] && graph->edge[u][v] < INT_MAX && graph->edge[u][v] > 0)
+            if (visited[j] == false && 0 < graph->edge[minNode][j] && graph->edge[minNode][j] < INT_MAX)
             {
-                int newDist = distance[u] + graph->edge[u][v];
-                if (newDist < distance[v])
+                int newDistance = distance[minNode] + graph->edge[minNode][j];
+                if (newDistance < distance[j])
                 {
-                    distance[v] = newDist;
-                    prior[v] = u;
+                    distance[j] = newDistance;
+                    prior[j] = minNode;
                 }
             }
         }
-    }
-    for (int i = 0; i < graph->vertexSum; i++)
-    {
-        printf("%c\t", graph->vertex[i]);
-        if (distance[i] == INT_MAX)
-        {
-            printf(" \t");
-        }
-        else
-        {
-            printf("%d\t", distance[i]);
-        }
-        if (distance[i] != INT_MAX)
-        {
-            int path[graph->vertexSum], pathIndex = 0;
-            for (int v = i; v != -1; v = prior[v])
-            {
-                path[pathIndex++] = v;
-            }
-            for (int j = pathIndex - 1; j >= 0; j--)
-            {
-                printf("%c", graph->vertex[path[j]]);
-                if (j > 0) printf("->");
-            }
-        }
-        printf("\n");
     }
 }
 
@@ -134,12 +110,8 @@ void dijkstraAMGraph(AMGraph graph, int startIndex)
 // Input startIndex endIndex weight:
 // 1 2 2
 // Input startIndex endIndex weight:
-// 2 0 3
-// a       0       a
-// b       1       a->b
-// c       3       a->b->c
-// d
-//
+// 2 3 3
+// 10
 // Process finished with exit code 0
 
 int main()
@@ -155,12 +127,12 @@ int main()
     getchar();
 
     char key = 'k';
-    LBTree tree = NULL, pointer = NULL;
+    LBTree tree = NULL, node = NULL;
     buildLBTree(&tree);
-    pointer = findKeyNode(tree, key);
-    if (pointer != NULL)
+    node = findKeyNode(tree, key);
+    if (node != NULL)
     {
-        printf("%c in tree\n", pointer->data);
+        printf("%c in tree\n", node->data);
     }
     else
     {
@@ -168,10 +140,20 @@ int main()
     }
     destroyLBTree(&tree);
 
+    int prior[100];
+    int distance[100];
+    bool visited[100];
+    int pathSum = 0;
+    int startIndex = 0;
     AMGraph graph = NULL;
     initiateAMGraph(&graph);
     createDAMGraph(graph);
-    dijkstraAMGraph(graph, 0);
+    getMinPathAMGraph(graph, startIndex, prior, distance, visited);
+    for (int i = 0; i < graph->vertexSum; i++)
+    {
+        pathSum += distance[i];
+    }
+    printf("%d", pathSum);
     destroyAMGraph(&graph);
     return 0;
 }

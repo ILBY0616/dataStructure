@@ -3,7 +3,7 @@
 #include <SStack.h>
 #include <stdio.h>
 
-// 用顺序栈和链队判断回文
+// 设计顺序栈和链队判断回文
 bool isPalindrome(SStack stack, LQueue queue, int* data, int length)
 {
     for (int i = 0; i < length; i++)
@@ -28,7 +28,7 @@ bool isPalindrome(SStack stack, LQueue queue, int* data, int length)
     return true;
 }
 
-// 递归先序遍历二叉树
+// 设计链式二叉树的创建、先序遍历、中序遍历、后续遍历程序
 void preOrderByRecursion(LBTree tree)
 {
     if (tree != NULL)
@@ -39,7 +39,6 @@ void preOrderByRecursion(LBTree tree)
     }
 }
 
-// 递归中序遍历二叉树
 void inOrderByRecursion(LBTree tree)
 {
     if (tree != NULL)
@@ -50,7 +49,6 @@ void inOrderByRecursion(LBTree tree)
     }
 }
 
-// 递归后序遍历二叉树
 void postOrderByRecursion(LBTree tree)
 {
     if (tree != NULL)
@@ -61,8 +59,8 @@ void postOrderByRecursion(LBTree tree)
     }
 }
 
-// 用邻接矩阵存储、广度优先遍历图
-// 见AMGraph.h中void createUAMGraph(AMGraph graph);bool BFSAMGraph(AMGraph graph, int startIndex,bool visited[]);
+// 编写邻接矩阵存储图的创建、广度优先遍历程序
+// 见08Graph.AMGraph.h中
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2009.exe
 // YES
@@ -72,6 +70,7 @@ void postOrderByRecursion(LBTree tree)
 // bca
 //
 // Process finished with exit code 0
+
 
 int main()
 {

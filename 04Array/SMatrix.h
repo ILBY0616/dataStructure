@@ -20,8 +20,10 @@ typedef struct Matrix
 
 // 创建稀疏矩阵
 SMatrix initiateSMatrix(int data[100][100], int row, int column);
-// 转置稀疏矩阵
-SMatrix transposeSMatrix(SMatrix matrix);
+// 简单转置矩阵
+SMatrix easyTranspose(SMatrix matrix);
+// 快速转置矩阵
+SMatrix quickTranspose(SMatrix matrix);
 // 打印稀疏矩阵
 void printSMatrix(SMatrix matrix);
 
@@ -46,7 +48,7 @@ inline SMatrix initiateSMatrix(int data[100][100], int row, int column)
     return matrix;
 }
 
-inline SMatrix transposeSMatrix(SMatrix matrix)
+inline SMatrix easyTranspose(SMatrix matrix)
 {
     // 空值处理
     if (matrix.length == 0)
@@ -77,6 +79,44 @@ inline SMatrix transposeSMatrix(SMatrix matrix)
     matrix.row = matrix.column;
     matrix.column = scale;
     return matrix;
+}
+
+inline SMatrix quickTranspose(SMatrix matrix)
+{
+    if (matrix.length == 0)
+    {
+        return matrix;
+    }
+    SMatrix transposeMatrix;
+    transposeMatrix.row = matrix.column;
+    transposeMatrix.column = matrix.row;
+    transposeMatrix.length = matrix.length;
+    int zeroSum[matrix.column];
+    int firstIndex[matrix.column];
+    for (int i = 0; i < matrix.column; i++)
+    {
+        zeroSum[i] = 0;
+        firstIndex[i] = -1;
+    }
+    for (int i = 0; i < matrix.length; i++)
+    {
+        zeroSum[matrix.data[i].column]++;
+    }
+    firstIndex[0] = 0;
+    for (int i = 1; i < matrix.column; i++)
+    {
+        firstIndex[i] = firstIndex[i - 1] + zeroSum[i - 1];
+    }
+    for (int i = 0; i < matrix.length; i++)
+    {
+        int column = matrix.data[i].column;
+        int index = firstIndex[column];
+        transposeMatrix.data[index].row = matrix.data[i].column;
+        transposeMatrix.data[index].column = matrix.data[i].row;
+        transposeMatrix.data[index].data = matrix.data[i].data;
+        firstIndex[column]++;
+    }
+    return transposeMatrix;
 }
 
 inline void printSMatrix(SMatrix matrix)

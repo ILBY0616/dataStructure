@@ -1,13 +1,9 @@
 #include <LBTree.h>
 #include <SLList.h>
 
-// 将带头结点单链表中最小结点移到最前面
-bool minToFront(SLList list)
+// 移到带头结点单链表中最小结点到最前面
+void minToHead(SLList list)
 {
-    if (list == NULL || list->next == NULL)
-    {
-        return false;
-    }
     SLList priorMin = list, currentMin = list->next, priorFind = list, currentFind = list->next;
     while (currentFind != NULL)
     {
@@ -22,10 +18,9 @@ bool minToFront(SLList list)
     priorMin->next = currentMin->next;
     currentMin->next = list->next;
     list->next = currentMin;
-    return true;
 }
 
-// 递归找到数组最大值
+// 查找数组最大值
 int findMaxValue(int* data, int length)
 {
     if (length > 0)
@@ -37,26 +32,26 @@ int findMaxValue(int* data, int length)
     return data[0];
 }
 
-// 计算叶子结点数目和非叶结点数目
-void countNode(LBTree tree, int* leafNode, int* branchNode)
+// 统计链式二叉树中叶子结点数目和非叶结点数目
+void getNodeSum(LBTree tree, int* leafSum, int* branchSum)
 {
     if (tree != NULL)
     {
         if (tree->left != NULL || tree->right != NULL)
         {
-            (*branchNode)++;
+            (*branchSum)++;
         }
         else
         {
-            (*leafNode)++;
+            (*leafSum)++;
         }
-        countNode(tree->left, leafNode, branchNode);
-        countNode(tree->right, leafNode, branchNode);
+        getNodeSum(tree->left, leafSum, branchSum);
+        getNodeSum(tree->right, leafSum, branchSum);
     }
 }
 
-// 用邻接矩阵定义、创建图
-// 见AMGraph.h中
+// 编写邻接表存储图的定义、创建程序
+// 见08Graph.ATGraph.h中
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2011.exe
 // -1 -2 -3 -4 -5
@@ -72,17 +67,17 @@ int main()
     SLList list = NULL;
     buildSLListByTail(data, 5, &list);
     printSLList(list);
-    minToFront(list);
+    minToHead(list);
     printSLList(list);
     destroySLList(&list);
 
     printf("%d\n", findMaxValue(data, 5));
 
-    int leafNode = 0, branchNode = 0;
+    int leafSum = 0, branchSum = 0;
     LBTree tree = NULL;
     buildLBTree(&tree);
-    countNode(tree, &leafNode, &branchNode);
-    printf("%d %d", leafNode, branchNode);
+    getNodeSum(tree, &leafSum, &branchSum);
+    printf("%d %d", leafSum, branchSum);
     destroyLBTree(&tree);
     return 0;
 }

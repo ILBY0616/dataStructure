@@ -1,13 +1,9 @@
 #include <LBTree.h>
 #include <SLList.h>
 
-// 合并带头结点有序单链表a和b到c，使c仍然有序
-bool mergeSortList(SLList a, SLList b, SLList c)
+// 生成有序带头结点单链表a和b的有序并集c
+void mergeSortList(SLList a, SLList b, SLList c)
 {
-    if (a == NULL || b == NULL || c == NULL || c->next != NULL)
-    {
-        return false;
-    }
     SLList i = a->next, j = b->next, k = c;
     while (i != NULL && j != NULL)
     {
@@ -24,10 +20,12 @@ bool mergeSortList(SLList a, SLList b, SLList c)
         k = k->next;
     }
     k->next = i != NULL ? i : j;
-    return true;
 }
 
-// 递归计算二叉树的高度
+// 统计邻接表存储的有向图中出度为零的结点数
+
+// 计算链式二叉树的高度和宽度
+// 见06Tree.LBTree.h
 int getHeight(LBTree tree)
 {
     if (tree == NULL)
@@ -37,39 +35,6 @@ int getHeight(LBTree tree)
     int leftHeight = getHeight(tree->left);
     int rightHeight = getHeight(tree->right);
     return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
-}
-
-// 计算二叉树的宽度
-int getWidth(LBTree tree)
-{
-    if (tree == NULL)
-    {
-        return 0;
-    }
-    LBTree queue[100];
-    int front = -1, rear = -1, last = 0, width = 0;
-    queue[++rear] = tree;
-    while (front != rear)
-    {
-        if (rear == last)
-        {
-            width = rear - front > width ? rear - front : width;
-        }
-        LBTree node = queue[++front];
-        if (node->left != NULL)
-        {
-            queue[++rear] = node->left;
-        }
-        if (node->right != NULL)
-        {
-            queue[++rear] = node->right;
-        }
-        if (front == last)
-        {
-            last = rear;
-        }
-    }
-    return width;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2018.exe
@@ -96,10 +61,5 @@ int main()
     destroySLList(&a);
     destroySLList(&b);
     destroySLList(&c);
-
-    LBTree tree = NULL;
-    buildLBTree(&tree);
-    printf("%d %d\n", getHeight(tree), getWidth(tree));
-    destroyLBTree(&tree);
     return 0;
 }

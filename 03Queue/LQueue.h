@@ -100,7 +100,7 @@ inline void destroyLQueue(LQueue* queue)
         free(node);
     }
     (*queue)->rear = NULL;
-    free(queue);
+    free(*queue);
     *queue = NULL;
 }
 

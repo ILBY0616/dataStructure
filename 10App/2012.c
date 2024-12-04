@@ -1,35 +1,26 @@
-#include <LBTree.h>
 #include <SLList.h>
 #include <stdio.h>
 
-// 统计带头结点单链表中值为data的结点数
-int countNode(SLList list, int data)
+// 统计带头结点单链表中值为key的结点数
+int getKeySum(SLList list, int key)
 {
-    int count = 0;
+    int sum = 0;
     SLList node = list->next;
     while (node != NULL)
     {
-        if (node->data == data)
+        if (node->data == key)
         {
-            count++;
+            sum++;
         }
         node = node->next;
     }
-    return count;
+    return sum;
 }
 
-// 递归统计链二叉树结点数
-void getTotal(LBTree tree, int* total)
-{
-    if (tree != NULL)
-    {
-        (*total)++;
-        getTotal(tree->left, total);
-        getTotal(tree->right, total);
-    }
-}
+// 统计链式二叉树结点数
+// 见10App.2008.c中
 
-// 奇数在前偶数在后
+// 移到所有奇数元素到所有偶数元素前面
 void oddToFront(int* data, int length)
 {
     for (int i = 0; i < length; i++)
@@ -54,28 +45,21 @@ void oddToFront(int* data, int length)
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2012.exe
 // 1
-// ab^^c^^
-// 3
 // 1 3 5 7 2 4 6 8
 // Process finished with exit code 0
 
 int main()
 {
+    int key = 7;
+    int length = 8;
     SLList list = NULL;
     int data[8] = {1, 3, 5, 7, 2, 4, 6, 8};
-    buildSLListByTail(data, 8, &list);
-    printf("%d\n", countNode(list, 7));
+    buildSLListByTail(data, length, &list);
+    printf("%d\n", getKeySum(list, key));
     destroySLList(&list);
 
-    int total = 0;
-    LBTree tree = NULL;
-    buildLBTree(&tree);
-    getTotal(tree, &total);
-    printf("%d\n", total);
-    destroyLBTree(&tree);
-
-    oddToFront(data, 8);
-    for (int i = 0; i < 8; i++)
+    oddToFront(data, length);
+    for (int i = 0; i < length; i++)
     {
         printf("%d ", data[i]);
     }

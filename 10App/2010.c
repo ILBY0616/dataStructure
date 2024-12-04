@@ -1,7 +1,7 @@
 #include <SStack.h>
 #include <stdio.h>
 
-// 十进制正整数化为八进制正整数
+// 设计编写顺序栈实现进制转换的程序
 void baseConversion(SStack stack, int data)
 {
     while (data > 0)
@@ -16,11 +16,11 @@ void baseConversion(SStack stack, int data)
     }
 }
 
-// 根据字符数组创建哈夫曼树并且输出其哈夫曼编码
-// 见SHTree.h中
+// 编写双亲表示法存储哈夫曼树的创建、编码程序
+// 见06Tree.SHTree.h中
 
-// 用邻接矩阵存储、深度优先遍历图
-// 见AMGraph.h中
+// 编写邻接矩阵存储图的创建、广度优先遍历程序
+// 见08Graph.AMGraph.h中
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2010.exe
 // 12

@@ -2,12 +2,8 @@
 #include <SLList.h>
 
 // 判断带头结点单链表是否中心对称
-bool judgeSymmetry(SLList list)
+bool isSymmetry(SLList list)
 {
-    if (list == NULL)
-    {
-        return false;
-    }
     char stack[100];
     char queue[100];
     int top = -1, front = -1, rear = -1;
@@ -28,7 +24,7 @@ bool judgeSymmetry(SLList list)
     return true;
 }
 
-// 求带头结点单链表a和b的交集c
+// 生成带头结点单链表a和b的交集c
 bool getIntersection(SLList a, SLList b, SLList c)
 {
     if (a == NULL || b == NULL || c == NULL)
@@ -55,7 +51,8 @@ bool getIntersection(SLList a, SLList b, SLList c)
     return true;
 }
 
-// 递归计算二叉树的高度
+// 计算链式二叉树的高度和宽度
+// 见06Tree.LBTree.h
 int getHeight(LBTree tree)
 {
     if (tree == NULL)
@@ -65,39 +62,6 @@ int getHeight(LBTree tree)
     int leftHeight = getHeight(tree->left);
     int rightHeight = getHeight(tree->right);
     return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
-}
-
-// 计算二叉树的宽度
-int getWidth(LBTree tree)
-{
-    if (tree == NULL)
-    {
-        return 0;
-    }
-    LBTree queue[100];
-    int front = -1, rear = -1, last = 0, width = 0;
-    queue[++rear] = tree;
-    while (front != rear)
-    {
-        if (rear == last)
-        {
-            width = rear - front > width ? rear - front : width;
-        }
-        LBTree node = queue[++front];
-        if (node->left != NULL)
-        {
-            queue[++rear] = node->left;
-        }
-        if (node->right != NULL)
-        {
-            queue[++rear] = node->right;
-        }
-        if (front == last)
-        {
-            last = rear;
-        }
-    }
-    return width;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2017.exe
@@ -124,7 +88,7 @@ int main()
     printSLList(c);
 
 
-    if (judgeSymmetry(c))
+    if (isSymmetry(c))
     {
         printf("right\n");
     }
@@ -138,7 +102,7 @@ int main()
 
     LBTree tree = NULL;
     buildLBTree(&tree);
-    printf("%d %d\n", getHeight(tree), getWidth(tree));
+    printf("%d", getHeight(tree));
     destroyLBTree(&tree);
     return 0;
 }

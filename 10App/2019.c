@@ -1,8 +1,7 @@
-#include <SStack.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-// 编写循环队列，只有头指针和结点数，实现入队出队函数
+// 设计编写只有头指针和结点数的循环队列的入队、出队程序
 typedef struct Queue
 {
     int data[10];
@@ -57,20 +56,8 @@ int findKeyIndex(int* data, int* length, int key)
     return -1;
 }
 
-// 十进制正整数化为八进制正整数
-void baseConversion(SStack stack, int data)
-{
-    while (data > 0)
-    {
-        pushSStack(stack, data % 8);
-        data /= 8;
-    }
-    while (stack->top != -1)
-    {
-        popSStack(stack, &data);
-        printf("%d", data);
-    }
-}
+// 设计编写顺序栈实现进制转换的程序
+// 见10App.2010.c中
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2019.exe
 // 0 1 2 3 4 5 6 7 8 9
@@ -99,10 +86,5 @@ int main()
     int length = 10;
     int key = 10;
     printf("%d\n", findKeyIndex(data, &length, key));
-
-    SStack stack;
-    initiateSStack(&stack);
-    baseConversion(stack, 10);
-    destroySStack(&stack);
     return 0;
 }

@@ -1,83 +1,20 @@
-#include <LBTree.h>
-#include <SStack.h>
 #include <stdio.h>
 
-// 十进制正整数化为八进制正整数
-void baseConversion(SStack stack, int data)
-{
-    while (data > 0)
-    {
-        pushSStack(stack, data % 8);
-        data /= 8;
-    }
-    while (stack->top != -1)
-    {
-        popSStack(stack, &data);
-        printf("%d", data);
-    }
-    printf("\n");
-}
+// 设计编写顺序栈实现进制转换的程序
+// 见10App.2010.c中
 
-// 递归先序遍历二叉树
-void preOrderByRecursion(LBTree tree)
-{
-    if (tree != NULL)
-    {
-        printf("%c", tree->data);
-        preOrderByRecursion(tree->left);
-        preOrderByRecursion(tree->right);
-    }
-}
+// 设计链式二叉树的创建、先序遍历、中序遍历、后续遍历程序
+// 见10App.2009.c中
 
-// 递归中序遍历二叉树
-void inOrderByRecursion(LBTree tree)
-{
-    if (tree != NULL)
-    {
-        inOrderByRecursion(tree->left);
-        printf("%c", tree->data);
-        inOrderByRecursion(tree->right);
-    }
-}
-
-// 递归后序遍历二叉树
-void postOrderByRecursion(LBTree tree)
-{
-    if (tree != NULL)
-    {
-        postOrderByRecursion(tree->left);
-        postOrderByRecursion(tree->right);
-        printf("%c", tree->data);
-    }
-}
-
-// 创建大小无序长度为20000的顺序表，运用堆排序的思想打印出前20大的数
-// 见SelectHeap.h中
+// 设计堆排序打印出大小无序长度为20000的顺序表前20大的数据
+// 见09Sort.SelectHeap.h中
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2015.exe
-// 12
-// ab^^c^^
-// abc
-// bac
-// bca
-//
+// Hello World!
 // Process finished with exit code 0
 
 int main()
 {
-    SStack stack;
-    initiateSStack(&stack);
-    baseConversion(stack, 10);
-    destroySStack(&stack);
-
-    LBTree tree = NULL;
-    buildLBTree(&tree);
-    preOrderByRecursion(tree);
-    printf("\n");
-    inOrderByRecursion(tree);
-    printf("\n");
-    postOrderByRecursion(tree);
-    printf("\n");
-    destroyLBTree(&tree);
+    printf("Hello World!");
     return 0;
 }

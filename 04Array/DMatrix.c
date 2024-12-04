@@ -1,11 +1,9 @@
 #include <DMatrix.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\04Array.DMartrix.exe
-// 1 0 2 1 0 0
+// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\04Array.DMatrix.exe
 // 1 0 1
 // 0 2 0
 // 1 0 0
-// 1 0 2 0 0 3
 // 1 0 0
 // 0 2 0
 // 0 0 3
@@ -15,25 +13,27 @@
 //
 // Process finished with exit code 0
 
+
 int main()
 {
-    int leftData[100][100] = {{1, 0, 1}, {0, 2, 0}, {1, 0, 0}};
-    int rightData[100][100] = {{1, 0, 0}, {0, 2, 0}, {0, 0, 3}};
-    int finalData[100][100];
-    // 压缩矩阵
-    DMatrix leftMatrix = initiateDMatrix(leftData, 3, 3);
-    DMatrix rightMatrix = initiateDMatrix(rightData, 3, 3);
-    // 打印矩阵
+    int row = 3, column = 3;
+    int leftArray[100][100] = {{1, 0, 1}, {0, 2, 0}, {1, 0, 0}};
+    int rightArray[100][100] = {{1, 0, 0}, {0, 2, 0}, {0, 0, 3}};
+    int finalArray[100][100];
+    // 压缩对称矩阵
+    DMatrix leftMatrix = initiateDMatrix(leftArray, row, column);
+    DMatrix rightMatrix = initiateDMatrix(rightArray, row, column);
+    // 打印对称矩阵
     printDMatrix(leftMatrix);
     printDMatrix(rightMatrix);
-    // 矩阵相乘
-    multiplyDMartrix(leftMatrix, rightMatrix, finalData);
-    // 打印乘积
+    // 对称矩阵相乘
+    multiplyDMatrix(leftMatrix, rightMatrix, finalArray);
+    // 打印矩阵乘积
     for (int i = 0; i < leftMatrix.row; i++)
     {
         for (int j = 0; j < rightMatrix.column; j++)
         {
-            printf("%d ", finalData[i][j]);
+            printf("%d ", finalArray[i][j]);
         }
         printf("\n");
     }

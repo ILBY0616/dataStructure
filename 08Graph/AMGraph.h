@@ -7,12 +7,12 @@
 #include <stdio.h>
 
 // 邻接矩阵
-typedef struct Graph
+typedef struct AMGraph
 {
     char vertex[100];
     int edge[100][100];
     int vertexSum, edgeSum;
-} Graph, *AMGraph;
+}* AMGraph;
 
 // 开辟邻接矩阵
 bool initiateAMGraph(AMGraph* graph);
@@ -37,7 +37,7 @@ inline bool initiateAMGraph(AMGraph* graph)
     {
         return false;
     }
-    *graph = (AMGraph)malloc(sizeof(Graph));
+    *graph = (AMGraph)malloc(sizeof(struct AMGraph));
     if (*graph == NULL)
     {
         return false;

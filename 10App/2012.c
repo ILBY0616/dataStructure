@@ -17,9 +17,6 @@ int getKeySum(SLList list, int key)
     return sum;
 }
 
-// 统计链式二叉树结点数
-// 见10App.2008.c中
-
 // 移到所有奇数元素到所有偶数元素前面
 void oddToFront(int* data, int length)
 {

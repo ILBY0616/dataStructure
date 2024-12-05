@@ -28,7 +28,7 @@ bool isPalindrome(SStack stack, LQueue queue, int* data, int length)
     return true;
 }
 
-// 设计链式二叉树的创建、先序遍历、中序遍历、后续遍历程序
+// 设计链式二叉树的创建、先序遍历、中序遍历、后续遍历、销毁程序
 void preOrderByRecursion(LBTree tree)
 {
     if (tree != NULL)
@@ -59,9 +59,6 @@ void postOrderByRecursion(LBTree tree)
     }
 }
 
-// 编写邻接矩阵存储图的创建、广度优先遍历程序
-// 见08Graph.AMGraph.h中
-
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2009.exe
 // YES
 // ab^^c^^
@@ -70,7 +67,6 @@ void postOrderByRecursion(LBTree tree)
 // bca
 //
 // Process finished with exit code 0
-
 
 int main()
 {

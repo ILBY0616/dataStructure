@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 // 循环队
-typedef struct Queue
+typedef struct SQueue
 {
     int data[100];
     int size, front, rear;
-} Queue, *SQueue;
+}* SQueue;
 
 // 开辟循环队
 bool initiateSQueue(SQueue* queue);
@@ -28,7 +28,7 @@ inline bool initiateSQueue(SQueue* queue)
     {
         return false;
     }
-    *queue = (SQueue)malloc(sizeof(Queue));
+    *queue = (SQueue)malloc(sizeof(struct SQueue));
     if (*queue == NULL)
     {
         return false;

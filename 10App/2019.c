@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// 设计编写只有头指针和结点数的循环队列的入队、出队程序
+// 设计编写只有头指针和数据总数的循环队列的入队、出队程序
 typedef struct Queue
 {
     int data[10];
@@ -27,7 +27,7 @@ void outQueue(Queue queue, int* data)
     }
 }
 
-// 查找有序数组中值为key的下标，找不到则插入到合适位置，保持数组有序
+// 查找有序数组中值为key的下标i，查找失败则插入到合适位置，保持数组有序
 int findKeyIndex(int* data, int* length, int key)
 {
     int low = 0, mid = 0, high = *length - 1;
@@ -56,13 +56,9 @@ int findKeyIndex(int* data, int* length, int key)
     return -1;
 }
 
-// 设计编写顺序栈实现进制转换的程序
-// 见10App.2010.c中
-
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2019.exe
 // 0 1 2 3 4 5 6 7 8 9
-// -1
-// 12
+// 5
 // Process finished with exit code 0
 
 int main()
@@ -82,9 +78,9 @@ int main()
     printf("\n");
     free(queue);
 
-    int data[100] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    int key = 11;
     int length = 10;
-    int key = 10;
-    printf("%d\n", findKeyIndex(data, &length, key));
+    int data[100] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    printf("%d", findKeyIndex(data, &length, key));
     return 0;
 }

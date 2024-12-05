@@ -6,11 +6,11 @@
 #include <stdio.h>
 
 // 带头结点单链表
-typedef struct ListNode
+typedef struct SLListNode
 {
     int data;
-    struct ListNode* next;
-} ListNode, *SLList;
+    struct SLListNode* next;
+}* SLList;
 
 // 开辟带头结点单链表
 bool initiateSLList(SLList* list);
@@ -37,7 +37,7 @@ inline bool initiateSLList(SLList* list)
     {
         return false;
     }
-    *list = (SLList)malloc(sizeof(ListNode));
+    *list = (SLList)malloc(sizeof(struct SLListNode));
     if (*list == NULL)
     {
         return false;
@@ -55,7 +55,7 @@ inline bool buildSLListByHead(int* data, int length, SLList* list)
     initiateSLList(list);
     for (int i = 0; i < length; i++)
     {
-        SLList node = malloc(sizeof(ListNode));
+        SLList node = malloc(sizeof(struct SLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -80,7 +80,7 @@ inline bool buildSLListByTail(int* data, int length, SLList* list)
     SLList tail = *list;
     for (int i = 0; i < length; i++)
     {
-        SLList node = malloc(sizeof(ListNode));
+        SLList node = malloc(sizeof(struct SLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -125,7 +125,7 @@ inline bool insertSLList(SLList list, int location, int data)
         temp = temp->next;
         location--;
     }
-    SLList node = malloc(sizeof(ListNode));
+    SLList node = malloc(sizeof(struct SLListNode));
     if (node != NULL)
     {
         node->data = data;

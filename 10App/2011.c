@@ -50,9 +50,6 @@ void getNodeSum(LBTree tree, int* leafSum, int* branchSum)
     }
 }
 
-// 编写邻接表存储图的定义、创建程序
-// 见08Graph.ATGraph.h中
-
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2011.exe
 // -1 -2 -3 -4 -5
 // -5 -1 -2 -3 -4

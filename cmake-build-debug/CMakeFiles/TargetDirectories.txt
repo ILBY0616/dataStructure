@@ -27,10 +27,6 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SelectHeapS
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SelectStraightSort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SwapBubbleSort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/09Sort.SwapQuickSort.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.01List.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.04Array.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.07Search.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.09Sort.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2006.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2007.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2008.dir
@@ -38,16 +34,11 @@ D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2009.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2010.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2011.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2012.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2013.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2014.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2015.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2016.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2017.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2018.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2019.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2020.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2021.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/10App.2022.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -4,11 +4,11 @@
 #include <stdio.h>
 
 // 压缩矩阵
-typedef struct Matrix
+typedef struct DMatrix
 {
     int data[100];
     int row, column, length;
-} Matrix, DMatrix;
+} DMatrix;
 
 // 创建压缩矩阵
 DMatrix initiateDMatrix(int data[100][100], int row, int column);

@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 // 链栈
-typedef struct StackNode
+typedef struct LStackNode
 {
     int data;
-    struct StackNode* next;
-} StackNode, *LStack;
+    struct LStackNode* next;
+}* LStack;
 
 // 开辟链栈
 bool initiateLStack(LStack* stack);
@@ -44,7 +44,7 @@ inline bool getLStack(LStack stack, int* data)
 
 inline bool pushLStack(LStack* stack, int data)
 {
-    LStack node = malloc(sizeof(StackNode));
+    LStack node = malloc(sizeof(struct LStackNode));
     if (node == NULL)
     {
         return false;

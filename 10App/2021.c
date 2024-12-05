@@ -1,14 +1,10 @@
-// #include <ATGraph.h>
+#include <ATGraph.h>
 #include <LBTree.h>
 #include <SLList.h>
 
-// 简单选择排序带头结点单链表（一趟排序可以确定最终位置，可以只交换值不换指针）
-bool straightSelectSortSLList(SLList list)
+// 实现带头结点单链表的简单选择排序算法
+void sortSLList(SLList list)
 {
-    if (list == NULL || list->next == NULL)
-    {
-        return false;
-    }
     SLList pointer = list->next;
     while (pointer != NULL)
     {
@@ -32,56 +28,39 @@ bool straightSelectSortSLList(SLList list)
         // 进入下轮查找
         pointer = pointer->next;
     }
-    return true;
 }
 
-// 求n个结点的逆邻接表
-// ATGraph createInverseGraph(ATGraph graph)
-// {
-//     ATGraph inverseGraph = NULL;
-//     initiateATGraph(&inverseGraph);
-//     inverseGraph->vertexSum = graph->vertexSum;
-//     inverseGraph->edgeSum = graph->edgeSum;
-//     // 初始化逆邻接表的顶点
-//     for (int i = 0; i < inverseGraph->vertexSum; i++)
-//     {
-//         inverseGraph->vertex[i].data = graph->vertex[i].data;
-//         inverseGraph->vertex[i].first = NULL;
-//     }
-//     // 遍历原图的邻接表，构建逆邻接表
-//     for (int i = 0; i < graph->vertexSum; i++)
-//     {
-//         Edge* edge = graph->vertex[i].first;
-//         while (edge != NULL)
-//         {
-//             int targetIndex = -1;
-//             // 找到目标顶点的索引
-//             for (int j = 0; j < graph->vertexSum; j++)
-//             {
-//                 if (graph->vertex[j].data == edge->data)
-//                 {
-//                     targetIndex = j;
-//                     break;
-//                 }
-//             }
-//             // 添加逆边
-//             if (targetIndex != -1)
-//             {
-//                 Edge* inverseEdge = malloc(sizeof(Edge));
-//                 if (inverseEdge != NULL)
-//                 {
-//                     inverseEdge->data = graph->vertex[i].data; // 原顶点成为目标顶点的边
-//                     inverseEdge->next = inverseGraph->vertex[targetIndex].first;
-//                     inverseGraph->vertex[targetIndex].first = inverseEdge;
-//                 }
-//             }
-//             edge = edge->next;
-//         }
-//     }
-//     return inverseGraph;
-// }
+// 编写邻接表存储图转换为逆邻接表存储图的程序
+void getInverseATGraph(ATGraph originGraph, ATGraph* inverseGraph)
+{
+    // 初始化逆邻接表值
+    (*inverseGraph)->vertexSum = originGraph->vertexSum;
+    (*inverseGraph)->edgeSum = originGraph->edgeSum;
+    for (int i = 0; i < originGraph->vertexSum; i++)
+    {
+        (*inverseGraph)->vertex[i].data = originGraph->vertex[i].data;
+        (*inverseGraph)->vertex[i].first = NULL;
+    }
+    // 遍历原邻接表，建立逆邻接表
+    for (int i = 0; i < originGraph->vertexSum; i++)
+    {
+        Edge* edge = originGraph->vertex[i].first;
+        while (edge != NULL)
+        {
+            Edge* newEdge = malloc(sizeof(Edge));
+            if (newEdge != NULL)
+            {
+                newEdge->index = i;
+                newEdge->weight = edge->weight;
+                newEdge->next = (*inverseGraph)->vertex[edge->index].first;
+                (*inverseGraph)->vertex[edge->index].first = newEdge;
+            }
+            edge = edge->next;
+        }
+    }
+}
 
-// 递归交换左右子树
+// 编写交换链式二叉树左右子树的程序
 void swapChild(LBTree tree)
 {
     if (tree != NULL)
@@ -98,19 +77,31 @@ void swapChild(LBTree tree)
 // 5 2 3 1 4
 // 1 2 3 4 5
 // Input vertexSum edgeSum:
-// 2 1
+// 4 3
 // Input vertex 0's value:
 // a
 // Input vertex 1's value:
 // b
-// Input startIndex endIndex:
-// 0 1
+// Input vertex 2's value:
+// c
+// Input vertex 3's value:
+// d
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 3 3
 // ATGraph:
-// a->b
-// b
+// a->1
+// b->2
+// c->3
+// d
 // ATGraph:
 // a
-// b->a
+// b->0
+// c->1
+// d->2
 // ab^^c^^
 // abc
 // acb
@@ -123,19 +114,19 @@ int main()
     int data[5] = {5, 2, 3, 1, 4};
     buildSLListByTail(data, 5, &list);
     printSLList(list);
-    straightSelectSortSLList(list);
+    sortSLList(list);
     printSLList(list);
     destroySLList(&list);
 
-    // ATGraph graph = NULL;
-    // initiateATGraph(&graph);
-    // createDATGraph(graph);
-    // printATGraph(graph);
-    // ATGraph inverseGraph = createInverseGraph(graph);
-    // printATGraph(inverseGraph);
-    // destroyATGraph(&graph);
-    // destroyATGraph(&inverseGraph);
-    // getchar();
+    ATGraph originGraph = NULL, inverseGraph = NULL;
+    initiateATGraph(&originGraph);
+    initiateATGraph(&inverseGraph);
+    createDATGraph(originGraph);
+    printATGraph(originGraph);
+    getInverseATGraph(originGraph, &inverseGraph);
+    printATGraph(inverseGraph);
+    destroyATGraph(&originGraph);
+    destroyATGraph(&inverseGraph);
 
     LBTree tree = NULL;
     buildLBTree(&tree);

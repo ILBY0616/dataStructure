@@ -7,11 +7,11 @@
 #include <stdio.h>
 
 // 定长串
-typedef struct String
+typedef struct SString
 {
     char data[100];
     int size, length;
-} String, *SString;
+}* SString;
 
 // 创建定长串
 bool buildSString(char* data, SString* string);
@@ -32,7 +32,7 @@ inline bool buildSString(char* data, SString* string)
     {
         return false;
     }
-    *string = malloc(sizeof(String));
+    *string = malloc(sizeof(struct SString));
     if (*string == NULL)
     {
         return false;

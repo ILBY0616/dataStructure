@@ -6,11 +6,11 @@
 #include <stdio.h>
 
 // 动态顺序表
-typedef struct SList
+typedef struct DSList
 {
     int* data;
     int size, length;
-} SList, *DSList;
+}* DSList;
 
 // 开辟动态顺序表
 bool initiateDSList(DSList* list);
@@ -31,7 +31,7 @@ inline bool initiateDSList(DSList* list)
     {
         return false;
     }
-    *list = (DSList)malloc(sizeof(SList));
+    *list = (DSList)malloc(sizeof(struct DSList));
     if (*list == NULL)
     {
         return false;

@@ -12,11 +12,11 @@ typedef struct Triple
 } Triple;
 
 // 稀疏矩阵
-typedef struct Matrix
+typedef struct SMatrix
 {
     Triple data[100];
     int row, column, length;
-} Matrix, SMatrix;
+} SMatrix;
 
 // 创建稀疏矩阵
 SMatrix initiateSMatrix(int data[100][100], int row, int column);

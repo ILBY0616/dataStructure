@@ -1,4 +1,4 @@
-#include <LBTree.h>
+#include <ATGraph.h>
 #include <SLList.h>
 
 // 生成有序带头结点单链表a和b的有序并集c
@@ -19,31 +19,46 @@ void mergeSortList(SLList a, SLList b, SLList c)
         }
         k = k->next;
     }
+    a->next = NULL;
+    b->next = NULL;
     k->next = i != NULL ? i : j;
 }
 
 // 统计邻接表存储的有向图中出度为零的结点数
-
-// 计算链式二叉树的高度和宽度
-// 见06Tree.LBTree.h
-int getHeight(LBTree tree)
+int getZeroSum(ATGraph graph)
 {
-    if (tree == NULL)
+    int sum = 0;
+    for (int i = 0; i < graph->vertexSum; i++)
     {
-        return 0;
+        if (graph->vertex[i].first == NULL)
+        {
+            sum++;
+        }
     }
-    int leftHeight = getHeight(tree->left);
-    int rightHeight = getHeight(tree->right);
-    return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
+    return sum;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2018.exe
 // 1 2 3 4 5
 // 5 6 7 8 9
 // 1 2 3 4 5 5 6 7 8 9
-// abd^^e^^cf^^g^^
-// 3 4
-//
+// Input vertexSum edgeSum:
+// 4 3
+// Input vertex 0's value:
+// a
+// Input vertex 1's value:
+// b
+// Input vertex 2's value:
+// c
+// Input vertex 3's value:
+// d
+// Input startIndex endIndex weight:
+// 0 1 1
+// Input startIndex endIndex weight:
+// 1 2 2
+// Input startIndex endIndex weight:
+// 2 3 3
+// 1
 // Process finished with exit code 0
 
 int main()
@@ -61,5 +76,11 @@ int main()
     destroySLList(&a);
     destroySLList(&b);
     destroySLList(&c);
+
+    ATGraph graph = NULL;
+    initiateATGraph(&graph);
+    createDATGraph(graph);
+    printf("%d", getZeroSum(graph));
+    destroyATGraph(&graph);
     return 0;
 }

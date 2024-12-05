@@ -7,11 +7,11 @@
 #include <stdio.h>
 
 // 链串
-typedef struct StringNode
+typedef struct LStringNode
 {
     char data;
-    struct StringNode* next;
-} StringNode, *LString;
+    struct LStringNode* next;
+}* LString;
 
 // 创建链串
 bool buildLString(char* data, LString* string);
@@ -32,7 +32,7 @@ inline bool buildLString(char* data, LString* string)
     LString tail = NULL;
     for (int i = 0; i < strlen(data); i++)
     {
-        LString node = malloc(sizeof(StringNode));
+        LString node = malloc(sizeof(struct LStringNode));
         if (node != NULL)
         {
             node->data = data[i];

@@ -5,16 +5,16 @@
 #include <stdlib.h>
 
 // 链队
-typedef struct QueueNode
+typedef struct LQueueNode
 {
     int data;
-    struct QueueNode* next;
-} QueueNode;
+    struct LQueueNode* next;
+} LQueueNode;
 
-typedef struct Queue
+typedef struct LQueue
 {
-    QueueNode *front, *rear;
-} Queue, *LQueue;
+    LQueueNode *front, *rear;
+}* LQueue;
 
 // 开辟链队
 bool initiateLQueue(LQueue* queue);
@@ -33,7 +33,7 @@ inline bool initiateLQueue(LQueue* queue)
     {
         return false;
     }
-    *queue = (LQueue)malloc(sizeof(Queue));
+    *queue = (LQueue)malloc(sizeof(struct LQueue));
     if (*queue == NULL)
     {
         return false;
@@ -59,7 +59,7 @@ inline bool inLQueue(LQueue queue, int data)
     {
         return false;
     }
-    QueueNode* node = malloc(sizeof(QueueNode));
+    LQueueNode* node = malloc(sizeof(LQueueNode));
     if (node == NULL)
     {
         return false;
@@ -85,7 +85,7 @@ inline bool outLQueue(LQueue queue, int* data)
         return false;
     }
     *data = queue->front->data;
-    QueueNode* node = queue->front;
+    LQueueNode* node = queue->front;
     queue->front = queue->front->next;
     free(node);
     return true;
@@ -95,7 +95,7 @@ inline void destroyLQueue(LQueue* queue)
 {
     while (*queue != NULL && (*queue)->front != NULL)
     {
-        QueueNode* node = (*queue)->front;
+        LQueueNode* node = (*queue)->front;
         (*queue)->front = (*queue)->front->next;
         free(node);
     }

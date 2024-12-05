@@ -37,7 +37,7 @@ bool getIntersection(SLList a, SLList b, SLList c)
         {
             if (j->data == i->data)
             {
-                SLList k = malloc(sizeof(ListNode));
+                SLList k = malloc(sizeof(struct SLListNode));
                 if (k != NULL)
                 {
                     k->data = j->data;
@@ -52,7 +52,6 @@ bool getIntersection(SLList a, SLList b, SLList c)
 }
 
 // 计算链式二叉树的高度和宽度
-// 见06Tree.LBTree.h
 int getHeight(LBTree tree)
 {
     if (tree == NULL)
@@ -70,8 +69,7 @@ int getHeight(LBTree tree)
 // 5
 // right
 // ab^^c^^
-// 2 2
-//
+// 2
 // Process finished with exit code 0
 
 int main()

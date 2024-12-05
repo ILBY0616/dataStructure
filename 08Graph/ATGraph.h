@@ -22,11 +22,11 @@ typedef struct Vertex
 } Vertex;
 
 // 邻接表
-typedef struct Graph
+typedef struct ATGraph
 {
     Vertex vertex[100];
     int vertexSum, edgeSum;
-} Graph, *ATGraph;
+}* ATGraph;
 
 // 开辟邻接表
 bool initiateATGraph(ATGraph* graph);
@@ -51,7 +51,7 @@ inline bool initiateATGraph(ATGraph* graph)
     {
         return false;
     }
-    *graph = (ATGraph)malloc(sizeof(Graph));
+    *graph = (ATGraph)malloc(sizeof(struct ATGraph));
     if (*graph == NULL)
     {
         return false;

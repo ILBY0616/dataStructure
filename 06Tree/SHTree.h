@@ -7,11 +7,11 @@
 #include <stdio.h>
 
 // 顺序哈夫曼树结点
-typedef struct TreeNode
+typedef struct SHTreeNode
 {
     char data;
     int up, left, right, weight;
-} TreeNode, *SHTree;
+}* SHTree;
 
 // 初始顺序哈夫曼树
 bool initiateSHTree(SHTree* tree, int length);
@@ -26,7 +26,7 @@ inline bool initiateSHTree(SHTree* tree, int length)
     {
         return false;
     }
-    *tree = (SHTree)malloc(2 * length * sizeof(TreeNode));
+    *tree = (SHTree)malloc(2 * length * sizeof(struct SHTreeNode));
     if (*tree == NULL)
     {
         return false;

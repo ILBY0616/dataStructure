@@ -23,9 +23,6 @@ int findIndex(int* data, int length)
     return -1;
 }
 
-// 编写压缩存储的对称矩阵乘法程序
-// 见04Array.DMartrix.h中
-
 // 编写实现双向交替冒泡排序算法的程序
 void doubleBubble(int* data, int length)
 {
@@ -70,7 +67,6 @@ void doubleBubble(int* data, int length)
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2006.exe
 // 4
 // 0 1 2 3 4 5 6 7 8 9
-//
 // Process finished with exit code 0
 
 int main()

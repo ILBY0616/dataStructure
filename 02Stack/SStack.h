@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 // 顺序栈
-typedef struct Stack
+typedef struct SStack
 {
     int data[100];
     int top, size;
-} Stack, *SStack;
+}* SStack;
 
 // 开辟顺序栈
 bool initiateSStack(SStack* stack);
@@ -28,7 +28,7 @@ inline bool initiateSStack(SStack* stack)
     {
         return false;
     }
-    *stack = (SStack)malloc(sizeof(Stack));
+    *stack = (SStack)malloc(sizeof(struct SStack));
     if (*stack == NULL)
     {
         return false;

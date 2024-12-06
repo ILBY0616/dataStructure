@@ -31,4 +31,3 @@ int main()
     destroySLList(&list);
     return 0;
 }
-

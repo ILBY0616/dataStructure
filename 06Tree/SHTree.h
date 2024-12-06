@@ -19,6 +19,8 @@ bool initiateSHTree(SHTree* tree, int length);
 bool buildSHTree(SHTree* tree, int length);
 // 编码顺序哈夫曼树
 bool buildSHTreeCode(SHTree* tree, int length);
+// 销毁顺序哈夫曼树
+bool destroySHTree(SHTree* tree);
 
 inline bool initiateSHTree(SHTree* tree, int length)
 {
@@ -118,6 +120,17 @@ inline bool buildSHTreeCode(SHTree* tree, int length)
         }
         printf("%c: %s\n", (*tree)[i].data, code);
     }
+    return true;
+}
+
+inline bool destroySHTree(SHTree* tree)
+{
+    if (*tree == NULL)
+    {
+        return false;
+    }
+    free(*tree);
+    *tree = NULL;
     return true;
 }
 

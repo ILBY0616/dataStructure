@@ -6,24 +6,24 @@
 #include <string.h>
 #include <stdio.h>
 
-// 定长串
+// 顺序串
 typedef struct SString
 {
     char data[100];
     int size, length;
 }* SString;
 
-// 创建定长串
+// 创建顺序串
 bool buildSString(char* data, SString* string);
 // 获取新下标
 void getNext(SString string, int next[]);
 // 获取新下标
 void getNextVal(SString string, int next[], int nextVal[]);
-// 匹配定长串
+// 匹配顺序串
 int matchSString(SString mainString, SString subString);
-// 打印定长串
+// 打印顺序串
 void printSString(SString string);
-// 销毁定长串
+// 销毁顺序串
 void destroySString(SString* string);
 
 inline bool buildSString(char* data, SString* string)

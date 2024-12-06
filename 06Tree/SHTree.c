@@ -20,5 +20,6 @@ int main()
     initiateSHTree(&tree, length);
     buildSHTree(&tree, length);
     buildSHTreeCode(&tree, length);
+    destroySHTree(&tree);
     return 0;
 }

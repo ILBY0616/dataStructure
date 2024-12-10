@@ -41,6 +41,41 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target 01List.01List
+
+
+#############################################
+# Order-only phony target for 01List.01List
+
+build cmake_object_order_depends_target_01List.01List: phony || .
+
+build CMakeFiles/01List.01List.dir/01List/01List.c.obj: C_COMPILER__01List.2e01List_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/01List.c || cmake_object_order_depends_target_01List.01List
+  DEP_FILE = CMakeFiles\01List.01List.dir\01List\01List.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\01List.01List.dir
+  OBJECT_FILE_DIR = CMakeFiles\01List.01List.dir\01List
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 01List.01List
+
+
+#############################################
+# Link the executable 01List.01List.exe
+
+build 01List.01List.exe: C_EXECUTABLE_LINKER__01List.2e01List_Debug CMakeFiles/01List.01List.dir/01List/01List.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\01List.01List.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 01List.01List.exe
+  TARGET_IMPLIB = lib01List.01List.dll.a
+  TARGET_PDB = 01List.01List.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 01List.DLList
 
 
@@ -52,7 +87,7 @@ build cmake_object_order_depends_target_01List.DLList: phony || .
 build CMakeFiles/01List.DLList.dir/01List/DLList.c.obj: C_COMPILER__01List.2eDLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/DLList.c || cmake_object_order_depends_target_01List.DLList
   DEP_FILE = CMakeFiles\01List.DLList.dir\01List\DLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\01List.DLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.DLList.dir\01List
 
@@ -87,7 +122,7 @@ build cmake_object_order_depends_target_01List.DSList: phony || .
 build CMakeFiles/01List.DSList.dir/01List/DSList.c.obj: C_COMPILER__01List.2eDSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/DSList.c || cmake_object_order_depends_target_01List.DSList
   DEP_FILE = CMakeFiles\01List.DSList.dir\01List\DSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\01List.DSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.DSList.dir\01List
 
@@ -122,7 +157,7 @@ build cmake_object_order_depends_target_01List.SLList: phony || .
 build CMakeFiles/01List.SLList.dir/01List/SLList.c.obj: C_COMPILER__01List.2eSLList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SLList.c || cmake_object_order_depends_target_01List.SLList
   DEP_FILE = CMakeFiles\01List.SLList.dir\01List\SLList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\01List.SLList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SLList.dir\01List
 
@@ -157,7 +192,7 @@ build cmake_object_order_depends_target_01List.SSList: phony || .
 build CMakeFiles/01List.SSList.dir/01List/SSList.c.obj: C_COMPILER__01List.2eSSList_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/SSList.c || cmake_object_order_depends_target_01List.SSList
   DEP_FILE = CMakeFiles\01List.SSList.dir\01List\SSList.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\01List.SSList.dir
   OBJECT_FILE_DIR = CMakeFiles\01List.SSList.dir\01List
 
@@ -181,6 +216,41 @@ build 01List.SSList.exe: C_EXECUTABLE_LINKER__01List.2eSSList_Debug CMakeFiles/0
   TARGET_PDB = 01List.SSList.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 02Stack.02Stack
+
+
+#############################################
+# Order-only phony target for 02Stack.02Stack
+
+build cmake_object_order_depends_target_02Stack.02Stack: phony || .
+
+build CMakeFiles/02Stack.02Stack.dir/02Stack/02Stack.c.obj: C_COMPILER__02Stack.2e02Stack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/02Stack.c || cmake_object_order_depends_target_02Stack.02Stack
+  DEP_FILE = CMakeFiles\02Stack.02Stack.dir\02Stack\02Stack.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\02Stack.02Stack.dir
+  OBJECT_FILE_DIR = CMakeFiles\02Stack.02Stack.dir\02Stack
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 02Stack.02Stack
+
+
+#############################################
+# Link the executable 02Stack.02Stack.exe
+
+build 02Stack.02Stack.exe: C_EXECUTABLE_LINKER__02Stack.2e02Stack_Debug CMakeFiles/02Stack.02Stack.dir/02Stack/02Stack.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\02Stack.02Stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 02Stack.02Stack.exe
+  TARGET_IMPLIB = lib02Stack.02Stack.dll.a
+  TARGET_PDB = 02Stack.02Stack.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 02Stack.LStack
 
 
@@ -192,7 +262,7 @@ build cmake_object_order_depends_target_02Stack.LStack: phony || .
 build CMakeFiles/02Stack.LStack.dir/02Stack/LStack.c.obj: C_COMPILER__02Stack.2eLStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/LStack.c || cmake_object_order_depends_target_02Stack.LStack
   DEP_FILE = CMakeFiles\02Stack.LStack.dir\02Stack\LStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\02Stack.LStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.LStack.dir\02Stack
 
@@ -227,7 +297,7 @@ build cmake_object_order_depends_target_02Stack.SStack: phony || .
 build CMakeFiles/02Stack.SStack.dir/02Stack/SStack.c.obj: C_COMPILER__02Stack.2eSStack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/SStack.c || cmake_object_order_depends_target_02Stack.SStack
   DEP_FILE = CMakeFiles\02Stack.SStack.dir\02Stack\SStack.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\02Stack.SStack.dir
   OBJECT_FILE_DIR = CMakeFiles\02Stack.SStack.dir\02Stack
 
@@ -251,6 +321,41 @@ build 02Stack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack_Debug CMakeFiles
   TARGET_PDB = 02Stack.SStack.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 03Queue.03Queue
+
+
+#############################################
+# Order-only phony target for 03Queue.03Queue
+
+build cmake_object_order_depends_target_03Queue.03Queue: phony || .
+
+build CMakeFiles/03Queue.03Queue.dir/03Queue/03Queue.c.obj: C_COMPILER__03Queue.2e03Queue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/03Queue.c || cmake_object_order_depends_target_03Queue.03Queue
+  DEP_FILE = CMakeFiles\03Queue.03Queue.dir\03Queue\03Queue.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\03Queue.03Queue.dir
+  OBJECT_FILE_DIR = CMakeFiles\03Queue.03Queue.dir\03Queue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 03Queue.03Queue
+
+
+#############################################
+# Link the executable 03Queue.03Queue.exe
+
+build 03Queue.03Queue.exe: C_EXECUTABLE_LINKER__03Queue.2e03Queue_Debug CMakeFiles/03Queue.03Queue.dir/03Queue/03Queue.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\03Queue.03Queue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 03Queue.03Queue.exe
+  TARGET_IMPLIB = lib03Queue.03Queue.dll.a
+  TARGET_PDB = 03Queue.03Queue.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 03Queue.LQueue
 
 
@@ -262,7 +367,7 @@ build cmake_object_order_depends_target_03Queue.LQueue: phony || .
 build CMakeFiles/03Queue.LQueue.dir/03Queue/LQueue.c.obj: C_COMPILER__03Queue.2eLQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/LQueue.c || cmake_object_order_depends_target_03Queue.LQueue
   DEP_FILE = CMakeFiles\03Queue.LQueue.dir\03Queue\LQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\03Queue.LQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.LQueue.dir\03Queue
 
@@ -297,7 +402,7 @@ build cmake_object_order_depends_target_03Queue.SQueue: phony || .
 build CMakeFiles/03Queue.SQueue.dir/03Queue/SQueue.c.obj: C_COMPILER__03Queue.2eSQueue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/SQueue.c || cmake_object_order_depends_target_03Queue.SQueue
   DEP_FILE = CMakeFiles\03Queue.SQueue.dir\03Queue\SQueue.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\03Queue.SQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\03Queue.SQueue.dir\03Queue
 
@@ -332,7 +437,7 @@ build cmake_object_order_depends_target_04Array.DMatrix: phony || .
 build CMakeFiles/04Array.DMatrix.dir/04Array/DMatrix.c.obj: C_COMPILER__04Array.2eDMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/DMatrix.c || cmake_object_order_depends_target_04Array.DMatrix
   DEP_FILE = CMakeFiles\04Array.DMatrix.dir\04Array\DMatrix.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\04Array.DMatrix.dir
   OBJECT_FILE_DIR = CMakeFiles\04Array.DMatrix.dir\04Array
 
@@ -367,7 +472,7 @@ build cmake_object_order_depends_target_04Array.SMatrix: phony || .
 build CMakeFiles/04Array.SMatrix.dir/04Array/SMatrix.c.obj: C_COMPILER__04Array.2eSMatrix_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/04Array/SMatrix.c || cmake_object_order_depends_target_04Array.SMatrix
   DEP_FILE = CMakeFiles\04Array.SMatrix.dir\04Array\SMatrix.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\04Array.SMatrix.dir
   OBJECT_FILE_DIR = CMakeFiles\04Array.SMatrix.dir\04Array
 
@@ -391,6 +496,41 @@ build 04Array.SMatrix.exe: C_EXECUTABLE_LINKER__04Array.2eSMatrix_Debug CMakeFil
   TARGET_PDB = 04Array.SMatrix.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 05String.05String
+
+
+#############################################
+# Order-only phony target for 05String.05String
+
+build cmake_object_order_depends_target_05String.05String: phony || .
+
+build CMakeFiles/05String.05String.dir/05String/05String.c.obj: C_COMPILER__05String.2e05String_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/05String.c || cmake_object_order_depends_target_05String.05String
+  DEP_FILE = CMakeFiles\05String.05String.dir\05String\05String.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\05String.05String.dir
+  OBJECT_FILE_DIR = CMakeFiles\05String.05String.dir\05String
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 05String.05String
+
+
+#############################################
+# Link the executable 05String.05String.exe
+
+build 05String.05String.exe: C_EXECUTABLE_LINKER__05String.2e05String_Debug CMakeFiles/05String.05String.dir/05String/05String.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\05String.05String.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 05String.05String.exe
+  TARGET_IMPLIB = lib05String.05String.dll.a
+  TARGET_PDB = 05String.05String.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 05String.LString
 
 
@@ -402,7 +542,7 @@ build cmake_object_order_depends_target_05String.LString: phony || .
 build CMakeFiles/05String.LString.dir/05String/LString.c.obj: C_COMPILER__05String.2eLString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/LString.c || cmake_object_order_depends_target_05String.LString
   DEP_FILE = CMakeFiles\05String.LString.dir\05String\LString.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\05String.LString.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.LString.dir\05String
 
@@ -437,7 +577,7 @@ build cmake_object_order_depends_target_05String.SString: phony || .
 build CMakeFiles/05String.SString.dir/05String/SString.c.obj: C_COMPILER__05String.2eSString_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/SString.c || cmake_object_order_depends_target_05String.SString
   DEP_FILE = CMakeFiles\05String.SString.dir\05String\SString.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\05String.SString.dir
   OBJECT_FILE_DIR = CMakeFiles\05String.SString.dir\05String
 
@@ -472,7 +612,7 @@ build cmake_object_order_depends_target_06Tree.LBTree: phony || .
 build CMakeFiles/06Tree.LBTree.dir/06Tree/LBTree.c.obj: C_COMPILER__06Tree.2eLBTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/LBTree.c || cmake_object_order_depends_target_06Tree.LBTree
   DEP_FILE = CMakeFiles\06Tree.LBTree.dir\06Tree\LBTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\06Tree.LBTree.dir
   OBJECT_FILE_DIR = CMakeFiles\06Tree.LBTree.dir\06Tree
 
@@ -507,7 +647,7 @@ build cmake_object_order_depends_target_06Tree.SHTree: phony || .
 build CMakeFiles/06Tree.SHTree.dir/06Tree/SHTree.c.obj: C_COMPILER__06Tree.2eSHTree_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/06Tree/SHTree.c || cmake_object_order_depends_target_06Tree.SHTree
   DEP_FILE = CMakeFiles\06Tree.SHTree.dir\06Tree\SHTree.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\06Tree.SHTree.dir
   OBJECT_FILE_DIR = CMakeFiles\06Tree.SHTree.dir\06Tree
 
@@ -531,179 +671,179 @@ build 06Tree.SHTree.exe: C_EXECUTABLE_LINKER__06Tree.2eSHTree_Debug CMakeFiles/0
   TARGET_PDB = 06Tree.SHTree.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.BlockSearch
+# Object build statements for EXECUTABLE target 07Graph.AMGraph
 
 
 #############################################
-# Order-only phony target for 07Search.BlockSearch
+# Order-only phony target for 07Graph.AMGraph
 
-build cmake_object_order_depends_target_07Search.BlockSearch: phony || .
+build cmake_object_order_depends_target_07Graph.AMGraph: phony || .
 
-build CMakeFiles/07Search.BlockSearch.dir/07Search/BlockSearch.c.obj: C_COMPILER__07Search.2eBlockSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/BlockSearch.c || cmake_object_order_depends_target_07Search.BlockSearch
-  DEP_FILE = CMakeFiles\07Search.BlockSearch.dir\07Search\BlockSearch.c.obj.d
+build CMakeFiles/07Graph.AMGraph.dir/07Graph/AMGraph.c.obj: C_COMPILER__07Graph.2eAMGraph_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Graph/AMGraph.c || cmake_object_order_depends_target_07Graph.AMGraph
+  DEP_FILE = CMakeFiles\07Graph.AMGraph.dir\07Graph\AMGraph.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.BlockSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.BlockSearch.dir\07Search
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\07Graph.AMGraph.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Graph.AMGraph.dir\07Graph
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.BlockSearch
+# Link build statements for EXECUTABLE target 07Graph.AMGraph
 
 
 #############################################
-# Link the executable 07Search.BlockSearch.exe
+# Link the executable 07Graph.AMGraph.exe
 
-build 07Search.BlockSearch.exe: C_EXECUTABLE_LINKER__07Search.2eBlockSearch_Debug CMakeFiles/07Search.BlockSearch.dir/07Search/BlockSearch.c.obj
+build 07Graph.AMGraph.exe: C_EXECUTABLE_LINKER__07Graph.2eAMGraph_Debug CMakeFiles/07Graph.AMGraph.dir/07Graph/AMGraph.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.BlockSearch.dir
+  OBJECT_DIR = CMakeFiles\07Graph.AMGraph.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.BlockSearch.exe
-  TARGET_IMPLIB = lib07Search.BlockSearch.dll.a
-  TARGET_PDB = 07Search.BlockSearch.exe.dbg
+  TARGET_FILE = 07Graph.AMGraph.exe
+  TARGET_IMPLIB = lib07Graph.AMGraph.dll.a
+  TARGET_PDB = 07Graph.AMGraph.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.FoldSearch
+# Object build statements for EXECUTABLE target 07Graph.ATGraph
 
 
 #############################################
-# Order-only phony target for 07Search.FoldSearch
+# Order-only phony target for 07Graph.ATGraph
 
-build cmake_object_order_depends_target_07Search.FoldSearch: phony || .
+build cmake_object_order_depends_target_07Graph.ATGraph: phony || .
 
-build CMakeFiles/07Search.FoldSearch.dir/07Search/FoldSearch.c.obj: C_COMPILER__07Search.2eFoldSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/FoldSearch.c || cmake_object_order_depends_target_07Search.FoldSearch
-  DEP_FILE = CMakeFiles\07Search.FoldSearch.dir\07Search\FoldSearch.c.obj.d
+build CMakeFiles/07Graph.ATGraph.dir/07Graph/ATGraph.c.obj: C_COMPILER__07Graph.2eATGraph_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Graph/ATGraph.c || cmake_object_order_depends_target_07Graph.ATGraph
+  DEP_FILE = CMakeFiles\07Graph.ATGraph.dir\07Graph\ATGraph.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.FoldSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.FoldSearch.dir\07Search
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\07Graph.ATGraph.dir
+  OBJECT_FILE_DIR = CMakeFiles\07Graph.ATGraph.dir\07Graph
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.FoldSearch
+# Link build statements for EXECUTABLE target 07Graph.ATGraph
 
 
 #############################################
-# Link the executable 07Search.FoldSearch.exe
+# Link the executable 07Graph.ATGraph.exe
 
-build 07Search.FoldSearch.exe: C_EXECUTABLE_LINKER__07Search.2eFoldSearch_Debug CMakeFiles/07Search.FoldSearch.dir/07Search/FoldSearch.c.obj
+build 07Graph.ATGraph.exe: C_EXECUTABLE_LINKER__07Graph.2eATGraph_Debug CMakeFiles/07Graph.ATGraph.dir/07Graph/ATGraph.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.FoldSearch.dir
+  OBJECT_DIR = CMakeFiles\07Graph.ATGraph.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.FoldSearch.exe
-  TARGET_IMPLIB = lib07Search.FoldSearch.dll.a
-  TARGET_PDB = 07Search.FoldSearch.exe.dbg
+  TARGET_FILE = 07Graph.ATGraph.exe
+  TARGET_IMPLIB = lib07Graph.ATGraph.dll.a
+  TARGET_PDB = 07Graph.ATGraph.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 07Search.SequenceSearch
+# Object build statements for EXECUTABLE target 08Search.BlockSearch
 
 
 #############################################
-# Order-only phony target for 07Search.SequenceSearch
+# Order-only phony target for 08Search.BlockSearch
 
-build cmake_object_order_depends_target_07Search.SequenceSearch: phony || .
+build cmake_object_order_depends_target_08Search.BlockSearch: phony || .
 
-build CMakeFiles/07Search.SequenceSearch.dir/07Search/SequenceSearch.c.obj: C_COMPILER__07Search.2eSequenceSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/07Search/SequenceSearch.c || cmake_object_order_depends_target_07Search.SequenceSearch
-  DEP_FILE = CMakeFiles\07Search.SequenceSearch.dir\07Search\SequenceSearch.c.obj.d
+build CMakeFiles/08Search.BlockSearch.dir/08Search/BlockSearch.c.obj: C_COMPILER__08Search.2eBlockSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/BlockSearch.c || cmake_object_order_depends_target_08Search.BlockSearch
+  DEP_FILE = CMakeFiles\08Search.BlockSearch.dir\08Search\BlockSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\07Search.SequenceSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\07Search.SequenceSearch.dir\07Search
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.BlockSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.BlockSearch.dir\08Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 07Search.SequenceSearch
+# Link build statements for EXECUTABLE target 08Search.BlockSearch
 
 
 #############################################
-# Link the executable 07Search.SequenceSearch.exe
+# Link the executable 08Search.BlockSearch.exe
 
-build 07Search.SequenceSearch.exe: C_EXECUTABLE_LINKER__07Search.2eSequenceSearch_Debug CMakeFiles/07Search.SequenceSearch.dir/07Search/SequenceSearch.c.obj
+build 08Search.BlockSearch.exe: C_EXECUTABLE_LINKER__08Search.2eBlockSearch_Debug CMakeFiles/08Search.BlockSearch.dir/08Search/BlockSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\07Search.SequenceSearch.dir
+  OBJECT_DIR = CMakeFiles\08Search.BlockSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 07Search.SequenceSearch.exe
-  TARGET_IMPLIB = lib07Search.SequenceSearch.dll.a
-  TARGET_PDB = 07Search.SequenceSearch.exe.dbg
+  TARGET_FILE = 08Search.BlockSearch.exe
+  TARGET_IMPLIB = lib08Search.BlockSearch.dll.a
+  TARGET_PDB = 08Search.BlockSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Graph.AMGraph
+# Object build statements for EXECUTABLE target 08Search.FoldSearch
 
 
 #############################################
-# Order-only phony target for 08Graph.AMGraph
+# Order-only phony target for 08Search.FoldSearch
 
-build cmake_object_order_depends_target_08Graph.AMGraph: phony || .
+build cmake_object_order_depends_target_08Search.FoldSearch: phony || .
 
-build CMakeFiles/08Graph.AMGraph.dir/08Graph/AMGraph.c.obj: C_COMPILER__08Graph.2eAMGraph_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Graph/AMGraph.c || cmake_object_order_depends_target_08Graph.AMGraph
-  DEP_FILE = CMakeFiles\08Graph.AMGraph.dir\08Graph\AMGraph.c.obj.d
+build CMakeFiles/08Search.FoldSearch.dir/08Search/FoldSearch.c.obj: C_COMPILER__08Search.2eFoldSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/FoldSearch.c || cmake_object_order_depends_target_08Search.FoldSearch
+  DEP_FILE = CMakeFiles\08Search.FoldSearch.dir\08Search\FoldSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\08Graph.AMGraph.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Graph.AMGraph.dir\08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.FoldSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.FoldSearch.dir\08Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Graph.AMGraph
+# Link build statements for EXECUTABLE target 08Search.FoldSearch
 
 
 #############################################
-# Link the executable 08Graph.AMGraph.exe
+# Link the executable 08Search.FoldSearch.exe
 
-build 08Graph.AMGraph.exe: C_EXECUTABLE_LINKER__08Graph.2eAMGraph_Debug CMakeFiles/08Graph.AMGraph.dir/08Graph/AMGraph.c.obj
+build 08Search.FoldSearch.exe: C_EXECUTABLE_LINKER__08Search.2eFoldSearch_Debug CMakeFiles/08Search.FoldSearch.dir/08Search/FoldSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Graph.AMGraph.dir
+  OBJECT_DIR = CMakeFiles\08Search.FoldSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Graph.AMGraph.exe
-  TARGET_IMPLIB = lib08Graph.AMGraph.dll.a
-  TARGET_PDB = 08Graph.AMGraph.exe.dbg
+  TARGET_FILE = 08Search.FoldSearch.exe
+  TARGET_IMPLIB = lib08Search.FoldSearch.dll.a
+  TARGET_PDB = 08Search.FoldSearch.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 08Graph.ATGraph
+# Object build statements for EXECUTABLE target 08Search.SequenceSearch
 
 
 #############################################
-# Order-only phony target for 08Graph.ATGraph
+# Order-only phony target for 08Search.SequenceSearch
 
-build cmake_object_order_depends_target_08Graph.ATGraph: phony || .
+build cmake_object_order_depends_target_08Search.SequenceSearch: phony || .
 
-build CMakeFiles/08Graph.ATGraph.dir/08Graph/ATGraph.c.obj: C_COMPILER__08Graph.2eATGraph_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Graph/ATGraph.c || cmake_object_order_depends_target_08Graph.ATGraph
-  DEP_FILE = CMakeFiles\08Graph.ATGraph.dir\08Graph\ATGraph.c.obj.d
+build CMakeFiles/08Search.SequenceSearch.dir/08Search/SequenceSearch.c.obj: C_COMPILER__08Search.2eSequenceSearch_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/SequenceSearch.c || cmake_object_order_depends_target_08Search.SequenceSearch
+  DEP_FILE = CMakeFiles\08Search.SequenceSearch.dir\08Search\SequenceSearch.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
-  OBJECT_DIR = CMakeFiles\08Graph.ATGraph.dir
-  OBJECT_FILE_DIR = CMakeFiles\08Graph.ATGraph.dir\08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.SequenceSearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.SequenceSearch.dir\08Search
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 08Graph.ATGraph
+# Link build statements for EXECUTABLE target 08Search.SequenceSearch
 
 
 #############################################
-# Link the executable 08Graph.ATGraph.exe
+# Link the executable 08Search.SequenceSearch.exe
 
-build 08Graph.ATGraph.exe: C_EXECUTABLE_LINKER__08Graph.2eATGraph_Debug CMakeFiles/08Graph.ATGraph.dir/08Graph/ATGraph.c.obj
+build 08Search.SequenceSearch.exe: C_EXECUTABLE_LINKER__08Search.2eSequenceSearch_Debug CMakeFiles/08Search.SequenceSearch.dir/08Search/SequenceSearch.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\08Graph.ATGraph.dir
+  OBJECT_DIR = CMakeFiles\08Search.SequenceSearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 08Graph.ATGraph.exe
-  TARGET_IMPLIB = lib08Graph.ATGraph.dll.a
-  TARGET_PDB = 08Graph.ATGraph.exe.dbg
+  TARGET_FILE = 08Search.SequenceSearch.exe
+  TARGET_IMPLIB = lib08Search.SequenceSearch.dll.a
+  TARGET_PDB = 08Search.SequenceSearch.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 09Sort.CountSort
@@ -717,7 +857,7 @@ build cmake_object_order_depends_target_09Sort.CountSort: phony || .
 build CMakeFiles/09Sort.CountSort.dir/09Sort/CountSort.c.obj: C_COMPILER__09Sort.2eCountSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/CountSort.c || cmake_object_order_depends_target_09Sort.CountSort
   DEP_FILE = CMakeFiles\09Sort.CountSort.dir\09Sort\CountSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.CountSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.CountSort.dir\09Sort
 
@@ -752,7 +892,7 @@ build cmake_object_order_depends_target_09Sort.InsertFoldSort: phony || .
 build CMakeFiles/09Sort.InsertFoldSort.dir/09Sort/InsertFoldSort.c.obj: C_COMPILER__09Sort.2eInsertFoldSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertFoldSort.c || cmake_object_order_depends_target_09Sort.InsertFoldSort
   DEP_FILE = CMakeFiles\09Sort.InsertFoldSort.dir\09Sort\InsertFoldSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.InsertFoldSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertFoldSort.dir\09Sort
 
@@ -787,7 +927,7 @@ build cmake_object_order_depends_target_09Sort.InsertShellSort: phony || .
 build CMakeFiles/09Sort.InsertShellSort.dir/09Sort/InsertShellSort.c.obj: C_COMPILER__09Sort.2eInsertShellSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertShellSort.c || cmake_object_order_depends_target_09Sort.InsertShellSort
   DEP_FILE = CMakeFiles\09Sort.InsertShellSort.dir\09Sort\InsertShellSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.InsertShellSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertShellSort.dir\09Sort
 
@@ -822,7 +962,7 @@ build cmake_object_order_depends_target_09Sort.InsertStraightSort: phony || .
 build CMakeFiles/09Sort.InsertStraightSort.dir/09Sort/InsertStraightSort.c.obj: C_COMPILER__09Sort.2eInsertStraightSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertStraightSort.c || cmake_object_order_depends_target_09Sort.InsertStraightSort
   DEP_FILE = CMakeFiles\09Sort.InsertStraightSort.dir\09Sort\InsertStraightSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.InsertStraightSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertStraightSort.dir\09Sort
 
@@ -857,7 +997,7 @@ build cmake_object_order_depends_target_09Sort.MergeSort: phony || .
 build CMakeFiles/09Sort.MergeSort.dir/09Sort/MergeSort.c.obj: C_COMPILER__09Sort.2eMergeSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/MergeSort.c || cmake_object_order_depends_target_09Sort.MergeSort
   DEP_FILE = CMakeFiles\09Sort.MergeSort.dir\09Sort\MergeSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.MergeSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.MergeSort.dir\09Sort
 
@@ -892,7 +1032,7 @@ build cmake_object_order_depends_target_09Sort.RadixSort: phony || .
 build CMakeFiles/09Sort.RadixSort.dir/09Sort/RadixSort.c.obj: C_COMPILER__09Sort.2eRadixSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/RadixSort.c || cmake_object_order_depends_target_09Sort.RadixSort
   DEP_FILE = CMakeFiles\09Sort.RadixSort.dir\09Sort\RadixSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.RadixSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.RadixSort.dir\09Sort
 
@@ -927,7 +1067,7 @@ build cmake_object_order_depends_target_09Sort.SelectHeapSort: phony || .
 build CMakeFiles/09Sort.SelectHeapSort.dir/09Sort/SelectHeapSort.c.obj: C_COMPILER__09Sort.2eSelectHeapSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SelectHeapSort.c || cmake_object_order_depends_target_09Sort.SelectHeapSort
   DEP_FILE = CMakeFiles\09Sort.SelectHeapSort.dir\09Sort\SelectHeapSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.SelectHeapSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.SelectHeapSort.dir\09Sort
 
@@ -962,7 +1102,7 @@ build cmake_object_order_depends_target_09Sort.SelectStraightSort: phony || .
 build CMakeFiles/09Sort.SelectStraightSort.dir/09Sort/SelectStraightSort.c.obj: C_COMPILER__09Sort.2eSelectStraightSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SelectStraightSort.c || cmake_object_order_depends_target_09Sort.SelectStraightSort
   DEP_FILE = CMakeFiles\09Sort.SelectStraightSort.dir\09Sort\SelectStraightSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.SelectStraightSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.SelectStraightSort.dir\09Sort
 
@@ -997,7 +1137,7 @@ build cmake_object_order_depends_target_09Sort.SwapBubbleSort: phony || .
 build CMakeFiles/09Sort.SwapBubbleSort.dir/09Sort/SwapBubbleSort.c.obj: C_COMPILER__09Sort.2eSwapBubbleSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SwapBubbleSort.c || cmake_object_order_depends_target_09Sort.SwapBubbleSort
   DEP_FILE = CMakeFiles\09Sort.SwapBubbleSort.dir\09Sort\SwapBubbleSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.SwapBubbleSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.SwapBubbleSort.dir\09Sort
 
@@ -1032,7 +1172,7 @@ build cmake_object_order_depends_target_09Sort.SwapQuickSort: phony || .
 build CMakeFiles/09Sort.SwapQuickSort.dir/09Sort/SwapQuickSort.c.obj: C_COMPILER__09Sort.2eSwapQuickSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SwapQuickSort.c || cmake_object_order_depends_target_09Sort.SwapQuickSort
   DEP_FILE = CMakeFiles\09Sort.SwapQuickSort.dir\09Sort\SwapQuickSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\09Sort.SwapQuickSort.dir
   OBJECT_FILE_DIR = CMakeFiles\09Sort.SwapQuickSort.dir\09Sort
 
@@ -1067,7 +1207,7 @@ build cmake_object_order_depends_target_10App.2006: phony || .
 build CMakeFiles/10App.2006.dir/10App/2006.c.obj: C_COMPILER__10App.2e2006_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2006.c || cmake_object_order_depends_target_10App.2006
   DEP_FILE = CMakeFiles\10App.2006.dir\10App\2006.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2006.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2006.dir\10App
 
@@ -1102,7 +1242,7 @@ build cmake_object_order_depends_target_10App.2007: phony || .
 build CMakeFiles/10App.2007.dir/10App/2007.c.obj: C_COMPILER__10App.2e2007_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2007.c || cmake_object_order_depends_target_10App.2007
   DEP_FILE = CMakeFiles\10App.2007.dir\10App\2007.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2007.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2007.dir\10App
 
@@ -1137,7 +1277,7 @@ build cmake_object_order_depends_target_10App.2008: phony || .
 build CMakeFiles/10App.2008.dir/10App/2008.c.obj: C_COMPILER__10App.2e2008_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2008.c || cmake_object_order_depends_target_10App.2008
   DEP_FILE = CMakeFiles\10App.2008.dir\10App\2008.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2008.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2008.dir\10App
 
@@ -1172,7 +1312,7 @@ build cmake_object_order_depends_target_10App.2009: phony || .
 build CMakeFiles/10App.2009.dir/10App/2009.c.obj: C_COMPILER__10App.2e2009_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2009.c || cmake_object_order_depends_target_10App.2009
   DEP_FILE = CMakeFiles\10App.2009.dir\10App\2009.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2009.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2009.dir\10App
 
@@ -1207,7 +1347,7 @@ build cmake_object_order_depends_target_10App.2010: phony || .
 build CMakeFiles/10App.2010.dir/10App/2010.c.obj: C_COMPILER__10App.2e2010_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2010.c || cmake_object_order_depends_target_10App.2010
   DEP_FILE = CMakeFiles\10App.2010.dir\10App\2010.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2010.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2010.dir\10App
 
@@ -1242,7 +1382,7 @@ build cmake_object_order_depends_target_10App.2011: phony || .
 build CMakeFiles/10App.2011.dir/10App/2011.c.obj: C_COMPILER__10App.2e2011_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2011.c || cmake_object_order_depends_target_10App.2011
   DEP_FILE = CMakeFiles\10App.2011.dir\10App\2011.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2011.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2011.dir\10App
 
@@ -1277,7 +1417,7 @@ build cmake_object_order_depends_target_10App.2012: phony || .
 build CMakeFiles/10App.2012.dir/10App/2012.c.obj: C_COMPILER__10App.2e2012_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2012.c || cmake_object_order_depends_target_10App.2012
   DEP_FILE = CMakeFiles\10App.2012.dir\10App\2012.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2012.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2012.dir\10App
 
@@ -1312,7 +1452,7 @@ build cmake_object_order_depends_target_10App.2017: phony || .
 build CMakeFiles/10App.2017.dir/10App/2017.c.obj: C_COMPILER__10App.2e2017_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2017.c || cmake_object_order_depends_target_10App.2017
   DEP_FILE = CMakeFiles\10App.2017.dir\10App\2017.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2017.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2017.dir\10App
 
@@ -1347,7 +1487,7 @@ build cmake_object_order_depends_target_10App.2018: phony || .
 build CMakeFiles/10App.2018.dir/10App/2018.c.obj: C_COMPILER__10App.2e2018_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2018.c || cmake_object_order_depends_target_10App.2018
   DEP_FILE = CMakeFiles\10App.2018.dir\10App\2018.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2018.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2018.dir\10App
 
@@ -1382,7 +1522,7 @@ build cmake_object_order_depends_target_10App.2019: phony || .
 build CMakeFiles/10App.2019.dir/10App/2019.c.obj: C_COMPILER__10App.2e2019_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2019.c || cmake_object_order_depends_target_10App.2019
   DEP_FILE = CMakeFiles\10App.2019.dir\10App\2019.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2019.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2019.dir\10App
 
@@ -1417,7 +1557,7 @@ build cmake_object_order_depends_target_10App.2020: phony || .
 build CMakeFiles/10App.2020.dir/10App/2020.c.obj: C_COMPILER__10App.2e2020_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2020.c || cmake_object_order_depends_target_10App.2020
   DEP_FILE = CMakeFiles\10App.2020.dir\10App\2020.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2020.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2020.dir\10App
 
@@ -1452,7 +1592,7 @@ build cmake_object_order_depends_target_10App.2021: phony || .
 build CMakeFiles/10App.2021.dir/10App/2021.c.obj: C_COMPILER__10App.2e2021_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2021.c || cmake_object_order_depends_target_10App.2021
   DEP_FILE = CMakeFiles\10App.2021.dir\10App\2021.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2021.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2021.dir\10App
 
@@ -1487,7 +1627,7 @@ build cmake_object_order_depends_target_10App.2023: phony || .
 build CMakeFiles/10App.2023.dir/10App/2023.c.obj: C_COMPILER__10App.2e2023_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/10App/2023.c || cmake_object_order_depends_target_10App.2023
   DEP_FILE = CMakeFiles\10App.2023.dir\10App\2023.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\10App.2023.dir
   OBJECT_FILE_DIR = CMakeFiles\10App.2023.dir\10App
 
@@ -1522,7 +1662,7 @@ build cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.30.5.Comp
 build CMakeFiles/cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c.obj: C_COMPILER__cmake-build-debug.2eCMakeFiles.2e3.2e30.2e5.2eCompilerIdC.2eCMakeCCompilerId_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c || cmake_object_order_depends_target_cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId
   DEP_FILE = CMakeFiles\cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.30.5\CompilerIdC\CMakeCCompilerId.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/08Graph
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
   OBJECT_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles\cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.dir\CMakeFiles\3.30.5\CompilerIdC
 
@@ -1571,6 +1711,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build 01List.01List: phony 01List.01List.exe
+
 build 01List.DLList: phony 01List.DLList.exe
 
 build 01List.DSList: phony 01List.DSList.exe
@@ -1579,9 +1721,13 @@ build 01List.SLList: phony 01List.SLList.exe
 
 build 01List.SSList: phony 01List.SSList.exe
 
+build 02Stack.02Stack: phony 02Stack.02Stack.exe
+
 build 02Stack.LStack: phony 02Stack.LStack.exe
 
 build 02Stack.SStack: phony 02Stack.SStack.exe
+
+build 03Queue.03Queue: phony 03Queue.03Queue.exe
 
 build 03Queue.LQueue: phony 03Queue.LQueue.exe
 
@@ -1591,6 +1737,8 @@ build 04Array.DMatrix: phony 04Array.DMatrix.exe
 
 build 04Array.SMatrix: phony 04Array.SMatrix.exe
 
+build 05String.05String: phony 05String.05String.exe
+
 build 05String.LString: phony 05String.LString.exe
 
 build 05String.SString: phony 05String.SString.exe
@@ -1599,15 +1747,15 @@ build 06Tree.LBTree: phony 06Tree.LBTree.exe
 
 build 06Tree.SHTree: phony 06Tree.SHTree.exe
 
-build 07Search.BlockSearch: phony 07Search.BlockSearch.exe
+build 07Graph.AMGraph: phony 07Graph.AMGraph.exe
 
-build 07Search.FoldSearch: phony 07Search.FoldSearch.exe
+build 07Graph.ATGraph: phony 07Graph.ATGraph.exe
 
-build 07Search.SequenceSearch: phony 07Search.SequenceSearch.exe
+build 08Search.BlockSearch: phony 08Search.BlockSearch.exe
 
-build 08Graph.AMGraph: phony 08Graph.AMGraph.exe
+build 08Search.FoldSearch: phony 08Search.FoldSearch.exe
 
-build 08Graph.ATGraph: phony 08Graph.ATGraph.exe
+build 08Search.SequenceSearch: phony 08Search.SequenceSearch.exe
 
 build 09Sort.CountSort: phony 09Sort.CountSort.exe
 
@@ -1665,7 +1813,7 @@ build cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Search.BlockSearch.exe 07Search.FoldSearch.exe 07Search.SequenceSearch.exe 08Graph.AMGraph.exe 08Graph.ATGraph.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.01List.exe 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.02Stack.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.03Queue.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.05String.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Graph.AMGraph.exe 07Graph.ATGraph.exe 08Search.BlockSearch.exe 08Search.FoldSearch.exe 08Search.SequenceSearch.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

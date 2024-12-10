@@ -16,7 +16,7 @@ typedef struct LQueue
     LQueueNode *front, *rear;
 }* LQueue;
 
-// 开辟链队
+// 初始链队
 bool initiateLQueue(LQueue* queue);
 // 读队
 bool getLQueue(LQueue queue, int* data);

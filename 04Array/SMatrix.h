@@ -19,7 +19,7 @@ typedef struct SMatrix
 } SMatrix;
 
 // 创建稀疏矩阵
-SMatrix initiateSMatrix(int data[100][100], int row, int column);
+SMatrix createSMatrix(int data[100][100], int row, int column);
 // 简单转置矩阵
 SMatrix easyTranspose(SMatrix matrix);
 // 快速转置矩阵
@@ -27,7 +27,7 @@ SMatrix quickTranspose(SMatrix matrix);
 // 打印稀疏矩阵
 void printSMatrix(SMatrix matrix);
 
-inline SMatrix initiateSMatrix(int data[100][100], int row, int column)
+inline SMatrix createSMatrix(int data[100][100], int row, int column)
 {
     SMatrix matrix;
     matrix.row = row;
@@ -50,71 +50,72 @@ inline SMatrix initiateSMatrix(int data[100][100], int row, int column)
 
 inline SMatrix easyTranspose(SMatrix matrix)
 {
-    // 空值处理
-    if (matrix.length == 0)
+    if (matrix.length != 0)
     {
-        return matrix;
-    }
-    // 按列排序
-    for (int i = 0; i < matrix.length; i++)
-    {
-        for (int j = 0; j < matrix.length - i - 1; j++)
+        // 按列增序
+        for (int i = 0; i < matrix.length; i++)
         {
-            if (matrix.data[j].column > matrix.data[j + 1].column)
+            for (int j = 0; j < matrix.length - i - 1; j++)
             {
-                Triple triple = matrix.data[j];
-                matrix.data[j] = matrix.data[j + 1];
-                matrix.data[j + 1] = triple;
+                if (matrix.data[j].column > matrix.data[j + 1].column)
+                {
+                    Triple temp = matrix.data[j];
+                    matrix.data[j] = matrix.data[j + 1];
+                    matrix.data[j + 1] = temp;
+                }
             }
         }
+        // 行列互换
+        for (int k = 0; k < matrix.length; k++)
+        {
+            int temp = matrix.data[k].row;
+            matrix.data[k].row = matrix.data[k].column;
+            matrix.data[k].column = temp;
+        }
     }
-    // 行列互换
-    for (int k = 0; k < matrix.length; k++)
-    {
-        int index = matrix.data[k].row;
-        matrix.data[k].row = matrix.data[k].column;
-        matrix.data[k].column = index;
-    }
-    int scale = matrix.row;
+    int temp = matrix.row;
     matrix.row = matrix.column;
-    matrix.column = scale;
+    matrix.column = temp;
     return matrix;
 }
 
 inline SMatrix quickTranspose(SMatrix matrix)
 {
-    if (matrix.length == 0)
-    {
-        return matrix;
-    }
     SMatrix transposeMatrix;
     transposeMatrix.row = matrix.column;
     transposeMatrix.column = matrix.row;
     transposeMatrix.length = matrix.length;
-    int zeroSum[matrix.column];
-    int firstIndex[matrix.column];
-    for (int i = 0; i < matrix.column; i++)
+    if (matrix.length != 0)
     {
-        zeroSum[i] = 0;
-        firstIndex[i] = -1;
-    }
-    for (int i = 0; i < matrix.length; i++)
-    {
-        zeroSum[matrix.data[i].column]++;
-    }
-    firstIndex[0] = 0;
-    for (int i = 1; i < matrix.column; i++)
-    {
-        firstIndex[i] = firstIndex[i - 1] + zeroSum[i - 1];
-    }
-    for (int i = 0; i < matrix.length; i++)
-    {
-        int column = matrix.data[i].column;
-        int index = firstIndex[column];
-        transposeMatrix.data[index].row = matrix.data[i].column;
-        transposeMatrix.data[index].column = matrix.data[i].row;
-        transposeMatrix.data[index].data = matrix.data[i].data;
-        firstIndex[column]++;
+        int dataSum[matrix.column];
+        int firstIndex[matrix.column];
+        // 初始辅助数组
+        for (int i = 0; i < matrix.column; i++)
+        {
+            dataSum[i] = 0;
+            firstIndex[i] = -1;
+        }
+        // 计算矩阵每列所有非零元素个数
+        for (int i = 0; i < matrix.length; i++)
+        {
+            dataSum[matrix.data[i].column]++;
+        }
+        // 计算矩阵每列首个非零元素位置
+        firstIndex[0] = 0;
+        for (int i = 1; i < matrix.column; i++)
+        {
+            firstIndex[i] = firstIndex[i - 1] + dataSum[i - 1];
+        }
+        // 转置矩阵
+        for (int i = 0; i < matrix.length; i++)
+        {
+            int column = matrix.data[i].column;
+            int position = firstIndex[column];
+            transposeMatrix.data[position].row = matrix.data[i].column;
+            transposeMatrix.data[position].column = matrix.data[i].row;
+            transposeMatrix.data[position].data = matrix.data[i].data;
+            firstIndex[column]++;
+        }
     }
     return transposeMatrix;
 }

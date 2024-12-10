@@ -15,7 +15,7 @@ typedef struct SHTreeNode
 
 // 初始顺序哈夫曼树
 bool initiateSHTree(SHTree* tree, int length);
-// 创建顺序哈夫曼树
+// 建造顺序哈夫曼树
 bool buildSHTree(SHTree* tree, int length);
 // 编码顺序哈夫曼树
 bool buildSHTreeCode(SHTree* tree, int length);

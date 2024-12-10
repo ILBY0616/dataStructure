@@ -11,7 +11,7 @@ typedef struct LStackNode
     struct LStackNode* next;
 }* LStack;
 
-// 开辟链栈
+// 初始链栈
 bool initiateLStack(LStack* stack);
 // 读栈
 bool getLStack(LStack stack, int* data);

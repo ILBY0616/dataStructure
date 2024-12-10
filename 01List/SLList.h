@@ -12,11 +12,11 @@ typedef struct SLListNode
     struct SLListNode* next;
 }* SLList;
 
-// 开辟带头结点单链表
+// 初始带头结点单链表
 bool initiateSLList(SLList* list);
-// 头插法创建带头结点单链表
+// 头插法建造带头结点单链表
 bool buildSLListByHead(int* data, int length, SLList* list);
-// 尾插法创建带头结点单链表
+// 尾插法建造带头结点单链表
 bool buildSLListByTail(int* data, int length, SLList* list);
 // 查找数据
 SLList selectSLList(SLList list, int data);

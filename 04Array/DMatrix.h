@@ -3,21 +3,21 @@
 
 #include <stdio.h>
 
-// 压缩矩阵
+// 稠密矩阵
 typedef struct DMatrix
 {
     int data[100];
     int row, column, length;
 } DMatrix;
 
-// 创建压缩矩阵
-DMatrix initiateDMatrix(int data[100][100], int row, int column);
-// 相乘压缩矩阵
+// 创建稠密矩阵
+DMatrix createDMatrix(int data[100][100], int row, int column);
+// 相乘稠密矩阵
 void multiplyDMatrix(DMatrix leftMatrix, DMatrix rightMatrix, int finalMatrix[100][100]);
-// 打印压缩矩阵
+// 打印稠密矩阵
 void printDMatrix(DMatrix matrix);
 
-inline DMatrix initiateDMatrix(int data[100][100], int row, int column)
+inline DMatrix createDMatrix(int data[100][100], int row, int column)
 {
     DMatrix matrix;
     matrix.row = row;
@@ -25,7 +25,7 @@ inline DMatrix initiateDMatrix(int data[100][100], int row, int column)
     matrix.length = 0;
     for (int i = 0; i < row; i++)
     {
-        // 压缩对称矩阵
+        // 稠密对称矩阵
         for (int j = 0; j <= i; j++)
         {
             matrix.data[matrix.length++] = data[i][j];

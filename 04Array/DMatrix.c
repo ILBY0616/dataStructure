@@ -20,8 +20,8 @@ int main()
     int rightArray[100][100] = {{1, 0, 0}, {0, 2, 0}, {0, 0, 3}};
     int finalArray[100][100];
     // 压缩对称矩阵
-    DMatrix leftMatrix = initiateDMatrix(leftArray, row, column);
-    DMatrix rightMatrix = initiateDMatrix(rightArray, row, column);
+    DMatrix leftMatrix = createDMatrix(leftArray, row, column);
+    DMatrix rightMatrix = createDMatrix(rightArray, row, column);
     // 打印对称矩阵
     printDMatrix(leftMatrix);
     printDMatrix(rightMatrix);

@@ -12,7 +12,7 @@ typedef struct DSList
     int size, length;
 }* DSList;
 
-// 开辟动态顺序表
+// 初始动态顺序表
 bool initiateDSList(DSList* list);
 // 查找数据
 int selectDSList(DSList list, int data);

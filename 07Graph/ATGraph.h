@@ -28,7 +28,7 @@ typedef struct ATGraph
     int vertexSum, edgeSum;
 }* ATGraph;
 
-// 开辟邻接表
+// 初始邻接表
 bool initiateATGraph(ATGraph* graph);
 // 创建有向图
 void createDATGraph(ATGraph graph);

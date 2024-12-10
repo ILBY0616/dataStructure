@@ -11,7 +11,7 @@ typedef struct SStack
     int top, size;
 }* SStack;
 
-// 开辟顺序栈
+// 初始顺序栈
 bool initiateSStack(SStack* stack);
 // 读栈
 bool getSStack(SStack stack, int* data);

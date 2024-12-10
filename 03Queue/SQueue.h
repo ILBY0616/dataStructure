@@ -11,7 +11,7 @@ typedef struct SQueue
     int size, front, rear;
 }* SQueue;
 
-// 开辟循环队
+// 初始循环队
 bool initiateSQueue(SQueue* queue);
 // 读队
 bool getSQueue(SQueue queue, int* data);

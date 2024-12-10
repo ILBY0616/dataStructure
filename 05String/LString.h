@@ -13,7 +13,7 @@ typedef struct LStringNode
     struct LStringNode* next;
 }* LString;
 
-// 创建链串
+// 建造链串
 bool buildLString(char* data, LString* string);
 // 匹配链串
 int matchLString(LString mainString, LString subString);

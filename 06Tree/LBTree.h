@@ -11,7 +11,7 @@ typedef struct LBTreeNode
     struct LBTreeNode *left, *right;
 }* LBTree;
 
-// 先序创建链式二叉树
+// 先序建造链式二叉树
 void buildLBTree(LBTree* tree);
 // 先序遍历链式二叉树
 void preOrderLBTree(LBTree tree);

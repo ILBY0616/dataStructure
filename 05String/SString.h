@@ -13,7 +13,7 @@ typedef struct SString
     int size, length;
 }* SString;
 
-// 创建顺序串
+// 建造顺序串
 bool buildSString(char* data, SString* string);
 // 获取新下标
 void getNext(SString string, int next[]);

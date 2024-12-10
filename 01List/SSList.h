@@ -12,7 +12,7 @@ typedef struct SSList
     int size, length;
 }* SSList;
 
-// 开辟静态顺序表
+// 初始静态顺序表
 bool initiateSSList(SSList* list);
 // 查找数据
 int selectSSList(SSList list, int data);

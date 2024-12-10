@@ -14,7 +14,7 @@ typedef struct AMGraph
     int vertexSum, edgeSum;
 }* AMGraph;
 
-// 开辟邻接矩阵
+// 初始邻接矩阵
 bool initiateAMGraph(AMGraph* graph);
 // 创建有向图
 void createDAMGraph(AMGraph graph);

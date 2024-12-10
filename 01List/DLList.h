@@ -12,11 +12,11 @@ typedef struct DLListNode
     struct DLListNode *prior, *next;
 }* DLList;
 
-// 开辟带头结点双链表
+// 初始带头结点双链表
 bool initiateDLList(DLList* list);
-// 头插法创建带头结点双链表
+// 头插法建造带头结点双链表
 bool buildDLListByHead(int* data, int length, DLList* list);
-// 尾插法创建带头结点双链表
+// 尾插法建造带头结点双链表
 bool buildDLListByTail(int* data, int length, DLList* list);
 // 查找数据
 DLList selectDLList(DLList list, int data);

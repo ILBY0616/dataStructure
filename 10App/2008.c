@@ -1,14 +1,13 @@
 #include <LBTree.h>
 
 // 统计链式二叉树结点数
-void getNodeSum(LBTree tree, int* sum)
+int getNodeSum(LBTree tree)
 {
-    if (tree != NULL)
+    if (tree == NULL)
     {
-        (*sum)++;
-        getNodeSum(tree->left, sum);
-        getNodeSum(tree->right, sum);
+        return 0;
     }
+    return getNodeSum(tree->left) + getNodeSum(tree->right) + 1;
 }
 
 // D:\CLion\WorkPlace\dataStructure\cmake-build-debug\10App.2008.exe
@@ -18,11 +17,9 @@ void getNodeSum(LBTree tree, int* sum)
 
 int main()
 {
-    int sum = 0;
     LBTree tree = NULL;
     buildLBTree(&tree);
-    getNodeSum(tree, &sum);
-    printf("%d", sum);
+    printf("%d", getNodeSum(tree));
     destroyLBTree(&tree);
     return 0;
 }

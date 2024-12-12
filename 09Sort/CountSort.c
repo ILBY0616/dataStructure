@@ -1,23 +1,42 @@
 #include <stdio.h>
 
 // 计数排序
-void countSort(int* data, int length);
-// 打印序列
-void printCount(int* data, int length);
-
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\09Sort.CountSort.exe
-// 9 8 7 6 5 4 3 2 1 0
-// 0 1 2 3 4 5 6 7 8 9
-//
-// Process finished with exit code 0
-
-int main()
+void countSort(int* data, int length)
 {
-    int data[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-    printCount(data, 10);
-    countSort(data, 10);
-    printCount(data, 10);
-    return 0;
+    int copy[length];
+    int position[length];
+    for (int i = 0; i < length; i++)
+    {
+        copy[i] = data[i];
+        position[i] = 0;
+    }
+    for (int i = 0; i < length; i++)
+    {
+        for (int j = i + 1; j < length; j++)
+        {
+            if (copy[i] <= copy[j])
+            {
+                position[j]++;
+            }
+            else
+            {
+                position[i]++;
+            }
+        }
+    }
+    for (int i = 0; i < length; i++)
+    {
+        data[position[i]] = copy[i];
+    }
+}
+
+// 打印序列
+void printCount(int* data, int length)
+{
+    for (int i = 0; i < length; i++)
+    {
+        printf("%d ", data[i]);
+    }
 }
 
 // 排序思想：
@@ -29,36 +48,17 @@ int main()
 // 2. 比较次数：使用双重循环比较元素，每个元素与其后所有元素比较，共计 n(n-1)/2 次比较。
 // 3. 移动次数：将每个元素放入新位置，每个元素仅需移动一次，总计 n 次。
 // 4. 交换次数：无直接交换操作，仅有统计和赋值过程。
-void countSort(int* data, int length)
-{
-    int temp[length];
-    int count[length];
-    for (int i = 0; i < length; i++)
-    {
-        temp[i] = data[i];
-        count[i] = 0;
-    }
-    for (int i = 0; i < length; i++)
-    {
-        for (int j = i + 1; j < length; j++)
-        {
-            if (temp[i] <= temp[j])
-                count[j]++;
-            else
-                count[i]++;
-        }
-    }
-    for (int i = 0; i < length; i++)
-    {
-        data[count[i]] = temp[i];
-    }
-}
 
-void printCount(int* data, int length)
+int main()
 {
-    for (int i = 0; i < length; i++)
-    {
-        printf("%d ", data[i]);
-    }
-    printf("\n");
+    int data[100] = {
+        99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77,
+        76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52,
+        51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27,
+        26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+    };
+    int length = 100;
+    countSort(data, length);
+    printCount(data, length);
+    return 0;
 }

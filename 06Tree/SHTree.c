@@ -15,7 +15,7 @@
 
 int main()
 {
-    int length = 4;
+    int length = 8;
     SHTree tree = NULL;
     initiateSHTree(&tree, length);
     buildSHTree(&tree, length);

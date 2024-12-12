@@ -811,6 +811,111 @@ build 08Search.FoldSearch.exe: C_EXECUTABLE_LINKER__08Search.2eFoldSearch_Debug 
   TARGET_PDB = 08Search.FoldSearch.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 08Search.HashSearchByAgain
+
+
+#############################################
+# Order-only phony target for 08Search.HashSearchByAgain
+
+build cmake_object_order_depends_target_08Search.HashSearchByAgain: phony || .
+
+build CMakeFiles/08Search.HashSearchByAgain.dir/08Search/HashSearchByAgain.c.obj: C_COMPILER__08Search.2eHashSearchByAgain_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/HashSearchByAgain.c || cmake_object_order_depends_target_08Search.HashSearchByAgain
+  DEP_FILE = CMakeFiles\08Search.HashSearchByAgain.dir\08Search\HashSearchByAgain.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByAgain.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.HashSearchByAgain.dir\08Search
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 08Search.HashSearchByAgain
+
+
+#############################################
+# Link the executable 08Search.HashSearchByAgain.exe
+
+build 08Search.HashSearchByAgain.exe: C_EXECUTABLE_LINKER__08Search.2eHashSearchByAgain_Debug CMakeFiles/08Search.HashSearchByAgain.dir/08Search/HashSearchByAgain.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByAgain.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 08Search.HashSearchByAgain.exe
+  TARGET_IMPLIB = lib08Search.HashSearchByAgain.dll.a
+  TARGET_PDB = 08Search.HashSearchByAgain.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 08Search.HashSearchByChain
+
+
+#############################################
+# Order-only phony target for 08Search.HashSearchByChain
+
+build cmake_object_order_depends_target_08Search.HashSearchByChain: phony || .
+
+build CMakeFiles/08Search.HashSearchByChain.dir/08Search/HashSearchByChain.c.obj: C_COMPILER__08Search.2eHashSearchByChain_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/HashSearchByChain.c || cmake_object_order_depends_target_08Search.HashSearchByChain
+  DEP_FILE = CMakeFiles\08Search.HashSearchByChain.dir\08Search\HashSearchByChain.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByChain.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.HashSearchByChain.dir\08Search
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 08Search.HashSearchByChain
+
+
+#############################################
+# Link the executable 08Search.HashSearchByChain.exe
+
+build 08Search.HashSearchByChain.exe: C_EXECUTABLE_LINKER__08Search.2eHashSearchByChain_Debug CMakeFiles/08Search.HashSearchByChain.dir/08Search/HashSearchByChain.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByChain.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 08Search.HashSearchByChain.exe
+  TARGET_IMPLIB = lib08Search.HashSearchByChain.dll.a
+  TARGET_PDB = 08Search.HashSearchByChain.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 08Search.HashSearchByOpen
+
+
+#############################################
+# Order-only phony target for 08Search.HashSearchByOpen
+
+build cmake_object_order_depends_target_08Search.HashSearchByOpen: phony || .
+
+build CMakeFiles/08Search.HashSearchByOpen.dir/08Search/HashSearchByOpen.c.obj: C_COMPILER__08Search.2eHashSearchByOpen_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/08Search/HashSearchByOpen.c || cmake_object_order_depends_target_08Search.HashSearchByOpen
+  DEP_FILE = CMakeFiles\08Search.HashSearchByOpen.dir\08Search\HashSearchByOpen.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByOpen.dir
+  OBJECT_FILE_DIR = CMakeFiles\08Search.HashSearchByOpen.dir\08Search
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 08Search.HashSearchByOpen
+
+
+#############################################
+# Link the executable 08Search.HashSearchByOpen.exe
+
+build 08Search.HashSearchByOpen.exe: C_EXECUTABLE_LINKER__08Search.2eHashSearchByOpen_Debug CMakeFiles/08Search.HashSearchByOpen.dir/08Search/HashSearchByOpen.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\08Search.HashSearchByOpen.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 08Search.HashSearchByOpen.exe
+  TARGET_IMPLIB = lib08Search.HashSearchByOpen.dll.a
+  TARGET_PDB = 08Search.HashSearchByOpen.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 08Search.SequenceSearch
 
 
@@ -844,6 +949,41 @@ build 08Search.SequenceSearch.exe: C_EXECUTABLE_LINKER__08Search.2eSequenceSearc
   TARGET_FILE = 08Search.SequenceSearch.exe
   TARGET_IMPLIB = lib08Search.SequenceSearch.dll.a
   TARGET_PDB = 08Search.SequenceSearch.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 09Sort.BubbleSort
+
+
+#############################################
+# Order-only phony target for 09Sort.BubbleSort
+
+build cmake_object_order_depends_target_09Sort.BubbleSort: phony || .
+
+build CMakeFiles/09Sort.BubbleSort.dir/09Sort/BubbleSort.c.obj: C_COMPILER__09Sort.2eBubbleSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/BubbleSort.c || cmake_object_order_depends_target_09Sort.BubbleSort
+  DEP_FILE = CMakeFiles\09Sort.BubbleSort.dir\09Sort\BubbleSort.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\09Sort.BubbleSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.BubbleSort.dir\09Sort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 09Sort.BubbleSort
+
+
+#############################################
+# Link the executable 09Sort.BubbleSort.exe
+
+build 09Sort.BubbleSort.exe: C_EXECUTABLE_LINKER__09Sort.2eBubbleSort_Debug CMakeFiles/09Sort.BubbleSort.dir/09Sort/BubbleSort.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\09Sort.BubbleSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 09Sort.BubbleSort.exe
+  TARGET_IMPLIB = lib09Sort.BubbleSort.dll.a
+  TARGET_PDB = 09Sort.BubbleSort.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 09Sort.CountSort
@@ -881,109 +1021,109 @@ build 09Sort.CountSort.exe: C_EXECUTABLE_LINKER__09Sort.2eCountSort_Debug CMakeF
   TARGET_PDB = 09Sort.CountSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.InsertFoldSort
+# Object build statements for EXECUTABLE target 09Sort.FoldSort
 
 
 #############################################
-# Order-only phony target for 09Sort.InsertFoldSort
+# Order-only phony target for 09Sort.FoldSort
 
-build cmake_object_order_depends_target_09Sort.InsertFoldSort: phony || .
+build cmake_object_order_depends_target_09Sort.FoldSort: phony || .
 
-build CMakeFiles/09Sort.InsertFoldSort.dir/09Sort/InsertFoldSort.c.obj: C_COMPILER__09Sort.2eInsertFoldSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertFoldSort.c || cmake_object_order_depends_target_09Sort.InsertFoldSort
-  DEP_FILE = CMakeFiles\09Sort.InsertFoldSort.dir\09Sort\InsertFoldSort.c.obj.d
+build CMakeFiles/09Sort.FoldSort.dir/09Sort/FoldSort.c.obj: C_COMPILER__09Sort.2eFoldSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/FoldSort.c || cmake_object_order_depends_target_09Sort.FoldSort
+  DEP_FILE = CMakeFiles\09Sort.FoldSort.dir\09Sort\FoldSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.InsertFoldSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertFoldSort.dir\09Sort
+  OBJECT_DIR = CMakeFiles\09Sort.FoldSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.FoldSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.InsertFoldSort
+# Link build statements for EXECUTABLE target 09Sort.FoldSort
 
 
 #############################################
-# Link the executable 09Sort.InsertFoldSort.exe
+# Link the executable 09Sort.FoldSort.exe
 
-build 09Sort.InsertFoldSort.exe: C_EXECUTABLE_LINKER__09Sort.2eInsertFoldSort_Debug CMakeFiles/09Sort.InsertFoldSort.dir/09Sort/InsertFoldSort.c.obj
+build 09Sort.FoldSort.exe: C_EXECUTABLE_LINKER__09Sort.2eFoldSort_Debug CMakeFiles/09Sort.FoldSort.dir/09Sort/FoldSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.InsertFoldSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.FoldSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09Sort.InsertFoldSort.exe
-  TARGET_IMPLIB = lib09Sort.InsertFoldSort.dll.a
-  TARGET_PDB = 09Sort.InsertFoldSort.exe.dbg
+  TARGET_FILE = 09Sort.FoldSort.exe
+  TARGET_IMPLIB = lib09Sort.FoldSort.dll.a
+  TARGET_PDB = 09Sort.FoldSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.InsertShellSort
+# Object build statements for EXECUTABLE target 09Sort.HeapSort
 
 
 #############################################
-# Order-only phony target for 09Sort.InsertShellSort
+# Order-only phony target for 09Sort.HeapSort
 
-build cmake_object_order_depends_target_09Sort.InsertShellSort: phony || .
+build cmake_object_order_depends_target_09Sort.HeapSort: phony || .
 
-build CMakeFiles/09Sort.InsertShellSort.dir/09Sort/InsertShellSort.c.obj: C_COMPILER__09Sort.2eInsertShellSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertShellSort.c || cmake_object_order_depends_target_09Sort.InsertShellSort
-  DEP_FILE = CMakeFiles\09Sort.InsertShellSort.dir\09Sort\InsertShellSort.c.obj.d
+build CMakeFiles/09Sort.HeapSort.dir/09Sort/HeapSort.c.obj: C_COMPILER__09Sort.2eHeapSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/HeapSort.c || cmake_object_order_depends_target_09Sort.HeapSort
+  DEP_FILE = CMakeFiles\09Sort.HeapSort.dir\09Sort\HeapSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.InsertShellSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertShellSort.dir\09Sort
+  OBJECT_DIR = CMakeFiles\09Sort.HeapSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.HeapSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.InsertShellSort
+# Link build statements for EXECUTABLE target 09Sort.HeapSort
 
 
 #############################################
-# Link the executable 09Sort.InsertShellSort.exe
+# Link the executable 09Sort.HeapSort.exe
 
-build 09Sort.InsertShellSort.exe: C_EXECUTABLE_LINKER__09Sort.2eInsertShellSort_Debug CMakeFiles/09Sort.InsertShellSort.dir/09Sort/InsertShellSort.c.obj
+build 09Sort.HeapSort.exe: C_EXECUTABLE_LINKER__09Sort.2eHeapSort_Debug CMakeFiles/09Sort.HeapSort.dir/09Sort/HeapSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.InsertShellSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.HeapSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09Sort.InsertShellSort.exe
-  TARGET_IMPLIB = lib09Sort.InsertShellSort.dll.a
-  TARGET_PDB = 09Sort.InsertShellSort.exe.dbg
+  TARGET_FILE = 09Sort.HeapSort.exe
+  TARGET_IMPLIB = lib09Sort.HeapSort.dll.a
+  TARGET_PDB = 09Sort.HeapSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.InsertStraightSort
+# Object build statements for EXECUTABLE target 09Sort.InsertSort
 
 
 #############################################
-# Order-only phony target for 09Sort.InsertStraightSort
+# Order-only phony target for 09Sort.InsertSort
 
-build cmake_object_order_depends_target_09Sort.InsertStraightSort: phony || .
+build cmake_object_order_depends_target_09Sort.InsertSort: phony || .
 
-build CMakeFiles/09Sort.InsertStraightSort.dir/09Sort/InsertStraightSort.c.obj: C_COMPILER__09Sort.2eInsertStraightSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertStraightSort.c || cmake_object_order_depends_target_09Sort.InsertStraightSort
-  DEP_FILE = CMakeFiles\09Sort.InsertStraightSort.dir\09Sort\InsertStraightSort.c.obj.d
+build CMakeFiles/09Sort.InsertSort.dir/09Sort/InsertSort.c.obj: C_COMPILER__09Sort.2eInsertSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/InsertSort.c || cmake_object_order_depends_target_09Sort.InsertSort
+  DEP_FILE = CMakeFiles\09Sort.InsertSort.dir\09Sort\InsertSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.InsertStraightSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertStraightSort.dir\09Sort
+  OBJECT_DIR = CMakeFiles\09Sort.InsertSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.InsertSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.InsertStraightSort
+# Link build statements for EXECUTABLE target 09Sort.InsertSort
 
 
 #############################################
-# Link the executable 09Sort.InsertStraightSort.exe
+# Link the executable 09Sort.InsertSort.exe
 
-build 09Sort.InsertStraightSort.exe: C_EXECUTABLE_LINKER__09Sort.2eInsertStraightSort_Debug CMakeFiles/09Sort.InsertStraightSort.dir/09Sort/InsertStraightSort.c.obj
+build 09Sort.InsertSort.exe: C_EXECUTABLE_LINKER__09Sort.2eInsertSort_Debug CMakeFiles/09Sort.InsertSort.dir/09Sort/InsertSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.InsertStraightSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.InsertSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09Sort.InsertStraightSort.exe
-  TARGET_IMPLIB = lib09Sort.InsertStraightSort.dll.a
-  TARGET_PDB = 09Sort.InsertStraightSort.exe.dbg
+  TARGET_FILE = 09Sort.InsertSort.exe
+  TARGET_IMPLIB = lib09Sort.InsertSort.dll.a
+  TARGET_PDB = 09Sort.InsertSort.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 09Sort.MergeSort
@@ -1021,6 +1161,41 @@ build 09Sort.MergeSort.exe: C_EXECUTABLE_LINKER__09Sort.2eMergeSort_Debug CMakeF
   TARGET_PDB = 09Sort.MergeSort.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target 09Sort.QuickSort
+
+
+#############################################
+# Order-only phony target for 09Sort.QuickSort
+
+build cmake_object_order_depends_target_09Sort.QuickSort: phony || .
+
+build CMakeFiles/09Sort.QuickSort.dir/09Sort/QuickSort.c.obj: C_COMPILER__09Sort.2eQuickSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/QuickSort.c || cmake_object_order_depends_target_09Sort.QuickSort
+  DEP_FILE = CMakeFiles\09Sort.QuickSort.dir\09Sort\QuickSort.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
+  OBJECT_DIR = CMakeFiles\09Sort.QuickSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.QuickSort.dir\09Sort
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 09Sort.QuickSort
+
+
+#############################################
+# Link the executable 09Sort.QuickSort.exe
+
+build 09Sort.QuickSort.exe: C_EXECUTABLE_LINKER__09Sort.2eQuickSort_Debug CMakeFiles/09Sort.QuickSort.dir/09Sort/QuickSort.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\09Sort.QuickSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 09Sort.QuickSort.exe
+  TARGET_IMPLIB = lib09Sort.QuickSort.dll.a
+  TARGET_PDB = 09Sort.QuickSort.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target 09Sort.RadixSort
 
 
@@ -1056,144 +1231,74 @@ build 09Sort.RadixSort.exe: C_EXECUTABLE_LINKER__09Sort.2eRadixSort_Debug CMakeF
   TARGET_PDB = 09Sort.RadixSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.SelectHeapSort
+# Object build statements for EXECUTABLE target 09Sort.SelectSort
 
 
 #############################################
-# Order-only phony target for 09Sort.SelectHeapSort
+# Order-only phony target for 09Sort.SelectSort
 
-build cmake_object_order_depends_target_09Sort.SelectHeapSort: phony || .
+build cmake_object_order_depends_target_09Sort.SelectSort: phony || .
 
-build CMakeFiles/09Sort.SelectHeapSort.dir/09Sort/SelectHeapSort.c.obj: C_COMPILER__09Sort.2eSelectHeapSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SelectHeapSort.c || cmake_object_order_depends_target_09Sort.SelectHeapSort
-  DEP_FILE = CMakeFiles\09Sort.SelectHeapSort.dir\09Sort\SelectHeapSort.c.obj.d
+build CMakeFiles/09Sort.SelectSort.dir/09Sort/SelectSort.c.obj: C_COMPILER__09Sort.2eSelectSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SelectSort.c || cmake_object_order_depends_target_09Sort.SelectSort
+  DEP_FILE = CMakeFiles\09Sort.SelectSort.dir\09Sort\SelectSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.SelectHeapSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.SelectHeapSort.dir\09Sort
+  OBJECT_DIR = CMakeFiles\09Sort.SelectSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.SelectSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.SelectHeapSort
+# Link build statements for EXECUTABLE target 09Sort.SelectSort
 
 
 #############################################
-# Link the executable 09Sort.SelectHeapSort.exe
+# Link the executable 09Sort.SelectSort.exe
 
-build 09Sort.SelectHeapSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSelectHeapSort_Debug CMakeFiles/09Sort.SelectHeapSort.dir/09Sort/SelectHeapSort.c.obj
+build 09Sort.SelectSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSelectSort_Debug CMakeFiles/09Sort.SelectSort.dir/09Sort/SelectSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.SelectHeapSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.SelectSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09Sort.SelectHeapSort.exe
-  TARGET_IMPLIB = lib09Sort.SelectHeapSort.dll.a
-  TARGET_PDB = 09Sort.SelectHeapSort.exe.dbg
+  TARGET_FILE = 09Sort.SelectSort.exe
+  TARGET_IMPLIB = lib09Sort.SelectSort.dll.a
+  TARGET_PDB = 09Sort.SelectSort.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.SelectStraightSort
+# Object build statements for EXECUTABLE target 09Sort.ShellSort
 
 
 #############################################
-# Order-only phony target for 09Sort.SelectStraightSort
+# Order-only phony target for 09Sort.ShellSort
 
-build cmake_object_order_depends_target_09Sort.SelectStraightSort: phony || .
+build cmake_object_order_depends_target_09Sort.ShellSort: phony || .
 
-build CMakeFiles/09Sort.SelectStraightSort.dir/09Sort/SelectStraightSort.c.obj: C_COMPILER__09Sort.2eSelectStraightSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SelectStraightSort.c || cmake_object_order_depends_target_09Sort.SelectStraightSort
-  DEP_FILE = CMakeFiles\09Sort.SelectStraightSort.dir\09Sort\SelectStraightSort.c.obj.d
+build CMakeFiles/09Sort.ShellSort.dir/09Sort/ShellSort.c.obj: C_COMPILER__09Sort.2eShellSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/ShellSort.c || cmake_object_order_depends_target_09Sort.ShellSort
+  DEP_FILE = CMakeFiles\09Sort.ShellSort.dir\09Sort\ShellSort.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.SelectStraightSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.SelectStraightSort.dir\09Sort
+  OBJECT_DIR = CMakeFiles\09Sort.ShellSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\09Sort.ShellSort.dir\09Sort
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.SelectStraightSort
+# Link build statements for EXECUTABLE target 09Sort.ShellSort
 
 
 #############################################
-# Link the executable 09Sort.SelectStraightSort.exe
+# Link the executable 09Sort.ShellSort.exe
 
-build 09Sort.SelectStraightSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSelectStraightSort_Debug CMakeFiles/09Sort.SelectStraightSort.dir/09Sort/SelectStraightSort.c.obj
+build 09Sort.ShellSort.exe: C_EXECUTABLE_LINKER__09Sort.2eShellSort_Debug CMakeFiles/09Sort.ShellSort.dir/09Sort/ShellSort.c.obj
   FLAGS = -g
   LINK_FLAGS = -mconsole
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.SelectStraightSort.dir
+  OBJECT_DIR = CMakeFiles\09Sort.ShellSort.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = 09Sort.SelectStraightSort.exe
-  TARGET_IMPLIB = lib09Sort.SelectStraightSort.dll.a
-  TARGET_PDB = 09Sort.SelectStraightSort.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.SwapBubbleSort
-
-
-#############################################
-# Order-only phony target for 09Sort.SwapBubbleSort
-
-build cmake_object_order_depends_target_09Sort.SwapBubbleSort: phony || .
-
-build CMakeFiles/09Sort.SwapBubbleSort.dir/09Sort/SwapBubbleSort.c.obj: C_COMPILER__09Sort.2eSwapBubbleSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SwapBubbleSort.c || cmake_object_order_depends_target_09Sort.SwapBubbleSort
-  DEP_FILE = CMakeFiles\09Sort.SwapBubbleSort.dir\09Sort\SwapBubbleSort.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.SwapBubbleSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.SwapBubbleSort.dir\09Sort
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.SwapBubbleSort
-
-
-#############################################
-# Link the executable 09Sort.SwapBubbleSort.exe
-
-build 09Sort.SwapBubbleSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSwapBubbleSort_Debug CMakeFiles/09Sort.SwapBubbleSort.dir/09Sort/SwapBubbleSort.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.SwapBubbleSort.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 09Sort.SwapBubbleSort.exe
-  TARGET_IMPLIB = lib09Sort.SwapBubbleSort.dll.a
-  TARGET_PDB = 09Sort.SwapBubbleSort.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target 09Sort.SwapQuickSort
-
-
-#############################################
-# Order-only phony target for 09Sort.SwapQuickSort
-
-build cmake_object_order_depends_target_09Sort.SwapQuickSort: phony || .
-
-build CMakeFiles/09Sort.SwapQuickSort.dir/09Sort/SwapQuickSort.c.obj: C_COMPILER__09Sort.2eSwapQuickSort_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/09Sort/SwapQuickSort.c || cmake_object_order_depends_target_09Sort.SwapQuickSort
-  DEP_FILE = CMakeFiles\09Sort.SwapQuickSort.dir\09Sort\SwapQuickSort.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\09Sort.SwapQuickSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\09Sort.SwapQuickSort.dir\09Sort
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 09Sort.SwapQuickSort
-
-
-#############################################
-# Link the executable 09Sort.SwapQuickSort.exe
-
-build 09Sort.SwapQuickSort.exe: C_EXECUTABLE_LINKER__09Sort.2eSwapQuickSort_Debug CMakeFiles/09Sort.SwapQuickSort.dir/09Sort/SwapQuickSort.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\09Sort.SwapQuickSort.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 09Sort.SwapQuickSort.exe
-  TARGET_IMPLIB = lib09Sort.SwapQuickSort.dll.a
-  TARGET_PDB = 09Sort.SwapQuickSort.exe.dbg
+  TARGET_FILE = 09Sort.ShellSort.exe
+  TARGET_IMPLIB = lib09Sort.ShellSort.dll.a
+  TARGET_PDB = 09Sort.ShellSort.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 10App.2006
@@ -1755,27 +1860,33 @@ build 08Search.BlockSearch: phony 08Search.BlockSearch.exe
 
 build 08Search.FoldSearch: phony 08Search.FoldSearch.exe
 
+build 08Search.HashSearchByAgain: phony 08Search.HashSearchByAgain.exe
+
+build 08Search.HashSearchByChain: phony 08Search.HashSearchByChain.exe
+
+build 08Search.HashSearchByOpen: phony 08Search.HashSearchByOpen.exe
+
 build 08Search.SequenceSearch: phony 08Search.SequenceSearch.exe
+
+build 09Sort.BubbleSort: phony 09Sort.BubbleSort.exe
 
 build 09Sort.CountSort: phony 09Sort.CountSort.exe
 
-build 09Sort.InsertFoldSort: phony 09Sort.InsertFoldSort.exe
+build 09Sort.FoldSort: phony 09Sort.FoldSort.exe
 
-build 09Sort.InsertShellSort: phony 09Sort.InsertShellSort.exe
+build 09Sort.HeapSort: phony 09Sort.HeapSort.exe
 
-build 09Sort.InsertStraightSort: phony 09Sort.InsertStraightSort.exe
+build 09Sort.InsertSort: phony 09Sort.InsertSort.exe
 
 build 09Sort.MergeSort: phony 09Sort.MergeSort.exe
 
+build 09Sort.QuickSort: phony 09Sort.QuickSort.exe
+
 build 09Sort.RadixSort: phony 09Sort.RadixSort.exe
 
-build 09Sort.SelectHeapSort: phony 09Sort.SelectHeapSort.exe
+build 09Sort.SelectSort: phony 09Sort.SelectSort.exe
 
-build 09Sort.SelectStraightSort: phony 09Sort.SelectStraightSort.exe
-
-build 09Sort.SwapBubbleSort: phony 09Sort.SwapBubbleSort.exe
-
-build 09Sort.SwapQuickSort: phony 09Sort.SwapQuickSort.exe
+build 09Sort.ShellSort: phony 09Sort.ShellSort.exe
 
 build 10App.2006: phony 10App.2006.exe
 
@@ -1813,7 +1924,7 @@ build cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.01List.exe 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.02Stack.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.03Queue.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.05String.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Graph.AMGraph.exe 07Graph.ATGraph.exe 08Search.BlockSearch.exe 08Search.FoldSearch.exe 08Search.SequenceSearch.exe 09Sort.CountSort.exe 09Sort.InsertFoldSort.exe 09Sort.InsertShellSort.exe 09Sort.InsertStraightSort.exe 09Sort.MergeSort.exe 09Sort.RadixSort.exe 09Sort.SelectHeapSort.exe 09Sort.SelectStraightSort.exe 09Sort.SwapBubbleSort.exe 09Sort.SwapQuickSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.01List.exe 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.02Stack.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.03Queue.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.05String.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Graph.AMGraph.exe 07Graph.ATGraph.exe 08Search.BlockSearch.exe 08Search.FoldSearch.exe 08Search.HashSearchByAgain.exe 08Search.HashSearchByChain.exe 08Search.HashSearchByOpen.exe 08Search.SequenceSearch.exe 09Sort.BubbleSort.exe 09Sort.CountSort.exe 09Sort.FoldSort.exe 09Sort.HeapSort.exe 09Sort.InsertSort.exe 09Sort.MergeSort.exe 09Sort.QuickSort.exe 09Sort.RadixSort.exe 09Sort.SelectSort.exe 09Sort.ShellSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

@@ -65,19 +65,19 @@ inline bool buildSHTree(SHTree* tree, int length)
     }
     for (int i = length; i < 2 * length - 1; i++)
     {
-        int lChild = -1, rChild = -1, lMin = INT_MAX, rMin = INT_MAX;
+        int lChild = -1, rChild = -1, lWeight = INT_MAX, rWeight = INT_MAX;
         for (int j = 0; j < i; j++)
         {
-            if ((*tree)[j].weight < lMin && (*tree)[j].up == -1)
+            if ((*tree)[j].weight < lWeight && (*tree)[j].up == -1)
             {
-                rMin = lMin;
+                rWeight = lWeight;
+                lWeight = (*tree)[j].weight;
                 rChild = lChild;
-                lMin = (*tree)[j].weight;
                 lChild = j;
             }
-            else if ((*tree)[j].weight < rMin && (*tree)[j].up == -1)
+            else if ((*tree)[j].weight < rWeight && (*tree)[j].up == -1)
             {
-                rMin = (*tree)[j].weight;
+                rWeight = (*tree)[j].weight;
                 rChild = j;
             }
         }

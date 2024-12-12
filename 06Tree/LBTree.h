@@ -38,17 +38,13 @@ inline void buildLBTree(LBTree* tree)
     }
     else
     {
-        LBTree node = NULL;
-        while (node == NULL)
+        LBTree node = malloc(sizeof(struct LBTreeNode));
+        if (node != NULL)
         {
-            node = (LBTree)malloc(sizeof(struct LBTreeNode));
-            if (node != NULL)
-            {
-                *tree = node;
-                (*tree)->data = data;
-                buildLBTree(&(*tree)->left);
-                buildLBTree(&(*tree)->right);
-            }
+            *tree = node;
+            (*tree)->data = data;
+            buildLBTree(&(*tree)->left);
+            buildLBTree(&(*tree)->right);
         }
     }
 }

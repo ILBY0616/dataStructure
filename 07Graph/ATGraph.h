@@ -217,7 +217,7 @@ inline bool BFSATGraph(ATGraph graph, int startIndex,bool* visited)
         Edge* edge = graph->vertex[currentIndex].first;
         while (edge != NULL)
         {
-            if (!visited[edge->index])
+            if (visited[edge->index] == false)
             {
                 queue[++rear] = edge->index;
                 visited[edge->index] = true;

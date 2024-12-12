@@ -191,7 +191,7 @@ inline bool BFSAMGraph(AMGraph graph, int startIndex,bool* visited)
         printf("%c", graph->vertex[startIndex]);
         for (int endIndex = 0; endIndex < graph->vertexSum; endIndex++)
         {
-            if (judgeEdgeAMGraph(graph, startIndex, endIndex) && !visited[endIndex])
+            if (judgeEdgeAMGraph(graph, startIndex, endIndex) == true && visited[endIndex] == false)
             {
                 queue[++rear] = endIndex;
                 visited[endIndex] = true;

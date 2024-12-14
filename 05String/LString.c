@@ -1,11 +1,5 @@
 #include <LString.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.LString.exe
-// goodgoogle
-// google
-// 5
-// Process finished with exit code 0
-
 int main()
 {
     char* a = "goodgoogle";

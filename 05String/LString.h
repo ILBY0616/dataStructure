@@ -11,7 +11,7 @@ typedef struct LStringNode
 {
     char data;
     struct LStringNode* next;
-}* LString;
+} LStringNode, *LString;
 
 // 建造链串
 bool buildLString(char* data, LString* string);
@@ -28,8 +28,7 @@ inline bool buildLString(char* data, LString* string)
     {
         return false;
     }
-    LString head = NULL;
-    LString tail = NULL;
+    LString head = NULL, tail = NULL;
     for (int i = 0; i < strlen(data); i++)
     {
         LString node = malloc(sizeof(struct LStringNode));
@@ -65,8 +64,7 @@ inline int matchLString(LString mainString, LString subString)
     int location = 0;
     for (LString i = mainString; i != NULL; i = i->next)
     {
-        LString j = i;
-        LString k = subString;
+        LString j = i, k = subString;
         while (j != NULL && k != NULL && j->data == k->data)
         {
             j = j->next;

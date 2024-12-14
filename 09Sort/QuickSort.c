@@ -3,25 +3,25 @@
 // 划分序列
 int divideData(int* data, int low, int high)
 {
-    int temp = data[low];
+    data[0] = data[low];
     // 划分
     while (low < high)
     {
         // 比较
-        while (low < high && data[high] >= temp)
+        while (low < high && data[high] >= data[0])
         {
             high--;
         }
         data[low] = data[high];
         // 比较
-        while (low < high && data[low] <= temp)
+        while (low < high && data[low] <= data[0])
         {
             low++;
         }
         data[high] = data[low];
     }
     // 交换
-    data[low] = temp;
+    data[low] = data[0];
     return low;
 }
 
@@ -39,7 +39,7 @@ void quickSort(int* data, int low, int high)
 // 打印序列
 void printQuick(int* data, int length)
 {
-    for (int i = 0; i < length; i++)
+    for (int i = 1; i <= length; i++)
     {
         printf("%d ", data[i]);
     }
@@ -57,13 +57,13 @@ void printQuick(int* data, int length)
 
 int main()
 {
-    int data[100] = {
-        99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77,
+    int data[101] = {
+        101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77,
         76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52,
         51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27,
-        26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+        26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
     };
-    int low = 0, high = 99, length = 100;
+    int low = 1, high = 100, length = 100;
     quickSort(data, low, high);
     printQuick(data, length);
     return 0;

@@ -1,18 +1,5 @@
 #include <DMatrix.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\04Array.DMatrix.exe
-// 1 0 1
-// 0 2 0
-// 1 0 0
-// 1 0 0
-// 0 2 0
-// 0 0 3
-// 1 0 3
-// 0 4 0
-// 1 0 0
-//
-// Process finished with exit code 0
-
 int main()
 {
     int row = 3, column = 3;

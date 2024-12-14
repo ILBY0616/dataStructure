@@ -25,7 +25,6 @@ inline DMatrix createDMatrix(int data[100][100], int row, int column)
     matrix.length = 0;
     for (int i = 0; i < row; i++)
     {
-        // 稠密对称矩阵
         for (int j = 0; j <= i; j++)
         {
             matrix.data[matrix.length++] = data[i][j];
@@ -44,9 +43,9 @@ inline void multiplyDMatrix(DMatrix leftMatrix, DMatrix rightMatrix, int finalMa
             for (int k = 0; k < leftMatrix.column; k++)
             {
                 // left[i][k]索引
-                int leftIndex = i >= k ? i * (i + 1) / 2 + k : k * (k + 1) / 2 + i;
+                int leftIndex = i >= k ? (1 + i) * i / 2 + k : (1 + k) * k / 2 + i;
                 // right[k][j]索引
-                int rightIndex = k >= j ? k * (k + 1) / 2 + j : j * (j + 1) / 2 + k;
+                int rightIndex = k >= j ? (1 + k) * k / 2 + j : (1 + j) * j / 2 + k;
                 // 计算final[i][j]
                 finalMatrix[i][j] += leftMatrix.data[leftIndex] * rightMatrix.data[rightIndex];
             }
@@ -60,7 +59,7 @@ inline void printDMatrix(DMatrix matrix)
     {
         for (int j = 0; j < matrix.column; j++)
         {
-            int k = i >= j ? (1 + i) * i / 2 + j : (j + 1) * j / 2 + i;
+            int k = i >= j ? (1 + i) * i / 2 + j : (1 + j) * j / 2 + i;
             printf("%d ", matrix.data[k]);
         }
         printf("\n");

@@ -10,7 +10,7 @@ typedef struct DLListNode
 {
     int data;
     struct DLListNode *prior, *next;
-}* DLList;
+} DLListNode, *DLList;
 
 // 初始带头结点双链表
 bool initiateDLList(DLList* list);
@@ -37,7 +37,7 @@ inline bool initiateDLList(DLList* list)
     {
         return false;
     }
-    *list = (DLList)malloc(sizeof(struct DLListNode));
+    *list = (DLList)malloc(sizeof(DLListNode));
     if (*list == NULL)
     {
         return false;
@@ -49,14 +49,13 @@ inline bool initiateDLList(DLList* list)
 
 inline bool buildDLListByHead(int* data, int length, DLList* list)
 {
-    if (*list != NULL)
+    if (initiateDLList(list) == false)
     {
         return false;
     }
-    initiateDLList(list);
     for (int i = 0; i < length; i++)
     {
-        DLList node = malloc(sizeof(struct DLListNode));
+        DLList node = malloc(sizeof(DLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -78,15 +77,14 @@ inline bool buildDLListByHead(int* data, int length, DLList* list)
 
 inline bool buildDLListByTail(int* data, int length, DLList* list)
 {
-    if (*list != NULL)
+    if (initiateDLList(list) == false)
     {
         return false;
     }
-    initiateDLList(list);
     DLList tail = *list;
     for (int i = 0; i < length; i++)
     {
-        DLList node = malloc(sizeof(struct DLListNode));
+        DLList node = malloc(sizeof(DLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -107,14 +105,14 @@ inline DLList selectDLList(DLList list, int data)
 {
     if (list != NULL)
     {
-        DLList temp = list->next;
-        while (temp != NULL)
+        DLList current = list->next;
+        while (current != NULL)
         {
-            if (temp->data == data)
+            if (current->data == data)
             {
-                return temp;
+                return current;
             }
-            temp = temp->next;
+            current = current->next;
         }
     }
     return NULL;
@@ -122,56 +120,48 @@ inline DLList selectDLList(DLList list, int data)
 
 inline bool insertDLList(DLList list, int location, int data)
 {
-    if (list == NULL || location < 0)
+    if (list == NULL || location < 0 || location > getLengthDLList(list))
     {
         return false;
     }
-    DLList temp = list;
-    while (location > 0 && temp->next != NULL)
+    DLList prior = list;
+    while (location > 0)
     {
-        temp = temp->next;
+        prior = prior->next;
         location--;
     }
-    DLList node = malloc(sizeof(struct DLListNode));
-    if (node != NULL)
+    DLList node = malloc(sizeof(DLListNode));
+    if (node == NULL)
     {
-        node->data = data;
-        node->prior = temp;
-        node->next = temp->next;
-        if (temp->next != NULL)
-        {
-            temp->next->prior = node;
-        }
-        temp->next = node;
+        return false;
     }
+    node->data = data;
+    node->next = prior->next;
+    node->prior = prior;
+    if (prior->next != NULL)
+    {
+        prior->next->prior = node;
+    }
+    prior->next = node;
     return true;
 }
 
 inline bool deleteDLList(DLList list, int location)
 {
-    if (list == NULL || list->next == NULL || location < 0)
+    if (list == NULL || list->next == NULL || location < 0 || location > getLengthDLList(list) - 1)
     {
         return false;
     }
-    DLList temp = list->next;
-    while (location > 0 && temp->next != NULL)
+    DLList prior = list;
+    while (location > 0)
     {
-        temp = temp->next;
+        prior = prior->next;
         location--;
     }
-    if (temp == NULL)
-    {
-        return false;
-    }
-    if (temp->prior != NULL)
-    {
-        temp->prior->next = temp->next;
-    }
-    if (temp->next != NULL)
-    {
-        temp->next->prior = temp->prior;
-    }
-    free(temp);
+    DLList node = prior->next;
+    prior->next = node->next;
+    node->next->prior = prior;
+    free(node);
     return true;
 }
 
@@ -197,24 +187,22 @@ inline int getLengthDLList(DLList list)
     {
         return 0;
     }
-    DLList temp = list->next;
     int length = 0;
-    while (temp != NULL)
+    while (list->next != NULL)
     {
+        list = list->next;
         length++;
-        temp = temp->next;
     }
     return length;
 }
 
 inline void destroyDLList(DLList* list)
 {
-    DLList temp = *list;
-    while (temp != NULL)
+    while (*list != NULL)
     {
+        DLList node = *list;
         *list = (*list)->next;
-        free(temp);
-        temp = *list;
+        free(node);
     }
     *list = NULL;
 }

@@ -41,41 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/CLion/WorkPlace/dataStructure/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target 01List.01List
-
-
-#############################################
-# Order-only phony target for 01List.01List
-
-build cmake_object_order_depends_target_01List.01List: phony || .
-
-build CMakeFiles/01List.01List.dir/01List/01List.c.obj: C_COMPILER__01List.2e01List_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/01List/01List.c || cmake_object_order_depends_target_01List.01List
-  DEP_FILE = CMakeFiles\01List.01List.dir\01List\01List.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\01List.01List.dir
-  OBJECT_FILE_DIR = CMakeFiles\01List.01List.dir\01List
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 01List.01List
-
-
-#############################################
-# Link the executable 01List.01List.exe
-
-build 01List.01List.exe: C_EXECUTABLE_LINKER__01List.2e01List_Debug CMakeFiles/01List.01List.dir/01List/01List.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\01List.01List.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 01List.01List.exe
-  TARGET_IMPLIB = lib01List.01List.dll.a
-  TARGET_PDB = 01List.01List.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target 01List.DLList
 
 
@@ -216,41 +181,6 @@ build 01List.SSList.exe: C_EXECUTABLE_LINKER__01List.2eSSList_Debug CMakeFiles/0
   TARGET_PDB = 01List.SSList.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target 02Stack.02Stack
-
-
-#############################################
-# Order-only phony target for 02Stack.02Stack
-
-build cmake_object_order_depends_target_02Stack.02Stack: phony || .
-
-build CMakeFiles/02Stack.02Stack.dir/02Stack/02Stack.c.obj: C_COMPILER__02Stack.2e02Stack_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/02Stack/02Stack.c || cmake_object_order_depends_target_02Stack.02Stack
-  DEP_FILE = CMakeFiles\02Stack.02Stack.dir\02Stack\02Stack.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\02Stack.02Stack.dir
-  OBJECT_FILE_DIR = CMakeFiles\02Stack.02Stack.dir\02Stack
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 02Stack.02Stack
-
-
-#############################################
-# Link the executable 02Stack.02Stack.exe
-
-build 02Stack.02Stack.exe: C_EXECUTABLE_LINKER__02Stack.2e02Stack_Debug CMakeFiles/02Stack.02Stack.dir/02Stack/02Stack.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\02Stack.02Stack.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 02Stack.02Stack.exe
-  TARGET_IMPLIB = lib02Stack.02Stack.dll.a
-  TARGET_PDB = 02Stack.02Stack.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target 02Stack.LStack
 
 
@@ -319,41 +249,6 @@ build 02Stack.SStack.exe: C_EXECUTABLE_LINKER__02Stack.2eSStack_Debug CMakeFiles
   TARGET_FILE = 02Stack.SStack.exe
   TARGET_IMPLIB = lib02Stack.SStack.dll.a
   TARGET_PDB = 02Stack.SStack.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target 03Queue.03Queue
-
-
-#############################################
-# Order-only phony target for 03Queue.03Queue
-
-build cmake_object_order_depends_target_03Queue.03Queue: phony || .
-
-build CMakeFiles/03Queue.03Queue.dir/03Queue/03Queue.c.obj: C_COMPILER__03Queue.2e03Queue_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/03Queue/03Queue.c || cmake_object_order_depends_target_03Queue.03Queue
-  DEP_FILE = CMakeFiles\03Queue.03Queue.dir\03Queue\03Queue.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\03Queue.03Queue.dir
-  OBJECT_FILE_DIR = CMakeFiles\03Queue.03Queue.dir\03Queue
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 03Queue.03Queue
-
-
-#############################################
-# Link the executable 03Queue.03Queue.exe
-
-build 03Queue.03Queue.exe: C_EXECUTABLE_LINKER__03Queue.2e03Queue_Debug CMakeFiles/03Queue.03Queue.dir/03Queue/03Queue.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\03Queue.03Queue.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 03Queue.03Queue.exe
-  TARGET_IMPLIB = lib03Queue.03Queue.dll.a
-  TARGET_PDB = 03Queue.03Queue.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 03Queue.LQueue
@@ -494,41 +389,6 @@ build 04Array.SMatrix.exe: C_EXECUTABLE_LINKER__04Array.2eSMatrix_Debug CMakeFil
   TARGET_FILE = 04Array.SMatrix.exe
   TARGET_IMPLIB = lib04Array.SMatrix.dll.a
   TARGET_PDB = 04Array.SMatrix.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target 05String.05String
-
-
-#############################################
-# Order-only phony target for 05String.05String
-
-build cmake_object_order_depends_target_05String.05String: phony || .
-
-build CMakeFiles/05String.05String.dir/05String/05String.c.obj: C_COMPILER__05String.2e05String_unscanned_Debug D$:/CLion/WorkPlace/dataStructure/05String/05String.c || cmake_object_order_depends_target_05String.05String
-  DEP_FILE = CMakeFiles\05String.05String.dir\05String\05String.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  INCLUDES = -ID:/CLion/WorkPlace/dataStructure/01List -ID:/CLion/WorkPlace/dataStructure/02Stack -ID:/CLion/WorkPlace/dataStructure/03Queue -ID:/CLion/WorkPlace/dataStructure/04Array -ID:/CLion/WorkPlace/dataStructure/05String -ID:/CLion/WorkPlace/dataStructure/06Tree -ID:/CLion/WorkPlace/dataStructure/07Graph
-  OBJECT_DIR = CMakeFiles\05String.05String.dir
-  OBJECT_FILE_DIR = CMakeFiles\05String.05String.dir\05String
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target 05String.05String
-
-
-#############################################
-# Link the executable 05String.05String.exe
-
-build 05String.05String.exe: C_EXECUTABLE_LINKER__05String.2e05String_Debug CMakeFiles/05String.05String.dir/05String/05String.c.obj
-  FLAGS = -g
-  LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\05String.05String.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = 05String.05String.exe
-  TARGET_IMPLIB = lib05String.05String.dll.a
-  TARGET_PDB = 05String.05String.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 05String.LString
@@ -1816,8 +1676,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build 01List.01List: phony 01List.01List.exe
-
 build 01List.DLList: phony 01List.DLList.exe
 
 build 01List.DSList: phony 01List.DSList.exe
@@ -1826,13 +1684,9 @@ build 01List.SLList: phony 01List.SLList.exe
 
 build 01List.SSList: phony 01List.SSList.exe
 
-build 02Stack.02Stack: phony 02Stack.02Stack.exe
-
 build 02Stack.LStack: phony 02Stack.LStack.exe
 
 build 02Stack.SStack: phony 02Stack.SStack.exe
-
-build 03Queue.03Queue: phony 03Queue.03Queue.exe
 
 build 03Queue.LQueue: phony 03Queue.LQueue.exe
 
@@ -1841,8 +1695,6 @@ build 03Queue.SQueue: phony 03Queue.SQueue.exe
 build 04Array.DMatrix: phony 04Array.DMatrix.exe
 
 build 04Array.SMatrix: phony 04Array.SMatrix.exe
-
-build 05String.05String: phony 05String.05String.exe
 
 build 05String.LString: phony 05String.LString.exe
 
@@ -1924,7 +1776,7 @@ build cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId: phony cm
 #############################################
 # Folder: D:/CLion/WorkPlace/dataStructure/cmake-build-debug
 
-build all: phony 01List.01List.exe 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.02Stack.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.03Queue.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.05String.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Graph.AMGraph.exe 07Graph.ATGraph.exe 08Search.BlockSearch.exe 08Search.FoldSearch.exe 08Search.HashSearchByAgain.exe 08Search.HashSearchByChain.exe 08Search.HashSearchByOpen.exe 08Search.SequenceSearch.exe 09Sort.BubbleSort.exe 09Sort.CountSort.exe 09Sort.FoldSort.exe 09Sort.HeapSort.exe 09Sort.InsertSort.exe 09Sort.MergeSort.exe 09Sort.QuickSort.exe 09Sort.RadixSort.exe 09Sort.SelectSort.exe 09Sort.ShellSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
+build all: phony 01List.DLList.exe 01List.DSList.exe 01List.SLList.exe 01List.SSList.exe 02Stack.LStack.exe 02Stack.SStack.exe 03Queue.LQueue.exe 03Queue.SQueue.exe 04Array.DMatrix.exe 04Array.SMatrix.exe 05String.LString.exe 05String.SString.exe 06Tree.LBTree.exe 06Tree.SHTree.exe 07Graph.AMGraph.exe 07Graph.ATGraph.exe 08Search.BlockSearch.exe 08Search.FoldSearch.exe 08Search.HashSearchByAgain.exe 08Search.HashSearchByChain.exe 08Search.HashSearchByOpen.exe 08Search.SequenceSearch.exe 09Sort.BubbleSort.exe 09Sort.CountSort.exe 09Sort.FoldSort.exe 09Sort.HeapSort.exe 09Sort.InsertSort.exe 09Sort.MergeSort.exe 09Sort.QuickSort.exe 09Sort.RadixSort.exe 09Sort.SelectSort.exe 09Sort.ShellSort.exe 10App.2006.exe 10App.2007.exe 10App.2008.exe 10App.2009.exe 10App.2010.exe 10App.2011.exe 10App.2012.exe 10App.2017.exe 10App.2018.exe 10App.2019.exe 10App.2020.exe 10App.2021.exe 10App.2023.exe cmake-build-debug.CMakeFiles.3.30.5.CompilerIdC.CMakeCCompilerId.exe
 
 # =============================================================================
 # Built-in targets

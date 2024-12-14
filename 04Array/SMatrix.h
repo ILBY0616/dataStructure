@@ -89,7 +89,6 @@ inline SMatrix quickTranspose(SMatrix matrix)
     {
         int dataSum[matrix.column];
         int firstIndex[matrix.column];
-        // 初始辅助数组
         for (int i = 0; i < matrix.column; i++)
         {
             dataSum[i] = 0;
@@ -106,7 +105,6 @@ inline SMatrix quickTranspose(SMatrix matrix)
         {
             firstIndex[i] = firstIndex[i - 1] + dataSum[i - 1];
         }
-        // 转置矩阵
         for (int i = 0; i < matrix.length; i++)
         {
             int column = matrix.data[i].column;

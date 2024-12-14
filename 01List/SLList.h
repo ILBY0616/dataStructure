@@ -10,7 +10,7 @@ typedef struct SLListNode
 {
     int data;
     struct SLListNode* next;
-}* SLList;
+} SLListNode, *SLList;
 
 // 初始带头结点单链表
 bool initiateSLList(SLList* list);
@@ -37,7 +37,7 @@ inline bool initiateSLList(SLList* list)
     {
         return false;
     }
-    *list = (SLList)malloc(sizeof(struct SLListNode));
+    *list = (SLList)malloc(sizeof(SLListNode));
     if (*list == NULL)
     {
         return false;
@@ -48,14 +48,13 @@ inline bool initiateSLList(SLList* list)
 
 inline bool buildSLListByHead(int* data, int length, SLList* list)
 {
-    if (*list != NULL)
+    if (initiateSLList(list) == false)
     {
         return false;
     }
-    initiateSLList(list);
     for (int i = 0; i < length; i++)
     {
-        SLList node = malloc(sizeof(struct SLListNode));
+        SLList node = malloc(sizeof(SLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -72,15 +71,14 @@ inline bool buildSLListByHead(int* data, int length, SLList* list)
 
 inline bool buildSLListByTail(int* data, int length, SLList* list)
 {
-    if (*list != NULL)
+    if (initiateSLList(list) == false)
     {
         return false;
     }
-    initiateSLList(list);
     SLList tail = *list;
     for (int i = 0; i < length; i++)
     {
-        SLList node = malloc(sizeof(struct SLListNode));
+        SLList node = malloc(sizeof(SLListNode));
         if (node != NULL)
         {
             node->data = data[i];
@@ -100,14 +98,14 @@ inline SLList selectSLList(SLList list, int data)
 {
     if (list != NULL)
     {
-        SLList temp = list->next;
-        while (temp != NULL)
+        SLList current = list->next;
+        while (current != NULL)
         {
-            if (temp->data == data)
+            if (current->data == data)
             {
-                return temp;
+                return current;
             }
-            temp = temp->next;
+            current = current->next;
         }
     }
     return NULL;
@@ -119,19 +117,20 @@ inline bool insertSLList(SLList list, int location, int data)
     {
         return false;
     }
-    SLList temp = list;
+    SLList prior = list;
     while (location > 0)
     {
-        temp = temp->next;
+        prior = prior->next;
         location--;
     }
-    SLList node = malloc(sizeof(struct SLListNode));
-    if (node != NULL)
+    SLList node = malloc(sizeof(SLListNode));
+    if (node == NULL)
     {
-        node->data = data;
-        node->next = temp->next;
-        temp->next = node;
+        return false;
     }
+    node->data = data;
+    node->next = prior->next;
+    prior->next = node;
     return true;
 }
 
@@ -141,14 +140,14 @@ inline bool deleteSLList(SLList list, int location)
     {
         return false;
     }
-    SLList temp = list;
+    SLList prior = list;
     while (location > 0)
     {
-        temp = temp->next;
+        prior = prior->next;
         location--;
     }
-    SLList node = temp->next;
-    temp->next = node->next;
+    SLList node = prior->next;
+    prior->next = node->next;
     free(node);
     return true;
 }
@@ -175,34 +174,24 @@ inline int getLengthSLList(SLList list)
     {
         return 0;
     }
-    SLList slow = list->next;
-    SLList fast = list->next;
-    int length = 1;
-    while (fast != NULL && fast->next != NULL)
+    int length = 0;
+    SLList slow = list->next, fast = list->next;
+    while (slow != NULL && fast != NULL && fast->next != NULL)
     {
         slow = slow->next;
         fast = fast->next->next;
         length++;
     }
-    if (fast != NULL)
-    {
-        length = length * 2 - 1;
-    }
-    else
-    {
-        length = length * 2;
-    }
-    return length;
+    return fast != NULL ? length * 2 + 1 : length * 2;
 }
 
 inline void destroySLList(SLList* list)
 {
-    SLList node = *list;
-    while (node != NULL)
+    while (*list != NULL)
     {
+        SLList node = *list;
         *list = (*list)->next;
         free(node);
-        node = *list;
     }
     *list = NULL;
 }

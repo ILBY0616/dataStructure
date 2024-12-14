@@ -1,17 +1,13 @@
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.01List.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.DLList.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.DSList.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.SLList.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/01List.SSList.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/02Stack.02Stack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/02Stack.LStack.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/02Stack.SStack.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/03Queue.03Queue.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/03Queue.LQueue.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/03Queue.SQueue.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.DMatrix.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/04Array.SMatrix.dir
-D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.05String.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.LString.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/05String.SString.dir
 D:/CLion/WorkPlace/dataStructure/cmake-build-debug/CMakeFiles/06Tree.LBTree.dir

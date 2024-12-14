@@ -1,11 +1,5 @@
 #include <SString.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\05String.SString.exe
-// goodgoogle
-// google
-// 5
-// Process finished with exit code 0
-
 int main()
 {
     char* a = "goodgoogle";

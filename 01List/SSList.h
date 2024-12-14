@@ -23,7 +23,7 @@ bool deleteSSList(SSList list, int location);
 // 打印静态顺序表
 bool printSSList(SSList list);
 // 销毁静态顺序表
-bool destroySSList(SSList* list);
+void destroySSList(SSList* list);
 
 inline bool initiateSSList(SSList* list)
 {
@@ -105,15 +105,13 @@ inline bool printSSList(SSList list)
     return true;
 }
 
-inline bool destroySSList(SSList* list)
+inline void destroySSList(SSList* list)
 {
-    if (*list == NULL)
+    if (*list != NULL)
     {
-        return false;
+        free(*list);
+        *list = NULL;
     }
-    free(*list);
-    *list = NULL;
-    return true;
 }
 
 #endif

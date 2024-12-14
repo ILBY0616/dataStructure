@@ -23,7 +23,7 @@ bool deleteDSList(DSList list, int location);
 // 打印动态顺序表
 bool printDSList(DSList list);
 // 销毁动态顺序表
-bool destroyDSList(DSList* list);
+void destroyDSList(DSList* list);
 
 inline bool initiateDSList(DSList* list)
 {
@@ -63,6 +63,7 @@ inline int selectDSList(DSList list, int data)
 
 inline bool insertDSList(DSList list, int location, int data)
 {
+    // 检查
     if (list == NULL || location < 0 || location > list->length)
     {
         return false;
@@ -70,17 +71,19 @@ inline bool insertDSList(DSList list, int location, int data)
     if (list->length == list->size)
     {
         list->size += 100;
-        int* newData = realloc(list->data, list->size * sizeof(int));
-        if (newData == NULL)
+        int* listData = realloc(list->data, list->size * sizeof(int));
+        if (listData == NULL)
         {
             return false;
         }
-        list->data = newData;
+        list->data = listData;
     }
+    // 后移
     for (int i = list->length; i > location; i--)
     {
         list->data[i] = list->data[i - 1];
     }
+    // 删除
     list->data[location] = data;
     list->length++;
     return true;
@@ -88,14 +91,17 @@ inline bool insertDSList(DSList list, int location, int data)
 
 inline bool deleteDSList(DSList list, int location)
 {
+    // 检查
     if (list == NULL || list->length == 0 || location < 0 || location > list->length - 1)
     {
         return false;
     }
+    // 后移
     for (int i = location; i < list->length - 1; i++)
     {
         list->data[i] = list->data[i + 1];
     }
+    // 删除
     list->length--;
     return true;
 }
@@ -114,17 +120,15 @@ inline bool printDSList(DSList list)
     return true;
 }
 
-inline bool destroyDSList(DSList* list)
+inline void destroyDSList(DSList* list)
 {
-    if (*list == NULL)
+    if (*list != NULL)
     {
-        return false;
+        free((*list)->data);
+        (*list)->data = NULL;
+        free(*list);
+        *list = NULL;
     }
-    free((*list)->data);
-    (*list)->data = NULL;
-    free(*list);
-    *list = NULL;
-    return true;
 }
 
 #endif

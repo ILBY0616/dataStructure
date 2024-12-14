@@ -3,30 +3,27 @@
 // 调整大根堆
 void adjustHeap(int* data, int root, int length)
 {
-    int max = root;
-    int left = 2 * root + 1;
-    int right = 2 * root + 2;
-    if (left < length && data[left] > data[max])
+    data[0] = data[root];
+    for (int i = root * 2; i <= length; i *= 2)
     {
-        max = left;
+        if (i < length && data[i] < data[i + 1])
+        {
+            i++;
+        }
+        if (data[0] >= data[i])
+        {
+            break;
+        }
+        data[root] = data[i];
+        root = i;
     }
-    if (right < length && data[right] > data[max])
-    {
-        max = right;
-    }
-    if (max != root)
-    {
-        int temp = data[root];
-        data[root] = data[max];
-        data[max] = temp;
-        adjustHeap(data, max, length);
-    }
+    data[root] = data[0];
 }
 
 // 建造大根堆
 void buildHeap(int* data, int length)
 {
-    for (int i = length / 2 - 1; i >= 0; i--)
+    for (int i = length / 2; i >= 1; i--)
     {
         adjustHeap(data, i, length);
     }
@@ -36,19 +33,19 @@ void buildHeap(int* data, int length)
 void heapSort(int* data, int length, int sortSum)
 {
     buildHeap(data, length);
-    for (int i = length - 1; i >= length - sortSum; i--)
+    for (int i = length; i > 1 + length - sortSum; i--)
     {
-        int max = data[0];
-        data[0] = data[i];
-        data[i] = max;
-        adjustHeap(data, 0, i);
+        data[0] = data[1];
+        data[1] = data[i];
+        data[i] = data[0];
+        adjustHeap(data, 1, i - 1);
     }
 }
 
 // 打印序列
 void printData(int* data, int length)
 {
-    for (int i = 0; i < length; i++)
+    for (int i = 1; i <= length; i++)
     {
         printf("%d ", data[i]);
     }
@@ -79,11 +76,11 @@ void printData(int* data, int length)
 
 int main()
 {
-    int data[100] = {
-        99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77,
+    int data[101] = {
+        101, 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77,
         76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52,
         51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27,
-        26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+        26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
     };
     int length = 100, sortSum = 100;
     heapSort(data, length, sortSum);

@@ -72,8 +72,11 @@ inline bool outSQueue(SQueue queue, int* data)
 
 inline void destroySQueue(SQueue* queue)
 {
-    free(*queue);
-    *queue = NULL;
+    if (*queue != NULL)
+    {
+        free(*queue);
+        *queue = NULL;
+    }
 }
 
 #endif

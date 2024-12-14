@@ -70,8 +70,11 @@ inline bool popSStack(SStack stack, int* data)
 
 inline void destroySStack(SStack* stack)
 {
-    free(*stack);
-    *stack = NULL;
+    if (*stack != NULL)
+    {
+        free(*stack);
+        *stack = NULL;
+    }
 }
 
 #endif

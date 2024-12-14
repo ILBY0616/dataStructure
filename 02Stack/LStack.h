@@ -9,7 +9,7 @@ typedef struct LStackNode
 {
     int data;
     struct LStackNode* next;
-}* LStack;
+} LStackNode, *LStack;
 
 // 初始链栈
 bool initiateLStack(LStack* stack);
@@ -44,7 +44,7 @@ inline bool getLStack(LStack stack, int* data)
 
 inline bool pushLStack(LStack* stack, int data)
 {
-    LStack node = malloc(sizeof(struct LStackNode));
+    LStack node = malloc(sizeof(LStackNode));
     if (node == NULL)
     {
         return false;
@@ -62,7 +62,7 @@ inline bool popLStack(LStack* stack, int* data)
         return false;
     }
     LStack node = *stack;
-    *data = node->data;
+    *data = (*stack)->data;
     *stack = (*stack)->next;
     free(node);
     return true;

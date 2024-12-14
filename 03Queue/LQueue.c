@@ -1,10 +1,6 @@
 #include <LQueue.h>
 #include <stdio.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\03Queue.LQueue.exe
-// 1 2 3 4 5 6 7 8 9 10
-// Process finished with exit code 0
-
 int main()
 {
     int i, data;

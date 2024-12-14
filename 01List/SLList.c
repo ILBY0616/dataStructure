@@ -1,14 +1,5 @@
 #include <SLList.h>
 
-// D:\CLion\WorkPlace\dataStructure\cmake-build-debug\01List.SLList.exe
-// 5 4 3 2 1
-// 1 2 3 4 5
-// 1 2 3 4 5 6 7 8 9 10
-// The 5 is in list
-// 1 2 3 4 6 7 8 9 10
-//
-// Process finished with exit code 0
-
 int main()
 {
     SLList list = NULL;

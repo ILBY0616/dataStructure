@@ -9,7 +9,7 @@
 // 顺序串
 typedef struct SString
 {
-    char data[100];
+    char* data;
     int size, length;
 }* SString;
 
@@ -17,8 +17,6 @@ typedef struct SString
 bool buildSString(char* data, SString* string);
 // 获取新下标
 void getNext(SString string, int next[]);
-// 获取新下标
-void getNextVal(SString string, int next[], int nextVal[]);
 // 匹配顺序串
 int matchSString(SString mainString, SString subString);
 // 打印顺序串
@@ -28,7 +26,7 @@ void destroySString(SString* string);
 
 inline bool buildSString(char* data, SString* string)
 {
-    if (*string != NULL)
+    if (data == NULL || *string != NULL)
     {
         return false;
     }
@@ -37,15 +35,20 @@ inline bool buildSString(char* data, SString* string)
     {
         return false;
     }
+    (*string)->size = 2 * strlen(data);
+    (*string)->data = malloc((*string)->size * sizeof(char));
+    (*string)->length = strlen(data);
+    if ((*string)->data == NULL)
+    {
+        return false;
+    }
     int i = 0;
-    (*string)->size = 100;
-    while (i < strlen(data) && i < (*string)->size)
+    while (i < (*string)->length)
     {
         (*string)->data[i] = data[i];
         i++;
     }
     (*string)->data[i] = '\0';
-    (*string)->length = strlen(data);
     return true;
 }
 
@@ -57,27 +60,13 @@ inline void getNext(SString string, int next[])
     {
         if (j == -1 || string->data[i] == string->data[j])
         {
-            next[++i] = ++j;
+            i++;
+            j++;
+            next[i] = string->data[i] == string->data[j] ? next[j] : j;
         }
         else
         {
             j = next[j];
-        }
-    }
-}
-
-inline void getNextVal(SString string, int next[], int nextVal[])
-{
-    nextVal[0] = -1;
-    for (int i = 1; i < string->length; i++)
-    {
-        if (string->data[i] == string->data[next[i]])
-        {
-            nextVal[i] = nextVal[next[i]];
-        }
-        else
-        {
-            nextVal[i] = next[i];
         }
     }
 }
@@ -90,9 +79,7 @@ inline int matchSString(SString mainString, SString subString)
     }
     int i = 0, j = 0;
     int next[subString->length];
-    int nextVal[subString->length];
     getNext(subString, next);
-    getNextVal(subString, next, nextVal);
     while (i < mainString->length && j < subString->length)
     {
         if (j == -1 || mainString->data[i] == subString->data[j])
@@ -102,10 +89,10 @@ inline int matchSString(SString mainString, SString subString)
         }
         else
         {
-            j = nextVal[j];
+            j = next[j];
         }
     }
-    return subString->length == j ? i - j : -1;
+    return j == subString->length ? i - j : -1;
 }
 
 inline void printSString(SString string)
@@ -119,8 +106,11 @@ inline void printSString(SString string)
 
 inline void destroySString(SString* string)
 {
-    free(*string);
-    *string = NULL;
+    if (*string != NULL)
+    {
+        free(*string);
+        *string = NULL;
+    }
 }
 
 #endif
